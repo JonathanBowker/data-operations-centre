@@ -1,0 +1,322 @@
+{
+  "doc": {
+    "properties": {
+      "@timestamp": {
+        "type": "date",
+        "format": "dateOptionalTime"
+      },
+      "@version": {
+        "type": "string"
+      },
+      "GKGRECORDID": {
+        "type": "string"
+      },
+      "DATE": {
+        "type": "string"
+      },
+      "SourceCollectionIdentifier": {
+        "type": "string"
+      },
+      "SourceCommonName": {
+        "type": "string"
+      },
+      "DocumentIdentifier": {
+        "type": "string"
+      },
+      "Counts": {
+        "properties": {
+          "CountType": {
+            "type": "string"
+          },
+          "Count": {
+            "type": "long"
+          },
+          "ObjectType": {
+            "type": "string"
+          },
+          "LocationType": {
+            "type": "string"
+          },
+          "LocationFullName": {
+            "type": "string"
+          },
+          "LocationCountryCode": {
+            "type": "string"
+          },
+          "LocationADM1Code": {
+            "type": "string"
+          },
+          "LocationLatitude": {
+            "type": "double"
+          },
+          "LocationLongitude": {
+            "type": "double"
+          },
+          "LocationFeatureID": {
+            "type": "string"
+          }
+        }
+      },
+      "V2Counts": {
+        "properties": {
+          "CountType": {
+            "type": "string"
+          },
+          "Count": {
+            "type": "long"
+          },
+          "ObjectType": {
+            "type": "string"
+          },
+          "LocationType": {
+            "type": "string"
+          },
+          "LocationFullName": {
+            "type": "string"
+          },
+          "LocationCountryCode": {
+            "type": "string"
+          },
+          "LocationADM1Code": {
+            "type": "string"
+          },
+          "LocationLatitude": {
+            "type": "double"
+          },
+          "LocationLongitude": {
+            "type": "double"
+          },
+          "LocationFeatureID": {
+            "type": "string"
+          }
+        }
+      },
+      "Themes": {
+        "type": "string"
+      },
+      "V2Themes": {
+        "type": "string"
+      },
+      "Locations": {
+        "properties": {
+          "LocationType": {
+            "type": "string"
+          },
+          "LocationFullName": {
+            "type": "string"
+          },
+          "LocationCountryCode": {
+            "type": "string"
+          },
+          "LocationADM1Code": {
+            "type": "string"
+          },
+          "LocationLatitude": {
+            "type": "double"
+          },
+          "LocationLongitude": {
+            "type": "double"
+          },
+          "LocationFeatureID": {
+            "type": "string"
+          }
+        }
+      },
+      "V2Locations": {
+        "properties": {
+          "LocationType": {
+            "type": "string"
+          },
+          "LocationFullName": {
+            "type": "string"
+          },
+          "LocationCountryCode": {
+            "type": "string"
+          },
+          "LocationADM1Code": {
+            "type": "string"
+          },
+          "LocationLatitude": {
+            "type": "double"
+          },
+          "LocationLongitude": {
+            "type": "double"
+          },
+          "LocationFeatureID": {
+            "type": "string"
+          }
+        }
+      },
+      "Persons": {
+        "type": "string"
+      },
+      "V2Persons": {
+        "type": "string"
+      },
+      "Organisations": {
+        "type": "string"
+      },
+      "V2Organisations": {
+        "type": "string"
+      },
+      "V2Tone": {
+        "properties": {
+          "Tone": {
+            "type": "double"
+          },
+          "Positive Score": {
+            "type": "double"
+          },
+          "Negative Score": {
+            "type": "double"
+          },
+          "Polarity": {
+            "type": "double"
+          },
+          "Activity Reference Density": {
+            "type": "double"
+          },
+          "Self/Group Reference Density": {
+            "type": "double"
+          },
+          "Word Count": {
+            "type": "string"
+          }
+        }
+      },
+      "Dates": {
+        "properties": {
+          "Date Resolution": {
+            "type": "long"
+          },
+          "Month": {
+            "type": "long"
+          },
+          "Day": {
+            "type": "long"
+          },
+          "Year": {
+            "type": "long"
+          },
+          "Offset": {
+            "type": "long"
+          }
+        }
+      },
+      "GCAM": {
+        "type": "string"
+      },
+      "SharingImage": {
+        "type": "string"
+      },
+      "RelatedImages": {
+        "type": "string"
+      },
+      "SocialImageEmbeds": {
+        "type": "string"
+      },
+      "SocialVideoEmbeds": {
+        "type": "string"
+      },
+      "Quotations": {
+        "properties": {
+          "Offset": {
+            "type": "long"
+          },
+          "Length": {
+            "type": "long"
+          },
+          "Verb": {
+            "type": "string"
+          },
+          "Quote": {
+            "type": "string"
+          }
+        }
+      },
+      "AllNames": {
+        "type": "string"
+      },
+      "Amounts": {
+        "properties": {
+          "Amount": {
+            "type": "long"
+          },
+          "Object": {
+            "type": "string"
+          },
+          "Offset": {
+            "type": "string"
+          }
+        }
+      },
+      "PageInfo": {
+        "properties": {
+          "Links": {
+            "type": "string"
+          },
+          "Authors": {
+            "type": "string"
+          },
+          "Published Timestamp": {
+            "type": "string"
+          }
+        }
+      },
+      "TranslationInfo": {
+        "properties": {
+          "SRCLC": {
+            "type": "string"
+          },
+          "ENG": {
+            "type": "string"
+          }
+        }
+      },
+      "Extras": {
+        "properties": {
+          "CITEDREFERENCESLIST": {
+            "properties": {
+              "Authors": {
+                "type": "string"
+              },
+              "Title": {
+                "type": "string"
+              },
+              "BookTitle": {
+                "type": "string"
+              },
+              "Date": {
+                "type": "string"
+              },
+              "Journal": {
+                "type": "string"
+              },
+              "Volume": {
+                "type": "string"
+              },
+              "Issue": {
+                "type": "string"
+              },
+              "Pages": {
+                "type": "string"
+              },
+              "Institution": {
+                "type": "string"
+              },
+              "Publisher": {
+                "type": "string"
+              },
+              "Location": {
+                "type": "string"
+              },
+              "Marker": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

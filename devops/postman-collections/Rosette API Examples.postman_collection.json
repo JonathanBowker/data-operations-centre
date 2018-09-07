@@ -1,0 +1,692 @@
+{
+	"info": {
+		"name": "Rosette API Examples",
+		"_postman_id": "8a479b8f-8e5e-4e45-0034-9c9e61f6c095",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Morphology - Compound Components",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Rechtsschutzversicherungsgesellschaften\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/compound-components",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"compound-components"
+					]
+				},
+				"description": "Run morphological analysis on input\n\nfeature: compound-components\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Morphology - Complete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The quick brown fox jumped ove the lazy dog\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/complete",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"complete"
+					]
+				},
+				"description": "Run morphological analysis on input\n\nfeature: complete\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/info/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"info",
+						""
+					]
+				},
+				"description": "Rosette API information"
+			},
+			"response": []
+		},
+		{
+			"name": "Morphology - Han Readings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"北京大学生物系主任办公室内部会议\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/han-readings",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"han-readings"
+					]
+				},
+				"description": "Run morphological analysis on input\n\nfeature: han-readings\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Morphology - Lemmas",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The fact is that the geese just went back to get a rest and I'm not banking on their return soon\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/lemmas",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"lemmas"
+					]
+				},
+				"description": "Run morphological analysis on input\n\nfeature: lemmas\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Morphology - Parts of Speech",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The fact is that the geese just went back to get a rest and I'm not banking on their return soon\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/parts-of-speech",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"parts-of-speech"
+					]
+				},
+				"description": "Run morphological analysis on input\n\nfeature: parts-of-speech\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Relationships",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The Ghostbusters movie was filmed in Boston.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/relationships/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"relationships",
+						""
+					]
+				},
+				"description": "Relationships endpoing"
+			},
+			"response": []
+		},
+		{
+			"name": "Tokens",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"北京大学生物系主任办公室内部会议\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/tokens",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"tokens"
+					]
+				},
+				"description": "Tokens endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Name Similarity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name1\": {\"text\": \"Michael Jackson\"}, \"name2\": {\"text\": \"迈克尔·杰克逊\"} }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/name-similarity",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"name-similarity"
+					]
+				},
+				"description": "Name-Similarity endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Categories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"contentUri\": \"http://www.onlocationvacations.com/2015/03/05/the-new-ghostbusters-movie-begins-filming-in-boston-in-june/\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/categories",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"categories"
+					]
+				},
+				"description": "Categories endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Entities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Bill Murray will appear in new Ghostbusters film: Dr. Peter Venkman was spotted filming a cameo in Boston this… http://dlvr.it/BnsFfS\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/entities",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"entities"
+					]
+				},
+				"description": "Entities endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Sentiment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"<html><head><title>New Ghostbusters Film</title></head><body><p>Original Ghostbuster Dan Aykroyd, who also co-wrote the 1984 Ghostbusters film, couldn’t be more pleased with the new all-female Ghostbusters cast, telling The Hollywood Reporter, “The Aykroyd family is delighted by this inheritance of the Ghostbusters torch by these most magnificent women in comedy.”</p></body></html>\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/sentiment",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"sentiment"
+					]
+				},
+				"description": "Sentiment endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/ping",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"ping"
+					]
+				},
+				"description": "Rosette API Ping"
+			},
+			"response": []
+		},
+		{
+			"name": "Sentences",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"This land is your land. This land is my land\\nFrom California to the New York island;\\nFrom the red wood forest to the Gulf Stream waters\\n\\nThis land was made for you and Me.\\n\\nAs I was walking that ribbon of highway,\\nI saw above me that endless skyway:\\nI saw below me that golden valley:\\nThis land was made for you and me.\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/sentences",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"sentences"
+					]
+				},
+				"description": "Sentences endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Name Translation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\"name\": \"معمر محمد أبو منيار القذاف\", \"targetLanguage\": \"eng\", \"targetScript\": \"Latn\"}\""
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/name-translation",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"name-translation"
+					]
+				},
+				"description": "Name-translation endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Language",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Por favor Señorita, says the man.\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/language",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"language"
+					]
+				},
+				"description": "Language endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Entities Linked",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Last month director Paul Feig announced the movie will have an all-star female cast including Kristen Wiig, Melissa McCarthy, Leslie Jones and Kate McKinnon.\" }"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/entities/linked",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"entities",
+						"linked"
+					]
+				},
+				"description": "Entities/Linked endpoint"
+			},
+			"response": []
+		}
+	]
+}

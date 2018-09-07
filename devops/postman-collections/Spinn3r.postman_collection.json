@@ -1,0 +1,1053 @@
+{
+	"info": {
+		"name": "Spinn3r",
+		"_postman_id": "b946e280-85f8-9ee0-a91b-374f8c783ac7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "source_publisher_type",
+			"description": "",
+			"item": [
+				{
+					"name": "Post QueryString UNKNOWN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:UNKNOWN AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString UNKNOWN"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString CLASSIFIED ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:CLASSIFIED AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString CLASSIFIED "
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString FORUM ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:CLASSIFIED AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString FORUM  "
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString REVIEW ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:REVIEW AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString REVIEW   "
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString MEMETRACKER ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MEMETRACKER AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString MEMETRACKER    "
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString MICROBLOG",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MICROBLOG AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString SOCIAL_MEDIA",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:SOCIAL_MEDIA AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString SOCIAL_MEDIA"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString VIDEO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:VIDEO AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString VIDEO"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString PHOTO",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:PHOTO AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString PHOTO"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString FIREFOX",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"size\": 1,\n    \"query\" : {\n        \"term\" : { \"main\" : \"firefox\" }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString INSTAGRAM",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:PHOTO AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString INSTAGRAM"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString LINKEDIN",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:PHOTO AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString LINKEDIN"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instagram",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "News",
+			"description": "",
+			"item": [
+				{
+					"name": "Post QueryString MAINSTREAM_NEWS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MAINSTREAM_NEWS AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString MAINSTREAM_NEWS"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Blogs",
+			"description": "",
+			"item": [
+				{
+					"name": "Post QueryString WEBLOG",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:WEBLOG AND Ebola\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post QueryString WEBLOG"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facebook",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "Twitter",
+			"description": "",
+			"item": [
+				{
+					"name": "Post QueryString TWITTER ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MICROBLOG AND Oman\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": [
+						{
+							"id": "26933926-7870-46cc-b140-65b4b88a84b7",
+							"name": "response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-vendor",
+										"value": "brandsentiment",
+										"name": "X-vendor",
+										"enabled": true
+									},
+									{
+										"key": "X-vendor-auth",
+										"value": "EYakNi3AGWGy359IO84oHmdtnr4",
+										"name": "X-vendor-auth",
+										"enabled": true
+									},
+									{
+										"key": "Cache-Control",
+										"name": "Cache-Control",
+										"value": "no-cache"
+									},
+									{
+										"key": "Postman-Token",
+										"name": "Postman-Token",
+										"value": "3db51ef5-5c40-2c04-1b19-86da9520f8d9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MICROBLOG AND Oman\"\n    }\n  }  \n}\n"
+								},
+								"url": {
+									"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+									"protocol": "http",
+									"host": [
+										"brandsentiment",
+										"elasticsearch",
+										"spinn3r",
+										"com"
+									],
+									"path": [
+										"content*",
+										"_search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "javascript",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "4865",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Jetty(9.3.6.v20151106)",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "{\"took\":44,\"timed_out\":false,\"_shards\":{\"total\":390,\"successful\":390,\"failed\":0},\"hits\":{\"total\":53583,\"max_score\":9.303802,\"hits\":[{\"_index\":\"content_2016_01_16\",\"_type\":\"content\",\"_id\":\"1452921748000002342\",\"_score\":9.303802,\"_source\":{\n  \"bucket\" : 1452921600093,\n  \"sequence\" : 1452921748000002342,\n  \"sequence_range\" : 47493,\n  \"hashcode\" : \"KXUcfbb6NEmtZNnvtQFpYLW-mUU\",\n  \"resource\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"date_found\" : \"2016-01-16T05:22:28Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.617\",\n  \"source_hashcode\" : \"OLJoQjEmfZLGIg-nwphqnX8JVM8\",\n  \"source_resource\" : \"https://twitter.com/SamWatson__\",\n  \"source_link\" : \"https://twitter.com/SamWatson__\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-26T14:56:50Z\",\n  \"source_last_updated\" : \"2015-12-26T14:56:51Z\",\n  \"source_last_published\" : \"2015-12-26T14:56:51Z\",\n  \"source_last_posted\" : \"2014-11-24T04:31:28Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 262632,\n  \"source_content_checksum\" : \"bOpDX6oR8j2Hi5BsllfjIjCETSw\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Sam Watson\",\n  \"source_description\" : \"<p>Itinerant Brit usually found bouncing round the more remote bits of the Middle East, North or East Africa in a Land Rover. <a href=\\\"http://t.co/NcQpNvdy6d\\\" rel=\\\"nofollow\\\" title=\\\"http://zerzura.me\\\">http://zerzura.me&nbsp;</a></p>\",\n  \"source_handle\" : \"SamWatson__\",\n  \"source_favorites\" : 1187,\n  \"source_followers\" : 1171,\n  \"source_following\" : 1713,\n  \"source_verified\" : false,\n  \"source_location\" : \"Cairo / York / Glen Coe\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/512948156683022336/OgJ0J-cB_400x400.jpeg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2011-11-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"canonical\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"#oman! :)\",\n  \"main_length\" : 9,\n  \"main_checksum\" : \"Wf5y61uNUYiGbbev7Etf82vLsVw\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"oman\" ],\n  \"links\" : [ \"https://twitter.com/hashtag/oman?src=hash\" ],\n  \"published\" : \"2016-01-16T05:20:49Z\",\n  \"author_name\" : \"Sam Watson\",\n  \"author_link\" : \"https://twitter.com/SamWatson__\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/512948156683022336/OgJ0J-cB_bigger.jpeg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"lang\" : \"und\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451362496000004856\",\"_score\":9.136201,\"_source\":{\n  \"bucket\" : 1451362200051,\n  \"sequence\" : 1451362496000004856,\n  \"sequence_range\" : 5451,\n  \"hashcode\" : \"SIZtKywrT0e7WQZmLB8dFhjw_is\",\n  \"resource\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"date_found\" : \"2015-12-29T04:14:56Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"FeycfRmv8mKQlKQmAofWeuTz5n0\",\n  \"source_resource\" : \"https://twitter.com/themothqueen\",\n  \"source_link\" : \"https://twitter.com/themothqueen\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T21:10:46Z\",\n  \"source_last_updated\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_published\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_posted\" : \"2015-01-25T09:31:48Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 266871,\n  \"source_content_checksum\" : \"kEoKFfveXJDhGV2cs7JZc72MfHU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"emo grandma\",\n  \"source_description\" : \"<p>probably sleeping</p>\",\n  \"source_handle\" : \"themothqueen\",\n  \"source_favorites\" : 1729,\n  \"source_followers\" : 69,\n  \"source_following\" : 70,\n  \"source_verified\" : false,\n  \"source_location\" : \"New Mexico, USA\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/638256964183552000/3QZ5Tkxv_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"canonical\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T04:03:53Z\",\n  \"author_name\" : \"emo grandma\",\n  \"author_link\" : \"https://twitter.com/themothqueen\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666198339788996608/hPI10Njw_bigger.jpg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451308660000004177\",\"_score\":9.132395,\"_source\":{\n  \"bucket\" : 1451308500012,\n  \"sequence\" : 1451308660000004177,\n  \"sequence_range\" : 83212,\n  \"hashcode\" : \"hk1vnneBB0CXZhHkQt-d0AZirYw\",\n  \"resource\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"date_found\" : \"2015-12-28T13:17:40Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"NdE9Qd9XKy-HOV8t9PtEltjVNKs\",\n  \"source_resource\" : \"https://twitter.com/AliAlRiyami\",\n  \"source_link\" : \"https://twitter.com/AliAlRiyami\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-07T09:28:40Z\",\n  \"source_last_updated\" : \"2015-10-07T09:29:26Z\",\n  \"source_last_published\" : \"2015-10-07T09:29:26Z\",\n  \"source_last_posted\" : \"2014-12-02T00:01:41Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 292940,\n  \"source_content_checksum\" : \"tnhPBSeCvePKyxrgr2CrFAjxwl0\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Ali Al Riyami\",\n  \"source_description\" : \"<p>Arsenal &amp; Barca <img src=\\\"https://abs.twimg.com/emoji/v1/72x72/2764.png\\\" alt=\\\"❤️\\\" title=\\\"Heavy red heart\\\" /></p>\",\n  \"source_handle\" : \"AliAlRiyami\",\n  \"source_favorites\" : 275,\n  \"source_followers\" : 169,\n  \"source_following\" : 294,\n  \"source_verified\" : false,\n  \"source_location\" : \"Abu Dhabi / Swansea UK\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/640449102476537856/OAgc25ao_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2011-08-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"canonical\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-28T13:12:43Z\",\n  \"author_name\" : \"Ali Al Riyami\",\n  \"author_link\" : \"https://twitter.com/AliAlRiyami\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666743470506319872/_Ia2vYKN_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451687867000001588\",\"_score\":9.132395,\"_source\":{\n  \"bucket\" : 1451687700054,\n  \"sequence\" : 1451687867000001588,\n  \"sequence_range\" : 61954,\n  \"hashcode\" : \"DlcdLqvwenEDbjf4VZe2KWLB7cI\",\n  \"resource\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"date_found\" : \"2016-01-01T22:37:47Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.606\",\n  \"source_hashcode\" : \"ykEJGRx6dQiVzmPYMnSPVrwCGLw\",\n  \"source_resource\" : \"https://twitter.com/nupacalypse_prv\",\n  \"source_link\" : \"https://twitter.com/nupacalypse_prv\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-02T12:44:25Z\",\n  \"source_last_updated\" : \"2015-10-02T12:45:11Z\",\n  \"source_last_published\" : \"2015-10-02T12:45:11Z\",\n  \"source_last_posted\" : \"2015-06-27T16:41:54Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 280258,\n  \"source_content_checksum\" : \"CcUZeRpjTgA-PN6JHQzzNAhA-pA\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Yeshua☦\",\n  \"source_description\" : \"<p>the xHollyWood Kid~* *  <a href=\\\"https://twitter.com/hashtag/MoD?src=hash\\\">#<b>MoD</b></a>!  <a href=\\\"https://twitter.com/hashtag/teamUniversal?src=hash\\\">#<b>teamUniversal</b></a> <a href=\\\"https://twitter.com/hashtag/Aries?src=hash\\\">#<b>Aries</b></a> <a href=\\\"https://twitter.com/hashtag/team2FINE?src=hash\\\">#<b>team2FINE</b></a> *NoSwaggerJaccing or I will find sumbody to Kill U** [PRIV]└A</p>\",\n  \"source_handle\" : \"nupacalypse_prv\",\n  \"source_favorites\" : 14100,\n  \"source_followers\" : 10300,\n  \"source_following\" : 67,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://yeshuacoming.com\" ],\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/645052138238808064/5-DN3RgF_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2012-03-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"canonical\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"OMan\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"3DpqzE_735S0X1KxFKq-UVNuneE\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2016-01-01T22:34:06Z\",\n  \"author_name\" : \"Yeshua ☦\",\n  \"author_link\" : \"https://twitter.com/nupacalypse_prv\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/645052138238808064/5-DN3RgF_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451382613000004398\",\"_score\":9.130002,\"_source\":{\n  \"bucket\" : 1451382600001,\n  \"sequence\" : 1451382613000004398,\n  \"sequence_range\" : 37301,\n  \"hashcode\" : \"KIK47Q6bffT0j0v96IR9OSlyfvU\",\n  \"resource\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"date_found\" : \"2015-12-29T09:50:13Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"WmrX-E7-d1MIOCZdmsyzhTBqvmk\",\n  \"source_resource\" : \"https://twitter.com/Luna1290\",\n  \"source_link\" : \"https://twitter.com/Luna1290\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-16T15:16:28Z\",\n  \"source_last_updated\" : \"2015-12-16T15:16:30Z\",\n  \"source_last_published\" : \"2015-12-16T15:16:30Z\",\n  \"source_last_posted\" : \"2014-11-23T23:33:56Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 259829,\n  \"source_content_checksum\" : \"mB_FwSe7P6iafahi1ZS2Z5aRG6g\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Claudia Luna\",\n  \"source_description\" : \"<p>Developing Leaders,culture, literarure, &amp; Excelence worldwide <a href=\\\"http://t.co/nrUOIvt2Xh\\\" rel=\\\"nofollow\\\" title=\\\"http://www.laredmediagroup.net\\\">http://www.laredmediagroup.net&nbsp;</a> Deepak Chopra Spanish/ portugues Media. <a href=\\\"http://t.co/kDvF0Bcpza\\\" rel=\\\"nofollow\\\" title=\\\"http://www.excelsiorhub.com\\\">http://www.excelsiorhub.com&nbsp;</a></p>\",\n  \"source_handle\" : \"Luna1290\",\n  \"source_favorites\" : 3247,\n  \"source_followers\" : 1247,\n  \"source_following\" : 215,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://www.excelsiorhub.com\" ],\n  \"source_location\" : \"Global\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/600796739470163969/tnFKJ0Dc_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2012-02-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"canonical\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman ...\",\n  \"main_length\" : 8,\n  \"main_checksum\" : \"ahoe9vlPoQao-bmKw2X21ymEq8g\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T09:48:06Z\",\n  \"author_name\" : \"Claudia Luna\",\n  \"author_link\" : \"https://twitter.com/Luna1290\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/600796739470163969/tnFKJ0Dc_bigger.jpg\",\n  \"author_gender\" : \"FEMALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451498797000007461\",\"_score\":9.129262,\"_source\":{\n  \"bucket\" : 1451498700055,\n  \"sequence\" : 1451498797000007461,\n  \"sequence_range\" : 94155,\n  \"hashcode\" : \"X9LSOX7FfedCL62fSTMzCdSmkCs\",\n  \"resource\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"date_found\" : \"2015-12-30T18:06:37Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"EmTd-9uiyQXztixj21Nx36co2oI\",\n  \"source_resource\" : \"https://twitter.com/_jhwr\",\n  \"source_link\" : \"https://twitter.com/_jhwr\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_updated\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_published\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_posted\" : \"2014-12-23T09:28:24Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 284077,\n  \"source_content_checksum\" : \"vwohVgXdm5YAljwz_6M_-8ED4wc\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"munaaljhwri\",\n  \"source_description\" : \"<p>تحياتي للجميع</p>\",\n  \"source_handle\" : \"_jhwr\",\n  \"source_favorites\" : 65,\n  \"source_followers\" : 192,\n  \"source_following\" : 90,\n  \"source_verified\" : false,\n  \"source_location\" : \"الامارات. العين\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/681503952630845441/OxCu9W5p_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-10-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"canonical\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-30T18:05:46Z\",\n  \"author_name\" : \"munaaljhwri\",\n  \"author_link\" : \"https://twitter.com/_jhwr\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/681503952630845441/OxCu9W5p_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451357106000004903\",\"_score\":9.126197,\"_source\":{\n  \"bucket\" : 1451357100020,\n  \"sequence\" : 1451357106000004903,\n  \"sequence_range\" : 88220,\n  \"hashcode\" : \"b06rF_az5qDQgp93VlWZjKtMGTw\",\n  \"resource\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"date_found\" : \"2015-12-29T02:45:06Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"FeycfRmv8mKQlKQmAofWeuTz5n0\",\n  \"source_resource\" : \"https://twitter.com/themothqueen\",\n  \"source_link\" : \"https://twitter.com/themothqueen\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T21:10:46Z\",\n  \"source_last_updated\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_published\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_posted\" : \"2015-01-25T09:31:48Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 266871,\n  \"source_content_checksum\" : \"kEoKFfveXJDhGV2cs7JZc72MfHU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"emo grandma\",\n  \"source_description\" : \"<p>probably sleeping</p>\",\n  \"source_handle\" : \"themothqueen\",\n  \"source_favorites\" : 1729,\n  \"source_followers\" : 69,\n  \"source_following\" : 70,\n  \"source_verified\" : false,\n  \"source_location\" : \"New Mexico, USA\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/638256964183552000/3QZ5Tkxv_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"canonical\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"OMAN\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"afHmxJhT7Tj5XSt7z2mL8rR0B7A\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T02:36:09Z\",\n  \"author_name\" : \"emo grandma\",\n  \"author_link\" : \"https://twitter.com/themothqueen\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666198339788996608/hPI10Njw_bigger.jpg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451334927000003299\",\"_score\":9.123557,\"_source\":{\n  \"bucket\" : 1451334900094,\n  \"sequence\" : 1451334927000003299,\n  \"sequence_range\" : 15294,\n  \"hashcode\" : \"d_9QBrFgMrzb-JexWfKHc-p0hB4\",\n  \"resource\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"date_found\" : \"2015-12-28T20:35:27Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"BV3_pa3eOVFepGBrIod1zM4EpnA\",\n  \"source_resource\" : \"https://twitter.com/WSZadjali\",\n  \"source_link\" : \"https://twitter.com/WSZadjali\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-03T09:25:42Z\",\n  \"source_last_updated\" : \"2015-10-03T09:20:37Z\",\n  \"source_last_published\" : \"2015-10-03T09:25:29Z\",\n  \"source_last_posted\" : \"2015-10-03T09:20:15Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 274585,\n  \"source_content_checksum\" : \"Q1ILdV-YM8caICBM2fZFmVMjPiI\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"وضاح\",\n  \"source_description\" : \"وضاح\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"canonical\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"// oman\",\n  \"main_length\" : 7,\n  \"main_checksum\" : \"0P3wiwQz311dF0kjXTlQ4k4xQ7I\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-28T20:33:33Z\",\n  \"author_name\" : \"وضاح\",\n  \"author_link\" : \"https://twitter.com/WSZadjali\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/681497344618180608/IQvhDFgo_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451409295000004312\",\"_score\":9.11613,\"_source\":{\n  \"bucket\" : 1451409000042,\n  \"sequence\" : 1451409295000004312,\n  \"sequence_range\" : 74742,\n  \"hashcode\" : \"VmutVrpfG9ghU9G3_mdtmeH9UPY\",\n  \"resource\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"date_found\" : \"2015-12-29T17:14:55Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"pic0Dn9upi_syvjV93THiNgpMtc\",\n  \"source_resource\" : \"https://twitter.com/maithan44\",\n  \"source_link\" : \"https://twitter.com/maithan44\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T23:46:36Z\",\n  \"source_last_updated\" : \"2015-09-25T23:46:43Z\",\n  \"source_last_published\" : \"2015-09-25T23:46:43Z\",\n  \"source_last_posted\" : \"2015-06-16T11:23:37Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 287986,\n  \"source_content_checksum\" : \"oiuVDPjW-790mLhqS9Mnwp8Mnu8\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Maithaalharthy\",\n  \"source_description\" : \"<p>الحمدلله على ما انا عليه</p>\",\n  \"source_handle\" : \"maithan44\",\n  \"source_favorites\" : 172,\n  \"source_followers\" : 164,\n  \"source_following\" : 101,\n  \"source_verified\" : false,\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/640581259429711873/rQKTxqOn_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-05-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"canonical\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T17:07:53Z\",\n  \"author_name\" : \"Maithaalharthy\",\n  \"author_link\" : \"https://twitter.com/maithan44\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/677125689846403072/iWfVZeTF_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_14_to_2015_12_20\",\"_type\":\"content\",\"_id\":\"1450332723000014803\",\"_score\":9.088166,\"_source\":{\n  \"bucket\" : 1450332600034,\n  \"sequence\" : 1450332723000014803,\n  \"sequence_range\" : 5534,\n  \"hashcode\" : \"6QbxvwHDPEiHPais4loSTbdkwt4\",\n  \"resource\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"date_found\" : \"2015-12-17T06:12:03Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.603\",\n  \"source_hashcode\" : \"hfrjzCjTJTgzWWbRdBd3UNsUhKU\",\n  \"source_resource\" : \"https://twitter.com/TraveasyUK\",\n  \"source_link\" : \"https://twitter.com/TraveasyUK\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-08T05:51:42Z\",\n  \"source_last_updated\" : \"2015-10-08T05:54:42Z\",\n  \"source_last_published\" : \"2015-10-08T05:54:42Z\",\n  \"source_last_posted\" : \"2014-11-24T08:48:10Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 265722,\n  \"source_content_checksum\" : \"Jr6eMFP4cfEc9AmOMnlQtHQS9PU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"TraveasyUK\",\n  \"source_description\" : \"<p>Do you love to travel? We love taking you there. Follow us for latest news, deals &amp; assistance.</p>\",\n  \"source_handle\" : \"TraveasyUK\",\n  \"source_favorites\" : 2,\n  \"source_followers\" : 415,\n  \"source_following\" : 961,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://www.traveasy.com/\" ],\n  \"source_location\" : \"0208 819 9853\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/494363696794071040/VG4RGMvS_400x400.jpeg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-01-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"canonical\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"#Oman\",\n  \"main_length\" : 5,\n  \"main_checksum\" : \"PsfCgJu4WB6zlmilIUJqbUEwK2c\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"Oman\" ],\n  \"links\" : [ \"https://twitter.com/hashtag/Oman?src=hash\" ],\n  \"published\" : \"2015-12-17T06:07:36Z\",\n  \"author_name\" : \"TraveasyUK\",\n  \"author_link\" : \"https://twitter.com/TraveasyUK\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/494363696794071040/VG4RGMvS_bigger.jpeg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"lang\" : \"und\"\n}}]}}"
+						},
+						{
+							"id": "8b5f82bf-ff26-4c27-8059-32d1cc52a996",
+							"name": "oman",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-vendor",
+										"value": "brandsentiment",
+										"name": "X-vendor",
+										"enabled": true
+									},
+									{
+										"key": "X-vendor-auth",
+										"value": "EYakNi3AGWGy359IO84oHmdtnr4",
+										"name": "X-vendor-auth",
+										"enabled": true
+									},
+									{
+										"key": "Cache-Control",
+										"name": "Cache-Control",
+										"value": "no-cache"
+									},
+									{
+										"key": "Postman-Token",
+										"name": "Postman-Token",
+										"value": "3db51ef5-5c40-2c04-1b19-86da9520f8d9"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"source_publisher_type:MICROBLOG AND Oman\"\n    }\n  }  \n}\n"
+								},
+								"url": {
+									"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+									"protocol": "http",
+									"host": [
+										"brandsentiment",
+										"elasticsearch",
+										"spinn3r",
+										"com"
+									],
+									"path": [
+										"content*",
+										"_search"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "javascript",
+							"header": [
+								{
+									"name": "Access-Control-Allow-Origin",
+									"key": "Access-Control-Allow-Origin",
+									"value": "*",
+									"description": ""
+								},
+								{
+									"name": "Content-Encoding",
+									"key": "Content-Encoding",
+									"value": "gzip",
+									"description": ""
+								},
+								{
+									"name": "Content-Length",
+									"key": "Content-Length",
+									"value": "4865",
+									"description": ""
+								},
+								{
+									"name": "Content-Type",
+									"key": "Content-Type",
+									"value": "application/json; charset=UTF-8",
+									"description": ""
+								},
+								{
+									"name": "Server",
+									"key": "Server",
+									"value": "Jetty(9.3.6.v20151106)",
+									"description": ""
+								}
+							],
+							"cookie": [],
+							"body": "{\"took\":44,\"timed_out\":false,\"_shards\":{\"total\":390,\"successful\":390,\"failed\":0},\"hits\":{\"total\":53583,\"max_score\":9.303802,\"hits\":[{\"_index\":\"content_2016_01_16\",\"_type\":\"content\",\"_id\":\"1452921748000002342\",\"_score\":9.303802,\"_source\":{\n  \"bucket\" : 1452921600093,\n  \"sequence\" : 1452921748000002342,\n  \"sequence_range\" : 47493,\n  \"hashcode\" : \"KXUcfbb6NEmtZNnvtQFpYLW-mUU\",\n  \"resource\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"date_found\" : \"2016-01-16T05:22:28Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.617\",\n  \"source_hashcode\" : \"OLJoQjEmfZLGIg-nwphqnX8JVM8\",\n  \"source_resource\" : \"https://twitter.com/SamWatson__\",\n  \"source_link\" : \"https://twitter.com/SamWatson__\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-26T14:56:50Z\",\n  \"source_last_updated\" : \"2015-12-26T14:56:51Z\",\n  \"source_last_published\" : \"2015-12-26T14:56:51Z\",\n  \"source_last_posted\" : \"2014-11-24T04:31:28Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 262632,\n  \"source_content_checksum\" : \"bOpDX6oR8j2Hi5BsllfjIjCETSw\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Sam Watson\",\n  \"source_description\" : \"<p>Itinerant Brit usually found bouncing round the more remote bits of the Middle East, North or East Africa in a Land Rover. <a href=\\\"http://t.co/NcQpNvdy6d\\\" rel=\\\"nofollow\\\" title=\\\"http://zerzura.me\\\">http://zerzura.me&nbsp;</a></p>\",\n  \"source_handle\" : \"SamWatson__\",\n  \"source_favorites\" : 1187,\n  \"source_followers\" : 1171,\n  \"source_following\" : 1713,\n  \"source_verified\" : false,\n  \"source_location\" : \"Cairo / York / Glen Coe\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/512948156683022336/OgJ0J-cB_400x400.jpeg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2011-11-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"canonical\" : \"https://twitter.com/SamWatson__/status/688229396453326848\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"#oman! :)\",\n  \"main_length\" : 9,\n  \"main_checksum\" : \"Wf5y61uNUYiGbbev7Etf82vLsVw\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"oman\" ],\n  \"links\" : [ \"https://twitter.com/hashtag/oman?src=hash\" ],\n  \"published\" : \"2016-01-16T05:20:49Z\",\n  \"author_name\" : \"Sam Watson\",\n  \"author_link\" : \"https://twitter.com/SamWatson__\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/512948156683022336/OgJ0J-cB_bigger.jpeg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"lang\" : \"und\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451362496000004856\",\"_score\":9.136201,\"_source\":{\n  \"bucket\" : 1451362200051,\n  \"sequence\" : 1451362496000004856,\n  \"sequence_range\" : 5451,\n  \"hashcode\" : \"SIZtKywrT0e7WQZmLB8dFhjw_is\",\n  \"resource\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"date_found\" : \"2015-12-29T04:14:56Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"FeycfRmv8mKQlKQmAofWeuTz5n0\",\n  \"source_resource\" : \"https://twitter.com/themothqueen\",\n  \"source_link\" : \"https://twitter.com/themothqueen\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T21:10:46Z\",\n  \"source_last_updated\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_published\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_posted\" : \"2015-01-25T09:31:48Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 266871,\n  \"source_content_checksum\" : \"kEoKFfveXJDhGV2cs7JZc72MfHU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"emo grandma\",\n  \"source_description\" : \"<p>probably sleeping</p>\",\n  \"source_handle\" : \"themothqueen\",\n  \"source_favorites\" : 1729,\n  \"source_followers\" : 69,\n  \"source_following\" : 70,\n  \"source_verified\" : false,\n  \"source_location\" : \"New Mexico, USA\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/638256964183552000/3QZ5Tkxv_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"canonical\" : \"https://twitter.com/themothqueen/status/681687052908244992\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T04:03:53Z\",\n  \"author_name\" : \"emo grandma\",\n  \"author_link\" : \"https://twitter.com/themothqueen\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666198339788996608/hPI10Njw_bigger.jpg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451308660000004177\",\"_score\":9.132395,\"_source\":{\n  \"bucket\" : 1451308500012,\n  \"sequence\" : 1451308660000004177,\n  \"sequence_range\" : 83212,\n  \"hashcode\" : \"hk1vnneBB0CXZhHkQt-d0AZirYw\",\n  \"resource\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"date_found\" : \"2015-12-28T13:17:40Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"NdE9Qd9XKy-HOV8t9PtEltjVNKs\",\n  \"source_resource\" : \"https://twitter.com/AliAlRiyami\",\n  \"source_link\" : \"https://twitter.com/AliAlRiyami\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-07T09:28:40Z\",\n  \"source_last_updated\" : \"2015-10-07T09:29:26Z\",\n  \"source_last_published\" : \"2015-10-07T09:29:26Z\",\n  \"source_last_posted\" : \"2014-12-02T00:01:41Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 292940,\n  \"source_content_checksum\" : \"tnhPBSeCvePKyxrgr2CrFAjxwl0\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Ali Al Riyami\",\n  \"source_description\" : \"<p>Arsenal &amp; Barca <img src=\\\"https://abs.twimg.com/emoji/v1/72x72/2764.png\\\" alt=\\\"❤️\\\" title=\\\"Heavy red heart\\\" /></p>\",\n  \"source_handle\" : \"AliAlRiyami\",\n  \"source_favorites\" : 275,\n  \"source_followers\" : 169,\n  \"source_following\" : 294,\n  \"source_verified\" : false,\n  \"source_location\" : \"Abu Dhabi / Swansea UK\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/640449102476537856/OAgc25ao_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2011-08-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"canonical\" : \"https://twitter.com/AliAlRiyami/status/681462785809727490\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-28T13:12:43Z\",\n  \"author_name\" : \"Ali Al Riyami\",\n  \"author_link\" : \"https://twitter.com/AliAlRiyami\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666743470506319872/_Ia2vYKN_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451687867000001588\",\"_score\":9.132395,\"_source\":{\n  \"bucket\" : 1451687700054,\n  \"sequence\" : 1451687867000001588,\n  \"sequence_range\" : 61954,\n  \"hashcode\" : \"DlcdLqvwenEDbjf4VZe2KWLB7cI\",\n  \"resource\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"date_found\" : \"2016-01-01T22:37:47Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.606\",\n  \"source_hashcode\" : \"ykEJGRx6dQiVzmPYMnSPVrwCGLw\",\n  \"source_resource\" : \"https://twitter.com/nupacalypse_prv\",\n  \"source_link\" : \"https://twitter.com/nupacalypse_prv\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-02T12:44:25Z\",\n  \"source_last_updated\" : \"2015-10-02T12:45:11Z\",\n  \"source_last_published\" : \"2015-10-02T12:45:11Z\",\n  \"source_last_posted\" : \"2015-06-27T16:41:54Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 280258,\n  \"source_content_checksum\" : \"CcUZeRpjTgA-PN6JHQzzNAhA-pA\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Yeshua☦\",\n  \"source_description\" : \"<p>the xHollyWood Kid~* *  <a href=\\\"https://twitter.com/hashtag/MoD?src=hash\\\">#<b>MoD</b></a>!  <a href=\\\"https://twitter.com/hashtag/teamUniversal?src=hash\\\">#<b>teamUniversal</b></a> <a href=\\\"https://twitter.com/hashtag/Aries?src=hash\\\">#<b>Aries</b></a> <a href=\\\"https://twitter.com/hashtag/team2FINE?src=hash\\\">#<b>team2FINE</b></a> *NoSwaggerJaccing or I will find sumbody to Kill U** [PRIV]└A</p>\",\n  \"source_handle\" : \"nupacalypse_prv\",\n  \"source_favorites\" : 14100,\n  \"source_followers\" : 10300,\n  \"source_following\" : 67,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://yeshuacoming.com\" ],\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/645052138238808064/5-DN3RgF_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2012-03-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"canonical\" : \"https://twitter.com/nupacalypse_prv/status/683053614646992896\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"OMan\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"3DpqzE_735S0X1KxFKq-UVNuneE\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2016-01-01T22:34:06Z\",\n  \"author_name\" : \"Yeshua ☦\",\n  \"author_link\" : \"https://twitter.com/nupacalypse_prv\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/645052138238808064/5-DN3RgF_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451382613000004398\",\"_score\":9.130002,\"_source\":{\n  \"bucket\" : 1451382600001,\n  \"sequence\" : 1451382613000004398,\n  \"sequence_range\" : 37301,\n  \"hashcode\" : \"KIK47Q6bffT0j0v96IR9OSlyfvU\",\n  \"resource\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"date_found\" : \"2015-12-29T09:50:13Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"WmrX-E7-d1MIOCZdmsyzhTBqvmk\",\n  \"source_resource\" : \"https://twitter.com/Luna1290\",\n  \"source_link\" : \"https://twitter.com/Luna1290\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-16T15:16:28Z\",\n  \"source_last_updated\" : \"2015-12-16T15:16:30Z\",\n  \"source_last_published\" : \"2015-12-16T15:16:30Z\",\n  \"source_last_posted\" : \"2014-11-23T23:33:56Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 259829,\n  \"source_content_checksum\" : \"mB_FwSe7P6iafahi1ZS2Z5aRG6g\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Claudia Luna\",\n  \"source_description\" : \"<p>Developing Leaders,culture, literarure, &amp; Excelence worldwide <a href=\\\"http://t.co/nrUOIvt2Xh\\\" rel=\\\"nofollow\\\" title=\\\"http://www.laredmediagroup.net\\\">http://www.laredmediagroup.net&nbsp;</a> Deepak Chopra Spanish/ portugues Media. <a href=\\\"http://t.co/kDvF0Bcpza\\\" rel=\\\"nofollow\\\" title=\\\"http://www.excelsiorhub.com\\\">http://www.excelsiorhub.com&nbsp;</a></p>\",\n  \"source_handle\" : \"Luna1290\",\n  \"source_favorites\" : 3247,\n  \"source_followers\" : 1247,\n  \"source_following\" : 215,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://www.excelsiorhub.com\" ],\n  \"source_location\" : \"Global\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/600796739470163969/tnFKJ0Dc_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2012-02-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"canonical\" : \"https://twitter.com/Luna1290/status/681773680121233408\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman ...\",\n  \"main_length\" : 8,\n  \"main_checksum\" : \"ahoe9vlPoQao-bmKw2X21ymEq8g\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T09:48:06Z\",\n  \"author_name\" : \"Claudia Luna\",\n  \"author_link\" : \"https://twitter.com/Luna1290\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/600796739470163969/tnFKJ0Dc_bigger.jpg\",\n  \"author_gender\" : \"FEMALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451498797000007461\",\"_score\":9.129262,\"_source\":{\n  \"bucket\" : 1451498700055,\n  \"sequence\" : 1451498797000007461,\n  \"sequence_range\" : 94155,\n  \"hashcode\" : \"X9LSOX7FfedCL62fSTMzCdSmkCs\",\n  \"resource\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"date_found\" : \"2015-12-30T18:06:37Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"EmTd-9uiyQXztixj21Nx36co2oI\",\n  \"source_resource\" : \"https://twitter.com/_jhwr\",\n  \"source_link\" : \"https://twitter.com/_jhwr\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_updated\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_published\" : \"2015-12-28T17:59:48Z\",\n  \"source_last_posted\" : \"2014-12-23T09:28:24Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 284077,\n  \"source_content_checksum\" : \"vwohVgXdm5YAljwz_6M_-8ED4wc\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"munaaljhwri\",\n  \"source_description\" : \"<p>تحياتي للجميع</p>\",\n  \"source_handle\" : \"_jhwr\",\n  \"source_favorites\" : 65,\n  \"source_followers\" : 192,\n  \"source_following\" : 90,\n  \"source_verified\" : false,\n  \"source_location\" : \"الامارات. العين\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/681503952630845441/OxCu9W5p_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-10-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"canonical\" : \"https://twitter.com/_jhwr/status/682261310093049856\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-30T18:05:46Z\",\n  \"author_name\" : \"munaaljhwri\",\n  \"author_link\" : \"https://twitter.com/_jhwr\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/681503952630845441/OxCu9W5p_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451357106000004903\",\"_score\":9.126197,\"_source\":{\n  \"bucket\" : 1451357100020,\n  \"sequence\" : 1451357106000004903,\n  \"sequence_range\" : 88220,\n  \"hashcode\" : \"b06rF_az5qDQgp93VlWZjKtMGTw\",\n  \"resource\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"date_found\" : \"2015-12-29T02:45:06Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"FeycfRmv8mKQlKQmAofWeuTz5n0\",\n  \"source_resource\" : \"https://twitter.com/themothqueen\",\n  \"source_link\" : \"https://twitter.com/themothqueen\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T21:10:46Z\",\n  \"source_last_updated\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_published\" : \"2015-09-25T21:10:50Z\",\n  \"source_last_posted\" : \"2015-01-25T09:31:48Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 266871,\n  \"source_content_checksum\" : \"kEoKFfveXJDhGV2cs7JZc72MfHU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"emo grandma\",\n  \"source_description\" : \"<p>probably sleeping</p>\",\n  \"source_handle\" : \"themothqueen\",\n  \"source_favorites\" : 1729,\n  \"source_followers\" : 69,\n  \"source_following\" : 70,\n  \"source_verified\" : false,\n  \"source_location\" : \"New Mexico, USA\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/638256964183552000/3QZ5Tkxv_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"canonical\" : \"https://twitter.com/themothqueen/status/681664975799095297\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"OMAN\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"afHmxJhT7Tj5XSt7z2mL8rR0B7A\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T02:36:09Z\",\n  \"author_name\" : \"emo grandma\",\n  \"author_link\" : \"https://twitter.com/themothqueen\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/666198339788996608/hPI10Njw_bigger.jpg\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451334927000003299\",\"_score\":9.123557,\"_source\":{\n  \"bucket\" : 1451334900094,\n  \"sequence\" : 1451334927000003299,\n  \"sequence_range\" : 15294,\n  \"hashcode\" : \"d_9QBrFgMrzb-JexWfKHc-p0hB4\",\n  \"resource\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"date_found\" : \"2015-12-28T20:35:27Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"BV3_pa3eOVFepGBrIod1zM4EpnA\",\n  \"source_resource\" : \"https://twitter.com/WSZadjali\",\n  \"source_link\" : \"https://twitter.com/WSZadjali\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-03T09:25:42Z\",\n  \"source_last_updated\" : \"2015-10-03T09:20:37Z\",\n  \"source_last_published\" : \"2015-10-03T09:25:29Z\",\n  \"source_last_posted\" : \"2015-10-03T09:20:15Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 274585,\n  \"source_content_checksum\" : \"Q1ILdV-YM8caICBM2fZFmVMjPiI\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"وضاح\",\n  \"source_description\" : \"وضاح\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"canonical\" : \"https://twitter.com/WSZadjali/status/681573723355361280\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"// oman\",\n  \"main_length\" : 7,\n  \"main_checksum\" : \"0P3wiwQz311dF0kjXTlQ4k4xQ7I\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-28T20:33:33Z\",\n  \"author_name\" : \"وضاح\",\n  \"author_link\" : \"https://twitter.com/WSZadjali\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/681497344618180608/IQvhDFgo_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451409295000004312\",\"_score\":9.11613,\"_source\":{\n  \"bucket\" : 1451409000042,\n  \"sequence\" : 1451409295000004312,\n  \"sequence_range\" : 74742,\n  \"hashcode\" : \"VmutVrpfG9ghU9G3_mdtmeH9UPY\",\n  \"resource\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"date_found\" : \"2015-12-29T17:14:55Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"pic0Dn9upi_syvjV93THiNgpMtc\",\n  \"source_resource\" : \"https://twitter.com/maithan44\",\n  \"source_link\" : \"https://twitter.com/maithan44\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-09-25T23:46:36Z\",\n  \"source_last_updated\" : \"2015-09-25T23:46:43Z\",\n  \"source_last_published\" : \"2015-09-25T23:46:43Z\",\n  \"source_last_posted\" : \"2015-06-16T11:23:37Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 287986,\n  \"source_content_checksum\" : \"oiuVDPjW-790mLhqS9Mnwp8Mnu8\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Maithaalharthy\",\n  \"source_description\" : \"<p>الحمدلله على ما انا عليه</p>\",\n  \"source_handle\" : \"maithan44\",\n  \"source_favorites\" : 172,\n  \"source_followers\" : 164,\n  \"source_following\" : 101,\n  \"source_verified\" : false,\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/640581259429711873/rQKTxqOn_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-05-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"canonical\" : \"https://twitter.com/maithan44/status/681884355720048642\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Oman\",\n  \"main_length\" : 4,\n  \"main_checksum\" : \"wUw23_ymGwdBD142MLpdmcYKtdU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-29T17:07:53Z\",\n  \"author_name\" : \"Maithaalharthy\",\n  \"author_link\" : \"https://twitter.com/maithan44\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/677125689846403072/iWfVZeTF_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_14_to_2015_12_20\",\"_type\":\"content\",\"_id\":\"1450332723000014803\",\"_score\":9.088166,\"_source\":{\n  \"bucket\" : 1450332600034,\n  \"sequence\" : 1450332723000014803,\n  \"sequence_range\" : 5534,\n  \"hashcode\" : \"6QbxvwHDPEiHPais4loSTbdkwt4\",\n  \"resource\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"date_found\" : \"2015-12-17T06:12:03Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.603\",\n  \"source_hashcode\" : \"hfrjzCjTJTgzWWbRdBd3UNsUhKU\",\n  \"source_resource\" : \"https://twitter.com/TraveasyUK\",\n  \"source_link\" : \"https://twitter.com/TraveasyUK\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-08T05:51:42Z\",\n  \"source_last_updated\" : \"2015-10-08T05:54:42Z\",\n  \"source_last_published\" : \"2015-10-08T05:54:42Z\",\n  \"source_last_posted\" : \"2014-11-24T08:48:10Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 265722,\n  \"source_content_checksum\" : \"Jr6eMFP4cfEc9AmOMnlQtHQS9PU\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"TraveasyUK\",\n  \"source_description\" : \"<p>Do you love to travel? We love taking you there. Follow us for latest news, deals &amp; assistance.</p>\",\n  \"source_handle\" : \"TraveasyUK\",\n  \"source_favorites\" : 2,\n  \"source_followers\" : 415,\n  \"source_following\" : 961,\n  \"source_verified\" : false,\n  \"source_profiles\" : [ \"http://www.traveasy.com/\" ],\n  \"source_location\" : \"0208 819 9853\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/494363696794071040/VG4RGMvS_400x400.jpeg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2013-01-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"canonical\" : \"https://twitter.com/TraveasyUK/status/677369534278443008\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"#Oman\",\n  \"main_length\" : 5,\n  \"main_checksum\" : \"PsfCgJu4WB6zlmilIUJqbUEwK2c\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"Oman\" ],\n  \"links\" : [ \"https://twitter.com/hashtag/Oman?src=hash\" ],\n  \"published\" : \"2015-12-17T06:07:36Z\",\n  \"author_name\" : \"TraveasyUK\",\n  \"author_link\" : \"https://twitter.com/TraveasyUK\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/494363696794071040/VG4RGMvS_bigger.jpeg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"lang\" : \"und\"\n}}]}}"
+						}
+					]
+				},
+				{
+					"name": "Post QueryString  10K",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"site:twitter.com AND tags:* mentions:* AND main:jakarta\"\n    }\n  }  \n}"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search?size=10000&pretty=true",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10000"
+								},
+								{
+									"key": "pretty",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString  10K ISIS",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"site:twitter.com AND tags:(\"ISIS\",\"Daesh\",\"Qaeda\")\"\n    }\n  }  \n}"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search?size=10000&pretty=true",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10000"
+								},
+								{
+									"key": "pretty",
+									"value": "true"
+								}
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": []
+				},
+				{
+					"name": "Post QueryString  Scroll",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"query_string\" : {\n        \"query\" : \"site:twitter.com AND tags:* mentions:* AND main:jakarta\"\n    }\n  }  \n}"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search?scroll=1m",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							],
+							"query": [
+								{
+									"key": "scroll",
+									"value": "1m"
+								}
+							]
+						},
+						"description": "The scroll API can be used to retrieve large numbers of results (or even all results) from a single search request"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get all Spinn3r Indeces",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/_cat/indices?v",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": null
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Match Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\" : {\n        \"main\" : \"this is a test\"\n    }\n  }  \n}\n"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "A family of match queries that accept text/numerics/dates, analyzes it and constructs a query out of it. "
+			},
+			"response": [
+				{
+					"id": "89e7d67b-1edb-4237-88c6-dc91a9dab799",
+					"name": "text",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment",
+								"name": "X-vendor",
+								"enabled": true
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4",
+								"name": "X-vendor-auth",
+								"enabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "1cf2ae8e-dcfa-7f71-e559-054d942f87a7"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\": {\n    \"match\" : {\n        \"main\" : \"this is a test\"\n    }\n  }  \n}\n"
+						},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"content*",
+								"_search"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "javascript",
+					"header": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "4469",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8",
+							"description": ""
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Jetty(9.3.6.v20151106)",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\"took\":559,\"timed_out\":false,\"_shards\":{\"total\":390,\"successful\":390,\"failed\":0},\"hits\":{\"total\":884477150,\"max_score\":5.657809,\"hits\":[{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1450839264000003268\",\"_score\":5.657809,\"_source\":{\n  \"bucket\" : 1450839000012,\n  \"sequence\" : 1450839264000003268,\n  \"sequence_range\" : 29612,\n  \"hashcode\" : \"x7bk9VlejOjgBjEGQ2YhhWhp_4w\",\n  \"resource\" : \"https://twitter.com/Beeeeryan/status/679494880217796608\",\n  \"date_found\" : \"2015-12-23T02:54:24Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"vI0XOX6kz5DBa-yJCAtxaua0pSA\",\n  \"source_resource\" : \"https://twitter.com/Beeeeryan\",\n  \"source_link\" : \"https://twitter.com/Beeeeryan\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-19T20:24:44Z\",\n  \"source_last_updated\" : \"2015-12-19T20:24:45Z\",\n  \"source_last_published\" : \"2015-12-19T20:24:45Z\",\n  \"source_last_posted\" : \"2015-08-08T16:16:21Z\",\n  \"source_update_interval\" : 3600000,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 263208,\n  \"source_content_checksum\" : \"ia_8Lrp-_-kiXzKosspnAakxMKk\",\n  \"source_setting_update_strategy\" : \"CYCLICAL\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Beeeeryan\",\n  \"source_description\" : \"<p>160 characters is never enough. IG: bryanownzyou Snapchat: bryanownzyou</p>\",\n  \"source_handle\" : \"Beeeeryan\",\n  \"source_favorites\" : 111,\n  \"source_followers\" : 117,\n  \"source_following\" : 890,\n  \"source_verified\" : true,\n  \"source_profiles\" : [ \"http://www.facebook.com/bryanownzyou\" ],\n  \"source_location\" : \"Houston, TX\",\n  \"source_image_src\" : \"https://pbs.twimg.com/profile_images/662378268062908417/I5kCuIsW_400x400.jpg\",\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_created\" : \"2009-04-01T00:00:00Z\",\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/Beeeeryan/status/679494880217796608\",\n  \"canonical\" : \"https://twitter.com/Beeeeryan/status/679494880217796608\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"Test this is a test\",\n  \"main_length\" : 19,\n  \"main_checksum\" : \"UBuH4HjIlksLTpVCTmNVZiMLeWg\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-23T02:52:58Z\",\n  \"author_name\" : \"Beeeeryan\",\n  \"author_link\" : \"https://twitter.com/Beeeeryan\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/662378268062908417/I5kCuIsW_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1450941423000014992\",\"_score\":5.655508,\"_source\":{\n  \"bucket\" : 1450941300085,\n  \"sequence\" : 1450941423000014992,\n  \"sequence_range\" : 82985,\n  \"hashcode\" : \"WoNZwTU7kjb0P0KvZPqEHQwYjQk\",\n  \"resource\" : \"https://twitter.com/helloiamxxx/status/679923615542947840\",\n  \"date_found\" : \"2015-12-24T07:17:03Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"F6p9MZ_3J-japYMVR21Zb74UOsU\",\n  \"source_resource\" : \"https://twitter.com/helloiamxxx\",\n  \"source_link\" : \"https://twitter.com/helloiamxxx\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-24T07:17:03Z\",\n  \"source_last_updated\" : \"2015-12-24T07:16:31Z\",\n  \"source_last_published\" : \"2015-12-24T07:17:01Z\",\n  \"source_last_posted\" : \"2015-12-24T07:16:09Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 258351,\n  \"source_content_checksum\" : \"3iKTyuYf5GLhEdxFXTRI0RAGjrI\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"thexxxinbox\",\n  \"source_description\" : \"thexxxinbox\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/helloiamxxx/status/679923615542947840\",\n  \"canonical\" : \"https://twitter.com/helloiamxxx/status/679923615542947840\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"test this is a test\",\n  \"main_length\" : 19,\n  \"main_checksum\" : \"9NmgWHl0tUfSHUuW2g5SOqHuufU\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-24T07:16:36Z\",\n  \"author_name\" : \"thexxxinbox\",\n  \"author_link\" : \"https://twitter.com/helloiamxxx\",\n  \"author_avatar_img\" : \"https://abs.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_28_to_2016_01_01\",\"_type\":\"content\",\"_id\":\"1451525492000009485\",\"_score\":5.614271,\"_source\":{\n  \"bucket\" : 1451525400025,\n  \"sequence\" : 1451525492000009485,\n  \"sequence_range\" : 25925,\n  \"hashcode\" : \"0kKLZt7XB4ZeZLnbSzf1oiCKkMU\",\n  \"resource\" : \"https://twitter.com/HealForceCare/status/682373368755032064\",\n  \"date_found\" : \"2015-12-31T01:31:32Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"5dNm3_owS2yQobDAjL0nMZ5NOdM\",\n  \"source_resource\" : \"https://twitter.com/HealForceCare\",\n  \"source_link\" : \"https://twitter.com/HealForceCare\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-24T03:34:04Z\",\n  \"source_last_updated\" : \"2015-12-24T03:33:11Z\",\n  \"source_last_published\" : \"2015-12-24T03:34:01Z\",\n  \"source_last_posted\" : \"2015-12-24T03:32:55Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 250315,\n  \"source_content_checksum\" : \"PygBXFTfx3hO83pFu92E7btHdPE\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"HealForceHealthcare\",\n  \"source_description\" : \"HealForceHealthcare\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/HealForceCare/status/682373368755032064\",\n  \"canonical\" : \"https://twitter.com/HealForceCare/status/682373368755032064\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"this is a test test test test test test test test test test test test test test test test test test test test test test test test test test\",\n  \"main_length\" : 139,\n  \"main_checksum\" : \"qUWzSFYOfLC4m7LKGggjjLHGfOg\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-31T01:31:03Z\",\n  \"author_name\" : \"HealForceHealthcare\",\n  \"author_link\" : \"https://twitter.com/HealForceCare\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/681414442542886912/g_LqsGLP_bigger.jpg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"et\"\n}},{\"_index\":\"merged_content_2015_12_14_to_2015_12_20\",\"_type\":\"content\",\"_id\":\"1450275329000014531\",\"_score\":5.4835486,\"_source\":{\n  \"bucket\" : 1450275300013,\n  \"sequence\" : 1450275329000014531,\n  \"sequence_range\" : 813,\n  \"hashcode\" : \"C5zqIwXudjlbzuH-kCJrTBVyNg0\",\n  \"resource\" : \"https://twitter.com/Jamie_Beth_S/status/677129839657148416\",\n  \"date_found\" : \"2015-12-16T14:15:29Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.602\",\n  \"source_hashcode\" : \"96hheXG5suC1QSispCfhZr-9Ksw\",\n  \"source_resource\" : \"https://twitter.com/Jamie_Beth_S\",\n  \"source_link\" : \"https://twitter.com/Jamie_Beth_S\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-10T15:58:58Z\",\n  \"source_last_updated\" : \"2015-12-10T15:54:36Z\",\n  \"source_last_published\" : \"2015-12-10T15:58:56Z\",\n  \"source_last_posted\" : \"2015-12-10T15:51:08Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 255779,\n  \"source_content_checksum\" : \"Yo0mPx8EL0sa39CT46cKUSsll1E\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Jamie Beth\",\n  \"source_description\" : \"Jamie Beth\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/Jamie_Beth_S/status/677129839657148416\",\n  \"canonical\" : \"https://twitter.com/Jamie_Beth_S/status/677129839657148416\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"This is a test! #test\",\n  \"main_length\" : 21,\n  \"main_checksum\" : \"MiV32P770Faw5nzp4SdrH-HbLzE\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"test\" ],\n  \"links\" : [ \"https://twitter.com/hashtag/test?src=hash\" ],\n  \"published\" : \"2015-12-16T14:15:08Z\",\n  \"author_name\" : \"Jamie Beth\",\n  \"author_link\" : \"https://twitter.com/Jamie_Beth_S\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/638050550932733952/wB6JoJxe_bigger.jpg\",\n  \"author_gender\" : \"FEMALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_14_to_2015_12_20\",\"_type\":\"content\",\"_id\":\"1450139829000007073\",\"_score\":5.4806933,\"_source\":{\n  \"bucket\" : 1450139700066,\n  \"sequence\" : 1450139829000007073,\n  \"sequence_range\" : 48366,\n  \"hashcode\" : \"s6ZQCRMPHI9mBNozVpJDGUBgkQ4\",\n  \"resource\" : \"https://twitter.com/Ludwigter/status/676561453210599426\",\n  \"date_found\" : \"2015-12-15T00:37:09Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.598\",\n  \"source_hashcode\" : \"TMQqb9SHKFpWoUjmaPtHN_VFpT4\",\n  \"source_resource\" : \"https://twitter.com/Ludwigter\",\n  \"source_link\" : \"https://twitter.com/Ludwigter\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-14T23:57:29Z\",\n  \"source_last_updated\" : \"2015-12-14T23:56:36Z\",\n  \"source_last_published\" : \"2015-12-14T23:57:28Z\",\n  \"source_last_posted\" : \"2015-12-14T23:56:22Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 248261,\n  \"source_content_checksum\" : \"aTY10PB1MB38ULek_4GqFzDkSHo\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Ludwig\",\n  \"source_description\" : \"Ludwig\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/Ludwigter/status/676561453210599426\",\n  \"canonical\" : \"https://twitter.com/Ludwigter/status/676561453210599426\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"test. this is a test..\",\n  \"main_length\" : 22,\n  \"main_checksum\" : \"WXkrcIa4dpyaiKCPhOPHcWBW5dQ\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-15T00:36:35Z\",\n  \"author_name\" : \"Ludwig\",\n  \"author_link\" : \"https://twitter.com/Ludwigter\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/676554881319079937/ylpE7qNH_bigger.png\",\n  \"author_gender\" : \"MALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\",\n  \"duplicates_count\" : 0\n}},{\"_index\":\"merged_content_2015_12_14_to_2015_12_20\",\"_type\":\"content\",\"_id\":\"1450296450000010054\",\"_score\":5.479437,\"_source\":{\n  \"bucket\" : 1450296300094,\n  \"sequence\" : 1450296450000010054,\n  \"sequence_range\" : 92494,\n  \"hashcode\" : \"BNc-pXhskQp-gOvxysjGr9IUDi4\",\n  \"resource\" : \"https://twitter.com/BalanceLogic/status/677218391371808769\",\n  \"date_found\" : \"2015-12-16T20:07:30Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.603\",\n  \"source_hashcode\" : \"CDbx6ddPbtMDZ04Aa0YKrwrrheU\",\n  \"source_resource\" : \"https://twitter.com/BalanceLogic\",\n  \"source_link\" : \"https://twitter.com/BalanceLogic\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2014-12-05T16:30:25Z\",\n  \"source_last_updated\" : \"2014-12-05T16:30:20Z\",\n  \"source_last_published\" : \"2014-12-05T16:30:25Z\",\n  \"source_last_posted\" : \"2014-12-05T16:30:00Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 238895,\n  \"source_content_checksum\" : \"vHbD1WVAoux938xgZSCON-nmzdE\",\n  \"source_setting_update_strategy\" : \"SEARCH\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"BalanceLogic\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : 0,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 0,\n  \"source_parsed_posts_max\" : 0,\n  \"permalink\" : \"https://twitter.com/BalanceLogic/status/677218391371808769\",\n  \"canonical\" : \"https://twitter.com/BalanceLogic/status/677218391371808769\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"*Test* This is a test\",\n  \"main_length\" : 21,\n  \"main_checksum\" : \"ybWCgrAvcSLH-nH5cYZB5gkGJUY\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-16T20:07:01Z\",\n  \"author_name\" : \"BalanceLogic\",\n  \"author_link\" : \"https://twitter.com/BalanceLogic\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/469877083494031362/TTqLoJOo_bigger.jpeg\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1450735946000007852\",\"_score\":5.182257,\"_source\":{\n  \"bucket\" : 1450735800076,\n  \"sequence\" : 1450735946000007852,\n  \"sequence_range\" : 9776,\n  \"hashcode\" : \"z0bYTm_40Slmu-YfZIgS-Lw32LA\",\n  \"resource\" : \"https://twitter.com/EMOGODSOO/status/679061745638367232\",\n  \"date_found\" : \"2015-12-21T22:12:26Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.604\",\n  \"source_hashcode\" : \"5I4nZlm1IgjeWBnpmmghy-yHpy8\",\n  \"source_resource\" : \"https://twitter.com/EMOGODSOO\",\n  \"source_link\" : \"https://twitter.com/EMOGODSOO\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-10-21T22:57:38Z\",\n  \"source_last_updated\" : \"2015-10-21T22:56:56Z\",\n  \"source_last_published\" : \"2015-10-21T22:57:37Z\",\n  \"source_last_posted\" : \"2015-10-21T22:56:37Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 264235,\n  \"source_content_checksum\" : \"4SiDA6R3qvFIgBSJRGPgNR3s8W8\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"spooky alexia\",\n  \"source_description\" : \"spooky alexia\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/EMOGODSOO/status/679061745638367232\",\n  \"canonical\" : \"https://twitter.com/EMOGODSOO/status/679061745638367232\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"this is a test\",\n  \"main_length\" : 14,\n  \"main_checksum\" : \"-ia-Gd5r_5P3C8IwhDTkpEC7rQI\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-21T22:11:51Z\",\n  \"author_name\" : \"alexia\",\n  \"author_link\" : \"https://twitter.com/EMOGODSOO\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/678077689673080832/9aJyIibo_bigger.jpg\",\n  \"author_gender\" : \"FEMALE\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}},{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1450695159000003109\",\"_score\":5.182257,\"_source\":{\n  \"bucket\" : 1450695000030,\n  \"sequence\" : 1450695159000003109,\n  \"sequence_range\" : 51430,\n  \"hashcode\" : \"rENa7EfggxHF0ZPqNXkC-ABUSeY\",\n  \"resource\" : \"https://instagram.com/p/_jQ62UrxFR\",\n  \"date_found\" : \"2015-12-21T10:52:39Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.603\",\n  \"source_hashcode\" : \"4b8QBzOqumROG_zKb_id0mkCRrI\",\n  \"source_resource\" : \"https://instagram.com/explore/tags/test\",\n  \"source_link\" : \"https://www.instagram.com/explore/tags/test/\",\n  \"source_publisher_type\" : \"PHOTO\",\n  \"source_date_found\" : \"2015-12-11T00:26:59Z\",\n  \"source_last_updated\" : \"2015-12-21T10:34:28Z\",\n  \"source_last_published\" : \"2015-12-21T10:52:38Z\",\n  \"source_last_posted\" : \"2015-12-21T10:33:56Z\",\n  \"source_update_interval\" : 1087255,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 39662,\n  \"source_content_checksum\" : \"9lxMByyB96skEHLLXRU71cE2zw8\",\n  \"source_assigned_tags\" : [ \"#PVNN6QGx-80KVZYSaVbXkEbzlBc\" ],\n  \"source_setting_update_strategy\" : \"ADAPTIVE\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"COMPOSITE\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Instagram for #test\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : 0,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 24,\n  \"source_parsed_posts_max\" : 24,\n  \"permalink\" : \"https://instagram.com/p/_jQ62UrxFR/\",\n  \"canonical\" : \"https://instagram.com/p/_jQ62UrxFR/\",\n  \"domain\" : \"instagram.com\",\n  \"site\" : \"instagram.com\",\n  \"main\" : \"This is a #test\",\n  \"main_length\" : 15,\n  \"main_checksum\" : \"zt_ylTobrsC4uF_filFY04VkMxo\",\n  \"main_format\" : \"TEXT\",\n  \"tags\" : [ \"test\" ],\n  \"published\" : \"2015-12-21T10:46:07Z\",\n  \"image_src\" : \"https://scontent.cdninstagram.com/hphotos-xfp1/t51.2885-15/e35/12357817_1741424216080205_1432737584_n.jpg\",\n  \"image_width\" : 1080,\n  \"image_height\" : 1080,\n  \"type\" : \"POST\",\n  \"lang\" : \"U\",\n  \"likes\" : 1,\n  \"comments\" : 0\n}},{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1451099867000014016\",\"_score\":5.181772,\"_source\":{\n  \"bucket\" : 1451099700009,\n  \"sequence\" : 1451099867000014016,\n  \"sequence_range\" : 26309,\n  \"hashcode\" : \"XW4x_G4eyd6GX9pe8fuEUx9lREU\",\n  \"resource\" : \"https://youtube.com/watch?v=K65WabCeTMs\",\n  \"date_found\" : \"2015-12-26T03:17:47Z\",\n  \"index_method\" : \"PERMALINK_TASK\",\n  \"detection_method\" : \"SOURCE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"EQny6RwCh6GyevifJux0Zm6hpZ0\",\n  \"source_resource\" : \"https://youtube.com/channel/UCw3x1RASqu-NHa4ddqbe_dw\",\n  \"source_link\" : \"https://www.youtube.com/channel/UCw3x1RASqu-NHa4ddqbe_dw\",\n  \"source_publisher_type\" : \"VIDEO\",\n  \"source_date_found\" : \"2015-12-26T03:17:48Z\",\n  \"source_last_updated\" : \"2015-12-26T02:17:43Z\",\n  \"source_last_published\" : \"2015-12-26T03:17:43Z\",\n  \"source_last_posted\" : \"2015-12-26T02:17:43Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_content_length\" : 176690,\n  \"source_content_checksum\" : \"d_QPkODjw4dxLMGfUsPv83LDEn4\",\n  \"source_assigned_tags\" : [ \"#4HnT6SjzPJIsUzYhBMJ87ycC6uA\" ],\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_title\" : \"Nate Jarrett\",\n  \"source_description\" : \"Nate Jarrett\",\n  \"source_followers\" : -1,\n  \"permalink\" : \"https://www.youtube.com/watch?v=K65WabCeTMs\",\n  \"permalink_redirect\" : \"https://www.youtube.com/watch?v=K65WabCeTMs\",\n  \"permalink_redirect_domain\" : \"youtube.com\",\n  \"permalink_redirect_site\" : \"youtube.com\",\n  \"shortlink\" : \"https://youtu.be/K65WabCeTMs\",\n  \"canonical\" : \"https://www.youtube.com/watch?v=K65WabCeTMs\",\n  \"domain\" : \"youtube.com\",\n  \"site\" : \"youtube.com\",\n  \"main\" : \"this is a test\",\n  \"main_length\" : 14,\n  \"main_checksum\" : \"-ia-Gd5r_5P3C8IwhDTkpEC7rQI\",\n  \"main_format\" : \"HTML\",\n  \"summary_text\" : \"this is a test\",\n  \"title\" : \"Elimination first video ever\",\n  \"publisher\" : \"YouTube\",\n  \"description\" : \"this is a test\",\n  \"tags\" : [ \"game\", \"great\" ],\n  \"published\" : \"2015-12-24T00:00:00Z\",\n  \"author_name\" : \"Nate Jarrett\",\n  \"author_link\" : \"https://www.youtube.com/channel/UCw3x1RASqu-NHa4ddqbe_dw\",\n  \"author_avatar_img\" : \"https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif\",\n  \"author_avatar_width\" : 48,\n  \"author_avatar_height\" : 48,\n  \"image_src\" : \"https://i.ytimg.com/vi/K65WabCeTMs/hqdefault.jpg\",\n  \"card\" : \"PLAYER\",\n  \"video_player\" : \"https://www.youtube.com/embed/K65WabCeTMs\",\n  \"type\" : \"POST\",\n  \"lang\" : \"en\",\n  \"likes\" : 1,\n  \"views\" : 5\n}},{\"_index\":\"merged_content_2015_12_21_to_2015_12_27__2\",\"_type\":\"content\",\"_id\":\"1450745193000013951\",\"_score\":5.181682,\"_source\":{\n  \"bucket\" : 1450745100072,\n  \"sequence\" : 1450745193000013951,\n  \"sequence_range\" : 36972,\n  \"hashcode\" : \"qsiH6qeUhd-ACSeCbMFLH1vtfaw\",\n  \"resource\" : \"https://twitter.com/FiremapsSample/status/679100564160970752\",\n  \"date_found\" : \"2015-12-22T00:46:33Z\",\n  \"index_method\" : \"SOURCE_TASK_COMPOSITE\",\n  \"version\" : \"5.1.605\",\n  \"source_hashcode\" : \"hIjyfepbaBqqI42-LWCWbHwelpI\",\n  \"source_resource\" : \"https://twitter.com/FiremapsSample\",\n  \"source_link\" : \"https://twitter.com/FiremapsSample\",\n  \"source_publisher_type\" : \"MICROBLOG\",\n  \"source_date_found\" : \"2015-12-21T23:57:34Z\",\n  \"source_last_updated\" : \"2015-12-21T23:56:57Z\",\n  \"source_last_published\" : \"2015-12-21T23:57:32Z\",\n  \"source_last_posted\" : \"2015-12-21T23:56:36Z\",\n  \"source_update_interval\" : 0,\n  \"source_http_status\" : 200,\n  \"source_spam_probability\" : 0.0,\n  \"source_content_length\" : 246768,\n  \"source_content_checksum\" : \"WvDnBXFXN0G0a1rKgQlbR8HU7ek\",\n  \"source_setting_update_strategy\" : \"INDIRECT\",\n  \"source_setting_index_strategy\" : \"DEFAULT\",\n  \"source_setting_author_policy\" : \"DEFAULT\",\n  \"source_user_interactions\" : 0,\n  \"source_title\" : \"Firemaps Sample\",\n  \"source_description\" : \"Firemaps Sample\",\n  \"source_favorites\" : 0,\n  \"source_followers\" : -1,\n  \"source_following\" : 0,\n  \"source_verified\" : false,\n  \"source_image_width\" : 0,\n  \"source_image_height\" : 0,\n  \"source_favicon_width\" : 0,\n  \"source_favicon_height\" : 0,\n  \"source_likes\" : 0,\n  \"source_parsed_posts\" : 20,\n  \"source_parsed_posts_max\" : 20,\n  \"permalink\" : \"https://twitter.com/FiremapsSample/status/679100564160970752\",\n  \"canonical\" : \"https://twitter.com/FiremapsSample/status/679100564160970752\",\n  \"domain\" : \"twitter.com\",\n  \"site\" : \"twitter.com\",\n  \"main\" : \"This is a test\",\n  \"main_length\" : 14,\n  \"main_checksum\" : \"pU2I4GYS2CC8O-cod8dPJXtWGxk\",\n  \"main_format\" : \"TEXT\",\n  \"published\" : \"2015-12-22T00:46:06Z\",\n  \"author_name\" : \"Firemaps Sample\",\n  \"author_link\" : \"https://twitter.com/FiremapsSample\",\n  \"author_avatar_img\" : \"https://pbs.twimg.com/profile_images/676550964535427073/zrrctVhJ_bigger.png\",\n  \"author_gender\" : \"UNKNOWN\",\n  \"type\" : \"POST\",\n  \"sentiment\" : \"NEUTRAL\",\n  \"lang\" : \"en\"\n}}]}}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,5 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c10.1,10,1,WORDCOUNT,eng,SentiWordNet 3.0,Positive,Andrea Esuli Stefano Baccianella and Fabrizio Sebastiani. (2010). 'Sentiwordnet 3.0: An enhanced lexical resource for sentiment analysis and opinion mining'. In LREC.
+v10.1,10,1,SCOREDVALUE,eng,SentiWordNet 3.0,Positive (Scored Value),Andrea Esuli Stefano Baccianella and Fabrizio Sebastiani. (2010). 'Sentiwordnet 3.0: An enhanced lexical resource for sentiment analysis and opinion mining'. In LREC.
+c10.2,10,2,WORDCOUNT,eng,SentiWordNet 3.0,Negative,Andrea Esuli Stefano Baccianella and Fabrizio Sebastiani. (2010). 'Sentiwordnet 3.0: An enhanced lexical resource for sentiment analysis and opinion mining'. In LREC.
+v10.2,10,2,SCOREDVALUE,eng,SentiWordNet 3.0,Negative (Scored Value),Andrea Esuli Stefano Baccianella and Fabrizio Sebastiani. (2010). 'Sentiwordnet 3.0: An enhanced lexical resource for sentiment analysis and opinion mining'. In LREC.

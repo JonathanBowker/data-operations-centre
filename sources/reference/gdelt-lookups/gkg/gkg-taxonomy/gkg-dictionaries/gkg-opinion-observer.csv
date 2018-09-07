@@ -1,0 +1,3 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c7.1,7,1,WORDCOUNT,eng,Opinion Observer,Negative,"Bing Liu, Minqing Hu and Junsheng Cheng. (2005).  'Opinion Observer: Analyzing and Comparing Opinions on the Web.' Proceedings of the 14th International World Wide Web conference (WWW-2005), May 10-14, 2005, Chiba, Japan."
+c7.2,7,2,WORDCOUNT,eng,Opinion Observer,Positive,"Bing Liu, Minqing Hu and Junsheng Cheng. (2005).  'Opinion Observer: Analyzing and Comparing Opinions on the Web.' Proceedings of the 14th International World Wide Web conference (WWW-2005), May 10-14, 2005, Chiba, Japan."

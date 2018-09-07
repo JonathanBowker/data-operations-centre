@@ -1,0 +1,353 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Apache Stanbol - Local",
+		"_postman_id": "1327702c-2235-d713-b34a-64ec8a029132",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "JSON",
+			"description": "",
+			"item": []
+		},
+		{
+			"name": "Test",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/enhancer?uri=urn:fise-example-content-item&executionmetadata=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"enhancer"
+					],
+					"query": [
+						{
+							"key": "uri",
+							"value": "urn:fise-example-content-item",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "executionmetadata",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-Full Enhancement ",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/default",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July.\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-Engine",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/default",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July.\n\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-Proper Noun",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/dbpedia-proper-noun",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July.\n\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-Language",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/language",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-EntityLinking",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/dbpedia-fst-linking",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Chain-Disambiguation",
+			"request": {
+				"url": "http://localhost:8080/enhancer/chain/dbpedia-disambiguation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					},
+					{
+						"key": "Accept-Charset",
+						"value": "",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Engine- Language",
+			"request": {
+				"url": "http://localhost:8080/enhancer/engine/langdetect",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July.\n\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Engine- Tika",
+			"request": {
+				"url": "http://localhost:8080/enhancer/engine/tika",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Engine-Linking",
+			"request": {
+				"url": "http://localhost:8080/enhancer/engine/tika",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July.\n\""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Engine- NER",
+			"request": {
+				"url": "http://localhost:8080/enhancer/engine/ner",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Engine-celiNer",
+			"request": {
+				"url": "http://localhost:8080/enhancer/engine/celiNer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-type",
+						"value": "text/plain",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "The UK needs a \"credible fallback\" in case no EU trade deal is reached during Brexit negotiations, former Bank of England governor Mervyn King has said.\n\nLord King said British negotiators needed to show Brussels the country has an alternative over a bad trade deal post-Brexit.\nThe former governor, who served between 2003 and 2013, said no deal was \"not the first preference of anybody\".\n\nHe said the government \"probably wasted a year\" on its contingency plans.\nThe first round of Brexit negotiations at the European Commission ended in July."
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,5 @@
+variable,dictionaryID,dimensionID,Type,languageCode,dictionary,dimension
+c3.1,3,1,Wordcount,eng,Lexicoder Sentiment Dictionary,Negative
+c3.2,3,2,Wordcount,eng,Lexicoder Sentiment Dictionary,Positive
+c3.3,3,3,Wordcount,eng,Lexicoder Sentiment Dictionary,Neg Negative
+c3.4,3,4,Wordcount,eng,Lexicoder Sentiment Dictionary,Neg Positive

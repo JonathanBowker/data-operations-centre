@@ -1,0 +1,406 @@
+{
+	"info": {
+		"name": "IDRES APIs",
+		"_postman_id": "9b5f7985-cfb9-c64a-fb08-8e5a97f05c0b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Instagram User Profile",
+			"description": "",
+			"item": [
+				{
+					"name": "https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://api.instagram.com/v1/users/search?q=jack&access_token=ACCESS-TOKEN",
+							"protocol": "https",
+							"host": [
+								"api",
+								"instagram",
+								"com"
+							],
+							"path": [
+								"v1",
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "jack"
+								},
+								{
+									"key": "access_token",
+									"value": "ACCESS-TOKEN"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pinterest User Profile",
+			"description": "",
+			"item": [
+				{
+					"name": "GET users/lookup copy",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "2s6oBONqFU5IQEGqjcb7LSand",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "sM382SP6q2FD3r5610XRhoKRo0FShimPCKU7xUV96kC7BlNanM",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "NmBUFFSeveQctc8331zoFkvkAhPxSL8pVLrBPD95xjb0x",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1481391506,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "oAhK30",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "content-length",
+								"value": "128"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"2s6oBONqFU5IQEGqjcb7LSand\",oauth_token=\"29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1481391506\",oauth_nonce=\"oAhK30\",oauth_version=\"1.0\",oauth_signature=\"zGtilW1BYUNS5AkbUbTjYuTBzKc%3D\""
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.pinterest.com/v1/",
+							"protocol": "https",
+							"host": [
+								"api",
+								"pinterest",
+								"com"
+							],
+							"path": [
+								"v1",
+								""
+							]
+						},
+						"description": "Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Twitter User Profile",
+			"description": "",
+			"item": [
+				{
+					"name": "GET users/lookup copy",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "2s6oBONqFU5IQEGqjcb7LSand",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "sM382SP6q2FD3r5610XRhoKRo0FShimPCKU7xUV96kC7BlNanM",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "NmBUFFSeveQctc8331zoFkvkAhPxSL8pVLrBPD95xjb0x",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1481391506,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "oAhK30",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "content-length",
+								"value": "128"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"2s6oBONqFU5IQEGqjcb7LSand\",oauth_token=\"29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1481391506\",oauth_nonce=\"oAhK30\",oauth_version=\"1.0\",oauth_signature=\"zGtilW1BYUNS5AkbUbTjYuTBzKc%3D\""
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.twitter.com/1.1/users/lookup.json?screen_name=jonathanbowker",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"users",
+								"lookup.json"
+							],
+							"query": [
+								{
+									"key": "screen_name",
+									"value": "jonathanbowker"
+								}
+							]
+						},
+						"description": "Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vimeo User Profile",
+			"description": "",
+			"item": [
+				{
+					"name": "GET users/lookup copy",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "2s6oBONqFU5IQEGqjcb7LSand",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "sM382SP6q2FD3r5610XRhoKRo0FShimPCKU7xUV96kC7BlNanM",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "NmBUFFSeveQctc8331zoFkvkAhPxSL8pVLrBPD95xjb0x",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1481391506,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "oAhK30",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "accept-encoding",
+								"value": "gzip"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							},
+							{
+								"key": "content-length",
+								"value": "128"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"2s6oBONqFU5IQEGqjcb7LSand\",oauth_token=\"29634147-zTThsnG6gbJ4uHU1r0dLx6rPnhgdh2X4m6iaueHe6\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1481391506\",oauth_nonce=\"oAhK30\",oauth_version=\"1.0\",oauth_signature=\"zGtilW1BYUNS5AkbUbTjYuTBzKc%3D\""
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.twitter.com/1.1/users/lookup.json?screen_name=jonathanbowker",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"users",
+								"lookup.json"
+							],
+							"query": [
+								{
+									"key": "screen_name",
+									"value": "jonathanbowker"
+								}
+							]
+						},
+						"description": "Returns fully-hydrated user objects for up to 100 users per request, as specified by comma-separated values passed to the user_id and/or screen_name parameters."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

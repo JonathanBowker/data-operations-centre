@@ -1,0 +1,3 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c11.1,11,1,WORDCOUNT,eng,SentiWords,Polarity,"Guerini M., Gatti L. & Turchi M. (2013). 'Sentiment Analysis: How to Derive Prior Polarities from SentiWordNet'. In Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing (EMNLP'13), pp 1259-1269. Seattle, Washington, USA."
+v11.1,11,1,SCOREDVALUE,eng,SentiWords,Polarity (Scored Value),"Guerini M., Gatti L. & Turchi M. (2013). 'Sentiment Analysis: How to Derive Prior Polarities from SentiWordNet'. In Proceedings of the 2013 Conference on Empirical Methods in Natural Language Processing (EMNLP'13), pp 1259-1269. Seattle, Washington, USA."

@@ -1,0 +1,2810 @@
+{
+	"info": {
+		"name": "Neo4j",
+		"_postman_id": "a3cad76c-4577-9e66-06f0-c6b49b406c2a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Indexing",
+			"description": "",
+			"item": [
+				{
+					"name": "Create index",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"property_keys\" : [ \"property_1452643263390_1\" ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/schema/index/label_1452643263390_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"schema",
+								"index",
+								"label_1452643263390_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List indexes for a label",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/schema/index/label_1452643263149_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"schema",
+								"index",
+								"label_1452643263149_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Drop index",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/schema/index/label_1452643263260_1/property_1452643263260_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"schema",
+								"index",
+								"label_1452643263260_1",
+								"property_1452643263260_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Node degree",
+			"description": "",
+			"item": [
+				{
+					"name": "Get the degree of a node",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the degree of a node by direction",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10480/degree/out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10480",
+								"degree",
+								"out"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the degree of a node by direction and types",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"property_keys\" : [ \"property_1452643263390_1\" ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/schema/index/label_1452643263390_1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"schema",
+								"index",
+								"label_1452643263390_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Node labels",
+			"description": "",
+			"item": [
+				{
+					"name": "Adding a label to a node",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\"Person\"]"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10251/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10251",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Adding multiple labels to a node",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\"Person\", \"Actor\"]"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10262/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10262",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a label with an invalid name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\"\"]"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/10269/labels",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10269",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Replacing labels on a node",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\"Actor\", \"Director\"]\n  \n"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10252/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10252",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:QueryBlock),(p:RegisterBlock), (p:RegisterBlock)<-[r:HAS_REGISTER_BLOCK]-(s:RegisterFile), (m:QueryBlock)<-[q:HAS_QUERY_BLOCK]-(n:QueryFile) WHERE m.qBlockHash = p.rBlockHash RETURN (s.rFileUID) AS assetFileUID, (n.qFileUID) AS watcherFileUID, COUNT(*) AS totalMatchedAssetHashes\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removing a label from a node",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10253/labels/Person",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10253",
+								"labels",
+								"Person"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removing a non-existent label from a node",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10254/labels/Person",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10254",
+								"labels",
+								"Person"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Listing labels for a node",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10258/labels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10258",
+								"labels"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all nodes with a label",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/label/Actor/nodes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"label",
+								"Actor",
+								"nodes"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get nodes by label and property",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/label/Person/nodes?name=%22Clint+Eastwood%22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"label",
+								"Person",
+								"nodes"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "%22Clint+Eastwood%22"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List all labels",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10477/degree/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10477",
+								"degree",
+								"all"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Node properties",
+			"description": "",
+			"item": [
+				{
+					"name": "Set property on node",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/11/properties/foo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"11",
+								"properties",
+								"foo"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update node properties",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/9/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"9",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get properties for node",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/172/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"172",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get property for node",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/171/properties/foo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"171",
+								"properties",
+								"foo"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Property values can not be null",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Property values can not be nested",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all properties from node",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/2/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"2",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a named property from a node",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/1/properties/name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"1",
+								"properties",
+								"name"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nodes",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Node",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add Properties to Node",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Archie\"}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Read a Node",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "match1miss",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bWF0Y2gxbWlzcw=="
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/2",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Node",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "match1miss",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bWF0Y2gxbWlzcw=="
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Indexes",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "jb_BgyZ13y6627xi!£",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvOm1hdGNoMW1pc3M="
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Stream",
+								"value": "true"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/2",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Property values",
+			"description": "",
+			"item": [
+				{
+					"name": "List all property keys",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/propertykeys",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"propertykeys"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relationship",
+			"description": "",
+			"item": [
+				{
+					"name": "Get Relationship by ID",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/relationship/46",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"46"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create  Relationship",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/1/relationships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"1",
+								"relationships"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create a relationship with properties",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/11/relationships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"11",
+								"relationships"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"39"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all properties on a relationship",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/relationship/42/properties",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"42",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set all properties on a relationship",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/47/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"47",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get single property on a relationship",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"commit"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Set single property on a relationship",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/42/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"42",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all relationships",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/10336/relationships/all",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10336",
+								"relationships",
+								"all"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get incoming relationships",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/10355/relationships/in",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10355",
+								"relationships",
+								"in"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get outgoing relationships",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/node/10380/relationships/out",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10380",
+								"relationships",
+								"out"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get typed relationships",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/10311/relationships/all/LIKES&HATES",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"10311",
+								"relationships",
+								"all",
+								"LIKES&HATES"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get relationships on a node without relationships",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/node/9/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"node",
+								"9",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relationship properties",
+			"description": "",
+			"item": [
+				{
+					"name": "Update relationship properties",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/183/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"183",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove properties from a relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/37/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"37",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove property from a relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/40/properties/cost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"40",
+								"properties",
+								"cost"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove non-existent property from a relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/38/properties/non-existent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"38",
+								"properties",
+								"non-existent"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove properties from a non-existing relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/1234/properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"1234",
+								"properties"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Remove property from a non-existing relationship",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:7474/db/data/relationship/1234/properties/cost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"relationship",
+								"1234",
+								"properties",
+								"cost"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Relationship types",
+			"description": "",
+			"item": [
+				{
+					"name": "Get relationship types",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "Get relationship types",
+							"host": [
+								"Get relationship types"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transactional Cypher HTTP endpoint",
+			"description": "",
+			"item": [
+				{
+					"name": "Begin and commit a transaction in one request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN id(n)\"\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"commit"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Execute multiple statements",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN id(n)\"\n  }, {\n    \"statement\" : \"CREATE (n {props}) RETURN n\",\n    \"parameters\" : {\n      \"props\" : {\n        \"name\" : \"My Node\"\n      }\n    }\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/commit",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"commit"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Begin a transaction",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n {props}) RETURN n\",\n    \"parameters\" : {\n      \"props\" : {\n        \"name\" : \"My Node\"\n      }\n    }\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Execute statements in an open transaction",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN n\"\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/11",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"11"
+							]
+						},
+						"description": "Given that you have an open transaction, you can make a number of requests, each of which executes additional statements, and keeps the transaction open by resetting the transaction timeout."
+					},
+					"response": []
+				},
+				{
+					"name": "Execute statements in an open transaction in REST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN n\",\n    \"resultDataContents\" : [ \"REST\" ]\n  } ]\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/1",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"1"
+							]
+						},
+						"description": "Given that you have an open transaction, you can make a number of requests, each of which executes additional statements, and keeps the transaction open by resetting the transaction timeout. Specifying the REST format will give back full Neo4j Rest API representations of the Neo4j Nodes, Relationships and Paths, if returned."
+					},
+					"response": []
+				},
+				{
+					"name": "Reset transaction timeout of an open transaction",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN id(n)\"\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/2",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"2"
+							]
+						},
+						"description": "Every orphaned transaction is automatically expired after a period of inactivity. This may be prevented by resetting the transaction timeout.\n\nThe timeout may be reset by sending a keep-alive request to the server that executes an empty list of statements. This request will reset the transaction timeout and return the new time at which the transaction will expire as an RFC1123 formatted timestamp value in the “transaction” section of the response."
+					},
+					"response": []
+				},
+				{
+					"name": "Commit an open transaction",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\" : [ {\n    \"statement\" : \"CREATE (n) RETURN id(n)\"\n  } ]\n}"
+						},
+						"url": {
+							"raw": "http://ec2-54-194-141-242.eu-west-1.compute.amazonaws.com:7474/db/data/transaction/6/commit",
+							"protocol": "http",
+							"host": [
+								"ec2-54-194-141-242",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction",
+								"6",
+								"commit"
+							]
+						},
+						"description": "Given you have an open transaction, you can send a commit request. Optionally, you submit additional statements along with the request that will be executed before committing the transaction."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Matching",
+			"description": "",
+			"item": [
+				{
+					"name": "Match QueryFiles to RegisterFiles ",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:QueryBlock),(p:RegisterBlock), (p:RegisterBlock)<-[r:HAS_REGISTER_BLOCK]-(s:RegisterFile), (m:QueryBlock)<-[q:HAS_QUERY_BLOCK]-(n:QueryFile) WHERE m.qBlockHash = p.rBlockHash RETURN (s.rFileUID) AS assetFileUID, (n.qFileUID) AS watcherFileUID, COUNT(*) AS totalMatchedAssetHashes\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Match QueryFiles to RegisterFiles using Block Hash Matches"
+					},
+					"response": []
+				},
+				{
+					"name": "QueryIdentifiers to RegisterIdentifiers to RegisterFiles",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:QueryBlock),(p:RegisterBlock), (p:RegisterBlock)<-[r:HAS_REGISTER_BLOCK]-(s:RegisterFile), (m:QueryBlock)<-[q:HAS_QUERY_BLOCK]-(n:QueryFile) WHERE m.qBlockHash = p.rBlockHash RETURN (s.rFileUID) AS assetFileUID, (n.qFileUID) AS watcherFileUID, COUNT(*) AS totalMatchedHashes\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "//Match QueryIdentifiers to RegisterIdentifiers to RegisterFiles\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Count No. WatcherFiles to WatcherBlocks",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (p:QueryFile)-[:HAS_QUERY_BLOCK]->(c:QueryBlock) WITH p,count(c) as totalWatcherHashes RETURN (p.qFileUID) AS watcherFileUID, totalWatcherHashes\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Count No. WatcherFiles to WatcherBlocks"
+					},
+					"response": []
+				},
+				{
+					"name": "Count No. AssetFiles and AssetBlocks",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:RegisterFile)-[:HAS_REGISTER_BLOCK]->(m:RegisterBlock) WITH n,count(m) as totalAssetHashes RETURN (n.rFileUID) AS assetFileUID, totalAssetHashes\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Count No. AssetFiles and AssetBlocks"
+					},
+					"response": []
+				},
+				{
+					"name": "Find Relationship matches",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH p=()-[r:FILE_MATCH_ALERT]->() RETURN p LIMIT 500\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "\n\n"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

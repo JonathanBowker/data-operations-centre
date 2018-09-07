@@ -1,0 +1,402 @@
+{
+	"info": {
+		"name": "TheyWorkForYou",
+		"_postman_id": "b7ae82c0-ef17-ad3d-8fc3-0f0554283559",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getMPs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getMPs?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getMPs"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns list of MPs"
+			},
+			"response": []
+		},
+		{
+			"name": "getLORDs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getLords?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getLords"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns list of Lords"
+			},
+			"response": []
+		},
+		{
+			"name": "getMLAs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getMLAs?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getMLAs"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns list of MLAs"
+			},
+			"response": []
+		},
+		{
+			"name": "getMSPs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getMSPs?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getMSPs"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns list of MSPs"
+			},
+			"response": []
+		},
+		{
+			"name": "getComments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getComments?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getComments"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns comments"
+			},
+			"response": []
+		},
+		{
+			"name": "getWrans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getWrans?date=&search=women&person=&gid=&year=&order=&page=&num=&output=js?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getWrans"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": ""
+						},
+						{
+							"key": "search",
+							"value": "women"
+						},
+						{
+							"key": "person",
+							"value": ""
+						},
+						{
+							"key": "gid",
+							"value": ""
+						},
+						{
+							"key": "year",
+							"value": ""
+						},
+						{
+							"key": "order",
+							"value": ""
+						},
+						{
+							"key": "page",
+							"value": ""
+						},
+						{
+							"key": "num",
+							"value": ""
+						},
+						{
+							"key": "output",
+							"value": "js?"
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns Written Answers"
+			},
+			"response": []
+		},
+		{
+			"name": "getConstituency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getConstituency?postcode=rg87nq&output=js&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getConstituency"
+					],
+					"query": [
+						{
+							"key": "postcode",
+							"value": "rg87nq"
+						},
+						{
+							"key": "output",
+							"value": "js"
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Searches for a UK Parliament constituency and returns details"
+			},
+			"response": []
+		},
+		{
+			"name": "getConstituencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getConstituencies&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getConstituencies&key=FmBg7RDE3pLYDtGryfA3obke"
+					]
+				},
+				"description": "Returns list of UK Parliament constituencies"
+			},
+			"response": []
+		},
+		{
+			"name": "getWMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getWMS?date=&search=women&person=&gid=&year=&order=&page=&num=&output=js?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getWMS"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": ""
+						},
+						{
+							"key": "search",
+							"value": "women"
+						},
+						{
+							"key": "person",
+							"value": ""
+						},
+						{
+							"key": "gid",
+							"value": ""
+						},
+						{
+							"key": "year",
+							"value": ""
+						},
+						{
+							"key": "order",
+							"value": ""
+						},
+						{
+							"key": "page",
+							"value": ""
+						},
+						{
+							"key": "num",
+							"value": ""
+						},
+						{
+							"key": "output",
+							"value": "js?"
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns Written Ministerial Statements"
+			},
+			"response": []
+		},
+		{
+			"name": "getSelectCommittee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.theyworkforyou.com/api/getCommittee?name=Health+Committee&output=js?&key=FmBg7RDE3pLYDtGryfA3obke",
+					"protocol": "https",
+					"host": [
+						"www",
+						"theyworkforyou",
+						"com"
+					],
+					"path": [
+						"api",
+						"getCommittee"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Health+Committee"
+						},
+						{
+							"key": "output",
+							"value": "js?"
+						},
+						{
+							"key": "key",
+							"value": "FmBg7RDE3pLYDtGryfA3obke"
+						}
+					]
+				},
+				"description": "Returns members of Select Committee"
+			},
+			"response": []
+		}
+	]
+}

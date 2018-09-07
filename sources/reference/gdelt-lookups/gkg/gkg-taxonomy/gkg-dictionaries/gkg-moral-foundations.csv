@@ -1,0 +1,12 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c25.1,25,1,WORDCOUNT,eng,Moral Foundations Dictionary,HarmVirtue,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.2,25,2,WORDCOUNT,eng,Moral Foundations Dictionary,HarmVice,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.3,25,3,WORDCOUNT,eng,Moral Foundations Dictionary,FairnessVirtue,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.4,25,4,WORDCOUNT,eng,Moral Foundations Dictionary,FairnessVice,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.5,25,5,WORDCOUNT,eng,Moral Foundations Dictionary,IngroupVirtue,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.6,25,6,WORDCOUNT,eng,Moral Foundations Dictionary,IngroupVice,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.7,25,7,WORDCOUNT,eng,Moral Foundations Dictionary,AuthorityVirtue,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.8,25,8,WORDCOUNT,eng,Moral Foundations Dictionary,AuthorityVice,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.9,25,9,WORDCOUNT,eng,Moral Foundations Dictionary,PurityVirtue,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.10,25,10,WORDCOUNT,eng,Moral Foundations Dictionary,PurityVice,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"
+c25.11,25,11,WORDCOUNT,eng,Moral Foundations Dictionary,MoralityGeneral,"Graham, Jesse and Haidt, Jonathan. (online). Moral Foundations Dictionary. Available http://moralfoundations.org/othermaterials"

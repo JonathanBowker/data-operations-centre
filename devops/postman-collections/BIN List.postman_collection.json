@@ -1,0 +1,79 @@
+{
+	"info": {
+		"name": "BIN List",
+		"_postman_id": "7e9d77b7-4745-0f7d-785d-3045c9b82bcb",
+		"description": "binlist.net is a public web service for searching Issuer Identification Numbers (IIN).\n\nThe first 6 digits of a credit card number are known as the Issuer Identification Number (IIN), previously known as Bank Identification Number (BIN). These identify the institution that issued the card to the card holder.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BIN List  JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.binlist.net/json/431940",
+					"protocol": "http",
+					"host": [
+						"www",
+						"binlist",
+						"net"
+					],
+					"path": [
+						"json",
+						"431940"
+					]
+				},
+				"description": "Make HTTP GET requests to http://www.binlist.net/{format}/{bin}\n\nSupported formats are csv, xml or json."
+			},
+			"response": []
+		},
+		{
+			"name": "BIN List  CSV",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.binlist.net/csv/431940",
+					"protocol": "http",
+					"host": [
+						"www",
+						"binlist",
+						"net"
+					],
+					"path": [
+						"csv",
+						"431940"
+					]
+				},
+				"description": "Make HTTP GET requests to http://www.binlist.net/{format}/{bin}\n\nSupported formats are csv, xml or json."
+			},
+			"response": []
+		},
+		{
+			"name": "BIN List  XML",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://www.binlist.net/xml/431940",
+					"protocol": "http",
+					"host": [
+						"www",
+						"binlist",
+						"net"
+					],
+					"path": [
+						"xml",
+						"431940"
+					]
+				},
+				"description": "Make HTTP GET requests to http://www.binlist.net/{format}/{bin}\n\nSupported formats are csv, xml or json."
+			},
+			"response": []
+		}
+	]
+}

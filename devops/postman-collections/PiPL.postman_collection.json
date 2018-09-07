@@ -1,0 +1,64 @@
+{
+	"info": {
+		"name": "PiPL",
+		"_postman_id": "24c91519-3c89-7e67-339a-566bcb47f17f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://api.pipl.com/search/v4/",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "jonathanbowker",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "match1miss",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "key",
+						"value": "BUSINESS-PREMIUM-DEMO-t0r4umlmkidqvx5eknwvht8z"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://api.pipl.com/search/v4/",
+					"protocol": "http",
+					"host": [
+						"api",
+						"pipl",
+						"com"
+					],
+					"path": [
+						"search",
+						"v4",
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

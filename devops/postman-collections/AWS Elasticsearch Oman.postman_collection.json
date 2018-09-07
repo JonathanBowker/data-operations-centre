@@ -1,0 +1,1530 @@
+{
+	"info": {
+		"name": "AWS Elasticsearch Oman",
+		"_postman_id": "71128f63-cda5-a258-0a63-b53417331bc4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "02. Mappings",
+			"description": "",
+			"item": [
+				{
+					"name": "Put a Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tweet\" : {\n    \"properties\": {\n          \"@timestamp\": {\n            \"type\": \"date\",\n            \"format\": \"dateOptionalTime\"\n          },\n          \"@version\": {\n            \"type\": \"string\"\n          },\n          \"coordinates\": {\n            \"properties\": {\n              \"coordinates\": {\n                \"type\": \"double\"\n              },\n              \"type\": {\n                \"type\": \"string\"\n              }\n            }\n          },\n          \"created_at\": {\n            \"type\": \"string\"\n          },\n          \"entities\": {\n            \"properties\": {\n              \"hashtags\": {\n                \"properties\": {\n                  \"indices\": {\n                    \"type\": \"long\"\n                  },\n                  \"text\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"media\": {\n                \"properties\": {\n                  \"display_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"expanded_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"indices\": {\n                    \"type\": \"long\"\n                  },\n                  \"media_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"media_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"sizes\": {\n                    \"properties\": {\n                      \"large\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"medium\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"small\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"thumb\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      }\n                    }\n                  },\n                  \"source_status_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"source_status_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"source_user_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"source_user_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"type\": {\n                    \"type\": \"string\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"urls\": {\n                \"properties\": {\n                  \"display_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"expanded_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"indices\": {\n                    \"type\": \"long\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"user_mentions\": {\n                \"properties\": {\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"indices\": {\n                    \"type\": \"long\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"screen_name\": {\n                    \"type\": \"string\"\n                  }\n                }\n              }\n            }\n          },\n          \"extended_entities\": {\n            \"properties\": {\n              \"media\": {\n                \"properties\": {\n                  \"display_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"expanded_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"indices\": {\n                    \"type\": \"long\"\n                  },\n                  \"media_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"media_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"sizes\": {\n                    \"properties\": {\n                      \"large\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"medium\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"small\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      },\n                      \"thumb\": {\n                        \"properties\": {\n                          \"h\": {\n                            \"type\": \"long\"\n                          },\n                          \"resize\": {\n                            \"type\": \"string\"\n                          },\n                          \"w\": {\n                            \"type\": \"long\"\n                          }\n                        }\n                      }\n                    }\n                  },\n                  \"source_status_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"source_status_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"source_user_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"source_user_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"type\": {\n                    \"type\": \"string\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  },\n                  \"video_info\": {\n                    \"properties\": {\n                      \"aspect_ratio\": {\n                        \"type\": \"long\"\n                      },\n                      \"duration_millis\": {\n                        \"type\": \"long\"\n                      },\n                      \"variants\": {\n                        \"properties\": {\n                          \"bitrate\": {\n                            \"type\": \"long\"\n                          },\n                          \"content_type\": {\n                            \"type\": \"string\"\n                          },\n                          \"url\": {\n                            \"type\": \"string\"\n                          }\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          },\n          \"favorite_count\": {\n            \"type\": \"long\"\n          },\n          \"favorited\": {\n            \"type\": \"boolean\"\n          },\n          \"filter_level\": {\n            \"type\": \"string\"\n          },\n          \"geo\": {\n            \"properties\": {\n              \"coordinates\": {\n                \"type\": \"double\"\n              },\n              \"type\": {\n                \"type\": \"string\"\n              }\n            }\n          },\n          \"id\": {\n            \"type\": \"long\"\n          },\n          \"id_str\": {\n            \"type\": \"string\"\n          },\n          \"in_reply_to_screen_name\": {\n            \"type\": \"string\"\n          },\n          \"in_reply_to_status_id\": {\n            \"type\": \"long\"\n          },\n          \"in_reply_to_status_id_str\": {\n            \"type\": \"string\"\n          },\n          \"in_reply_to_user_id\": {\n            \"type\": \"long\"\n          },\n          \"in_reply_to_user_id_str\": {\n            \"type\": \"string\"\n          },\n          \"is_quote_status\": {\n            \"type\": \"boolean\"\n          },\n          \"lang\": {\n            \"type\": \"string\"\n          },\n          \"place\": {\n            \"properties\": {\n              \"attributes\": {\n                \"type\": \"object\"\n              },\n              \"bounding_box\": {\n                \"properties\": {\n                  \"coordinates\": {\n                    \"type\": \"double\"\n                  },\n                  \"type\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"country\": {\n                \"type\": \"string\"\n              },\n              \"country_code\": {\n                \"type\": \"string\"\n              },\n              \"full_name\": {\n                \"type\": \"string\"\n              },\n              \"id\": {\n                \"type\": \"string\"\n              },\n              \"name\": {\n                \"type\": \"string\"\n              },\n              \"place_type\": {\n                \"type\": \"string\"\n              },\n              \"url\": {\n                \"type\": \"string\"\n              }\n            }\n          },\n          \"possibly_sensitive\": {\n            \"type\": \"boolean\"\n          },\n          \"quoted_status\": {\n            \"properties\": {\n              \"created_at\": {\n                \"type\": \"string\"\n              },\n              \"entities\": {\n                \"properties\": {\n                  \"hashtags\": {\n                    \"properties\": {\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"text\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"media\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"media_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"media_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"sizes\": {\n                        \"properties\": {\n                          \"large\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"medium\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"small\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"thumb\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          }\n                        }\n                      },\n                      \"source_status_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_status_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"source_user_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_user_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"type\": {\n                        \"type\": \"string\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"urls\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"user_mentions\": {\n                    \"properties\": {\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"name\": {\n                        \"type\": \"string\"\n                      },\n                      \"screen_name\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  }\n                }\n              },\n              \"extended_entities\": {\n                \"properties\": {\n                  \"media\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"media_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"media_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"sizes\": {\n                        \"properties\": {\n                          \"large\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"medium\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"small\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"thumb\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          }\n                        }\n                      },\n                      \"source_status_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_status_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"source_user_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_user_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"type\": {\n                        \"type\": \"string\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      },\n                      \"video_info\": {\n                        \"properties\": {\n                          \"aspect_ratio\": {\n                            \"type\": \"long\"\n                          },\n                          \"duration_millis\": {\n                            \"type\": \"long\"\n                          },\n                          \"variants\": {\n                            \"properties\": {\n                              \"bitrate\": {\n                                \"type\": \"long\"\n                              },\n                              \"content_type\": {\n                                \"type\": \"string\"\n                              },\n                              \"url\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    }\n                  }\n                }\n              },\n              \"favorite_count\": {\n                \"type\": \"long\"\n              },\n              \"favorited\": {\n                \"type\": \"boolean\"\n              },\n              \"filter_level\": {\n                \"type\": \"string\"\n              },\n              \"id\": {\n                \"type\": \"long\"\n              },\n              \"id_str\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_screen_name\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_status_id\": {\n                \"type\": \"long\"\n              },\n              \"in_reply_to_status_id_str\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_user_id\": {\n                \"type\": \"long\"\n              },\n              \"in_reply_to_user_id_str\": {\n                \"type\": \"string\"\n              },\n              \"is_quote_status\": {\n                \"type\": \"boolean\"\n              },\n              \"lang\": {\n                \"type\": \"string\"\n              },\n              \"possibly_sensitive\": {\n                \"type\": \"boolean\"\n              },\n              \"quoted_status_id\": {\n                \"type\": \"long\"\n              },\n              \"quoted_status_id_str\": {\n                \"type\": \"string\"\n              },\n              \"retweet_count\": {\n                \"type\": \"long\"\n              },\n              \"retweeted\": {\n                \"type\": \"boolean\"\n              },\n              \"scopes\": {\n                \"properties\": {\n                  \"followers\": {\n                    \"type\": \"boolean\"\n                  }\n                }\n              },\n              \"source\": {\n                \"type\": \"string\"\n              },\n              \"text\": {\n                \"type\": \"string\"\n              },\n              \"truncated\": {\n                \"type\": \"boolean\"\n              },\n              \"user\": {\n                \"properties\": {\n                  \"contributors_enabled\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"created_at\": {\n                    \"type\": \"string\"\n                  },\n                  \"default_profile\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"default_profile_image\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"description\": {\n                    \"type\": \"string\"\n                  },\n                  \"favourites_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"followers_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"friends_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"geo_enabled\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"is_translator\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"lang\": {\n                    \"type\": \"string\"\n                  },\n                  \"listed_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"location\": {\n                    \"type\": \"string\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_image_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_image_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_tile\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"profile_banner_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_image_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_image_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_link_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_sidebar_border_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_sidebar_fill_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_text_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_use_background_image\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"protected\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"screen_name\": {\n                    \"type\": \"string\"\n                  },\n                  \"statuses_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"time_zone\": {\n                    \"type\": \"string\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  },\n                  \"utc_offset\": {\n                    \"type\": \"long\"\n                  },\n                  \"verified\": {\n                    \"type\": \"boolean\"\n                  }\n                }\n              }\n            }\n          },\n          \"quoted_status_id\": {\n            \"type\": \"long\"\n          },\n          \"quoted_status_id_str\": {\n            \"type\": \"string\"\n          },\n          \"retweet_count\": {\n            \"type\": \"long\"\n          },\n          \"retweeted\": {\n            \"type\": \"boolean\"\n          },\n          \"retweeted_status\": {\n            \"properties\": {\n              \"coordinates\": {\n                \"properties\": {\n                  \"coordinates\": {\n                    \"type\": \"double\"\n                  },\n                  \"type\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"created_at\": {\n                \"type\": \"string\"\n              },\n              \"entities\": {\n                \"properties\": {\n                  \"hashtags\": {\n                    \"properties\": {\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"text\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"media\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"media_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"media_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"sizes\": {\n                        \"properties\": {\n                          \"large\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"medium\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"small\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"thumb\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          }\n                        }\n                      },\n                      \"source_status_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_status_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"source_user_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_user_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"type\": {\n                        \"type\": \"string\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"urls\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"user_mentions\": {\n                    \"properties\": {\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"name\": {\n                        \"type\": \"string\"\n                      },\n                      \"screen_name\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  }\n                }\n              },\n              \"extended_entities\": {\n                \"properties\": {\n                  \"media\": {\n                    \"properties\": {\n                      \"display_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"expanded_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"indices\": {\n                        \"type\": \"long\"\n                      },\n                      \"media_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"media_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"sizes\": {\n                        \"properties\": {\n                          \"large\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"medium\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"small\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          },\n                          \"thumb\": {\n                            \"properties\": {\n                              \"h\": {\n                                \"type\": \"long\"\n                              },\n                              \"resize\": {\n                                \"type\": \"string\"\n                              },\n                              \"w\": {\n                                \"type\": \"long\"\n                              }\n                            }\n                          }\n                        }\n                      },\n                      \"source_status_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_status_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"source_user_id\": {\n                        \"type\": \"long\"\n                      },\n                      \"source_user_id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"type\": {\n                        \"type\": \"string\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      },\n                      \"video_info\": {\n                        \"properties\": {\n                          \"aspect_ratio\": {\n                            \"type\": \"long\"\n                          },\n                          \"duration_millis\": {\n                            \"type\": \"long\"\n                          },\n                          \"variants\": {\n                            \"properties\": {\n                              \"bitrate\": {\n                                \"type\": \"long\"\n                              },\n                              \"content_type\": {\n                                \"type\": \"string\"\n                              },\n                              \"url\": {\n                                \"type\": \"string\"\n                              }\n                            }\n                          }\n                        }\n                      }\n                    }\n                  }\n                }\n              },\n              \"favorite_count\": {\n                \"type\": \"long\"\n              },\n              \"favorited\": {\n                \"type\": \"boolean\"\n              },\n              \"filter_level\": {\n                \"type\": \"string\"\n              },\n              \"geo\": {\n                \"properties\": {\n                  \"coordinates\": {\n                    \"type\": \"double\"\n                  },\n                  \"type\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"id\": {\n                \"type\": \"long\"\n              },\n              \"id_str\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_screen_name\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_status_id\": {\n                \"type\": \"long\"\n              },\n              \"in_reply_to_status_id_str\": {\n                \"type\": \"string\"\n              },\n              \"in_reply_to_user_id\": {\n                \"type\": \"long\"\n              },\n              \"in_reply_to_user_id_str\": {\n                \"type\": \"string\"\n              },\n              \"is_quote_status\": {\n                \"type\": \"boolean\"\n              },\n              \"lang\": {\n                \"type\": \"string\"\n              },\n              \"place\": {\n                \"properties\": {\n                  \"attributes\": {\n                    \"type\": \"object\"\n                  },\n                  \"bounding_box\": {\n                    \"properties\": {\n                      \"coordinates\": {\n                        \"type\": \"double\"\n                      },\n                      \"type\": {\n                        \"type\": \"string\"\n                      }\n                    }\n                  },\n                  \"country\": {\n                    \"type\": \"string\"\n                  },\n                  \"country_code\": {\n                    \"type\": \"string\"\n                  },\n                  \"full_name\": {\n                    \"type\": \"string\"\n                  },\n                  \"id\": {\n                    \"type\": \"string\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"place_type\": {\n                    \"type\": \"string\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  }\n                }\n              },\n              \"possibly_sensitive\": {\n                \"type\": \"boolean\"\n              },\n              \"quoted_status\": {\n                \"properties\": {\n                  \"created_at\": {\n                    \"type\": \"string\"\n                  },\n                  \"entities\": {\n                    \"properties\": {\n                      \"hashtags\": {\n                        \"properties\": {\n                          \"indices\": {\n                            \"type\": \"long\"\n                          },\n                          \"text\": {\n                            \"type\": \"string\"\n                          }\n                        }\n                      },\n                      \"media\": {\n                        \"properties\": {\n                          \"display_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"expanded_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"id\": {\n                            \"type\": \"long\"\n                          },\n                          \"id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"indices\": {\n                            \"type\": \"long\"\n                          },\n                          \"media_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"media_url_https\": {\n                            \"type\": \"string\"\n                          },\n                          \"sizes\": {\n                            \"properties\": {\n                              \"large\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"medium\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"small\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"thumb\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              }\n                            }\n                          },\n                          \"source_status_id\": {\n                            \"type\": \"long\"\n                          },\n                          \"source_status_id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"source_user_id\": {\n                            \"type\": \"long\"\n                          },\n                          \"source_user_id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"type\": {\n                            \"type\": \"string\"\n                          },\n                          \"url\": {\n                            \"type\": \"string\"\n                          }\n                        }\n                      },\n                      \"urls\": {\n                        \"properties\": {\n                          \"display_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"expanded_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"indices\": {\n                            \"type\": \"long\"\n                          },\n                          \"url\": {\n                            \"type\": \"string\"\n                          }\n                        }\n                      },\n                      \"user_mentions\": {\n                        \"properties\": {\n                          \"id\": {\n                            \"type\": \"long\"\n                          },\n                          \"id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"indices\": {\n                            \"type\": \"long\"\n                          },\n                          \"name\": {\n                            \"type\": \"string\"\n                          },\n                          \"screen_name\": {\n                            \"type\": \"string\"\n                          }\n                        }\n                      }\n                    }\n                  },\n                  \"extended_entities\": {\n                    \"properties\": {\n                      \"media\": {\n                        \"properties\": {\n                          \"display_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"expanded_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"id\": {\n                            \"type\": \"long\"\n                          },\n                          \"id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"indices\": {\n                            \"type\": \"long\"\n                          },\n                          \"media_url\": {\n                            \"type\": \"string\"\n                          },\n                          \"media_url_https\": {\n                            \"type\": \"string\"\n                          },\n                          \"sizes\": {\n                            \"properties\": {\n                              \"large\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"medium\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"small\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              },\n                              \"thumb\": {\n                                \"properties\": {\n                                  \"h\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"resize\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"w\": {\n                                    \"type\": \"long\"\n                                  }\n                                }\n                              }\n                            }\n                          },\n                          \"source_status_id\": {\n                            \"type\": \"long\"\n                          },\n                          \"source_status_id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"source_user_id\": {\n                            \"type\": \"long\"\n                          },\n                          \"source_user_id_str\": {\n                            \"type\": \"string\"\n                          },\n                          \"type\": {\n                            \"type\": \"string\"\n                          },\n                          \"url\": {\n                            \"type\": \"string\"\n                          },\n                          \"video_info\": {\n                            \"properties\": {\n                              \"aspect_ratio\": {\n                                \"type\": \"long\"\n                              },\n                              \"duration_millis\": {\n                                \"type\": \"long\"\n                              },\n                              \"variants\": {\n                                \"properties\": {\n                                  \"bitrate\": {\n                                    \"type\": \"long\"\n                                  },\n                                  \"content_type\": {\n                                    \"type\": \"string\"\n                                  },\n                                  \"url\": {\n                                    \"type\": \"string\"\n                                  }\n                                }\n                              }\n                            }\n                          }\n                        }\n                      }\n                    }\n                  },\n                  \"favorite_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"favorited\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"filter_level\": {\n                    \"type\": \"string\"\n                  },\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"in_reply_to_screen_name\": {\n                    \"type\": \"string\"\n                  },\n                  \"in_reply_to_status_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"in_reply_to_status_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"in_reply_to_user_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"in_reply_to_user_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"is_quote_status\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"lang\": {\n                    \"type\": \"string\"\n                  },\n                  \"possibly_sensitive\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"quoted_status_id\": {\n                    \"type\": \"long\"\n                  },\n                  \"quoted_status_id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"retweet_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"retweeted\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"source\": {\n                    \"type\": \"string\"\n                  },\n                  \"text\": {\n                    \"type\": \"string\"\n                  },\n                  \"truncated\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"user\": {\n                    \"properties\": {\n                      \"contributors_enabled\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"created_at\": {\n                        \"type\": \"string\"\n                      },\n                      \"default_profile\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"default_profile_image\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"description\": {\n                        \"type\": \"string\"\n                      },\n                      \"favourites_count\": {\n                        \"type\": \"long\"\n                      },\n                      \"followers_count\": {\n                        \"type\": \"long\"\n                      },\n                      \"friends_count\": {\n                        \"type\": \"long\"\n                      },\n                      \"geo_enabled\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"id\": {\n                        \"type\": \"long\"\n                      },\n                      \"id_str\": {\n                        \"type\": \"string\"\n                      },\n                      \"is_translator\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"lang\": {\n                        \"type\": \"string\"\n                      },\n                      \"listed_count\": {\n                        \"type\": \"long\"\n                      },\n                      \"location\": {\n                        \"type\": \"string\"\n                      },\n                      \"name\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_background_color\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_background_image_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_background_image_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_background_tile\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"profile_banner_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_image_url\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_image_url_https\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_link_color\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_sidebar_border_color\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_sidebar_fill_color\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_text_color\": {\n                        \"type\": \"string\"\n                      },\n                      \"profile_use_background_image\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"protected\": {\n                        \"type\": \"boolean\"\n                      },\n                      \"screen_name\": {\n                        \"type\": \"string\"\n                      },\n                      \"statuses_count\": {\n                        \"type\": \"long\"\n                      },\n                      \"time_zone\": {\n                        \"type\": \"string\"\n                      },\n                      \"url\": {\n                        \"type\": \"string\"\n                      },\n                      \"utc_offset\": {\n                        \"type\": \"long\"\n                      },\n                      \"verified\": {\n                        \"type\": \"boolean\"\n                      }\n                    }\n                  }\n                }\n              },\n              \"quoted_status_id\": {\n                \"type\": \"long\"\n              },\n              \"quoted_status_id_str\": {\n                \"type\": \"string\"\n              },\n              \"retweet_count\": {\n                \"type\": \"long\"\n              },\n              \"retweeted\": {\n                \"type\": \"boolean\"\n              },\n              \"scopes\": {\n                \"properties\": {\n                  \"followers\": {\n                    \"type\": \"boolean\"\n                  }\n                }\n              },\n              \"source\": {\n                \"type\": \"string\"\n              },\n              \"text\": {\n                \"type\": \"string\"\n              },\n              \"truncated\": {\n                \"type\": \"boolean\"\n              },\n              \"user\": {\n                \"properties\": {\n                  \"contributors_enabled\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"created_at\": {\n                    \"type\": \"string\"\n                  },\n                  \"default_profile\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"default_profile_image\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"description\": {\n                    \"type\": \"string\"\n                  },\n                  \"favourites_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"followers_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"friends_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"geo_enabled\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"id\": {\n                    \"type\": \"long\"\n                  },\n                  \"id_str\": {\n                    \"type\": \"string\"\n                  },\n                  \"is_translator\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"lang\": {\n                    \"type\": \"string\"\n                  },\n                  \"listed_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"location\": {\n                    \"type\": \"string\"\n                  },\n                  \"name\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_image_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_image_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_background_tile\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"profile_banner_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_image_url\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_image_url_https\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_link_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_sidebar_border_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_sidebar_fill_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_text_color\": {\n                    \"type\": \"string\"\n                  },\n                  \"profile_use_background_image\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"protected\": {\n                    \"type\": \"boolean\"\n                  },\n                  \"screen_name\": {\n                    \"type\": \"string\"\n                  },\n                  \"statuses_count\": {\n                    \"type\": \"long\"\n                  },\n                  \"time_zone\": {\n                    \"type\": \"string\"\n                  },\n                  \"url\": {\n                    \"type\": \"string\"\n                  },\n                  \"utc_offset\": {\n                    \"type\": \"long\"\n                  },\n                  \"verified\": {\n                    \"type\": \"boolean\"\n                  }\n                }\n              }\n            }\n          },\n          \"source\": {\n            \"type\": \"string\"\n          },\n          \"text\": {\n            \"type\": \"string\"\n          },\n          \"timestamp_ms\": {\n            \"type\": \"string\"\n          },\n          \"truncated\": {\n            \"type\": \"boolean\"\n          },\n          \"user\": {\n            \"properties\": {\n              \"contributors_enabled\": {\n                \"type\": \"boolean\"\n              },\n              \"created_at\": {\n                \"type\": \"string\"\n              },\n              \"default_profile\": {\n                \"type\": \"boolean\"\n              },\n              \"default_profile_image\": {\n                \"type\": \"boolean\"\n              },\n              \"description\": {\n                \"type\": \"string\"\n              },\n              \"favourites_count\": {\n                \"type\": \"long\"\n              },\n              \"followers_count\": {\n                \"type\": \"long\"\n              },\n              \"friends_count\": {\n                \"type\": \"long\"\n              },\n              \"geo_enabled\": {\n                \"type\": \"boolean\"\n              },\n              \"id\": {\n                \"type\": \"long\"\n              },\n              \"id_str\": {\n                \"type\": \"string\"\n              },\n              \"is_translator\": {\n                \"type\": \"boolean\"\n              },\n              \"lang\": {\n                \"type\": \"string\"\n              },\n              \"listed_count\": {\n                \"type\": \"long\"\n              },\n              \"location\": {\n                \"type\": \"string\"\n              },\n              \"name\": {\n                \"type\": \"string\"\n              },\n              \"profile_background_color\": {\n                \"type\": \"string\"\n              },\n              \"profile_background_image_url\": {\n                \"type\": \"string\"\n              },\n              \"profile_background_image_url_https\": {\n                \"type\": \"string\"\n              },\n              \"profile_background_tile\": {\n                \"type\": \"boolean\"\n              },\n              \"profile_banner_url\": {\n                \"type\": \"string\"\n              },\n              \"profile_image_url\": {\n                \"type\": \"string\"\n              },\n              \"profile_image_url_https\": {\n                \"type\": \"string\"\n              },\n              \"profile_link_color\": {\n                \"type\": \"string\"\n              },\n              \"profile_sidebar_border_color\": {\n                \"type\": \"string\"\n              },\n              \"profile_sidebar_fill_color\": {\n                \"type\": \"string\"\n              },\n              \"profile_text_color\": {\n                \"type\": \"string\"\n              },\n              \"profile_use_background_image\": {\n                \"type\": \"boolean\"\n              },\n              \"protected\": {\n                \"type\": \"boolean\"\n              },\n              \"screen_name\": {\n                \"type\": \"string\"\n              },\n              \"statuses_count\": {\n                \"type\": \"long\"\n              },\n              \"time_zone\": {\n                \"type\": \"string\"\n              },\n              \"url\": {\n                \"type\": \"string\"\n              },\n              \"utc_offset\": {\n                \"type\": \"long\"\n              },\n              \"verified\": {\n                \"type\": \"boolean\"\n              }\n            }\n          }\n        }\n      }\n    }\n  },\n  \".kibana-4\": {\n    \"mappings\": {\n      \"config\": {\n        \"properties\": {\n          \"buildNum\": {\n            \"type\": \"long\"\n          },\n          \"defaultIndex\": {\n            \"type\": \"string\"\n          }\n        }\n      },\n      \"index-pattern\": {\n        \"properties\": {\n          \"customFormats\": {\n            \"type\": \"string\"\n          },\n          \"fields\": {\n            \"type\": \"string\"\n          },\n          \"intervalName\": {\n            \"type\": \"string\"\n          },\n          \"timeFieldName\": {\n            \"type\": \"string\"\n          },\n          \"title\": {\n            \"type\": \"string\"\n          }\n        }\n      },\n      \"search\": {\n        \"properties\": {\n          \"columns\": {\n            \"type\": \"string\"\n          },\n          \"description\": {\n            \"type\": \"string\"\n          },\n          \"hits\": {\n            \"type\": \"integer\"\n          },\n          \"kibanaSavedObjectMeta\": {\n            \"properties\": {\n              \"searchSourceJSON\": {\n                \"type\": \"string\"\n              }\n            }\n          },\n          \"sort\": {\n            \"type\": \"string\"\n          },\n          \"title\": {\n            \"type\": \"string\"\n          },\n          \"version\": {\n            \"type\": \"integer\"\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter-06.02.2016/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter-06.02.2016",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Mappings in the Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Mappings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Field Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping/field/message",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping",
+								"field",
+								"message"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Type Exists",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Mapping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Index Exists copy",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "05. Templates",
+			"description": "",
+			"item": [
+				{
+					"name": "Add a Template",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_template/template_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add another Template",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_template/template_2",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Templates",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_settings",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Aliases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "01. Indices",
+			"description": "",
+			"item": [
+				{
+					"name": "Get List of Indeces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/_cat/indices?v",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_cat",
+								"indices"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": null
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Twitter Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-mod-laopxpwdtplkzzflwgqnrg4uxy.eu-west-1.es.amazonaws.com/bbcm/",
+							"protocol": "https",
+							"host": [
+								"search-mod-laopxpwdtplkzzflwgqnrg4uxy",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Instagram Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/instagram/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"instagram",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Facebook Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/faceboook/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"faceboook",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create News Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/news/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"news",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Forum Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/news/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"news",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/_settings",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/_settings",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Index Exists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-mod-laopxpwdtplkzzflwgqnrg4uxy.eu-west-1.es.amazonaws.com/bbcm/",
+							"protocol": "https",
+							"host": [
+								"search-mod-laopxpwdtplkzzflwgqnrg4uxy",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Open an Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/_open",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_open"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Close an Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/_close",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_close"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update an Index Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/_settings",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put a tweet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/tweet/1",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-mod-laopxpwdtplkzzflwgqnrg4uxy.eu-west-1.es.amazonaws.com/bbcm/_search",
+							"protocol": "https",
+							"host": [
+								"search-mod-laopxpwdtplkzzflwgqnrg4uxy",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"_search"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index w/ JSON Settings copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/twitter/",
+							"protocol": "https",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "06. Warmers",
+			"description": "",
+			"item": [
+				{
+					"name": "Create an Index w/ a Warmer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put another Warmer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer_2",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer_2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Warmer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Warmers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Warmers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_warmer/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_warmer",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Warmers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "08. More POSTs",
+			"description": "",
+			"item": [
+				{
+					"name": "Clear Cache",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_cache/clear",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_cache",
+								"clear"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Flush",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_flush",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_flush"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_refresh",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_refresh"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Optimize",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_optimize",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_optimize"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "03. Aliases",
+			"description": "",
+			"item": [
+				{
+					"name": "Add an Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Aliases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removes the Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removes the Alias and Add an Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Filtered Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Routing Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Aliases in the Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all Aliases in the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_aliases/*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_aliases",
+								"*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "04. Analyse",
+			"description": "",
+			"item": [
+				{
+					"name": "Standard Analyser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_analyze?analyzer=standard",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "analyzer",
+									"value": "standard",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Tokeniser and Filters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/_analyze?tokenizer=keyword&filters=lowercase",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "tokenizer",
+									"value": "keyword",
+									"equals": true
+								},
+								{
+									"key": "filters",
+									"value": "lowercase",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Analyser of the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_analyze?text=this+is+a+test",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "this+is+a+test",
+									"equals": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "07. More GETs",
+			"description": "",
+			"item": [
+				{
+					"name": "Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_status",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_status"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_stats",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_stats"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Segments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_segments",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_segments"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_recovery",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_recovery"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,473 @@
+{
+	"info": {
+		"name": "ElasticSearch/Neo4j Localhost",
+		"_postman_id": "8e941db0-cb9f-2fb1-0fe9-b8b4e46b090f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200"
+				},
+				"description": "Get the ElasticSearch instance status."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Index",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						""
+					]
+				},
+				"description": "Create an index on the ElasticSearch cluster."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Type Schema",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/Movie/_mapping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"Movie",
+						"_mapping"
+					]
+				},
+				"description": "Create a type within our index with a defined schema."
+			},
+			"response": []
+		},
+		{
+			"name": "View Index Schema",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/_mapping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"_mapping"
+					]
+				},
+				"description": "Lookup the index's schema."
+			},
+			"response": []
+		},
+		{
+			"name": "Create Bulk Documents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/page/_bulk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"page",
+						"_bulk"
+					]
+				},
+				"description": "Create documents within a type via the bulk interface."
+			},
+			"response": []
+		},
+		{
+			"name": "Create/Update Single Document",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/comment/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"comment",
+						"1"
+					]
+				},
+				"description": "Create documents within a type with the provided ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Create/Update Single Document AutoGenerate ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/comment/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"comment",
+						""
+					]
+				},
+				"description": "Create documents within a type with an auto generated ID."
+			},
+			"response": []
+		},
+		{
+			"name": "Search Index",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = JSON.parse(responseBody);",
+							"",
+							"tests[\"meta code 200\"] = data.meta.code === 200;",
+							"tests[\"has items\"] = data.response.items != null;",
+							"tests[\"has owned\"] = data.response.items != null;",
+							"tests[\"has featured\"] = data.response.items.featured != null;",
+							"tests[\"has favorites\"] = data.response.items.favorites != null;",
+							"tests[\"has wishlist\"] = data.response.items.wishlist != null;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "j3wd479xdi210i2i6m5t5guvr9xm5ui"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth cjfpm7c9jzupzuh0q460kotm9jzw12p"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.twitchtv.v3+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:9200/neo4j-index/_search",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9200",
+					"path": [
+						"neo4j-index",
+						"_search"
+					]
+				},
+				"description": "Search a specific index."
+			},
+			"response": []
+		}
+	]
+}

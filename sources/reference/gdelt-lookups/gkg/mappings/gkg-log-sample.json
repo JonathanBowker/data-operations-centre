@@ -1,0 +1,290 @@
+{
+  "GKGRECORDID": "20161215074500-0",
+  "V2.1DATE": 20161200000000,
+  "V2SOURCECOLLECTIONIDENTIFIER": 2,
+  "V2SOURCECOMMONNAME": "BBC Monitoring",
+  "V2DOCUMENTIDENTIFIER": "Islamic Republic of Iran News Network, Tehran/BBC Monitoring/(c) BBC",
+  "V1COUNTS": "",
+  "V2.1COUNTS": "",
+  "V1THEMES": "TAX_ETHNICITY;TAX_ETHNICITY_IRANIAN;LEADER;TAX_FNCACT;TAX_FNCACT_PRESIDENT;USPEC_POLITICS_GENERAL1;WB_2433_CONFLICT_AND_VIOLENCE;WB_2432_FRAGILITY_CONFLICT_AND_VIOLENCE;TAX_RELIGION;TAX_RELIGION_MUSLIM;TAX_ETHNICITY_MUSLIM;CRISISLEX_CRISISLEXREC;TAX_RELIGION_ISLAMIC;TAX_RELIGION_ISLAM;IDEOLOGY;CRIME_LOOTING;UNGP_FORESTS_RIVERS_OCEANS;TAX_RELIGION_MUSLIMS;TAX_ETHNICITY_MUSLIMS;GENERAL_GOVERNMENT;UNREST_BELLIGERENT;WB_678_DIGITAL_GOVERNMENT;WB_694_BROADCAST_AND_MEDIA;WB_133_INFORMATION_AND_COMMUNICATION_TECHNOLOGIES;MEDIA_MSM;",
+  "V2ENHANCEDTHEMES": [
+    {
+      "Theme": "IDEOLOGY,",
+      "Offset": "303"
+    },
+    {
+      "Theme": "WB_2433_CONFLICT_AND_VIOLENCE",
+      "Offset": "77"
+    }
+  ],
+  "V1LOCATIONS": [
+    {
+      "LocationType": "1",
+      "LocationFullName": "Syria",
+      "LocationCountryCode": "SY",
+      "LocationADM1Code": "SY",
+      "LocationLatitude": "35",
+      "LocationLongitude": "38",
+      "LocationFeatureID": "SY"
+    },
+    {
+      "LocationType": "1",
+      "LocationFullName": "Syria",
+      "LocationCountryCode": "SY",
+      "LocationADM1Code": "SY",
+      "LocationLatitude": "35",
+      "LocationLongitude": "38",
+      "LocationFeatureID": "SY"
+    }
+  ],
+  "V2ENHANCEDLOCATIONS": [
+    {
+      "LocationType": "1",
+      "LocationFullName": "Syria",
+      "LocationCountryCode": "SY",
+      "LocationADM1Code": "SY",
+      "Location ADM2Code": "SY",
+      "LocationLatitude": "35",
+      "LocationLongitude": "38",
+      "LocationFeatureID": "SY",
+      "Offset": "398"
+    },
+    {
+      "LocationType": "1",
+      "LocationFullName": "Syria",
+      "LocationCountryCode": "SY",
+      "LocationADM1Code": "SY",
+      "Location ADM2Code": "SY",
+      "LocationLatitude": "35",
+      "LocationLongitude": "38",
+      "LocationFeatureID": "SY",
+      "Offset": "398"
+    }
+  ],
+  "V1PERSONS": "hassan rouhani",
+  "V2ENHANCEDPERSONS": [
+    {
+      "Person": "Hassan Rouhani",
+      "Offset": "32"
+    },
+    {
+      "Person": "Hassan Rouhani",
+      "Offset": "32"
+    }
+  ],
+  "V1ORGANIZATIONS": "international islamic unity conference",
+  "V2ENHANCEDORGANIZATIONS": [
+    {
+      "Organization": "International Islamic Unity Conference",
+      "Offset": "388"
+    }
+  ],
+  "V1.5TONE": {
+    "Tone": "-7.58293838862559",
+    "Positive Score": "2.3696682464455",
+    "Negative Score": "9.95260663507109",
+    "Polarity.": "12.3222748815166",
+    "ActivityRefDensity": "17.0616113744076",
+    "Self/GroupRefDensity": "0.4739336492891,193"
+  },
+  "V2.1ENHANCEDDATES": [
+    {
+      "DateResolution": "1",
+      "Month": "12",
+      "Day": "29",
+      "Year": "2016",
+      "Offset": "122"
+    },
+    {
+      "DateResolution": "4",
+      "Month": "12",
+      "Day": "29",
+      "Year": "2016",
+      "Offset": "235"
+    }
+  ],
+  "V2GCAM": {
+    "WordCount": "193",
+    "Leixcons": {
+      "AffectiveNorms": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "BodyBoundaries": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "FoestValues": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "GKGThemes": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "GeneralEnquirers": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "Hedonometers": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "HogengraadMotives": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "HogengraadTIME": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "LexicoderSentiments": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "LexicoderTopics": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "LinguisticInquiries": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "MultiLingualSenticons": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "Temperaments/Elements": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ],
+      "MoralFoundations": [
+        {
+          "Dimension": "Something",
+          "DimensionCount": 2
+        },
+        {
+          "Dimension": "Ealse",
+          "DimensionCount": 3
+        }
+      ]
+    },
+    "V2.1SHARINGIMAGE": "",
+    "V2.1RELATEDIMAGES": "",
+    "V2.1SOCIALIMAGEEMBEDS": "",
+    "V2.1SOCIALVIDEOEMBEDS": "",
+    "V2.1QUOTATIONS": [
+      {
+        "Offset": "Iranian President Hassan Rouhani,",
+        "Length": "33",
+        "Verb": "33",
+        "Quote": "33"
+      },
+      {
+        "Offset": "Iranian President Hassan Rouhani,",
+        "Length": "33",
+        "Verb": "33",
+        "Quote": "33"
+      }
+    ],
+    "V2.1ALLNAMES": [
+      {
+        "Person": "Iranian President Hassan Rouhani,",
+        "Offset": "33"
+      },
+      {
+        "Person": "Middle East",
+        "Offset": "135"
+      },
+      {
+        "Person": "International Islamic Unity Conference",
+        "Offset": "396"
+      },
+      {
+        "Person": "English-language Presse",
+        "Offset": "1348"
+      }
+    ],
+    "V2.1AMOUNTS": "",
+    "V2.1TRANSLATIONINFO": "",
+    "V2EXTRASXML": ""
+  }
+}

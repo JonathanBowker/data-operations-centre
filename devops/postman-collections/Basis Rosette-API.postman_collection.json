@@ -1,0 +1,770 @@
+{
+	"info": {
+		"name": "Basis Rosette-API",
+		"_postman_id": "d953270a-be16-bc31-7759-d204768db85d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "entities",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "52217b7b5514530c93b26b47d9403a12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"AUD/USD fails to break above 0.80. DXY sticks to modest recovery gains, struggles to gain momentum. \\nAfter testing the 0.80 handle and renewing its best level in more than four months there, the AUD/USD pair lost its momentum and retraced its daily advance. As of writing, the pair was trading at 0.7966, up only 5 pips on the day. \\nEarlier today, the data from Australia showed that home loans increased by 2.1% in November following the 0.6% contraction in October, beating the market expectation of -0.2% and easing the concerns over a possible real-estate bubble in the country. Although the AUD gathered strength against its rivals on the back of the upbeat data, the greenback's recovery later in the day didn't allow the pair to extend its gains. \\nAfter touching its lowest level in more than three years at 89.99 in the early Asian trading hours, the US Dollar Index reversed course and advanced to 90.58 in the NA session. Today's data from the U.S. showed that industrial production increased by 0.9% on a monthly basis in December and surpassed the market estimate of 0.4% while capacity utilization improved to 77.9% from 77.2%. Later in the session, the Fed is going to publish its Beige Book, which shows the current state of the economic activity in the U.S. Moreover, FOMC members Evans, Kaplan, and Mester will be delivering speeches. \\nTechnical outlook \\nWith a daily close above 0.8000 (psychological level/daily high), the pair could aim for 0.8090 (Sep. 20 high) and 0.8125 (Sep. 8 high). On the downside, supports align at 0.7905/0.7900 (Jan. 15 low/psychological level), 0.7845 (20-DMA) and 0.7760 (200-DMA). Meanwhile, the RSI indicator on the daily graph continues to float above the 70 mark, suggesting that the pair is still technically overbought and could need to make a correction before gaining further bullish momentum. \\nInformation on these pages contains forward-looking statements that involve risks and uncertainties. Markets and instruments profiled on this page are for informational purposes only and should not in any way come across as a recommendation to buy or sell in these securities. You should do your own thorough research before making any investment decisions. FXStreet does not in any way guarantee that this information is free from mistakes, errors, or material misstatements. It also does not guarantee that this information is of a timely nature. Investing in Forex involves a great deal of risk, including the loss of all or a portion of your investment, as well as emotional distress. All risks, losses and costs associated with investing, including total loss of principal, are your responsibility. RELATED TOPICS \"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/entities",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"entities"
+					]
+				},
+				"description": "Returns each entity extracted from the input.\n\nThe response is a list of extracted entities. Each entity includes chain ID (all instances of the same entity share a chain id), mention (entity text in the input), normalized text (the most complete form of this entity that appears in the input), count (how many times this entity appears in the input), and the confidence associated with the extraction."
+			},
+			"response": []
+		},
+		{
+			"name": "/entities/linked",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The prices of essential goods such as flour, oil and sugar have considerably gone up in Tajikistan, privately-owned Asia-Plus news agency reported on 16 January . \\rThe prices roused the indignation of customers, while sellers complain about the growth of the US dollar rate, the agency said. The rapid increase of prices for wheat flour and butter is something that the population is concerned over the most, the agency said. /nAccording to residents, the prices for everything - cigarettes, tea, coffee, sweets, sugar and other goods - have risen approximately by 30-40 per cents, the agency said. Prices for office machines and equipment, medicine, clothing, shoes and even office supplies also noticeably went up. /n However, the prices of locally produced goods - meat, eggs, milk, vegetables and fruits - have so far remained as before. /n The agency mentioned that over the past one year, the national currency, somoni, depreciated by 40 per cent against the dollar. /n The concern over the rising prices in Tajikistan is increasing, while over 30 per cent of Tajikistan's population is living under the poverty line, having only one bread-winner in the family, the agency said. /n Meanwhile, in 2015 the authorities did not fulfill their promise to raise salaries of employees of budget organizations, pensions and benefits, referring to financial problems. /n The agency said that the price hike of basic products primarily hit hard the budget of vulnerable people - the disabled, pensioners, single mothers and state employees. /n The salary is enough only for the payment of the flat rent and communal services, the agency quoted a local resident, who was complaining about the mounting prices, as saying. /n The families of migrants, who lived in better conditions last year, are now experiencing the same problems as others, the agency added.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/entities/linked",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"entities",
+						"linked"
+					]
+				},
+				"description": "Links entities in the input to entities in the knowledge base.\n\nThe response identifies the entities in the input that have been linked to entities in the knowledge base. Each entity includes an entity id (from the knowledge base), a chain id (all instances of the same entity share a chain id), the mention (entity text from the input), and confidence associated with the linking"
+			},
+			"response": []
+		},
+		{
+			"name": "/entities/linked/info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.rosette.com:443/rest/v1/entities/linked/info",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"rest",
+						"v1",
+						"entities",
+						"linked",
+						"info"
+					]
+				},
+				"description": "Response is a JSON string with request id, version , build info, and support (null for now).\n\nExample: {\"requestId\": \"xyz\", \"version\": \"1.0\", \"build\": \"abc\", \"support\": null}"
+			},
+			"response": []
+		},
+		{
+			"name": "/categories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Registration for candidates for the Islamic Consultative Majlis and the Assembly of Experts elections has ended, and all attention is now focused on the decisions of the institutions that are due to examine the candidates' eligibility. Some opinions and standpoints expressed demonstrate that the Guardian Council's vetting process is the most major concern of the political movements and parties. In this round of the elections and in view of the events following the 14 June (24 Khordad) election, there has been significantly increased interest in taking part in the election, compared with the past, and examining the eligibility of the high number of election candidates in the short time remaining until the election, can make conditions and any appeal process more difficult. \\n\\n  In an interview with E'temad, Guardian Council Spokesperson Nejatollah Ebrahimian, has emphasized this very point and says: \\\"When I look at the set of election regulations, it seems to me that in view of the difficulties that exist in Iran with regard to determining the candidates' eligibility, the law has not taken into account a suitable length of time for this matter; meaning that our time is short and this is a point that cannot be denied.\\\" He also reiterates: \\\"I myself am not particularly happy about the situation.\\\" In addition, one of the other recent concerns of the political movement is the issue of local inquiries that has been put forward by the Guardian Council. Ebrahimian also states in this respect: \\\"You may say that this method is open to criticism once executed, and I myself may have certain criticisms.\\\" With regard to certain criticisms made against the Guardian Council's local inquiries, the spokesperson states: \\\"Yes, there is a possibility of grudge and enmity. Man is fallible.\\\" Nevertheless, in addition to the local inquiry topic, the events of 2009 (1988) have become an excuse for a number of principle-ist political movements to use this means to eliminate their election rivals from the battlefield of 26 February (7 Esfand). This is because many reformist political activists were active in the election headquarters of the two candidates who objected to the results of the 10th presidential election. However, the Guardian Council spokesperson insists during the interview that such attacks should be responded to: \\\"Presence in election headquarters is not considered an obstacle to taking part in the election because the Guardian Council had approved the eligibility of all candidates. They were in fact supporting candidates whose eligibility had been approved by the Guardian Council.\\\" With regard to the presence of Guardian Council members, as rivals in the Assembly of Experts election, Ebrahimian no longer speaks from a position of this council's spokesperson, and says: \\\"In my personal opinion, we, members of the Guardian Council, should not express opinions in favour of any lists by the political factions. Another way of demonstrating justice and fairness -and this is my personal opinion and I am not speaking as the Guardian Council spokesperson -is that we should not even become candidates for the election.\\\" \\n\\n  Q: What are the stages of the process of examining the candidates' eligibility? \\n\\n  A: In practice, we have not yet entered into the processes related to the expression of official opinions, but files had already been established for candidates who were most likely to enter the election, especially candidates from the previous rounds or former lawmakers. Since the time frame for investigating any appeals is short, we have no choice other than to make preliminary investigations into these cases. The section related to our election carries out its preliminary works on the basis of existing files and documents, all of which are prepared for examination in subsequent stages. \\n\\n  Q: Last year, you had said that the provincial supervisory committees have become active in the form of provincial representatives and they will undertake the examination process. \\n\\n  A: The Guardian Council has provincial representatives who collect information in accordance with the organization that exists within the Guardian Council and is administered under the control of the Guardian Council secretary, and this information has now become useful to us; particularly in relation to candidates who are not well known. Regarding those individuals who have had no outstanding political activities, there have to be documents so that their eligibility can be examined and verified, and make their characters known to the investigating institutions such as the executive committees, supervisory committees, or the Guardian Council. Therefore, the process of collecting open information and the candidates' reactions to social developments, such as their speeches, have already been established and are underway. \\n\\n  Q: Are there any current statistics as to how many reports have been received from last year and how many candidates have been identified? \\n\\n  A: I have no exact statistics but there are documents and files for a considerable percentage of individuals who enter the election. This is because many people have previously been candidates and they may not have won enough votes, or they are former lawmakers, in addition to current ones. \\n\\n  Q: Is there a similar process for the Assembly of Experts? \\n\\n  A: It is slightly different. The process for examining the eligibility of Assembly of Experts candidates is based on the election law for the Assembly of Experts and the relevant Articles of Association. The executive and supervisory committees play no part in examining the eligibility of these candidates and this process is carried out by the six jurisconsults of the Guardian Council. Therefore, it follows another set of rules and it is the jurisconsults who examine their eligibility. \\n\\n  Q: As far as Majlis candidates are concerned, since it is the duty of supervisory committees to examine their eligibility before the Guardian Council, does the latter rely on the reports and examinations of the executive committees or does it follow its own mechanism? \\n\\n  A: Yes, if the executive committee approves an individual's eligibility but the supervisory committees do not agree with it and lean towards disqualification, the Guardian Council undoubtedly examines the approval process, its relevant documents, and even the voting mechanism, even though it may be different. If they approve, we have to take votes on disqualification and if they disqualify while we believe that they are eligible, we have to take a vote for approving eligibility. We cannot ignore the content of the file established by the executive committee. In fact, as supervisors, we have to express an opinion about the work carried out by the executive committee. \\n\\n  Q: Does the same mechanism apply to all provinces? \\n\\n  A: Yes. \\n\\n  Q: There are usually complaints about the disqualifications. Do you believe there is sufficient time to examine these complaints? \\n\\n  A: The issue of investigating complaints needs some kind of regulatory process for investigating election related disputes. A dispute in the real sense of the word, similar to a trial, even if it is not attended, is necessary because as judges, we have to weigh the reasons for and against, and vote accordingly and conscientiously. Even though we do not have an opportunity to do this at the moment, since we are the executives of the law, when I look at the set of election regulations, it appears to me that the law has not considered a suitably extensive time frame for approving eligibility, especially in view of the difficulties that exist in Iran. Our time for this process is short and this cannot be denied, but we have to take the utmost advantage of this short time and opportunity. Guardian Council members must be mobilized, and allocate all their time to investigating appeals and examining the contents of files. If a candidate has not been given a chance to express his viewpoints in the previous stages, we have to listen to his statements if necessary, and thus help the execution of justice. Naturally, God has not obliged us to work beyond our capability, but in any case, we have to compensate for this shortcoming in the law through added efforts. I myself am not particularly satisfied with the situation and I do not wish any individual not to have the chance of expressing his viewpoints, but we have no choice within our limited time other than to observe legal requirements. We have to deliver our opinion within the legal deadline. God willing, we shall try to take the utmost advantage of this time. \\n\\n  Q: What would happen if you are unable to investigate all complaints? \\n\\n  A: We are obliged to work to the best of our ability. We shall investigate the complaints, and opinions will be expressed about these complaints. There is after all a deadline for investigating the files. What would have been ideal is for us to be able to undertake extra research if necessary and to listen to the candidate's remarks. We may not always be able to do this extra work. I have no knowledge of what happened in the past because I was not in this post, but when I now look at the number of registered candidates and also at legal deadlines, I realize that the schedule is extremely tight, and we have no choice other than to use this very short time. We shall try to make our judgment to the best of our ability, with our eyes open and by observing justice and fairness. \\n\\n  Q: One of the issues that has been greatly debated by the media in recent months is the investigation into eligibility. The law has appointed four authorities to investigate the candidates' eligibility, but the Guardian Council is insisting on an issue called local inquiry. What is the reason for this? \\n\\n  A: There is an extremely important point that must be taken into account, which is that I cannot make any judgments as to whether local inquiries have been carried out well or not. I can only offer an assessment when I receive the results of these inquiries. Therefore, I cannot express an opinion about what is being carried out. But what does the law say? Does the law allow you to carry out inquiries about your own trusted colleagues? I am addressing this question to the Guardian Council. Does the law compel you to do such a thing? My answer is that in certain cases, not only are we allowed to do this, we have no choice but to undertake local inquiries. This is because the four authorities do not sometimes have sufficient information available to them, in accordance with their duties, that would enable them to examine the candidates' conditions. If this information is made available to us, you have to put them together with the conditions that the election law has stipulated for lawmakers. For example, none of these four authorities may have information as to whether an individual is of ill repute or not. None of these authorities may have information in this respect. Inquiries must be made among the people as to whether a particular individual is reputable or not. The same thing applies to whether this individual is pious and committed to his religion in practice or not. Impious individuals do not always have files at the judiciary. The National Organization for Civil Registration does not care whether an individual is pious or not, and if someone does not commit a crime, Law Enforcement does not care whether an individual is pious or not. Consequently, how do you verify points concerning which the four authorities have no information? We cannot say that we will ignore them because that is a violation of the law. Therefore, in order for the law not to be violated or futile, we have no choice other than to take these points into account. It seems that the legislator has predicted this contingency because article 50 of the election law tells executive committees that are made up of trusted individuals, to express an opinion based on the inquiry that is carried out locally and the information received from the Ministry of the Interior. The information received from the Ministry of the Interior is the same response by the four authorities. The purpose of local inquiries is to use the knowledge and information of local people to see if a candidate is pious and if he is bound to Shari'a law and believes in the Constitution. Consequently, article 50 has provided the executive committees with the tools for assessing this information. Hence, the law itself does not rely on the four authorities alone to determine the candidates' eligibility. \\n\\n  Q: The point is that the law has stipulated this for the executive committees and local trustees are in fact playing the same role. Why does the Guardian Council resort to local inquiries? \\n\\n  A: Because we have to supervise the work of executive committees, in addition to investigating the complaints and protests against their actions. If someone complains that these nine people have unlawfully and prejudicially told him that he is of ill repute and is not pious, what tools will the Guardian Council have to investigate these complaints? You then have no choice other than to assess the executive committees' opinions and to see if they are in accordance with the truth or not. You can use the same tools that they have used, which means that we must refer to local inquiries. Someone may claim that local inquiries have no proper mechanism, which is a debatable point. They may say that these methods are open to criticism, and I myself may have certain criticisms. As a member of the Guardian Council, if I receive such local inquiries and I have no knowledge of that particular individual, I may not pay any attention to the local inquiries if that person is not trusted by me. \\n\\n  Q: You said that if someone complains about the results of inquiries carried out by the local trustees for the executive committees, you have no choice other than to refer to local inquiries. Therefore, will local inquiries only be used by the Guardian Council when a candidate lodges a complaint? \\n\\n  A: According to the law, the supervisory committee may not accept their decision concerning the approval or disqualification of the candidate. For example they may say that a candidate is disqualified while the supervisory committee says that the candidate is eligible or vice versa. Occasionally, in order to approve eligibility, we have to refer to local inquiries; meaning that it makes no difference whether you go for eligibility or disqualification because this is one of the tools to establish eligibility. Some people say that the law has not explicitly determined a contingency. What I say is that in order to consider a rule as a legal rule, there is not necessarily any need for legal stipulations. Legal logic dictates that the tool available to the executive committee for establishing eligibility may be controlled by the Guardian Council through mandatory supervision, and this control is not possible other than through another kind of inquiry carried out by trustees. \\n\\n  Q: Were the local trustees in the executive committees not enough? I put this question forward again because the local trustees in the executive committees must also be approved by the Guardian Council. Can you not rely on individuals that have been approved by yourself? \\n\\n  A: It is so, but this is neither in my hands nor in the hands of the Governor's office. It is not merely the Guardian Council and the Governor's office, but a third party has come forward who says that he does not accept these people, that they are wrong, or a report has been received stating that they have made a mistake. In that case, we cannot say that their complaint will not be investigated because we trust these individuals. We have no choice other than to investigate the complaint and see whether they have acted erroneously or with prejudice. \\n\\n  Q: I put the same point forward in my previous question as to whether the Guardian Council's local inquiries will only become active in case of complaints by the candidates or not, which you attributed to the approval or non-approval of eligibility. In any case, regarding the same point about complaints, how would it be possible to investigate these complaints in view of the very short time available? When these reports are received they will undoubtedly be substantial files. \\n\\n  A: Had there been a selection or assessment process for eligibility concerning the network of trustworthy individuals, we would have been able to pay attention to their statements with a better degree of reassurance. We must not use the usual means of referring to the local mosque or the owner of the local supermarket in order to examine the opinions of the trustees of the executive committees. It is not sufficient that these individuals themselves are trusted, and we have to make our own inquiries and find individuals with the same level of moral rectitude, and put our questions to them. As to whether this takes place correctly or not, I have no accurate information but inquiries are carried out and information is gathered about the trustees themselves. Despite all the caution exercised, the possibility of grudge and enmity still exists, but sometimes in our lives, there is no choice other than to rely on the evidence and testimonies of witnesses and those with knowledge. You are aware that the same remarks are made about testimony as a means of proof, and they ask how can we be sure that the witness has not made a mistake, has not misheard or made the wrong observation. These probabilities are considerable but as far as everyday life and judgment are concerned, we have to ignore certain possibilities if we pay enough attention. For example, at present, based on our current judicial regulations, we can send someone to prison on the basis of local inquiries, and we tell that person that he or she has committed a crime because we carried out local inquiries, and this provided us with the necessary certainty and knowledge. Why cannot we rely on this in relation to establishing eligibility? Yes there is a possibility of grudge and enmity. Man is fallible but even in our everyday relations, we sometimes exercise all necessary caution and trust. The same applies here. \\n\\n  Q: As far as approving local trustees is concerned, both within the executive committees and in relation to local inquiries that the Guardian Council itself is due to carry out, what criteria have you taken into account? \\n\\n  A: The criteria related to executive committees have been specified in the law. As far as executive committees are concerned, the law states that they must be local or its members must have been residing in that location for a particular amount of time, be bound to Islam and the Constitution, and have no connection with the candidates. Therefore, these conditions can inspire us and we must take the same criteria into account regarding the authorities and the trustees, about whom we carry out our own inquiries. \\n\\n  Q: How important is their political tendencies; for example, whether they are reformist or principle-ist? \\n\\n  A: By rights, it should have no effect. Since I do not personally know the individuals who have been introduced to our system as trustees, I cannot make a clear judgement, but based on rules and regulations, political tendencies that conform to the system should not deprive a trusted person of expressing opinions. A pious individual, bound to Shari'a law and the Constitution must be listened to, regardless of his political tendencies, provided that he accepts the Islamic Republic system. \\n\\n  Q: So it is possible that a person with reformist tendencies may be among those trusted by the Guardian Council? \\n\\n  A: I have no exact statistics of them. Any accurate statistics that exists does not classify them on the basis of political tendencies. Therefore, a field inquiry must be carried out. \\n\\n  Q: In view of all the Guardian Council's processes for examining the eligibility of candidates, is it possible that those individuals who had been disqualified in the past, may be approved this time round? \\n\\n  A: These cases must be examined in practice, and if they complain, and their complaint is based on the fact that their disqualification was not justified and had no legal basis, and they are able to give reasons to prove their claim, they will undoubtedly be taken into account. If the reasons are convincing, the previous decisions may be overturned and they will be approved. \\n\\n  Q: So they must have already made a complaint? \\n\\n  A: The previous decisions are in place until they make a complaint. \\n\\n  Q: Many reformist figures were active in 2009 in the election headquarters of Messieurs [Mehdi] Karubi and [Mirhoseyn] Musavi, and they supported these two individuals. Will their presence in their election headquarters or their support result in disqualification? \\n\\n  A: Mere presence in election headquarters is not considered an obstacle to entering the election race because all candidates at the time had been approved by the Guardian Council. They were in fact supporting candidates whose eligibility had been approved by the Guardian Council. \\n\\n  Q: Let us speak about the process of assessing the eligibility of candidates for the Assembly of Experts. At the beginning of the interview you pointed out that this has a different mechanism. What form does this test take? \\n\\n  A: A test has already taken place but since conditions must be assessed after registration, the jurisconsults have one month to assess the people who have registered once the period of registration has ended. The means of assessment is the responsibility of the Guardian Council's jurisconsults. Different methods are conceivable such as interviews, and written exams with judgment based on their academic files, or a combination of the two. The question that everyone repeats is whether everybody must take part in the written exam or not. Those who have a powerful academic record will most likely not take part in a written exam. \\n\\n  Q: Is the decision the responsibility of the Guardian Council's jurisconsults? \\n\\n  A: Yes, it is their responsibility. \\n\\n  Q: Several of the Guardian Council's jurisconsults are themselves candidates for the Assembly of Experts election. Even though you previously said that they will not enter into the constituency where they themselves are candidates, is it generally not possible that this may influence the final decision? \\n\\n  A: They play no part in the area of supervision and as far as other conditions are concerned, the most important of which is the academic record, the jurisconsults of the Guardian Council have established their academic levels through other means. They have been accepted as mujtahed [an individual qualified to exercise ejtehad in the evaluation of Islamic law, who must have extensive knowledge of Arabic, the Koran, and legal Islamic theories] by the Supreme Leader and their ejtehad has been confirmed by the leadership. \\n\\n  Q: My question was not about the academic approval but making decisions about other candidates. Are their opinions taken into account? \\n\\n  A: This question can be put forward not only in relation to the Guardian Council members but also others; that in view of their own personal political tendencies, it is possible that it may influence their own personal decisions. \\n\\n  Q: This point assumes added significance because since they, specifically, are considered election rivals, therefore the judge himself is one side of the competition. \\n\\n  A: The point is that they control conditions as jurisconsults, but in the Guardian Council, in addition to the jurisconsults, law experts must also supervise this issue; namely that among the six members, you cannot condemn all six. Furthermore, even if the political tendency of all six people is the same, there is a set of 12 individuals, all of whom practice mandatory supervision. This means that if God forbid, there is any enmity -the possibility of which I consider to be zero -the entire supervisory committee can control and prevent it. \\n\\n  Q: In any case, as far as previous elections are concerned, many Guardian Council members had political tendencies close to the principle-ists, and they would even support principle-ist candidates in interviews and through various platforms. Consequently, there may be a suspicion that the Guardian Council may decide in favour of one movement. \\n\\n  A: This fault can be found with all decision-making institutions throughout the world. All individuals who are appointed to state posts, such as the Constitution Council, election courts, and other such institutions, are all officials who have participated in political activities. In fact, even in other countries, it was their political activities that brought these individuals to the top of the power structure. They may have been socialists or extreme right-wingers, moderate right-wingers or Christian Democrats. But when they are placed in positions such as judging the election, it is obvious that they will have personal choices. However, they have to try not to allow their personal opinions to interfere in their decisions as much as possible. As far as the Guardian Council is concerned, in this round, we insisted that no political statement should be made against candidates; so much so that in my position as spokesperson, who actually announces the Guardian Council standpoints, I took all precautions not to speak for or against any political faction. Even if there has been a history of statements made against certain candidates in the past, we have tried to bring this to a minimum this time around and to control it. This is itself a guarantee that we shall demonstrate impartiality. There is always a possibility because we are all human beings and fallible. This probability exists everywhere; meaning within all legal systems where you appoint someone as judge, and he votes for the left or the right. It is true that he makes a political choice but there are guarantees that we trust that person. For example, if they say in relation to a judge that 20 years of professional work have demonstrated that he is not influenced by his own political faction, and his professional life shows that he is not easily influenced, I believe that some of the Guardian Council members have been able to demonstrate this over the years; that they and their judgements are not influenced by their political choices. During my term in the Guardian Council, I have come to know certain figures whose ascetic and academic lives guarantee that they do not digress from the path of justice and fairness, and they are trusted by the leader. They have had positive track records in various social and political arenas, but is not there always the possibility of a mistake being made? The answer is that man is fallible and I do not deny this probability. \\n\\n  Q: You stated that previous rounds have demonstrated that political tendencies have not been able to influence opinions or decisions, but the reformist faction may have another view. They say that the Guardian Council members' political tendencies have at certain times been in favour of a particular movement. \\n\\n  A: Yes, to the best of my knowledge, fair-minded individuals from all factions reiterated that they did not believe the Guardian Council to be impartial and they had asked the Guardian Council merely to demonstrate its impartiality. If we want to be just, we have to say that Guardian Council members were able to observe justice, but maybe they were not able to demonstrate it well. The point that has resulted in a number of complaints is the inability to demonstrate fairness and justice rather than the inability to observe it. My personal opinion is that one of the ways to demonstrate this is that Guardian members should not express opinions in favour of any particular factions' list. Another way of demonstrating justice and fairness -and this is my personal opinion and I am not speaking as the Guardian Council spokesperson -is that we should not even become candidates for the election; even though the law has not created such a ban. \\n\\n  Q: Do you not believe that in order to eliminate these problems, we need to review the law? \\n\\n  A: In my opinion, the investigation process by the Guardian Council and the regulations related to investigating election disputes, require serious review and contemplation. This is my personal opinion. Now is not the time to give explanations and I will provide explanations after the election. \\n\\n  Q: In any case, the fact that the Guardian Council is not accountable to any other institution has been discussed during all rounds of elections. \\n\\n  A: I am sorry but there is a problem with this statement. The phrase that the Guardian Council is not accountable to any institution has been repeated by a number of media and politicians. This statement is wrong because there is always someone in a position of judgement who will ultimately make the final judgment. Election courts or the Constitution Council in other countries such as France have the same mechanism; meaning that there is an authority who is referred to when there is a complaint, and beyond that there is no other authority for control. \\n\\n  Q: This may not be the proper comparison, but the same Constitution Council in France to which you referred, consists of many individuals, three of whom are chosen by the president, three by the Senate, and three by the National Assembly. In fact, apart from the Senate which is indirectly elected through the people's votes, the other six members of these nine individuals are elected by an institution that has come to power with the people's direct votes. \\n\\n  A: But you are aware that on many occasions, this council can become socialist or right-wing. \\n\\n  Q: Yes, but society will find it easier to accept a judgment from those who have come to power through election institutions chosen by the people. \\n\\n  A: This matter is not related to elections that are directly or indirectly connected with public votes, but rather to every country's political system and Constitution. In our country, we have connected many matters to voting, supervision, and public choices. Sometimes it is a direct choice and sometimes it is indirect and through intermediaries. For example in relation to the debate over the six jurisconsults; even though they are chosen by the leader, the leader is chosen by representatives who have been chosen directly, meaning through votes. Or the head of the judiciary for example, has been chosen through voting and two intermediaries. This depends to a great degree on the formula that has been defined for government and democracy in these countries. However, the remark that the system is imperfect because there is no other authority is wrong. For example, as far as the judiciary is concerned, one can see that there is an authority who has the final say and there is no other authority beyond it. There is nothing wrong with this if you have the correct procedures, if you have clear and transparent rules for investigation, and if someone has the final say, there is nothing logically wrong with it.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com:443/rest/v1/categories",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"rest",
+						"v1",
+						"categories"
+					]
+				},
+				"description": "Returns an ordered list of categories identified in the input. The categories are Tier 1 contextual categories defined in the QAG Taxonomy.\n\nThe response is the contextual categories identified in the input."
+			},
+			"response": []
+		},
+		{
+			"name": "/sentiment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "52217b7b5514530c93b26b47d9403a12"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"AUD/USD fails to break above 0.80. DXY sticks to modest recovery gains, struggles to gain momentum. \\nAfter testing the 0.80 handle and renewing its best level in more than four months there, the AUD/USD pair lost its momentum and retraced its daily advance. As of writing, the pair was trading at 0.7966, up only 5 pips on the day. \\nEarlier today, the data from Australia showed that home loans increased by 2.1% in November following the 0.6% contraction in October, beating the market expectation of -0.2% and easing the concerns over a possible real-estate bubble in the country. Although the AUD gathered strength against its rivals on the back of the upbeat data, the greenback's recovery later in the day didn't allow the pair to extend its gains. \\nAfter touching its lowest level in more than three years at 89.99 in the early Asian trading hours, the US Dollar Index reversed course and advanced to 90.58 in the NA session. Today's data from the U.S. showed that industrial production increased by 0.9% on a monthly basis in December and surpassed the market estimate of 0.4% while capacity utilization improved to 77.9% from 77.2%. Later in the session, the Fed is going to publish its Beige Book, which shows the current state of the economic activity in the U.S. Moreover, FOMC members Evans, Kaplan, and Mester will be delivering speeches. \\nTechnical outlook \\nWith a daily close above 0.8000 (psychological level/daily high), the pair could aim for 0.8090 (Sep. 20 high) and 0.8125 (Sep. 8 high). On the downside, supports align at 0.7905/0.7900 (Jan. 15 low/psychological level), 0.7845 (20-DMA) and 0.7760 (200-DMA). Meanwhile, the RSI indicator on the daily graph continues to float above the 70 mark, suggesting that the pair is still technically overbought and could need to make a correction before gaining further bullish momentum. \\nInformation on these pages contains forward-looking statements that involve risks and uncertainties. Markets and instruments profiled on this page are for informational purposes only and should not in any way come across as a recommendation to buy or sell in these securities. You should do your own thorough research before making any investment decisions. FXStreet does not in any way guarantee that this information is free from mistakes, errors, or material misstatements. It also does not guarantee that this information is of a timely nature. Investing in Forex involves a great deal of risk, including the loss of all or a portion of your investment, as well as emotional distress. All risks, losses and costs associated with investing, including total loss of principal, are your responsibility. RELATED TOPICS \"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com:443/rest/v1/sentiment",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"rest",
+						"v1",
+						"sentiment"
+					]
+				},
+				"description": "Analyses the positive and negative sentiment expressed by the input.\n\nThe response contains sentiment analysis results."
+			},
+			"response": []
+		},
+		{
+			"name": "/language",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"The prices of essential goods such as flour, oil and sugar have considerably gone up in Tajikistan, privately-owned Asia-Plus news agency reported on 16 January . \\rThe prices roused the indignation of customers, while sellers complain about the growth of the US dollar rate, the agency said. The rapid increase of prices for wheat flour and butter is something that the population is concerned over the most, the agency said. /nAccording to residents, the prices for everything - cigarettes, tea, coffee, sweets, sugar and other goods - have risen approximately by 30-40 per cents, the agency said. Prices for office machines and equipment, medicine, clothing, shoes and even office supplies also noticeably went up. /n However, the prices of locally produced goods - meat, eggs, milk, vegetables and fruits - have so far remained as before. /n The agency mentioned that over the past one year, the national currency, somoni, depreciated by 40 per cent against the dollar. /n The concern over the rising prices in Tajikistan is increasing, while over 30 per cent of Tajikistan's population is living under the poverty line, having only one bread-winner in the family, the agency said. /n Meanwhile, in 2015 the authorities did not fulfill their promise to raise salaries of employees of budget organizations, pensions and benefits, referring to financial problems. /n The agency said that the price hike of basic products primarily hit hard the budget of vulnerable people - the disabled, pensioners, single mothers and state employees. /n The salary is enough only for the payment of the flat rent and communal services, the agency quoted a local resident, who was complaining about the mounting prices, as saying. /n The families of migrants, who lived in better conditions last year, are now experiencing the same problems as others, the agency added.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/language",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"language"
+					]
+				},
+				"description": "Returns list of candidate languages in order of descending confidence.\n\nThe response is an ordered list of detected languages, including language and detection confidence, sorted by descending confidence."
+			},
+			"response": []
+		},
+		{
+			"name": "/matched-name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name1\": {\n    \"text\": \"Влади́мир Влади́мирович Пу́тин\",\n    \"language\": \"rus\",\n    \"entityType\": \"PERSON\"\n  },\n  \"name2\": {\n    \"text\": \"Vladimir Putin\",\n    \"language\": \"eng\",\n    \"entityType\": \"PERSON\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/matched-name",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"matched-name"
+					]
+				},
+				"description": "Returns the result of matching 2 names.\n\nYou must specify the names to be matched."
+			},
+			"response": []
+		},
+		{
+			"name": "/morphology ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Wayne Rooney scores a pitfule goal against Liverpool in the agaianst the West Ham.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/lemmas",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"lemmas"
+					]
+				},
+				"description": "Returns morphological analysis of input.\n\nThe response may include lemmas, part of speech tags, compound word components, and Han readings. Support for specific return types depends on language."
+			},
+			"response": []
+		},
+		{
+			"name": "morphology/compound-components",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Wayne Rooney scores a pitfule goal against Liverpool in the agaianst the West Ham.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/compound-components",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"compound-components"
+					]
+				},
+				"description": "Returns morphological analysis of input.\n\nThe response may include lemmas, part of speech tags, compound word components, and Han readings. Support for specific return types depends on language."
+			},
+			"response": []
+		},
+		{
+			"name": "/morphology/parts-of-speech",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Wayne Rooney scores a pitfule goal against Liverpool in the agaianst the West Ham.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/parts-of-speech",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"parts-of-speech"
+					]
+				},
+				"description": "The example above returns a language specific data structure that represents the following JSON from Rosette API"
+			},
+			"response": []
+		},
+		{
+			"name": "/morphology/han-readings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"北京大学生物系主任办公室内部会议\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/han-readings",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"han-readings"
+					]
+				},
+				"description": "The example above returns a language specific data structure that represents the following JSON from Rosette API"
+			},
+			"response": []
+		},
+		{
+			"name": "/morphology/complete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Wayne Rooney scores a pitfule goal against Liverpool in the agaianst the West Ham.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/morphology/complete",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"morphology",
+						"complete"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/relationships",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Registration for candidates for the Islamic Consultative Majlis and the Assembly of Experts elections has ended, and all attention is now focused on the decisions of the institutions that are due to examine the candidates' eligibility. Some opinions and standpoints expressed demonstrate that the Guardian Council's vetting process is the most major concern of the political movements and parties. In this round of the elections and in view of the events following the 14 June (24 Khordad) election, there has been significantly increased interest in taking part in the election, compared with the past, and examining the eligibility of the high number of election candidates in the short time remaining until the election, can make conditions and any appeal process more difficult. \\n\\n  In an interview with E'temad, Guardian Council Spokesperson Nejatollah Ebrahimian, has emphasized this very point and says: \\\"When I look at the set of election regulations, it seems to me that in view of the difficulties that exist in Iran with regard to determining the candidates' eligibility, the law has not taken into account a suitable length of time for this matter; meaning that our time is short and this is a point that cannot be denied.\\\" He also reiterates: \\\"I myself am not particularly happy about the situation.\\\" In addition, one of the other recent concerns of the political movement is the issue of local inquiries that has been put forward by the Guardian Council. Ebrahimian also states in this respect: \\\"You may say that this method is open to criticism once executed, and I myself may have certain criticisms.\\\" With regard to certain criticisms made against the Guardian Council's local inquiries, the spokesperson states: \\\"Yes, there is a possibility of grudge and enmity. Man is fallible.\\\" Nevertheless, in addition to the local inquiry topic, the events of 2009 (1988) have become an excuse for a number of principle-ist political movements to use this means to eliminate their election rivals from the battlefield of 26 February (7 Esfand). This is because many reformist political activists were active in the election headquarters of the two candidates who objected to the results of the 10th presidential election. However, the Guardian Council spokesperson insists during the interview that such attacks should be responded to: \\\"Presence in election headquarters is not considered an obstacle to taking part in the election because the Guardian Council had approved the eligibility of all candidates. They were in fact supporting candidates whose eligibility had been approved by the Guardian Council.\\\" With regard to the presence of Guardian Council members, as rivals in the Assembly of Experts election, Ebrahimian no longer speaks from a position of this council's spokesperson, and says: \\\"In my personal opinion, we, members of the Guardian Council, should not express opinions in favour of any lists by the political factions. Another way of demonstrating justice and fairness -and this is my personal opinion and I am not speaking as the Guardian Council spokesperson -is that we should not even become candidates for the election.\\\" \\n\\n  Q: What are the stages of the process of examining the candidates' eligibility? \\n\\n  A: In practice, we have not yet entered into the processes related to the expression of official opinions, but files had already been established for candidates who were most likely to enter the election, especially candidates from the previous rounds or former lawmakers. Since the time frame for investigating any appeals is short, we have no choice other than to make preliminary investigations into these cases. The section related to our election carries out its preliminary works on the basis of existing files and documents, all of which are prepared for examination in subsequent stages. \\n\\n  Q: Last year, you had said that the provincial supervisory committees have become active in the form of provincial representatives and they will undertake the examination process. \\n\\n  A: The Guardian Council has provincial representatives who collect information in accordance with the organization that exists within the Guardian Council and is administered under the control of the Guardian Council secretary, and this information has now become useful to us; particularly in relation to candidates who are not well known. Regarding those individuals who have had no outstanding political activities, there have to be documents so that their eligibility can be examined and verified, and make their characters known to the investigating institutions such as the executive committees, supervisory committees, or the Guardian Council. Therefore, the process of collecting open information and the candidates' reactions to social developments, such as their speeches, have already been established and are underway. \\n\\n  Q: Are there any current statistics as to how many reports have been received from last year and how many candidates have been identified? \\n\\n  A: I have no exact statistics but there are documents and files for a considerable percentage of individuals who enter the election. This is because many people have previously been candidates and they may not have won enough votes, or they are former lawmakers, in addition to current ones. \\n\\n  Q: Is there a similar process for the Assembly of Experts? \\n\\n  A: It is slightly different. The process for examining the eligibility of Assembly of Experts candidates is based on the election law for the Assembly of Experts and the relevant Articles of Association. The executive and supervisory committees play no part in examining the eligibility of these candidates and this process is carried out by the six jurisconsults of the Guardian Council. Therefore, it follows another set of rules and it is the jurisconsults who examine their eligibility. \\n\\n  Q: As far as Majlis candidates are concerned, since it is the duty of supervisory committees to examine their eligibility before the Guardian Council, does the latter rely on the reports and examinations of the executive committees or does it follow its own mechanism? \\n\\n  A: Yes, if the executive committee approves an individual's eligibility but the supervisory committees do not agree with it and lean towards disqualification, the Guardian Council undoubtedly examines the approval process, its relevant documents, and even the voting mechanism, even though it may be different. If they approve, we have to take votes on disqualification and if they disqualify while we believe that they are eligible, we have to take a vote for approving eligibility. We cannot ignore the content of the file established by the executive committee. In fact, as supervisors, we have to express an opinion about the work carried out by the executive committee. \\n\\n  Q: Does the same mechanism apply to all provinces? \\n\\n  A: Yes. \\n\\n  Q: There are usually complaints about the disqualifications. Do you believe there is sufficient time to examine these complaints? \\n\\n  A: The issue of investigating complaints needs some kind of regulatory process for investigating election related disputes. A dispute in the real sense of the word, similar to a trial, even if it is not attended, is necessary because as judges, we have to weigh the reasons for and against, and vote accordingly and conscientiously. Even though we do not have an opportunity to do this at the moment, since we are the executives of the law, when I look at the set of election regulations, it appears to me that the law has not considered a suitably extensive time frame for approving eligibility, especially in view of the difficulties that exist in Iran. Our time for this process is short and this cannot be denied, but we have to take the utmost advantage of this short time and opportunity. Guardian Council members must be mobilized, and allocate all their time to investigating appeals and examining the contents of files. If a candidate has not been given a chance to express his viewpoints in the previous stages, we have to listen to his statements if necessary, and thus help the execution of justice. Naturally, God has not obliged us to work beyond our capability, but in any case, we have to compensate for this shortcoming in the law through added efforts. I myself am not particularly satisfied with the situation and I do not wish any individual not to have the chance of expressing his viewpoints, but we have no choice within our limited time other than to observe legal requirements. We have to deliver our opinion within the legal deadline. God willing, we shall try to take the utmost advantage of this time. \\n\\n  Q: What would happen if you are unable to investigate all complaints? \\n\\n  A: We are obliged to work to the best of our ability. We shall investigate the complaints, and opinions will be expressed about these complaints. There is after all a deadline for investigating the files. What would have been ideal is for us to be able to undertake extra research if necessary and to listen to the candidate's remarks. We may not always be able to do this extra work. I have no knowledge of what happened in the past because I was not in this post, but when I now look at the number of registered candidates and also at legal deadlines, I realize that the schedule is extremely tight, and we have no choice other than to use this very short time. We shall try to make our judgment to the best of our ability, with our eyes open and by observing justice and fairness. \\n\\n  Q: One of the issues that has been greatly debated by the media in recent months is the investigation into eligibility. The law has appointed four authorities to investigate the candidates' eligibility, but the Guardian Council is insisting on an issue called local inquiry. What is the reason for this? \\n\\n  A: There is an extremely important point that must be taken into account, which is that I cannot make any judgments as to whether local inquiries have been carried out well or not. I can only offer an assessment when I receive the results of these inquiries. Therefore, I cannot express an opinion about what is being carried out. But what does the law say? Does the law allow you to carry out inquiries about your own trusted colleagues? I am addressing this question to the Guardian Council. Does the law compel you to do such a thing? My answer is that in certain cases, not only are we allowed to do this, we have no choice but to undertake local inquiries. This is because the four authorities do not sometimes have sufficient information available to them, in accordance with their duties, that would enable them to examine the candidates' conditions. If this information is made available to us, you have to put them together with the conditions that the election law has stipulated for lawmakers. For example, none of these four authorities may have information as to whether an individual is of ill repute or not. None of these authorities may have information in this respect. Inquiries must be made among the people as to whether a particular individual is reputable or not. The same thing applies to whether this individual is pious and committed to his religion in practice or not. Impious individuals do not always have files at the judiciary. The National Organization for Civil Registration does not care whether an individual is pious or not, and if someone does not commit a crime, Law Enforcement does not care whether an individual is pious or not. Consequently, how do you verify points concerning which the four authorities have no information? We cannot say that we will ignore them because that is a violation of the law. Therefore, in order for the law not to be violated or futile, we have no choice other than to take these points into account. It seems that the legislator has predicted this contingency because article 50 of the election law tells executive committees that are made up of trusted individuals, to express an opinion based on the inquiry that is carried out locally and the information received from the Ministry of the Interior. The information received from the Ministry of the Interior is the same response by the four authorities. The purpose of local inquiries is to use the knowledge and information of local people to see if a candidate is pious and if he is bound to Shari'a law and believes in the Constitution. Consequently, article 50 has provided the executive committees with the tools for assessing this information. Hence, the law itself does not rely on the four authorities alone to determine the candidates' eligibility. \\n\\n  Q: The point is that the law has stipulated this for the executive committees and local trustees are in fact playing the same role. Why does the Guardian Council resort to local inquiries? \\n\\n  A: Because we have to supervise the work of executive committees, in addition to investigating the complaints and protests against their actions. If someone complains that these nine people have unlawfully and prejudicially told him that he is of ill repute and is not pious, what tools will the Guardian Council have to investigate these complaints? You then have no choice other than to assess the executive committees' opinions and to see if they are in accordance with the truth or not. You can use the same tools that they have used, which means that we must refer to local inquiries. Someone may claim that local inquiries have no proper mechanism, which is a debatable point. They may say that these methods are open to criticism, and I myself may have certain criticisms. As a member of the Guardian Council, if I receive such local inquiries and I have no knowledge of that particular individual, I may not pay any attention to the local inquiries if that person is not trusted by me. \\n\\n  Q: You said that if someone complains about the results of inquiries carried out by the local trustees for the executive committees, you have no choice other than to refer to local inquiries. Therefore, will local inquiries only be used by the Guardian Council when a candidate lodges a complaint? \\n\\n  A: According to the law, the supervisory committee may not accept their decision concerning the approval or disqualification of the candidate. For example they may say that a candidate is disqualified while the supervisory committee says that the candidate is eligible or vice versa. Occasionally, in order to approve eligibility, we have to refer to local inquiries; meaning that it makes no difference whether you go for eligibility or disqualification because this is one of the tools to establish eligibility. Some people say that the law has not explicitly determined a contingency. What I say is that in order to consider a rule as a legal rule, there is not necessarily any need for legal stipulations. Legal logic dictates that the tool available to the executive committee for establishing eligibility may be controlled by the Guardian Council through mandatory supervision, and this control is not possible other than through another kind of inquiry carried out by trustees. \\n\\n  Q: Were the local trustees in the executive committees not enough? I put this question forward again because the local trustees in the executive committees must also be approved by the Guardian Council. Can you not rely on individuals that have been approved by yourself? \\n\\n  A: It is so, but this is neither in my hands nor in the hands of the Governor's office. It is not merely the Guardian Council and the Governor's office, but a third party has come forward who says that he does not accept these people, that they are wrong, or a report has been received stating that they have made a mistake. In that case, we cannot say that their complaint will not be investigated because we trust these individuals. We have no choice other than to investigate the complaint and see whether they have acted erroneously or with prejudice. \\n\\n  Q: I put the same point forward in my previous question as to whether the Guardian Council's local inquiries will only become active in case of complaints by the candidates or not, which you attributed to the approval or non-approval of eligibility. In any case, regarding the same point about complaints, how would it be possible to investigate these complaints in view of the very short time available? When these reports are received they will undoubtedly be substantial files. \\n\\n  A: Had there been a selection or assessment process for eligibility concerning the network of trustworthy individuals, we would have been able to pay attention to their statements with a better degree of reassurance. We must not use the usual means of referring to the local mosque or the owner of the local supermarket in order to examine the opinions of the trustees of the executive committees. It is not sufficient that these individuals themselves are trusted, and we have to make our own inquiries and find individuals with the same level of moral rectitude, and put our questions to them. As to whether this takes place correctly or not, I have no accurate information but inquiries are carried out and information is gathered about the trustees themselves. Despite all the caution exercised, the possibility of grudge and enmity still exists, but sometimes in our lives, there is no choice other than to rely on the evidence and testimonies of witnesses and those with knowledge. You are aware that the same remarks are made about testimony as a means of proof, and they ask how can we be sure that the witness has not made a mistake, has not misheard or made the wrong observation. These probabilities are considerable but as far as everyday life and judgment are concerned, we have to ignore certain possibilities if we pay enough attention. For example, at present, based on our current judicial regulations, we can send someone to prison on the basis of local inquiries, and we tell that person that he or she has committed a crime because we carried out local inquiries, and this provided us with the necessary certainty and knowledge. Why cannot we rely on this in relation to establishing eligibility? Yes there is a possibility of grudge and enmity. Man is fallible but even in our everyday relations, we sometimes exercise all necessary caution and trust. The same applies here. \\n\\n  Q: As far as approving local trustees is concerned, both within the executive committees and in relation to local inquiries that the Guardian Council itself is due to carry out, what criteria have you taken into account? \\n\\n  A: The criteria related to executive committees have been specified in the law. As far as executive committees are concerned, the law states that they must be local or its members must have been residing in that location for a particular amount of time, be bound to Islam and the Constitution, and have no connection with the candidates. Therefore, these conditions can inspire us and we must take the same criteria into account regarding the authorities and the trustees, about whom we carry out our own inquiries. \\n\\n  Q: How important is their political tendencies; for example, whether they are reformist or principle-ist? \\n\\n  A: By rights, it should have no effect. Since I do not personally know the individuals who have been introduced to our system as trustees, I cannot make a clear judgement, but based on rules and regulations, political tendencies that conform to the system should not deprive a trusted person of expressing opinions. A pious individual, bound to Shari'a law and the Constitution must be listened to, regardless of his political tendencies, provided that he accepts the Islamic Republic system. \\n\\n  Q: So it is possible that a person with reformist tendencies may be among those trusted by the Guardian Council? \\n\\n  A: I have no exact statistics of them. Any accurate statistics that exists does not classify them on the basis of political tendencies. Therefore, a field inquiry must be carried out. \\n\\n  Q: In view of all the Guardian Council's processes for examining the eligibility of candidates, is it possible that those individuals who had been disqualified in the past, may be approved this time round? \\n\\n  A: These cases must be examined in practice, and if they complain, and their complaint is based on the fact that their disqualification was not justified and had no legal basis, and they are able to give reasons to prove their claim, they will undoubtedly be taken into account. If the reasons are convincing, the previous decisions may be overturned and they will be approved. \\n\\n  Q: So they must have already made a complaint? \\n\\n  A: The previous decisions are in place until they make a complaint. \\n\\n  Q: Many reformist figures were active in 2009 in the election headquarters of Messieurs [Mehdi] Karubi and [Mirhoseyn] Musavi, and they supported these two individuals. Will their presence in their election headquarters or their support result in disqualification? \\n\\n  A: Mere presence in election headquarters is not considered an obstacle to entering the election race because all candidates at the time had been approved by the Guardian Council. They were in fact supporting candidates whose eligibility had been approved by the Guardian Council. \\n\\n  Q: Let us speak about the process of assessing the eligibility of candidates for the Assembly of Experts. At the beginning of the interview you pointed out that this has a different mechanism. What form does this test take? \\n\\n  A: A test has already taken place but since conditions must be assessed after registration, the jurisconsults have one month to assess the people who have registered once the period of registration has ended. The means of assessment is the responsibility of the Guardian Council's jurisconsults. Different methods are conceivable such as interviews, and written exams with judgment based on their academic files, or a combination of the two. The question that everyone repeats is whether everybody must take part in the written exam or not. Those who have a powerful academic record will most likely not take part in a written exam. \\n\\n  Q: Is the decision the responsibility of the Guardian Council's jurisconsults? \\n\\n  A: Yes, it is their responsibility. \\n\\n  Q: Several of the Guardian Council's jurisconsults are themselves candidates for the Assembly of Experts election. Even though you previously said that they will not enter into the constituency where they themselves are candidates, is it generally not possible that this may influence the final decision? \\n\\n  A: They play no part in the area of supervision and as far as other conditions are concerned, the most important of which is the academic record, the jurisconsults of the Guardian Council have established their academic levels through other means. They have been accepted as mujtahed [an individual qualified to exercise ejtehad in the evaluation of Islamic law, who must have extensive knowledge of Arabic, the Koran, and legal Islamic theories] by the Supreme Leader and their ejtehad has been confirmed by the leadership. \\n\\n  Q: My question was not about the academic approval but making decisions about other candidates. Are their opinions taken into account? \\n\\n  A: This question can be put forward not only in relation to the Guardian Council members but also others; that in view of their own personal political tendencies, it is possible that it may influence their own personal decisions. \\n\\n  Q: This point assumes added significance because since they, specifically, are considered election rivals, therefore the judge himself is one side of the competition. \\n\\n  A: The point is that they control conditions as jurisconsults, but in the Guardian Council, in addition to the jurisconsults, law experts must also supervise this issue; namely that among the six members, you cannot condemn all six. Furthermore, even if the political tendency of all six people is the same, there is a set of 12 individuals, all of whom practice mandatory supervision. This means that if God forbid, there is any enmity -the possibility of which I consider to be zero -the entire supervisory committee can control and prevent it. \\n\\n  Q: In any case, as far as previous elections are concerned, many Guardian Council members had political tendencies close to the principle-ists, and they would even support principle-ist candidates in interviews and through various platforms. Consequently, there may be a suspicion that the Guardian Council may decide in favour of one movement. \\n\\n  A: This fault can be found with all decision-making institutions throughout the world. All individuals who are appointed to state posts, such as the Constitution Council, election courts, and other such institutions, are all officials who have participated in political activities. In fact, even in other countries, it was their political activities that brought these individuals to the top of the power structure. They may have been socialists or extreme right-wingers, moderate right-wingers or Christian Democrats. But when they are placed in positions such as judging the election, it is obvious that they will have personal choices. However, they have to try not to allow their personal opinions to interfere in their decisions as much as possible. As far as the Guardian Council is concerned, in this round, we insisted that no political statement should be made against candidates; so much so that in my position as spokesperson, who actually announces the Guardian Council standpoints, I took all precautions not to speak for or against any political faction. Even if there has been a history of statements made against certain candidates in the past, we have tried to bring this to a minimum this time around and to control it. This is itself a guarantee that we shall demonstrate impartiality. There is always a possibility because we are all human beings and fallible. This probability exists everywhere; meaning within all legal systems where you appoint someone as judge, and he votes for the left or the right. It is true that he makes a political choice but there are guarantees that we trust that person. For example, if they say in relation to a judge that 20 years of professional work have demonstrated that he is not influenced by his own political faction, and his professional life shows that he is not easily influenced, I believe that some of the Guardian Council members have been able to demonstrate this over the years; that they and their judgements are not influenced by their political choices. During my term in the Guardian Council, I have come to know certain figures whose ascetic and academic lives guarantee that they do not digress from the path of justice and fairness, and they are trusted by the leader. They have had positive track records in various social and political arenas, but is not there always the possibility of a mistake being made? The answer is that man is fallible and I do not deny this probability. \\n\\n  Q: You stated that previous rounds have demonstrated that political tendencies have not been able to influence opinions or decisions, but the reformist faction may have another view. They say that the Guardian Council members' political tendencies have at certain times been in favour of a particular movement. \\n\\n  A: Yes, to the best of my knowledge, fair-minded individuals from all factions reiterated that they did not believe the Guardian Council to be impartial and they had asked the Guardian Council merely to demonstrate its impartiality. If we want to be just, we have to say that Guardian Council members were able to observe justice, but maybe they were not able to demonstrate it well. The point that has resulted in a number of complaints is the inability to demonstrate fairness and justice rather than the inability to observe it. My personal opinion is that one of the ways to demonstrate this is that Guardian members should not express opinions in favour of any particular factions' list. Another way of demonstrating justice and fairness -and this is my personal opinion and I am not speaking as the Guardian Council spokesperson -is that we should not even become candidates for the election; even though the law has not created such a ban. \\n\\n  Q: Do you not believe that in order to eliminate these problems, we need to review the law? \\n\\n  A: In my opinion, the investigation process by the Guardian Council and the regulations related to investigating election disputes, require serious review and contemplation. This is my personal opinion. Now is not the time to give explanations and I will provide explanations after the election. \\n\\n  Q: In any case, the fact that the Guardian Council is not accountable to any other institution has been discussed during all rounds of elections. \\n\\n  A: I am sorry but there is a problem with this statement. The phrase that the Guardian Council is not accountable to any institution has been repeated by a number of media and politicians. This statement is wrong because there is always someone in a position of judgement who will ultimately make the final judgment. Election courts or the Constitution Council in other countries such as France have the same mechanism; meaning that there is an authority who is referred to when there is a complaint, and beyond that there is no other authority for control. \\n\\n  Q: This may not be the proper comparison, but the same Constitution Council in France to which you referred, consists of many individuals, three of whom are chosen by the president, three by the Senate, and three by the National Assembly. In fact, apart from the Senate which is indirectly elected through the people's votes, the other six members of these nine individuals are elected by an institution that has come to power with the people's direct votes. \\n\\n  A: But you are aware that on many occasions, this council can become socialist or right-wing. \\n\\n  Q: Yes, but society will find it easier to accept a judgment from those who have come to power through election institutions chosen by the people. \\n\\n  A: This matter is not related to elections that are directly or indirectly connected with public votes, but rather to every country's political system and Constitution. In our country, we have connected many matters to voting, supervision, and public choices. Sometimes it is a direct choice and sometimes it is indirect and through intermediaries. For example in relation to the debate over the six jurisconsults; even though they are chosen by the leader, the leader is chosen by representatives who have been chosen directly, meaning through votes. Or the head of the judiciary for example, has been chosen through voting and two intermediaries. This depends to a great degree on the formula that has been defined for government and democracy in these countries. However, the remark that the system is imperfect because there is no other authority is wrong. For example, as far as the judiciary is concerned, one can see that there is an authority who has the final say and there is no other authority beyond it. There is nothing wrong with this if you have the correct procedures, if you have clear and transparent rules for investigation, and if someone has the final say, there is nothing logically wrong with it.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/relationships",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"relationships"
+					]
+				},
+				"description": "Building on the results of entity extraction and linking, Rosette relationship extraction identifies how entities are related to each other.\n\nRosette performs open relationship extraction by finding anything within the text that looks like a relationship between entities. This allows you to filter and process the results according to your needs."
+			},
+			"response": []
+		},
+		{
+			"name": "/sentences",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"Wayne Rooney scores a pitfule goal against Liverpool in the agaianst the West Ham.\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/sentences",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"sentences"
+					]
+				},
+				"description": "Divides the input into sentences.\n\nThe response contains a list of sentences."
+			},
+			"response": []
+		},
+		{
+			"name": "/ping",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/ping",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"ping"
+					]
+				},
+				"description": "To authenticate (and send a ping) use this code."
+			},
+			"response": []
+		},
+		{
+			"name": "/tokens/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "ca9c1cf886673d412106cf915fe0aa63"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": \"北京大学生物系主任办公室内部会议\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com:443/rest/v1/tokens/",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"rest",
+						"v1",
+						"tokens",
+						""
+					]
+				},
+				"description": "Divides the input into tokens.\n\nThe response contains a list of tokens"
+			},
+			"response": []
+		},
+		{
+			"name": "/translated-name",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"معمر محمد أبو منيار القذاف\", \"targetLanguage\": \"eng\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/name-translation",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"name-translation"
+					]
+				},
+				"description": "Returns the translation of a name.\n\nyou must specify the name to translate and the target language for the translation.\n"
+			},
+			"response": []
+		},
+		{
+			"name": "/translated-name/info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "e647a291d6db80a573803d4ac5bd4507"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Abu Bakr al-Baghdadi\", \"entityType\": \"PERSON\", \"sourceLanguageOfOrigin\": \"ara\", \"targetLanguage\": \"ara\"}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/translated-name/info",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"translated-name",
+						"info"
+					]
+				},
+				"description": "Response is a JSON string with request id, version , build info, and support (null for now).\n\nExample: {\"requestId\": \"xyz\", \"version\": \"1.0\", \"build\": \"abc\", \"support\": null}"
+			},
+			"response": []
+		},
+		{
+			"name": "name-similarity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-RosetteAPI-Key",
+						"value": "52217b7b5514530c93b26b47d9403a12"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name1\": {\n    \"text\": \"Влади́мир Влади́мирович Пу́тин\",\n    \"language\": \"rus\",\n    \"entityType\": \"PERSON\"\n  },\n  \"name2\": {\n    \"text\": \"Vladimir Putin\",\n    \"language\": \"eng\",\n    \"entityType\": \"PERSON\"\n  }\n}"
+				},
+				"url": {
+					"raw": "https://api.rosette.com/rest/v1/matched-name",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rosette",
+						"com"
+					],
+					"path": [
+						"rest",
+						"v1",
+						"matched-name"
+					]
+				},
+				"description": "Returns the result of matching 2 names.\n\nYou must specify the names to be matched."
+			},
+			"response": []
+		}
+	]
+}

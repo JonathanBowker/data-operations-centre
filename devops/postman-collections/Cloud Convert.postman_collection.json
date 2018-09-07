@@ -1,0 +1,256 @@
+{
+	"info": {
+		"name": "Cloud Convert",
+		"_postman_id": "1b21f00e-f662-ff4d-2303-d1e2a2b1d6cc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "File Conversions API",
+			"description": "",
+			"item": [
+				{
+					"name": "Creating a new Process ID",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"apikey\": \"qTz4jB81iRUc3WpaW-7LoEms2BqNbS_r24lHih-mjqUnT3e3dr4GURwdNngyRbZbTDlUfGLe6HvqowVFpXhC_w\",\n    \"inputformat\": \"flv\",\n    \"outputformat\": \"mp4\"\n}"
+						},
+						"url": {
+							"raw": "https://api.cloudconvert.com/process",
+							"protocol": "https",
+							"host": [
+								"api",
+								"cloudconvert",
+								"com"
+							],
+							"path": [
+								"process"
+							]
+						},
+						"description": "In order to start a new conversion you need to create a new Process ID first. Each Process ID is for one-time use only and can only be used for converting one file."
+					},
+					"response": []
+				},
+				{
+					"name": "Starting the conversion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "apikey",
+								"value": "qTz4jB81iRUc3WpaW-7LoEms2BqNbS_r24lHih-mjqUnT3e3dr4GURwdNngyRbZbTDlUfGLe6HvqowVFpXhC_w"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": \"download\",\n    \"file\": \"https://www.fca.org.uk/publication/consultation/cp17-32.pdf\",\n    \"outputformat\": \"html\",\n    \"converteroptions\": {\n        \"audio_bitrate\": 128,\n        \"audio_normalize\": \"+20db\"\n    }\n}"
+						},
+						"url": {
+							"raw": "https://host123d1qo.cloudconvert.com/process/{id}",
+							"protocol": "https",
+							"host": [
+								"host123d1qo",
+								"cloudconvert",
+								"com"
+							],
+							"path": [
+								"process",
+								"{id}"
+							]
+						},
+						"description": "To get the actual conversion started, you need to do a POST request to the obtained Process URL."
+					},
+					"response": []
+				},
+				{
+					"name": "Get file information",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "apikey",
+								"value": "qTz4jB81iRUc3WpaW-7LoEms2BqNbS_r24lHih-mjqUnT3e3dr4GURwdNngyRbZbTDlUfGLe6HvqowVFpXhC_w"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mode\": \"info\",\n    \"input\": \"download\",\n    \"file\": \"https://www.fca.org.uk/publication/consultation/cp17-32.pdf\"\n}"
+						},
+						"url": {
+							"raw": "https://host123d1qv.cloudconvert.com/process/{id}",
+							"protocol": "https",
+							"host": [
+								"host123d1qv",
+								"cloudconvert",
+								"com"
+							],
+							"path": [
+								"process",
+								"{id}"
+							]
+						},
+						"description": "CloudConvert can be used to extract file metadata from PDF, image, video and audio files. Therefore the API offers the info mode. "
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Amazon S3 Integration",
+			"description": "It is possible to use Amazon S3 as storage both for input and output of conversions. ",
+			"item": [
+				{
+					"name": "Amazon S3 Integration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "apikey",
+								"value": "qTz4jB81iRUc3WpaW-7LoEms2BqNbS_r24lHih-mjqUnT3e3dr4GURwdNngyRbZbTDlUfGLe6HvqowVFpXhC_w"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"s3\": {\n            \"accesskeyid\": \"my_accessKeyId\",\n            \"secretaccesskey\": \"my_secretAccessKey\",\n            \"bucket\": \"some.bucket.name\"\n        }\n    },\n    \"file\": \"file.png\",\n    \"outputformat\": \"pdf\",\n    \"output\": {\n        \"s3\": {\n            \"accesskeyid\": \"my_accessKeyId\",\n            \"secretaccesskey\": \"my_secretAccessKey\",\n            \"bucket\": \"some.bucket.name\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://srv01.cloudconvert.com/process/{id}",
+							"protocol": "https",
+							"host": [
+								"srv01",
+								"cloudconvert",
+								"com"
+							],
+							"path": [
+								"process",
+								"{id}"
+							]
+						},
+						"description": "In order to start a new conversion you need to create a new Process ID first. Each Process ID is for one-time use only and can only be used for converting one file."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Azure Integration",
+			"description": "It is possible to use Microsoft Azure File Storage and Azure Blob Storage as storage both for input and output of conversions. For security reasons to use Shared Access Signatures (SAS) . ",
+			"item": [
+				{
+					"name": "Azure Integration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "apikey",
+								"value": "qTz4jB81iRUc3WpaW-7LoEms2BqNbS_r24lHih-mjqUnT3e3dr4GURwdNngyRbZbTDlUfGLe6HvqowVFpXhC_w"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"input\": {\n        \"azurefile\": {\n            \"storageaccount\": \"storage account name\",\n            \"sastoken\": \"?sv=...&sig=...\",\n            \"sharename\": \"name of your share\"\n        }\n    },\n    \"file\": \"file.png\",\n    \"outputformat\": \"pdf\",\n    \"output\": {\n        \"azurefile\": {\n            \"storageaccount\": \"storage account name\",\n            \"sastoken\": \"?sv=...&sig=...\",\n            \"sharename\": \"name of your share\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "https://srv01.cloudconvert.com/process/{id}",
+							"protocol": "https",
+							"host": [
+								"srv01",
+								"cloudconvert",
+								"com"
+							],
+							"path": [
+								"process",
+								"{id}"
+							]
+						},
+						"description": "In order to start a new conversion you need to create a new Process ID first. Each Process ID is for one-time use only and can only be used for converting one file."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://doc2doc.ethelhq.com/process/pdf/html",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://doc2doc.azurewebsites.net/process/pdf/html",
+					"protocol": "https",
+					"host": [
+						"doc2doc",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"process",
+						"pdf",
+						"html"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://doc2doc.ethelhq.com/process/pdf/html",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://doc2doc.ethelhq.com/process/pdf/html",
+					"protocol": "http",
+					"host": [
+						"doc2doc",
+						"ethelhq",
+						"com"
+					],
+					"path": [
+						"process",
+						"pdf",
+						"html"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

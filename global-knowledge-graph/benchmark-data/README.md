@@ -1,0 +1,1 @@
+The Benchmark Data Service prepares Benchmark data feeds for specific systems or application flows and guarantees delivery without data loss. We manage data workflow covering all the elements of good data processing to deliver fully validated, reformatted, customised data that is ready for consumption by in-house processes, third-party systems and the Global Knowledge Graph. 

@@ -1,0 +1,30 @@
+{
+  "doc": {
+    "properties": {
+      "Variable": {
+        "type": "string"
+      },
+      "DictionaryID": {
+        "type": "string"
+      },
+      "DimensionID": {
+        "type": "string"
+      },
+      "Type": {
+        "type": "string"
+      },
+      "LanguageCode": {
+        "type": "string"
+      },
+      "DictionaryHumanName": {
+        "type": "string"
+      },
+      "DimensionHumanName": {
+        "type": "string"
+      },
+      "DictionaryCitation": {
+        "type": "string"
+      }
+    }
+  }
+}

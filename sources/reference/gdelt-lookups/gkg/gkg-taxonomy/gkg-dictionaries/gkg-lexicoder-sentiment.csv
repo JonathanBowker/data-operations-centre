@@ -1,0 +1,5 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c3.1,3,1,WORDCOUNT,eng,Lexicoder Sentiment Dictionary,NEGATIVE,Lori Young and Stuart Soroka. (2012). 'Affective News: The Automated Coding of Sentiment in Political Texts'. Political Communication 29: 205-231.  Available at http://lexicoder.com/
+c3.2,3,2,WORDCOUNT,eng,Lexicoder Sentiment Dictionary,POSITIVE,Lori Young and Stuart Soroka. (2012). 'Affective News: The Automated Coding of Sentiment in Political Texts'. Political Communication 29: 205-231.  Available at http://lexicoder.com/
+c3.3,3,3,WORDCOUNT,eng,Lexicoder Sentiment Dictionary,NEG_NEGATIVE,Lori Young and Stuart Soroka. (2012). 'Affective News: The Automated Coding of Sentiment in Political Texts'. Political Communication 29: 205-231.  Available at http://lexicoder.com/
+c3.4,3,4,WORDCOUNT,eng,Lexicoder Sentiment Dictionary,NEG_POSITIVE,Lori Young and Stuart Soroka. (2012). 'Affective News: The Automated Coding of Sentiment in Political Texts'. Political Communication 29: 205-231.  Available at http://lexicoder.com/

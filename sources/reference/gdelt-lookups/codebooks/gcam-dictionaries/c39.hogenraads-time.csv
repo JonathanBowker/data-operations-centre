@@ -1,0 +1,42 @@
+variable,dictionaryID,dimensionID,Type,languageCode,dictionary,dimension
+c39.1,39,1,Wordcount,eng,Hogenraad's TIME,Time
+c39.2,39,2,Wordcount,eng,Hogenraad's TIME,Neverness
+c39.3,39,3,Wordcount,eng,Hogenraad's TIME,Period
+c39.4,39,4,Wordcount,eng,Hogenraad's TIME,Course (Indefinite Duration)
+c39.5,39,5,Wordcount,eng,Hogenraad's TIME,Contingent Duration
+c39.6,39,6,Wordcount,eng,Hogenraad's TIME,Diuturnity (Long Duration)
+c39.7,39,7,Wordcount,eng,Hogenraad's TIME,Transientness
+c39.8,39,8,Wordcount,eng,Hogenraad's TIME,Perpetuity (Endless Duration)
+c39.9,39,9,Wordcount,eng,Hogenraad's TIME,Instantaneity (Point Of Time)
+c39.10,39,10,Wordcount,eng,Hogenraad's TIME,Chronometry
+c39.11,39,11,Wordcount,eng,Hogenraad's TIME,Anachronism
+c39.12,39,12,Wordcount,eng,Hogenraad's TIME,Priority
+c39.13,39,13,Wordcount,eng,Hogenraad's TIME,Posteriority
+c39.14,39,14,Wordcount,eng,Hogenraad's TIME,Present Time
+c39.15,39,15,Wordcount,eng,Hogenraad's TIME,Different Time
+c39.16,39,16,Wordcount,eng,Hogenraad's TIME,Synchronism
+c39.17,39,17,Wordcount,eng,Hogenraad's TIME,Futurity
+c39.18,39,18,Wordcount,eng,Hogenraad's TIME,Preterition
+c39.19,39,19,Wordcount,eng,Hogenraad's TIME,Newness
+c39.20,39,20,Wordcount,eng,Hogenraad's TIME,Oldness
+c39.21,39,21,Wordcount,eng,Hogenraad's TIME,Morning
+c39.22,39,22,Wordcount,eng,Hogenraad's TIME,Evening
+c39.23,39,23,Wordcount,eng,Hogenraad's TIME,Youth
+c39.24,39,24,Wordcount,eng,Hogenraad's TIME,Age
+c39.25,39,25,Wordcount,eng,Hogenraad's TIME,Young Person
+c39.26,39,26,Wordcount,eng,Hogenraad's TIME,Old Person
+c39.27,39,27,Wordcount,eng,Hogenraad's TIME,Adultness
+c39.28,39,28,Wordcount,eng,Hogenraad's TIME,Earliness
+c39.29,39,29,Wordcount,eng,Hogenraad's TIME,Lateness
+c39.30,39,30,Wordcount,eng,Hogenraad's TIME,Occasion
+c39.31,39,31,Wordcount,eng,Hogenraad's TIME,Intempestivity
+c39.32,39,32,Wordcount,eng,Hogenraad's TIME,Frequency
+c39.33,39,33,Wordcount,eng,Hogenraad's TIME,Infrequency
+c39.34,39,34,Wordcount,eng,Hogenraad's TIME,Regularity
+c39.35,39,35,Wordcount,eng,Hogenraad's TIME,Fitfulness
+c39.36,39,36,Wordcount,eng,Hogenraad's TIME,Absolute Time
+c39.37,39,37,Wordcount,eng,Hogenraad's TIME,Relative Time
+c39.38,39,38,Wordcount,eng,Hogenraad's TIME,Recurrent Time
+c39.39,39,39,Wordcount,eng,Hogenraad's TIME,Past
+c39.40,39,40,Wordcount,eng,Hogenraad's TIME,Present
+c39.41,39,41,Wordcount,eng,Hogenraad's TIME,Future

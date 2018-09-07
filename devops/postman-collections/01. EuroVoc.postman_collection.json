@@ -1,0 +1,363 @@
+{
+	"info": {
+		"name": "01. EuroVoc",
+		"_postman_id": "a051f051-471d-fd19-037a-37b6033892d1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "eurovoc-domains",
+			"description": "",
+			"item": [
+				{
+					"name": "Create evc-domains index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-domains/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-domains",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete eurovoc-domains index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-domains/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-domains",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get eurovoc-domains index settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-domain/_settings",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-domain",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post eurovoc-domains records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"04\",\"domain\": \"POLITICS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"08\",\"domain\": \"INTERNATIONAL RELATIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"10\",\"domain\": \"EUROPEAN UNION\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"12\",\"domain\": \"LAW\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"16\",\"domain\": \"ECONOMICS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"20\",\"domain\": \"TRADE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"24\",\"domain\": \"FINANCE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"28\",\"domain\": \"SOCIAL QUESTIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"32\",\"domain\": \"EDUCATION AND COMMUNICATIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"36\",\"domain\": \"SCIENCE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"40\",\"domain\": \"BUSINESS AND COMPETITION\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"44\",\"domain\": \"EMPLOYMENT AND WORKING CONDITIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domainss\", \"_type\": \"domain\" } }\n{ \"domainID\": \"48\",\"domain\": \"TRANSPORT\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"52\",\"domain\": \"ENVIRONMENT\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"56\",\"domain\": \"AGRICULTURE, FORESTRY AND FISHERIES\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"60\",\"domain\": \"AGRI-FOODSTUFFS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"64\",\"domain\": \"PRODUCTION, TECHNOLOGY AND RESEARCH\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"66\",\"domain\": \"ENERGY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"68\",\"domain\": \"INDUSTRY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"72\",\"domain\": \"GEOGRAPHY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"76\",\"domain\": \"INTERNATIONAL ORGANISATIONS\",\"language\":\"en\" }"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc/domain/_bulk",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc",
+								"domain",
+								"_bulk"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "microthesaurus",
+			"description": "",
+			"item": [
+				{
+					"name": "Create eurovoc-mt index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-mt/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-mt",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete eurovoc-mt index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-mt/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-mt",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get eurovoc-mt index settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-mt/_settings",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-mt",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post eurovoc-mt records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0406\",\"label\": \"political framework\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0411\",\"label\": \"political party\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0416\",\"label\": \"electoral procedure and voting\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0421\",\"label\": \"parliament\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0426\",\"label\": \"parliamentary proceedings\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0431\",\"label\": \"politics and public safety\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0436\",\"label\": \"executive power and public service\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0806\",\"label\": \"international affairs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0811\",\"label\": \"cooperation policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0816\",\"label\": \"international security\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0821\",\"label\": \"defence\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1006\",\"label\": \"EU institutions and European civil service\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1011\",\"label\": \"European Union law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1016\",\"label\": \"European construction\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1021\",\"label\": \"EU finance\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1206\",\"label\": \"sources and branches of the law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1211\",\"label\": \"civil law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1216\",\"label\": \"criminal law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1221\",\"label\": \"justice\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1226\",\"label\": \"organisation of the legal system\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1231\",\"label\": \"international law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1236\",\"label\": \"rights and freedoms\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1606\",\"label\": \"economic policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1611\",\"label\": \"economic conditions\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1616\",\"label\": \"regions and regional policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1621\",\"label\": \"economic structure\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1626\",\"label\": \"national accounts\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1631\",\"label\": \"economic analysis\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2006\",\"label\": \"trade policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2011\",\"label\": \"tariff policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2016\",\"label\": \"trade\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2021\",\"label\": \"international trade\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2026\",\"label\": \"consumption\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2031\",\"label\": \"marketing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2036\",\"label\": \"distributive trades\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2406\",\"label\": \"monetary relations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2411\",\"label\": \"monetary economics\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2416\",\"label\": \"financial institutions and credit\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2421\",\"label\": \"free movement of capital\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2426\",\"label\": \"financing and investment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2431\",\"label\": \"insurance\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2436\",\"label\": \"public finance and budget policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2441\",\"label\": \"budget\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2446\",\"label\": \"taxation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2451\",\"label\": \"prices\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2806\",\"label\": \"family\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"2811\",\"label\": \"migration\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2816\",\"label\": \"demography and population\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2821\",\"label\": \"social framework\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2826\",\"label\": \"social affairs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2831\",\"label\": \"culture and religion\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2836\",\"label\": \"social protection\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2841\",\"label\": \"health\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2846\",\"label\": \"construction and town planning\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3206\",\"label\": \"education\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3211\",\"label\": \"teaching\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3216\",\"label\": \"organisation of teaching\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3221\",\"label\": \"documentation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3226\",\"label\": \"communications\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3231\",\"label\": \"information and information processing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3236\",\"label\": \"information technology and data processing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"36\",\"thesaurusID\": \"3606\",\"label\": \"natural and applied sciences\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"36\",\"thesaurusID\": \"3611\",\"label\": \"humanities\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4006\",\"label\": \"business organisation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4011\",\"label\": \"business classification\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4016\",\"label\": \"legal form of organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4021\",\"label\": \"management\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4026\",\"label\": \"accounting\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4031\",\"label\": \"competition\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4406\",\"label\": \"employment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4411\",\"label\": \"labour market\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4416\",\"label\": \"organisation of work and working conditions\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4421\",\"label\": \"personnel management and staff remuneration\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4426\",\"label\": \"labour law and labour relations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4806\",\"label\": \"transport policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4811\",\"label\": \"organisation of transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4816\",\"label\": \"land transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4821\",\"label\": \"maritime and inland waterway transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4826\",\"label\": \"air and space transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5206\",\"label\": \"environmental policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5211\",\"label\": \"natural environment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5216\",\"label\": \"deterioration of the environment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5606\",\"label\": \"agricultural policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5611\",\"label\": \"agricultural structures and production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5616\",\"label\": \"farming systems\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5621\",\"label\": \"cultivation of agricultural land\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5626\",\"label\": \"means of agricultural production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5631\",\"label\": \"agricultural activity\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5636\",\"label\": \"forestry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5641\",\"label\": \"fisheries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6006\",\"label\": \"plant product\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6011\",\"label\": \"animal product\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6016\",\"label\": \"processed agricultural produce\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6021\",\"label\": \"beverages and sugar\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6026\",\"label\": \"foodstuff\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6031\",\"label\": \"agri-foodstuffs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6036\",\"label\": \"food technology\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6406\",\"label\": \"production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6411\",\"label\": \"technology and technical regulations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6416\",\"label\": \"research and intellectual property\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6606\",\"label\": \"energy policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6611\",\"label\": \"coal and mining industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6616\",\"label\": \"oil industry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6621\",\"label\": \"electrical and nuclear industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6626\",\"label\": \"soft energy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6806\",\"label\": \"industrial structures and policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6811\",\"label\": \"chemistry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6816\",\"label\": \"iron, steel and other metal industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6821\",\"label\": \"mechanical engineering\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6826\",\"label\": \"electronics and electrical engineering\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6831\",\"label\": \"building and public works\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6836\",\"label\": \"wood industry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6841\",\"label\": \"leather and textile industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6846\",\"label\": \"miscellaneous industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7206\",\"label\": \"Europe\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7211\",\"label\": \"regions of EU Member States\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7216\",\"label\": \"America\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7221\",\"label\": \"Africa\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7226\",\"label\": \"Asia and Oceania\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7231\",\"label\": \"economic geography\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7236\",\"label\": \"political geography\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7241\",\"label\": \"overseas countries and territories\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7606\",\"label\": \"United Nations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7611\",\"label\": \"European organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7616\",\"label\": \"extra-European organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7621\",\"label\": \"world organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7626\",\"label\": \"non-governmental organisations\" }"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-mt/thesuarus/_bulk",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-mt",
+								"thesuarus",
+								"_bulk"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "eurovoc-descriptors",
+			"description": "",
+			"item": [
+				{
+					"name": "Create eurovoc-descriptors index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-descriptors/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-descriptors",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete eurovoc-descriptors index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-descriptors/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-descriptors",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get eurovoc-descriptors index settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-descriptors/_settings",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-descriptors",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post eurovoc-descriptors records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0406\",\"label\": \"political framework\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0411\",\"label\": \"political party\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0416\",\"label\": \"electoral procedure and voting\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0421\",\"label\": \"parliament\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0426\",\"label\": \"parliamentary proceedings\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0431\",\"label\": \"politics and public safety\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"0436\",\"label\": \"executive power and public service\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0806\",\"label\": \"international affairs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0811\",\"label\": \"cooperation policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0816\",\"label\": \"international security\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"08\",\"thesaurusID\": \"0821\",\"label\": \"defence\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1006\",\"label\": \"EU institutions and European civil service\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1011\",\"label\": \"European Union law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1016\",\"label\": \"European construction\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"10\",\"thesaurusID\": \"1021\",\"label\": \"EU finance\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1206\",\"label\": \"sources and branches of the law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1211\",\"label\": \"civil law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1216\",\"label\": \"criminal law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1221\",\"label\": \"justice\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1226\",\"label\": \"organisation of the legal system\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1231\",\"label\": \"international law\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"12\",\"thesaurusID\": \"1236\",\"label\": \"rights and freedoms\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1606\",\"label\": \"economic policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1611\",\"label\": \"economic conditions\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1616\",\"label\": \"regions and regional policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1621\",\"label\": \"economic structure\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1626\",\"label\": \"national accounts\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"16\",\"thesaurusID\": \"1631\",\"label\": \"economic analysis\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2006\",\"label\": \"trade policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2011\",\"label\": \"tariff policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2016\",\"label\": \"trade\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2021\",\"label\": \"international trade\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2026\",\"label\": \"consumption\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2031\",\"label\": \"marketing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"20\",\"thesaurusID\": \"2036\",\"label\": \"distributive trades\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2406\",\"label\": \"monetary relations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2411\",\"label\": \"monetary economics\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2416\",\"label\": \"financial institutions and credit\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2421\",\"label\": \"free movement of capital\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2426\",\"label\": \"financing and investment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2431\",\"label\": \"insurance\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2436\",\"label\": \"public finance and budget policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2441\",\"label\": \"budget\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2446\",\"label\": \"taxation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"24\",\"thesaurusID\": \"2451\",\"label\": \"prices\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2806\",\"label\": \"family\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"04\",\"thesaurusID\": \"2811\",\"label\": \"migration\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2816\",\"label\": \"demography and population\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2821\",\"label\": \"social framework\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2826\",\"label\": \"social affairs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2831\",\"label\": \"culture and religion\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2836\",\"label\": \"social protection\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2841\",\"label\": \"health\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"28\",\"thesaurusID\": \"2846\",\"label\": \"construction and town planning\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3206\",\"label\": \"education\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3211\",\"label\": \"teaching\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3216\",\"label\": \"organisation of teaching\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3221\",\"label\": \"documentation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3226\",\"label\": \"communications\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3231\",\"label\": \"information and information processing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"32\",\"thesaurusID\": \"3236\",\"label\": \"information technology and data processing\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"36\",\"thesaurusID\": \"3606\",\"label\": \"natural and applied sciences\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"36\",\"thesaurusID\": \"3611\",\"label\": \"humanities\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4006\",\"label\": \"business organisation\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4011\",\"label\": \"business classification\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4016\",\"label\": \"legal form of organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4021\",\"label\": \"management\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4026\",\"label\": \"accounting\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"40\",\"thesaurusID\": \"4031\",\"label\": \"competition\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4406\",\"label\": \"employment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4411\",\"label\": \"labour market\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4416\",\"label\": \"organisation of work and working conditions\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4421\",\"label\": \"personnel management and staff remuneration\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"44\",\"thesaurusID\": \"4426\",\"label\": \"labour law and labour relations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4806\",\"label\": \"transport policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4811\",\"label\": \"organisation of transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4816\",\"label\": \"land transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4821\",\"label\": \"maritime and inland waterway transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"48\",\"thesaurusID\": \"4826\",\"label\": \"air and space transport\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5206\",\"label\": \"environmental policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5211\",\"label\": \"natural environment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"52\",\"thesaurusID\": \"5216\",\"label\": \"deterioration of the environment\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5606\",\"label\": \"agricultural policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5611\",\"label\": \"agricultural structures and production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5616\",\"label\": \"farming systems\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5621\",\"label\": \"cultivation of agricultural land\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5626\",\"label\": \"means of agricultural production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5631\",\"label\": \"agricultural activity\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5636\",\"label\": \"forestry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"56\",\"thesaurusID\": \"5641\",\"label\": \"fisheries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6006\",\"label\": \"plant product\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6011\",\"label\": \"animal product\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6016\",\"label\": \"processed agricultural produce\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6021\",\"label\": \"beverages and sugar\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6026\",\"label\": \"foodstuff\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6031\",\"label\": \"agri-foodstuffs\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"60\",\"thesaurusID\": \"6036\",\"label\": \"food technology\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6406\",\"label\": \"production\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6411\",\"label\": \"technology and technical regulations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"64\",\"thesaurusID\": \"6416\",\"label\": \"research and intellectual property\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6606\",\"label\": \"energy policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6611\",\"label\": \"coal and mining industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6616\",\"label\": \"oil industry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6621\",\"label\": \"electrical and nuclear industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"66\",\"thesaurusID\": \"6626\",\"label\": \"soft energy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6806\",\"label\": \"industrial structures and policy\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6811\",\"label\": \"chemistry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6816\",\"label\": \"iron, steel and other metal industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6821\",\"label\": \"mechanical engineering\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6826\",\"label\": \"electronics and electrical engineering\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6831\",\"label\": \"building and public works\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6836\",\"label\": \"wood industry\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6841\",\"label\": \"leather and textile industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"68\",\"thesaurusID\": \"6846\",\"label\": \"miscellaneous industries\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7206\",\"label\": \"Europe\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7211\",\"label\": \"regions of EU Member States\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7216\",\"label\": \"America\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7221\",\"label\": \"Africa\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7226\",\"label\": \"Asia and Oceania\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7231\",\"label\": \"economic geography\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7236\",\"label\": \"political geography\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"72\",\"thesaurusID\": \"7241\",\"label\": \"overseas countries and territories\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7606\",\"label\": \"United Nations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7611\",\"label\": \"European organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7616\",\"label\": \"extra-European organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7621\",\"label\": \"world organisations\" }\n      { \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"thesaurus\" } }\n      { \"domainID\":\"76\",\"thesaurusID\": \"7626\",\"label\": \"non-governmental organisations\" }"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/eurovoc-descriptors/descriptor/_bulk",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"eurovoc-descriptors",
+								"descriptor",
+								"_bulk"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analysers",
+			"description": "",
+			"item": []
+		}
+	]
+}

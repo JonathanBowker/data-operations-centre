@@ -1,0 +1,24 @@
+[![Build Status](https://secure.travis-ci.org/Appendium/objectlabkit.png?branch=master)](http://travis-ci.org/Appendium/objectlabkit) [![Stories in Ready](https://badge.waffle.io/Appendium/objectlabkit.png?label=ready)](https://waffle.io/Appendium/objectlabkit) 
+Date Calc: [![Maven Central DateCalculator](https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/datecalc-common/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/datecalc-common)
+Utils: [![Maven Central Utils](https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/objectlab-utils/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/objectlab-utils)
+![GitHub license](https://img.shields.io/github/license/appendium/objectlabkit.svg?style=flat-square)
+[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=net.objectlab.kit:kit-parent)](https://sonarcloud.io/dashboard/index/net.objectlab.kit:kit-parent)    
+ObjectLab Kit
+=============
+
+ObjectLab Kit came out of our frustration to have to re-do the same kind of code over and over. Most banks will require basic Date calculation, ObjectLab did spoted another open source project for this but their licence forbids most financial institution from using it. This one is released under the business-friendly Apache 2.0 license.
+
+* Date Calculators (including new Currency Date Calculators for FX/Foreign Exchange), split in 3 jars:
+  * for JDK < 1.8
+  * for JDK 1.8 using LocalDate
+  * for JODA using Joda LocalDate
+* FX Rate Calculators (including Cross currencies calculations and MonetaryAmount), requires JDK8
+* Utils: set of utilities like Pair, Triplet, Total and BigDecimal that can handle nulls! requires JDK8
+
+[ObjectLab Kit site](http://objectlabkit.sf.net)
+
+[SonarQube](http://nemo.sonarsource.org/project/index/net.objectlab.kit:kit-parent)
+[Metrics at OpenHub](https://www.openhub.net/p/objectlabkit)
+[![Maven Central] (https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/kit-parent/badge.svg?style=flat-square)](https://maven-badges.herokuapp.com/maven-central/net.objectlab.kit/kit-parent/badge.svg?style=flat-square)
+
+![Brought to you by](http://objectlabkit.sourceforge.net/images/appendium_logo.jpg "Supported by Appendium") and ![Supported by ObjectLab](http://objectlabkit.sourceforge.net/images/objectlab_logo.jpg "Supported by ObjectLab")

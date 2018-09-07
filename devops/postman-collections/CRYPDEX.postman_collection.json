@@ -1,0 +1,2527 @@
+{
+    "info": {
+        "name": "CRYPDEX",
+        "_postman_id": "a869c876-116e-cfcd-9945-6a9549a5ca4f",
+        "description": "",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [{
+            "name": "Create Nodes & Load Data",
+            "description": "",
+            "item": [{
+                    "name": "Load AssetFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM 'file:///Users/jonathanbowker/Dropbox/CryDEX-DEMO/OutPut/AssetHashIndex/AssetBlocks.csv' AS row CREATE (a:Asset {assetFileUID:row.PartitionKey, assetHash:row.RowKey, assetTimestamp:row.TimeStamp,  assetNLP:row.NLPMatch, assetNLPPosition:row.NLPMatchPosition, assetWB:row.WBMatch, assetWBPosition:row.WBMatchPosition,  assetPT:row.PTMatch, assetPTPosition:row.PTMatchPosition, assetRB:row.RBMatch, assetRBPosition:row.RBMatchPosition, assetContent:row.IndexText})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Load ShadowFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM 'file:///Users/jonathanbowker/Dropbox/CryDEX-DEMO/OutPut/ShadowHashIndex/ShadowBlocks.csv' AS row CREATE (a:Shadow {shadowFileUID:row.PartitionKey, shadowHash:row.RowKey, shadowTimestamp:row.TimeStamp,  shadowNLP:row.NLPMatch, shadowNLPPosition:row.NLPMatchPosition, shadowWB:row.WBMatch, shadowWBPosition:row.WBMatchPosition,  shadowPT:row.PTMatch, shadowPTPosition:row.PTMatchPosition, shadowRB:row.RBMatch, shadowRBPosition:row.RBMatchPosition, shadowContent:row.IndexText})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Load & Merge Data",
+            "description": "",
+            "item": [{
+                    "name": "Load & Merge AssetFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM 'file:///Users/jonathanbowker/Dropbox/CryDEX-DEMO/OutPut/AssetHashIndex/AssetBlocks.csv' AS row MERGE (a:Asset {assetFileUID:row.PartitionKey, assetHash:row.RowKey, assetTimestamp:row.TimeStamp,  assetNLP:row.NLPMatch, assetNLPPosition:row.NLPMatchPosition, assetWB:row.WBMatch, assetWBPosition:row.WBMatchPosition,  assetPT:row.PTMatch, assetPTPosition:row.PTMatchPosition, assetRB:row.RBMatch, assetRBPosition:row.RBMatchPosition, assetContent:row.IndexText})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Load & Merge ShadowFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"USING PERIODIC COMMIT LOAD CSV WITH HEADERS FROM 'file:///Users/jonathanbowker/Dropbox/CryDEX-DEMO/OutPut/ShadowHashIndex/ShadowBlocks.csv' AS row MERGE (a:Shadow {shadowFileUID:row.PartitionKey, shadowHash:row.RowKey, shadowTimestamp:row.TimeStamp,  shadowNLP:row.NLPMatch, shadowNLPPosition:row.NLPMatchPosition, shadowWB:row.WBMatch, shadowWBPosition:row.WBMatchPosition,  shadowPT:row.PTMatch, shadowPTPosition:row.PTMatchPosition, shadowRB:row.RBMatch, shadowRBPosition:row.RBMatchPosition, shadowContent:row.IndexText})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Create Nodes",
+            "description": "",
+            "item": [{
+                    "name": "AssetFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Asset) WHERE EXISTS(n.assetFileUID) WITH DISTINCT n.assetFileUID AS assetFileUID, n.assetTimestamp AS assetTimestamp CREATE (a:AssetFile {assetFileUID:assetFileUID, assetTimestamp:assetTimestamp})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetNLP",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Asset)  WHERE n.assetNLP='1' CREATE (a:AssetNLP{assetFileUID:n.assetFileUID, assetHash:n.assetHash, assetNLPPosition:n.assetNLPPosition, assetContent:n.assetContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetPT",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Asset)  WHERE n.assetPT='1' CREATE (a:AssetPT{assetFileUID:n.assetFileUID, assetHash:n.assetHash, assetPTPosition:n.assetPTPosition, assetContent:n.assetContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetRB",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Asset)  WHERE n.assetRB='1' CREATE (a:AssetRB{assetFileUID:n.assetFileUID, assetHash:n.assetHash, assetRBPosition:n.assetRBPosition, assetContent:n.assetContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetWB",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Asset)  WHERE n.assetWB='1' CREATE (a:AssetWB{assetFileUID:n.assetFileUID, assetHash:n.assetHash, assetWBPosition:n.assetWBPosition, assetContent:n.assetContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowFile",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Shadow) WHERE EXISTS(n.shadowFileUID) WITH DISTINCT n.shadowFileUID AS shadowFileUID, n.shadowTimestamp AS shadowTimestamp CREATE (a:ShadowFile {shadowFileUID:shadowFileUID, shadowTimestamp:shadowTimestamp})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowNLP",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Shadow)  WHERE n.shadowNLP='1' CREATE (a:ShadowNLP{shadowFileUID:n.shadowFileUID, shadowHash:n.shadowHash, shadowNLPPosition:n.shadowNLPPosition, shadowContent:n.shadowContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowPT",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Shadow)  WHERE n.shadowPT='1' CREATE (a:ShadowPT{shadowFileUID:n.shadowFileUID, shadowHash:n.shadowHash, shadowPTPosition:n.shadowPTPosition, shadowContent:n.shadowContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowRB",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Shadow)  WHERE n.shadowRB='1' CREATE (a:ShadowRB{shadowFileUID:n.shadowFileUID, shadowHash:n.shadowHash, shadowRBPosition:n.shadowRBPosition, shadowContent:n.shadowContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowWB",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:Shadow)  WHERE n.shadowWB='1' CREATE (a:ShadowWB{shadowFileUID:n.shadowFileUID, shadowHash:n.shadowHash, shadowWBPosition:n.shadowWBPosition, shadowContent:n.shadowContent})\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction/commit",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction",
+                                "commit"
+                            ]
+                        },
+                        "description": ""
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "Create  Relationships",
+            "description": "",
+            "item": [{
+                    "name": "AssetFile > Child > Count",
+                    "description": "",
+                    "item": [{
+                            "name": "Asset_Child_NLP_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetFile),(m:AssetNLP) WHERE n.assetFileUID = m.assetFileUID WITH n.assetFileUID AS assetFileUID, m.assetFileUID AS assetNLPFileUID,  COUNT(m.assetHash) AS matchNLPCount CREATE (n)-[r:ASSET_CHILD_NLP_COUNT { assetNLPCount:  matchNLPCount  }]->(m) RETURN assetFileUID, matchNLPCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset_Child_PT_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetFile),(m:AssetPT) WHERE n.assetFileUID = m.assetFileUID WITH n.assetFileUID AS assetFileUID, m.assetFileUID AS assetPTFileUID,  COUNT(m.assetHash) AS matchPTCount CREATE (n)-[r:ASSET_CHILD_PT_COUNT {assetPTCount:  matchPTCount  }]->(m) RETURN assetFileUID, matchPTCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset_Child_RB_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetFile),(m:AssetRB) WHERE n.assetFileUID = m.assetFileUID WITH n.assetFileUID AS assetFileUID, m.assetFileUID AS assetRBFileUID,  COUNT(m.assetHash) AS matchRBCount CREATE (n)-[r:ASSET_CHILD_RB_COUNT { assetRBCount:  matchRBCount  }]->(m) RETURN assetFileUID, matchRBCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset_Child_WB_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetFile),(m:AssetWB) WHERE n.assetFileUID = m.assetFileUID WITH n.assetFileUID AS assetFileUID, m.assetFileUID AS assetWBFileUID,  COUNT(m.assetHash) AS matchWBCount CREATE (n)-[r:ASSET_CHILD_WB_COUNT { assetWBCount:  matchWBCount  }]->(m) RETURN assetFileUID, matchWBCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        }
+                    ],
+                    "_postman_isSubFolder": true
+                },
+                {
+                    "name": "ShadowFile > Child > Count",
+                    "description": "RELATIONSHIP COUNTS SHADOW FILE <-> CHILD",
+                    "item": [{
+                            "name": "Shadow_Child_NLP_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowFile),(m:ShadowNLP) WHERE n.shadowFileUID = m.shadowFileUID WITH n.shadowFileUID AS shadowFileUID, m.shadowFileUID AS shadowNLPFileUID,  COUNT(m.shadowHash) AS matchNLPCount CREATE (n)-[r:SHADOW_CHILD_NLP_COUNT { shadowNLPCount:  matchNLPCount  }]->(m) RETURN shadowFileUID, matchNLPCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow_Child_PT_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowFile),(m:ShadowPT) WHERE n.shadowFileUID = m.shadowFileUID WITH n.shadowFileUID AS shadowFileUID, m.shadowFileUID AS shadowNLPFileUID,  COUNT(m.shadowHash) AS matchPTCount CREATE (n)-[r:SHADOW_CHILD_PT_COUNT { shadowPTCount:  matchPTCount  }]->(m) RETURN shadowFileUID, matchPTCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow_Child_RB_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowFile),(m:ShadowRB) WHERE n.shadowFileUID = m.shadowFileUID WITH n.shadowFileUID AS shadowFileUID, m.shadowFileUID AS shadowNLPFileUID,  COUNT(m.shadowHash) AS matchRBCount CREATE (n)-[r:SHADOW_CHILD_RB_COUNT { shadowRBCount:  matchRBCount  }]->(m) RETURN shadowFileUID, matchRBCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow_Child_WB_Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowFile),(m:ShadowWB) WHERE n.shadowFileUID = m.shadowFileUID WITH n.shadowFileUID AS shadowFileUID, m.shadowFileUID AS shadowNLPFileUID,  COUNT(m.shadowHash) AS matchWBCount CREATE (n)-[r:SHADOW_CHILD_WB_COUNT { shadowWBCount:  matchWBCount  }]->(m) RETURN shadowFileUID, matchWBCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        }
+                    ],
+                    "_postman_isSubFolder": true
+                },
+                {
+                    "name": "AssetFile  > ShadowFile",
+                    "description": "AssetFile  > ShadowFile",
+                    "item": [{
+                            "name": "AssetRB File Hash Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRB) WITH n.assetFileUID AS assetFileUID, COUNT(n.assetHash) AS assetHashCount RETURN DISTINCT assetFileUID, assetHashCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "ShadowRB File Hash Count",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowRB) WITH m.shadowFileUID AS shadowFileUID, COUNT(m.shadowHash) AS shadowHashCount RETURN DISTINCT shadowFileUID, shadowHashCount\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        }
+                    ],
+                    "_postman_isSubFolder": true
+                },
+                {
+                    "name": "AssetFile > Child",
+                    "description": "",
+                    "item": [{
+                            "name": "AssetRB File Hash Count copy",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:AssetFile),(p:AssetNLP) WHERE m.assetFileUID = p.assetFileUID MERGE (m)-[:ASSET_CHILD_NLP]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset to NLP  Relationship copy",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:AssetFile),(p:AssetPT) WHERE m.assetFileUID = p.assetFileUID MERGE (m)-[:ASSET_CHILD_PT]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset to PT  Relationship copy",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:AssetFile),(p:AssetRB) WHERE m.assetFileUID = p.assetFileUID MERGE (m)-[:ASSET_CHILD_RB]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Asset to RB Relationship copy",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:AssetFile),(p:AssetWB) WHERE m.assetFileUID = p.assetFileUID MERGE (m)-[:ASSET_CHILD_WB]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        }
+                    ],
+                    "_postman_isSubFolder": true
+                },
+                {
+                    "name": "ShadowFile > Child",
+                    "description": "",
+                    "item": [{
+                            "name": "Shadow to NLP  Relationship",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowFile),(p:ShadowNLP) WHERE m.shadowFileUID = p.shadowFileUID MERGE (m)-[:SHADOW_CHILD_NLP]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow to PT  Relationship",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowFile),(p:ShadowPT) WHERE m.shadowFileUID = p.shadowFileUID MERGE (m)-[:SHADOW_CHILD_PT]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow to RB  Relationship",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowFile),(p:ShadowRB) WHERE m.shadowFileUID = p.shadowFileUID MERGE (m)-[:SHADOW_CHILD_RB]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        },
+                        {
+                            "name": "Shadow to WB  Relationship",
+                            "request": {
+                                "auth": {
+                                    "type": "basic",
+                                    "basic": [{
+                                            "key": "username",
+                                            "value": "neo4j",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "password",
+                                            "value": "neo",
+                                            "type": "string"
+                                        },
+                                        {
+                                            "key": "saveHelperData",
+                                            "value": true,
+                                            "type": "boolean"
+                                        },
+                                        {
+                                            "key": "showPassword",
+                                            "value": false,
+                                            "type": "boolean"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "header": [{
+                                        "key": "Accept",
+                                        "value": "application/json; charset=UTF-8"
+                                    },
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    },
+                                    {
+                                        "key": "Authorization",
+                                        "value": "Basic bmVvNGo6bmVv"
+                                    }
+                                ],
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowFile),(p:ShadowWB) WHERE m.shadowFileUID = p.shadowFileUID MERGE (m)-[:SHADOW_CHILD_WB]->(p)\"\n    }\n  ]\n}"
+                                },
+                                "url": {
+                                    "raw": "http://localhost:7474/db/data/transaction",
+                                    "protocol": "http",
+                                    "host": [
+                                        "localhost"
+                                    ],
+                                    "port": "7474",
+                                    "path": [
+                                        "db",
+                                        "data",
+                                        "transaction"
+                                    ]
+                                },
+                                "description": "\n\n"
+                            },
+                            "response": []
+                        }
+                    ],
+                    "_postman_isSubFolder": true
+                }
+            ]
+        },
+        {
+            "name": "Query Counts",
+            "description": "",
+            "item": [{
+                    "name": "AssetRB Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRB) WITH n.assetFileUID AS assetFileUID, COUNT(n.assetHash) AS assetHashCount RETURN DISTINCT assetFileUID, assetHashCount\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "ShadowRB Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (m:ShadowRB) WITH m.shadowFileUID AS shadowFileUID, COUNT(m.shadowHash) AS shadowHashCount RETURN DISTINCT shadowFileUID, shadowHashCount\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetNLP > ShadowNLP Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRollingBlock),(m:ShadowRollingBlock) WHERE n.contentHash = m.contentHash WITH n.fileUID AS assetRollingBlockFileUID, m.fileUID AS shadowRollingBlockFileUID,  COUNT(m.fileUID) AS count RETURN  assetRollingBlockFileUID, shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetPT > ShadowPT Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetPT),(m:ShadowPT) WHERE n.assetHash = m.shadowHash WITH n.assetFileUID AS assetFileUID, m.shadowFileUID AS shadowFileUID,  COUNT(*) AS matchingPTCount RETURN  assetFileUID, matchingPTCount, shadowFileUID\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetRB > ShadowRB Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRB),(m:ShadowRB) WHERE n.assetHash = m.shadowHash WITH n.assetFileUID AS assetFileUID, m.shadowFileUID AS shadowFileUID,  COUNT(*) AS matchingRBCount RETURN  assetFileUID, matchingRBCount, shadowFileUID\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                },
+                {
+                    "name": "AssetWB > ShadowWB Count",
+                    "request": {
+                        "auth": {
+                            "type": "basic",
+                            "basic": [{
+                                    "key": "username",
+                                    "value": "neo4j",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "password",
+                                    "value": "neo",
+                                    "type": "string"
+                                },
+                                {
+                                    "key": "saveHelperData",
+                                    "value": true,
+                                    "type": "boolean"
+                                },
+                                {
+                                    "key": "showPassword",
+                                    "value": false,
+                                    "type": "boolean"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [{
+                                "key": "Accept",
+                                "value": "application/json; charset=UTF-8"
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "Authorization",
+                                "value": "Basic bmVvNGo6bmVv"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetWB),(m:ShadowWB) WHERE n.assetHash = m.shadowHash WITH n.assetFileUID AS assetFileUID, m.shadowFileUID AS shadowFileUID,  COUNT(*) AS matchingWBCount RETURN  assetFileUID, matchingWBCount, shadowFileUID\"\n    }\n  ]\n}"
+                        },
+                        "url": {
+                            "raw": "http://localhost:7474/db/data/transaction",
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "7474",
+                            "path": [
+                                "db",
+                                "data",
+                                "transaction"
+                            ]
+                        },
+                        "description": "\n\n"
+                    },
+                    "response": []
+                }
+            ]
+        },
+        {
+            "name": "DiffWatch",
+            "request": {
+                "auth": {
+                    "type": "basic",
+                    "basic": [{
+                            "key": "username",
+                            "value": "neo4j",
+                            "type": "string"
+                        },
+                        {
+                            "key": "password",
+                            "value": "neo",
+                            "type": "string"
+                        },
+                        {
+                            "key": "saveHelperData",
+                            "value": true,
+                            "type": "boolean"
+                        },
+                        {
+                            "key": "showPassword",
+                            "value": false,
+                            "type": "boolean"
+                        }
+                    ]
+                },
+                "method": "POST",
+                "header": [{
+                        "key": "Accept",
+                        "value": "application/json; charset=UTF-8"
+                    },
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Basic bmVvNGo6bmVv"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetHash) WITH n.hashUID AS assetFileUID, COUNT(n:hashUID) AS assetHashCount MATCH (p:AssetHash),(q:ShadowHash) WHERE p.hash=q.hash WITH assetFileUID, assetHashCount, p.hashUID AS shadowFileUID, COUNT(p:hashUID) AS matchCount MATCH (assetFileUID),(shadowFileUID) WHERE assetFileUID=shadowFileUID RETURN assetFileUID, assetHashCount, shadowFileUID, matchCount, (matchCount*1.0^3/assetHashCount*1.0^3)*1^3 AS diffScore ORDER BY diffScore\"\n    }\n  ]\n}"
+                },
+                "url": {
+                    "raw": "http://localhost:7474/db/data/transaction",
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "7474",
+                    "path": [
+                        "db",
+                        "data",
+                        "transaction"
+                    ]
+                },
+                "description": "MATCH ASSET HASHES TO SHADOW HASHES CREATE DIFFSCORE"
+            },
+            "response": []
+        },
+        {
+            "name": "Post to Slack",
+            "request": {
+                "method": "POST",
+                "header": [{
+                    "key": "Content-type",
+                    "value": "application/json"
+                }],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"text\": \"\n\nDiffWatch alert:\\n\n\nassetFile:'f576c986-66b5-4502-bae4-6ea998d518b6'\\n\nassetHashCount:'2867'\\n\nshadowFileUID:'f576c986-66b5-4502-bae4-6ea998d518b6'\\n\nmatchCount:'750'\\n\ndiffScore:'0.2615974886641088'\\n\n<https://alert-system.com/alerts/1234|Click here>\\n\n\\n\nassetFile:'f576c986-66b5-4502-bae4-6ea998d518b6'\\n\nassetHashCount:'2867'\\n\nshadowFileUID:'f576c986-66b5-4502-bae4-6ea998d518b6'\\n\nmatchCount:'750'\\n\ndiffScore:'0.2615974886641088'\\n\n<https://alert-system.com/alerts/1234|Click here>\\n\n\n\n\"}"
+                },
+                "url": {
+                    "raw": "https://hooks.slack.com/services/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",
+                    "protocol": "https",
+                    "host": [
+                        "hooks",
+                        "slack",
+                        "com"
+                    ],
+                    "path": [
+                        "services",
+                        "T6RP006LQ",
+                        "B6SE8GE8J",
+                        "QO1TGwXWNCjtcEO23knBd16i"
+                    ]
+                },
+                "description": "Post to Slack"
+            },
+            "response": []
+        }
+    ]
+}

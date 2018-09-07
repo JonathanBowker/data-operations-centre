@@ -1,0 +1,1191 @@
+{
+	"info": {
+		"name": "DiffBot",
+		"_postman_id": "6f4b9ca4-0931-5690-1f58-4ab45a028f40",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crawlbot Analyze API",
+			"description": "The Diffbot Analyse API visually analyzes a web page, identifies its \"page-type,\" and determines which Diffbot extraction API (if any) is appropriate. Pages that match a supported extraction API -- articles, discussions, images, products or videos -- will be automatically extracted and returned in the Analyze API response.",
+			"item": [
+				{
+					"name": "Crawlbot Examples",
+					"description": "",
+					"item": [
+						{
+							"name": "Crawlbot Analyse API copy",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Diffbot"
+									},
+									{
+										"key": "Referer",
+										"value": "diffbot.com"
+									},
+									{
+										"key": "My-Custom-Header",
+										"value": "CustomValue"
+									},
+									{
+										"key": "",
+										"value": "",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "https://api.diffbot.com/v3/analyze?token=79353ca63d27d1d7a1f15a1b4c9a6b98&url=https://www.gov.uk/government/publications?keywords=&publication_filter_option=all&topics%5B%5D=crime-and-policing&departments%5B%5D=all&official_document_status=all&world_locations%5B%5D=all&from_date=&to_date=",
+									"protocol": "https",
+									"host": [
+										"api",
+										"diffbot",
+										"com"
+									],
+									"path": [
+										"v3",
+										"analyze"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "79353ca63d27d1d7a1f15a1b4c9a6b98",
+											"equals": true
+										},
+										{
+											"key": "url",
+											"value": "https://www.gov.uk/government/publications?keywords=",
+											"equals": true
+										},
+										{
+											"key": "publication_filter_option",
+											"value": "all",
+											"equals": true
+										},
+										{
+											"key": "topics%5B%5D",
+											"value": "crime-and-policing",
+											"equals": true
+										},
+										{
+											"key": "departments%5B%5D",
+											"value": "all",
+											"equals": true
+										},
+										{
+											"key": "official_document_status",
+											"value": "all",
+											"equals": true
+										},
+										{
+											"key": "world_locations%5B%5D",
+											"value": "all",
+											"equals": true
+										},
+										{
+											"key": "from_date",
+											"value": "",
+											"equals": true
+										},
+										{
+											"key": "to_date",
+											"value": "",
+											"equals": true
+										}
+									]
+								},
+								"description": "The Diffbot Analyze API visually analyzes a web page, identifies its \"page-type,\" and determines which Diffbot extraction API (if any) is appropriate. Pages that match a supported extraction API -- articles, discussions, images, products or videos -- will be automatically extracted and returned in the Analyze API response."
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Crawlbot Analyse API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/analyze?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"analyze"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Diffbot Analyze API visually analyzes a web page, identifies its \"page-type,\" and determines which Diffbot extraction API (if any) is appropriate. Pages that match a supported extraction API -- articles, discussions, images, products or videos -- will be automatically extracted and returned in the Analyze API response."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bulk URL API",
+			"description": "Diffbot's Bulk Processor lets you send a large quantity of URLs through a Diffbot extraction API for fast, asynchronous processing.",
+			"item": [
+				{
+					"name": "Bulk URL API",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.fca.org.uk https://www.fca.org.uk/publications&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/bulk",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"bulk"
+							]
+						},
+						"description": "The Bulk API allows you to submit large numbers of URLs for Diffbot API processing. The API returns data in JSON format."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Article Extraction API",
+			"description": "The Article API is used to extract clean article text and other data from news articles, blog posts and other text-heavy pages. Retrieve the full-text, cleaned and normalised HTML, related images and videos, author, date, tags—automatically, from any article on any site.",
+			"item": [
+				{
+					"name": "Article API + Comments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Article API is used to extract clean article text and other data from news articles, blog posts and other text-heavy pages. Retrieve the full-text, cleaned and normalized HTML, related images and videos, author, date, tags—automatically, from any article on any site."
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + No Comments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=...&url=...&discussion=false",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "discussion",
+									"value": "false",
+									"equals": true
+								}
+							]
+						},
+						"description": "By default the Article API will attempt to extract comments from article pages, using integrated functionality from the Diffbot Discussion API. "
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=79353ca63d27d1d7a1f15a1b4c9a6b98&url=https://www.fca.org.uk/publications/consultation-papers/cp17-29-client-money-and-unbreakable-deposits&fields=links,meta",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "79353ca63d27d1d7a1f15a1b4c9a6b98",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.fca.org.uk/publications/consultation-papers/cp17-29-client-money-and-unbreakable-deposits",
+									"equals": true
+								},
+								{
+									"key": "fields",
+									"value": "links,meta",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Article API + additional fields"
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + No Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=79353ca63d27d1d7a1f15a1b4c9a6b98&url=https://www.fca.org.uk/publication/consultation/cp17-29.pdf",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "79353ca63d27d1d7a1f15a1b4c9a6b98",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "https://www.fca.org.uk/publication/consultation/cp17-29.pdf",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Article API + with no additional fields"
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + Semantria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=...&url=...&textanalysis",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "textanalysis",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": "The Article API + Semantria allows extracted article content to be fully processed for categorisation, entity and keyword extraction, and sentiment analysis."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Discussion API",
+			"description": "The Discussion API automatically structures and extracts entire threads or lists of reviews/comments from most discussion pages, forums, and similarly structured web pages.",
+			"item": [
+				{
+					"name": "Article API + Comments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/article?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"article"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Article API is used to extract clean article text and other data from news articles, blog posts and other text-heavy pages. Retrieve the full-text, cleaned and normalized HTML, related images and videos, author, date, tags—automatically, from any article on any site."
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/discussion?token=...&url=...&fields=links,meta",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"discussion"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "fields",
+									"value": "links,meta",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Article API + additional fields"
+					},
+					"response": []
+				},
+				{
+					"name": "Article API + Semantria",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/discussion?token=...&url=...&textanalysis",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"discussion"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "textanalysis",
+									"value": "",
+									"equals": false
+								}
+							]
+						},
+						"description": "The Article API + Semantria allows extracted article content to be fully processed for categorisation, entity and keyword extraction, and sentiment analysis."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product API",
+			"description": "The Product API automatically extracts complete data from any shopping or e-commerce product page. Retrieve full pricing information, product IDs (SKU, UPC, MPN), images, product specifications, brand and more.",
+			"item": [
+				{
+					"name": "Discussion API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/product?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"product"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Discussion API automatically structures and extracts entire threads or lists of reviews/comments from most discussion pages, forums, and similarly structured web pages."
+					},
+					"response": []
+				},
+				{
+					"name": "Product API + Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/discussion?token=...&url=...&fields=links,meta",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"discussion"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "fields",
+									"value": "links,meta",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Product API + additional fields"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image API",
+			"description": "The Image API identifies the primary image(s) of a submitted web page and returns comprehensive information and metadata for each image.",
+			"item": [
+				{
+					"name": "Image API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/image?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"image"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Image API identifies the primary image(s) of a submitted web page and returns comprehensive information and metadata for each image."
+					},
+					"response": []
+				},
+				{
+					"name": "Image API + Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/image?token=...&url=...&fields=links,meta",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"image"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "fields",
+									"value": "links,meta",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Image API + additional fields"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Video API",
+			"description": "The Video API automatically extracts detailed video information—including most metadata, thumbnail images, direct video URL and embed code—from nearly any video page or video platform on the web.",
+			"item": [
+				{
+					"name": "Video API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/video?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"video"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Video API automatically extracts detailed video information—including most metadata, thumbnail images, direct video URL and embed code—from nearly any video page or video platform on the web."
+					},
+					"response": []
+				},
+				{
+					"name": "Video API + Fields",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/video?token=...&url=...&fields=links,meta",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"video"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "fields",
+									"value": "links,meta",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Video API + additional fields"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search API",
+			"description": "Diffbot's Search API allows you to search the extracted content of your Diffbot \"collections.\" A collection is a discrete Crawlbot or Bulk API job, and includes all of the web pages processed within that job.",
+			"item": [
+				{
+					"name": "Queries",
+					"description": "",
+					"item": [
+						{
+							"name": "Query \"computer vision\"",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+								},
+								"url": {
+									"raw": "https://api.diffbot.com/v3/search?token=...&query=computer+vision",
+									"protocol": "https",
+									"host": [
+										"api",
+										"diffbot",
+										"com"
+									],
+									"path": [
+										"v3",
+										"search"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "...",
+											"equals": true
+										},
+										{
+											"key": "query",
+											"value": "computer+vision",
+											"equals": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Query \"obama type:article sortby:date\"",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+								},
+								"url": {
+									"raw": "https://api.diffbot.com/v3/search?token=...&query=obama+type%3Aarticle+sortby%3Adate",
+									"protocol": "https",
+									"host": [
+										"api",
+										"diffbot",
+										"com"
+									],
+									"path": [
+										"v3",
+										"search"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "...",
+											"equals": true
+										},
+										{
+											"key": "query",
+											"value": "obama+type%3Aarticle+sortby%3Adate",
+											"equals": true
+										}
+									]
+								},
+								"description": ""
+							},
+							"response": []
+						},
+						{
+							"name": "Query - The most recently-written 40 articles in the \"dailycrawl\" collection.",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+								},
+								"url": {
+									"raw": "https://api.diffbot.com/v3/search?token=...&num=40&col=dailycrawl&query=type%3Aarticle%20sortby%3Adate",
+									"protocol": "https",
+									"host": [
+										"api",
+										"diffbot",
+										"com"
+									],
+									"path": [
+										"v3",
+										"search"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "...",
+											"equals": true
+										},
+										{
+											"key": "num",
+											"value": "40",
+											"equals": true
+										},
+										{
+											"key": "col",
+											"value": "dailycrawl",
+											"equals": true
+										},
+										{
+											"key": "query",
+											"value": "type%3Aarticle%20sortby%3Adate",
+											"equals": true
+										}
+									]
+								},
+								"description": "The most recently-written 40 articles in the \"dailycrawl\" collection."
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Search API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/search?token=...&query=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"search"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "query",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "Diffbot's Search API allows you to search the extracted content of your Diffbot \"collections.\" A collection is a discrete Crawlbot or Bulk API job, and includes all of the web pages processed within that job."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Custom API",
+			"description": "Custom APIs allow you to extract nearly anything from nearly any site using DiffBot's powerful rendering engine.",
+			"item": [
+				{
+					"name": "Custom API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/{your API name}?token=...&url=...",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"{your API name}"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...",
+									"equals": true
+								},
+								{
+									"key": "url",
+									"value": "...",
+									"equals": true
+								}
+							]
+						},
+						"description": "Custom APIs allow you to extract nearly anything from nearly any site using Diffbot's powerful rendering engine."
+					},
+					"response": []
+				},
+				{
+					"name": "Custom API + Authentication",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Diffbot"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/{your API name}?token=...url=http%3A%2F%2FUSERNAME:PASSWORD@www.diffbot.com",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"{your API name}"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "...url=http%3A%2F%2FUSERNAME:PASSWORD@www.diffbot.com",
+									"equals": true
+								}
+							]
+						},
+						"description": "You can supply Diffbot with basic authentication credentials or custom HTTP headers (see below) to access intranet pages or other sites that require a login."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account API",
+			"description": "The Account API returns information on a token's call volume and billing history.",
+			"item": [
+				{
+					"name": "Account API",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "name=bulkTest&token=79353ca63d27d1d7a1f15a1b4c9a6b98&urls=http://www.diffbot.com http://blog.diffbot.com&apiUrl=https://api.diffbot.com/v3/analyze"
+						},
+						"url": {
+							"raw": "https://api.diffbot.com/v3/account?token=79353ca63d27d1d7a1f15a1b4c9a6b98",
+							"protocol": "https",
+							"host": [
+								"api",
+								"diffbot",
+								"com"
+							],
+							"path": [
+								"v3",
+								"account"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "79353ca63d27d1d7a1f15a1b4c9a6b98",
+									"equals": true
+								}
+							]
+						},
+						"description": "The Account API returns information on a token's call volume and billing history."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

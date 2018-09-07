@@ -1,0 +1,1481 @@
+{
+  "rabbit_version": "3.6.15",
+  "users": [
+    {
+      "name": "ice",
+      "password_hash": "8gulaM8+bLZF65S+Qb6DsjwlwXTF7SMODa149kg4AqDLzTUI",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": ""
+    },
+    {
+      "name": "name",
+      "password_hash": "WatA8UVjrIezXoq1+8V4h5N9RK26Tx4XQ2zIakwANAEhIpHv",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    },
+    {
+      "name": "jbb",
+      "password_hash": "RczcxOPeNz0mhJtCGlfBahzhYEpocFGH0KFZbEFbeaadxyr5",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    },
+    {
+      "name": "alan",
+      "password_hash": "Empt0DI9Vg4NGOaRQ99XnihrBjVarmRLtS8vGUpWhx/ydxv3",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    },
+    {
+      "name": "admin",
+      "password_hash": "eJCTpv1Ff5BfNhweE7ac9U2ma7AYUY02GfUK3z3l4aF3T7YM",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": "administrator"
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    },
+    {
+      "name": "lix.data.incoming"
+    },
+    {
+      "name": "xenfin"
+    },
+    {
+      "name": "lix.data.outgoing.rbs"
+    },
+    {
+      "name": "vim"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "jbb",
+      "vhost": "lix.data.outgoing.rbs",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "alan",
+      "vhost": "lix.data.incoming",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "jbb",
+      "vhost": "lix.data.incoming",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "alan",
+      "vhost": "vim",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "jbb",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "admin",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "alan",
+      "vhost": "xenfin",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "alan",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "admin",
+      "vhost": "vim",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "jbb",
+      "vhost": "xenfin",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "ice",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "jbb",
+      "vhost": "vim",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    },
+    {
+      "user": "alan",
+      "vhost": "lix.data.outgoing.rbs",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "parameters": [],
+  "global_parameters": [
+    {
+      "name": "fxops",
+      "value": "rabbit@digitalocean"
+    },
+    {
+      "name": "cluster_name",
+      "value": "rabbit@localhost"
+    }
+  ],
+  "policies": [],
+  "queues": [
+    {
+      "name": "USD-CHF 03M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF ON",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 05M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 01M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 01W",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 03W",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 09M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 02M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 10M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "USD-CHF 08M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 02W",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF SN",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 06M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 04M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 12M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF TN",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 11M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    },
+    {
+      "name": "USD-CHF 07M",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {
+        "x-queue-mode": "lazy"
+      }
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "G10.market.vim.direct",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "ab.test.forwards.fanout",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "emerging.markets.vim.topic",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.outrights.g5",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.spots.g10",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "record.direct",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "G10.market.contributors.topic",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.outrights.g10",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "lix.data.incoming",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.spots.em",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.outrights",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.spots",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "ab.test.vim.fanout",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "emerging.markets.vim.direct",
+      "vhost": "/",
+      "type": "direct",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "record.enh.fanout",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "G10.market.vim.topic",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.spots.g5",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.outrights.em",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "fx.full.breadth",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "ab.test.fanout",
+      "vhost": "/",
+      "type": "fanout",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    },
+    {
+      "name": "xenfin.data.incoming.topic",
+      "vhost": "xenfin",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.ccm.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.esse.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcv.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcx.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.tubd.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.ubsw.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "G10.market.contributors.topic",
+      "vhost": "/",
+      "destination": "G10.market.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.zkbk.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.esse.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.hsbc.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.hsfx.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.ibc.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.igml.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.msln.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcv.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcx.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "emerging.markets.contributors.topic",
+      "vhost": "/",
+      "destination": "emerging.markets.vim.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.ubsw.*.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.audcad.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.audjpy.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.audnxd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.audusd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.cadjpy.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.cadusd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.chfjpy.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.chfusd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.euraud.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurcad.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurchf.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurgbp.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurjpy.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurjpy.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eurnok.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.eursek.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdchf.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdchf.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.gbpusd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdbrl.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdchf.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdclp.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdcnh.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdcop.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdczk.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdhuf.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdidr.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdinr.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdkrw.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdmxn.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdmyr.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdpen.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdphp.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdpln.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdron.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdrub.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdthb.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdtry.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdtwd.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.outrights",
+      "vhost": "/",
+      "destination": "fx.outrights.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.usdzar.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.audcad.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.audjpy.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.audnxd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.audusd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.cadjpy.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.cadusd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.chfjpy.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.chfusd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.euraud.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurcad.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurchf.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurgbp.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurjpy.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurjpy.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eurnok.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.eursek.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g10",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdchf.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdchf.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.gbpusd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdbrl.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.g5",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdchf.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdclp.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdcnh.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdcop.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdczk.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdhuf.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdidr.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdinr.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdkrw.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdmxn.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdmyr.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdpen.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdphp.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdpln.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdron.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdrub.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdthb.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdtry.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdtwd.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "fx.spots",
+      "vhost": "/",
+      "destination": "fx.spots.em",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.usdzar.s.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "emerging.markets.contributors.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.*.*.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "G10.market.contributors.topic",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.*.f.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "fx.outrights",
+      "destination_type": "exchange",
+      "routing_key": "*.*.*.*.o.*.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 01M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.01m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 01W",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.01w.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 02M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.02m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 02W",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.02w.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 03M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.03m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 03W",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.03w.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 04M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.04m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 05M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.05m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 06M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.06m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 07M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.07m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 08M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.08m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 09M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.09m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 10M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.10m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 11M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.11m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF 12M",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.12m.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF ON",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.on.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF SN",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.sn.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "USD-CHF TN",
+      "destination_type": "queue",
+      "routing_key": "*.*.*.usdchf.f.tn.*",
+      "arguments": {}
+    },
+    {
+      "source": "lix.data.incoming",
+      "vhost": "/",
+      "destination": "fx.spots",
+      "destination_type": "exchange",
+      "routing_key": "*.*.otcd.*.s.*.*",
+      "arguments": {}
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+	"info": {
+		"name": "Semantria",
+		"_postman_id": "4a0dffc9-db8b-0946-4211-94a9372f1918",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.semantria.com/collection.json=config_id?5c9e468c-8b64-4479-867f-9d3eca20427c",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : \"5c9e468c-8b64-4479-867f-9d3eca20427c\",\n  \"text\" : \"Khartoum, 16 February (SUNA) - Foreign Minister, Prof Ibrahim Ghandur met, at the begging of his visit to Brussels, with a number European Union(EU) officials top of them are EU commissioner for Terrorism, EU special envoy to Africa , and director of Africa at EU, where the minister briefed them on developments of situations in Sudan and efforts being made for reaching peaceful and political settlement , besides progress of national dialogue and regional situation, especially at Libyan, and Yemeni arenas and relations with South Sudan State./nThe minister also informed the EU officials on endeavours being made by Sudan to realize stability in the region and its role in combating human trafficking and terrorism, demanding EU to support Sudan in this connection./nForeign ministry's official spokesman stated that the EU officials affirmed work to open a new page in cooperation with Sudan and to support its efforts for reaching internal and regional settlement and that they welcomed the foreign minister's invitation, extended to them, to visit Sudan./nHe added that the minister will also meet with the EU general commissioner, EU commissioner for Internal Affairs and Migration, Humanitarian Aid commissioner, and a number of ministers [and] European officials in Brussels , besides, addressing the EU Committee of Political and Security Affairs.\",\n  \"tag\" : \"Khartoum\"\n}"
+				},
+				"url": {
+					"raw": "https://api.semantria.com/document.json?config_id=5c9e468c-8b64-4479-867f-9d3eca20427c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"semantria",
+						"com"
+					],
+					"path": [
+						"document.json"
+					],
+					"query": [
+						{
+							"key": "config_id",
+							"value": "5c9e468c-8b64-4479-867f-9d3eca20427c"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Document",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "BrandSentiment",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "match1miss",
+							"type": "string"
+						},
+						{
+							"key": "saveHelperData",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\" : \"5c9e468c-8b64-4479-867f-9d3eca20427c\",\n  \"text\" : \"A chunk of text for processing\",\n  \"tag\" : \"A tag is any text (up to 50 characters) used like a marker.\"\n}"
+				},
+				"url": {
+					"raw": "https://api.semantria.com/collection.json=config_id?5c9e468c-8b64-4479-867f-9d3eca20427c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"semantria",
+						"com"
+					],
+					"path": [
+						"collection.json=config_id"
+					],
+					"query": [
+						{
+							"key": "5c9e468c-8b64-4479-867f-9d3eca20427c",
+							"value": null
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

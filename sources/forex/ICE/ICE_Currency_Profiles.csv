@@ -1,0 +1,156 @@
+Region,Currency,Symbol
+Europe,Albania Lek,ALL
+Europe,Austrian Schilling,ATS
+Europe,Belarus Ruble,BYR
+Europe,Belgian Franc,BEF
+Europe,Bosnia Herzegovina Mark,BAM
+Europe,Bulgarian Lev,BGN
+Europe,Croatian Kuna,HRK
+Europe,Cyprus Pound,CYP
+Europe,Czech Koruna,CZK
+Europe,Danish Krone,DKK
+Europe,Estonian Kroon,EEK
+Europe,ECU,XEU
+Europe,Euro,EUR
+Europe,Finnish Markka,FIM
+Europe,French Franc,FRF
+Europe,Deutsche Mark,DEM
+Europe,Greek Drachma,GRD
+Europe,Hungarian Forint,HUF
+Europe,Iceland Krona,ISK
+Europe,Irish Punt,IEP
+Europe,Italian Lira,ITL
+Europe,Latvian Lat,LVL
+Europe,Lithuanian Litas,LTL
+Europe,Luxembourg Franc,LUF
+Europe,Macedonia Denar,MKD
+Europe,Maltese Lira,MTL
+Europe,Moldova Leu,MDL
+Europe,Dutch Guilder,NLG
+Europe,Norwegian Krone,NOK
+Europe,Polish Zloty,PLN
+Europe,Portugese Escudo,PTE
+Europe,Romanian Leu,RON
+Europe,Russian Ruble,RUB
+Europe,Slovakian Koruna,SKK
+Europe,Slovenian Tolar,SIT
+Europe,Spanish Peseta,ESP
+Europe,British Pound,GBP
+Europe,Swedish Krona,SEK
+Europe,Swiss Franc,CHF
+Africa & Gulf,Algerian Dinar,DZD
+Africa & Gulf,Angola Kwanza,AOA
+Africa & Gulf,Bahrain Dinar,BHD
+Africa & Gulf,Botswana Pula,BWP
+Africa & Gulf,Burundi Franc,BIF
+Africa & Gulf,Central African Franc,XAF
+Africa & Gulf,Comoros Franc,KMF
+Africa & Gulf,Congo Dem. Rep. Franc,CDF
+Africa & Gulf,Cote D’Ivorie Franc,XOF
+Africa & Gulf,Egyptian Pound,EGP
+Africa & Gulf,Ethiopia Birr,ETB
+Africa & Gulf,Gambian Dalasi,GMD
+Africa & Gulf,Ghana Cedi,GHS
+Africa & Gulf,Guinea Franc,GNF
+Africa & Gulf,Iran Rial,IRR
+Africa & Gulf,Israeli Shekel,ILS
+Africa & Gulf,Jordanian Dinar,JOD
+Africa & Gulf,Kenyan Shilling,KES
+Africa & Gulf,Kuwaiti Dinar,KWD
+Africa & Gulf,Lebanese Pound,LBP
+Africa & Gulf,Lesotho Loti,LSL
+Africa & Gulf,Malagasy Ariary,MGA
+Africa & Gulf,Malawi Kwacha,MWK
+Africa & Gulf,Mauritanian Ouguiya,MRO
+Africa & Gulf,Mauritius Rupee,MUR
+Africa & Gulf,Moroccan Dirham,MAD
+Africa & Gulf,Mozambique Metical,MZN
+Africa & Gulf,Namibia Dollar,NAD
+Africa & Gulf,Nigerian Naira,NGN
+Africa & Gulf,Omani Rial,OMR
+Africa & Gulf,Qatar Rial,QAR
+Africa & Gulf,Rwanda Franc,RWF
+Africa & Gulf,Saudi Arabian Riyal,SAR
+Africa & Gulf,Seychelles Rupee,SCR
+Africa & Gulf,Sierra Leone Leone,SLL
+Africa & Gulf,South African Rand,ZAR
+Africa & Gulf,Sudan Pound,SDG
+Africa & Gulf,Swaziland Lilangeni,SZL
+Africa & Gulf,Tanzania Shilling,TZS
+Africa & Gulf,Tunisian Dinar,TND
+Africa & Gulf,UAE Dirham,AED
+Africa & Gulf,Ugandan Shilling,UGX
+Africa & Gulf,Yemen Rial,YER
+Africa & Gulf,Zambian Kwacha,ZMK
+Africa & Gulf,Zimbabwe Dollar,ZWL
+Africa & Gulf,Zim Dollar Notional,ZDN
+Asia-Pacific,Australian Dollar,AUD
+Asia-Pacific,Azerbaijan Manat,AZN
+Asia-Pacific,Bangladesh Taka,BDT
+Asia-Pacific,Bhutan Ngultrum,BTN
+Asia-Pacific,Brunei Dollar,BND
+Asia-Pacific,Chinese R. Yuan,CNY
+Asia-Pacific,Chinese R. Yuan HK,CNH
+Asia-Pacific,Fiji Islands Dollar,FJD
+Asia-Pacific,Georgia Lari,GEL
+Asia-Pacific,Hong Kong Dollar,HKD
+Asia-Pacific,Indian Rupee,INR
+Asia-Pacific,Indonesian Rupiah,IDR
+Asia-Pacific,Japanese Yen,JPY
+Asia-Pacific,Kazakhstan Tenge,KZT
+Asia-Pacific,Kyrgystan Som,KGS
+Asia-Pacific,Macao Pataca,MOP
+Asia-Pacific,Malaysian Ringgit,MYR
+Asia-Pacific,Maldives Rufiyaa,MVR
+Asia-Pacific,Mongolia Tugrik,MNT
+Asia-Pacific,Nepal Rupee,NPR
+Asia-Pacific,New Zealand Dollar,NZD
+Asia-Pacific,Pacifique Franc,XPF
+Asia-Pacific,Pakistani Rupee,PKR
+Asia-Pacific,Papua NG Kina,PGK
+Asia-Pacific,Philippine Peso,PHP
+Asia-Pacific,Samoa Tala,WST
+Asia-Pacific,Singapore Dollar,SGD
+Asia-Pacific,Solomon Islands Dollar,SBD
+Asia-Pacific,South Korean Won,KRW
+Asia-Pacific,Sri Lanka Rupee,LKR
+Asia-Pacific,Taiwan Dollar,TWD
+Asia-Pacific,Thai Baht,THB
+Asia-Pacific,Thai Baht Offshore,TOF
+Asia-Pacific,Tonga Pa’anga,TOP
+Asia-Pacific,Uzbekistan Som,UZS
+Asia-Pacific,Vanuatu Vatu,VUV
+Asia-Pacific,Vietnam Dong,VND
+Americas,Argentine Peso,ARS
+Americas,Aruba Guilder,AWG
+Americas,Bahamas Dollar,BSD
+Americas,Barbados Dollar,BBD
+Americas,Belize Dollar,BZD
+Americas,Bermudan Dollar,BMD
+Americas,Bolivian Boliviano,BOB
+Americas,Brazilian Real,BRL
+Americas,Canadian Dollar,CAD
+Americas,Cayman Islands Dollar,KYD
+Americas,Chilean Peso,CLP
+Americas,Colombian Peso,COP
+Americas,Costa Rica Colon,CRC
+Americas,Cuba Peso,CUP
+Americas,Dominican Republic Peso,DOP
+Americas,East Caribbean Dollar,XCD
+Americas,Ecuadorian Sucre,ECS
+Americas,El Salvador Colon,SVC
+Americas,Guatemala Quetzal,GTQ
+Americas,Haiti Gourde,HTG
+Americas,Honduras Lempira,HNL
+Americas,Jamaica Dollar,JMD
+Americas,Mexican Peso,MXN
+Americas,Netherlands Antilles Guilder,ANG
+Americas,Nicaragua Gold Cordoba,NIO
+Americas,Panama Balboa,PAB
+Americas,Paraguay Guarano,PYG
+Americas,Peru New Sol,PEN
+Americas,Surinam Dollar,SRD
+Americas,Trindad & Tobago Dollar,TTD
+Americas,Uruguay Peso,UYU
+Americas,US Dollar,USD
+Americas,Venezuelan Bolivar Fuerte,VEF

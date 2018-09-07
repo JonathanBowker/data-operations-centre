@@ -1,0 +1,7 @@
+# Welcome to the Data Operations Centre
+
+The [Data Operations Centre](http://dataoperationscentre.com/) (DOC) is wholly owned by [Innovative Integrations](http://innovativeintegrations.co.uk/) Ltd and is the channel through which it provides integrated data application development and operations (DataOps). The DOC is powered by the [ETHEL® Cloud](http://innovativeintegrations.co.uk/ethel-cloud.html#ethel-cloud-overview), a data operations management platform for microservices that orchestrate data flow through a stack of big data technologies to extract insight for business needs, and enhance connectivity of data for collaboration and innovation.
+
+We have identified the inadequacies in operating at the macrostructure level of the FX market and a requirement to extend operations beyond the macrostructure to the more granular microstructure level. We also recognise that adapting to this new paradigm creates a set of challenges for investment managers, their data operations and legacy systems. 
+
+To provide access at the microstructure level and process automation capability we have developed a [Global Knowledge Graph](https://github.com/JonathanBowker/data-operations-centre/tree/master/global-knowledge-graph), a suite of [Managed Data Services](https://github.com/JonathanBowker/data-operations-centre/tree/master/managed-services) and a [Data Exploration Engine](https://github.com/JonathanBowker/data-operations-centre/tree/master/data-exploration-engine) to search, analyse, monitor and alert on connected market events. 

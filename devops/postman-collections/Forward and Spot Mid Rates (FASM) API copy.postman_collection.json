@@ -1,0 +1,941 @@
+{
+	"info": {
+		"name": "Forward and Spot Mid Rates (FASM) API copy",
+		"_postman_id": "eea48c42-986d-7320-ceb5-6cdd1646b5b8",
+		"description": "The Forwards and Spot Mid Rates (FASM) API is a computational API that calculates mid rates from a feed of aggregated global foreign exchange content supplied by more than 450 sources inlcuding - European, North and South American, Asia Pacifc, Middle Eastern and African OTC contributors.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Forward Mid Rates",
+			"description": "",
+			"item": [
+				{
+					"name": "Forwards",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allow subscribers to query the database by Forward Mid Rate PriceType and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by CurrencyPair ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allow subscribers to query the database by PriceType and Currency Pair and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by Tenor",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This endpoint allows the user to query the database by PriceType, CurrecyPair and Tenor and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by Date Time",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20eq%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20eq%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair, Tenor and a DateTime and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by < Less Than Date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair, Tenor and an End Date and responds with the latest 1000 records less than or equal to the date input."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by > Greater Than Date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxprod.table.core.windows.net/ForwardSpotMid()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20ge%20'01W'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2017-04-17&ss=t&srt=sco&sp=ra&se=2017-09-15T16:40:10Z&st=2017-09-15T08:40:10Z&spr=https&sig=Ujq4g0NCZhmnDSk4HPMLKSQ%2BEx346%2BUuOHOubwu%2F7u8%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxprod",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"path": [
+								"ForwardSpotMid()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20ge%20'01W'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2017-04-17",
+									"equals": true
+								},
+								{
+									"key": "ss",
+									"value": "t",
+									"equals": true
+								},
+								{
+									"key": "srt",
+									"value": "sco",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "ra",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-09-15T16:40:10Z",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-09-15T08:40:10Z",
+									"equals": true
+								},
+								{
+									"key": "spr",
+									"value": "https",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "Ujq4g0NCZhmnDSk4HPMLKSQ%2BEx346%2BUuOHOubwu%2F7u8%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair, Tenor and an End Date and responds with the latest 1000 records greater than or equal to the date input."
+					},
+					"response": []
+				},
+				{
+					"name": "Forward by Date Range",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;odata=nometadata"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxprod.table.core.windows.net/ForwardSpotMid()?$filter=PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20ge%20datetime'2017-07-26T06:45:00Z'%20and%20DateTime%20le%20datetime'2017-07-26T12:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2017-04-17&ss=t&srt=sco&sp=r&se=2020-09-17T12:23:26Z&st=2017-09-17T04:23:26Z&spr=https,http&sig=W87QUVT47siaDzb%2FlnwSLGIZMterXjfagXqAGT256mk%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxprod",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"path": [
+								"ForwardSpotMid()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'E'%20and%20PartitionKey%20lt%20'G'%20and%20CurrencyPair%20eq%20'AED/GBP'and%20Tenor%20eq%20'01W'%20and%20DateTime%20ge%20datetime'2017-07-26T06:45:00Z'%20and%20DateTime%20le%20datetime'2017-07-26T12:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2017-04-17",
+									"equals": true
+								},
+								{
+									"key": "ss",
+									"value": "t",
+									"equals": true
+								},
+								{
+									"key": "srt",
+									"value": "sco",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2020-09-17T12:23:26Z",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-09-17T04:23:26Z",
+									"equals": true
+								},
+								{
+									"key": "spr",
+									"value": "https,http",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "W87QUVT47siaDzb%2FlnwSLGIZMterXjfagXqAGT256mk%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair, Tenor and a Date Range and responds with the latest 1000 records within the dates input."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Spot Mid Rates",
+			"description": "",
+			"item": [
+				{
+					"name": "Spots",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allow subscribers to query the database by Spot Mid Rate PriceType and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Spot by CurrencyPair ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allow subscribers to query the database by PriceType and Currency Pair and responds with a maximum of 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Spot by Date Time",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20eq%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20eq%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair and a DateTime and responds with the latest 1000 records."
+					},
+					"response": []
+				},
+				{
+					"name": "Spot by < Less Than Date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair and an End Date and responds with the latest 1000 records less than or equal to the date input."
+					},
+					"response": []
+				},
+				{
+					"name": "Spot by > Greater Than Date",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20le%20datetime'2017-07-26T15:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair and an End Date and responds with the latest 1000 records greater than or equal to the date input."
+					},
+					"response": []
+				},
+				{
+					"name": "Spot by Date Range",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxdevlab.table.core.windows.net:443/ConsolidatedFeed()?$filter=PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20ge%20datetime'2017-07-26T06:45:00Z'%20and%20DateTime%20le%20datetime'2017-07-26T12:45:00Z'&st=2017-07-28T06%3A22%3A00Z&se=2017-12-29T07%3A22%3A00Z&sp=r&sv=2016-05-31&tn=consolidatedfeed&sig=oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+							"protocol": "https",
+							"host": [
+								"ncfxdevlab",
+								"table",
+								"core",
+								"windows",
+								"net"
+							],
+							"port": "443",
+							"path": [
+								"ConsolidatedFeed()"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "PartitionKey%20gt%20'R'%20and%20PartitionKey%20lt%20'T'%20and%20CurrencyPair%20eq%20'AED/GBP'%20and%20DateTime%20ge%20datetime'2017-07-26T06:45:00Z'%20and%20DateTime%20le%20datetime'2017-07-26T12:45:00Z'",
+									"equals": true
+								},
+								{
+									"key": "st",
+									"value": "2017-07-28T06%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "se",
+									"value": "2017-12-29T07%3A22%3A00Z",
+									"equals": true
+								},
+								{
+									"key": "sp",
+									"value": "r",
+									"equals": true
+								},
+								{
+									"key": "sv",
+									"value": "2016-05-31",
+									"equals": true
+								},
+								{
+									"key": "tn",
+									"value": "consolidatedfeed",
+									"equals": true
+								},
+								{
+									"key": "sig",
+									"value": "oxys5%2BWbwagEh0z8xosomtivH%2BWgG8UJfzCP0NdrgSI%3D",
+									"equals": true
+								}
+							]
+						},
+						"description": "This FASM endpoint allows the user to query the database by PriceType, CurrecyPair and a Date Range and responds with the latest 1000 records within the dates input."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

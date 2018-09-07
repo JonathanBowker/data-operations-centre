@@ -1,0 +1,33 @@
+<document>
+  
+  <properties>
+    <author email="kit@objectlab.co.uk">Benoit Xhenseval</author>
+    <title>Download</title>
+  </properties>
+  
+  <head>
+    <meta name="description" content="ObjectLab Kit offers free and open source Date calculators, released under the business-friendly Apache 2.0 license." />
+    <meta name="keywords" content="Date calculator, IMM Dates, Period Calculator, Financial Calendar, Business Calendar, java, open source" />
+    <meta name="Subject" content="Date Calculators" />
+    <meta name="Copyright" content="ObjectLab Financial Ltd" />
+    <meta name="Language" content="English" />
+    <meta name="Designer" content="ObjectLab Financial Ltd" />
+    <meta name="Distribution" content="Global" />
+    <meta name="robots" content="ALL"/>
+    <meta name="Revisit-After" content="20 Days" />
+  </head>
+  
+  <body>
+
+    <subsection name="Maven">
+      <p>If you're using Maven, setup is easy, as DateCalc is in the Maven Central Repository.</p>
+      <p>See info <a href="dependency-info.html">Here</a>.</p>
+    </subsection>
+
+    <subsection name="Download the Jars">
+      <p>If you are not using Maven, you can <a href="https://sourceforge.net/projects/objectlabkit/files/">download the jars here</a>.</p>
+    </subsection>
+
+  </body>
+  
+</document>

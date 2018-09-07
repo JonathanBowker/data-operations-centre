@@ -1,0 +1,242 @@
+{
+  "log": {
+    "properties": {
+      "@version": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "GLOBALEVENTID": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "DATE": {
+        "type": "date",
+        "format": "YYYYMMDDHHMMSS"        
+      },
+      "MonthYear": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "Year": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "FractionDate": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Name": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1CountryCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1KnownGroupCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1EthnicCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Religion1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Religion2Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Type1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Type2Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Type3Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Name": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2CountryCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2KnownGroupCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2EthnicCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Religion1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Religion2Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Type1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Type2Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Type3Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "IsRootEvent": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "EventCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "EventBaseCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "EventRootCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "QuadClass": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "GoldsteinScale": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "NumMentions": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "NumSources": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "NumArticles": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "AvgTone": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_Type": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_FullName": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_CountryCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_ADM1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_Lat": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_Long": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor1Geo_FeatureID": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_Type": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_FullName": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_CountryCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_ADM1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_Lat": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_Long": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "Actor2Geo_FeatureID": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_Type": {
+        "type": "integer",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_FullName": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_CountryCode": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_ADM1Code": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_Lat": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_Long": {
+        "type": "float",
+        "index": "not_analyzed"
+      },
+      "ActionGeo_FeatureID": {
+        "type": "string",
+        "index": "not_analyzed"
+      },
+      "DATEADDED": {
+        "type": "date",
+        "format": "YYYYMMDDHHMMSS"
+      },
+      "SOURCEURL": {
+        "type": "string",
+        "index": "not_analyzed"
+      }
+    }
+  }
+}

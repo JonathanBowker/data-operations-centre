@@ -1,0 +1,38 @@
+ICECode ,CityID,Bank ,City,SourceType,City,CityID,CityLat,CityLon,Country,ISO-3166-alpha2,ISO-3166-alpha2,ISO-3166-numeric,Fips,Region,RegionID,LEI
+BAB ,BAH ,Bahrain Association of Banks ,Bahrain,Central Bank,Bahrain,BAH ,26.0667,50.5577,Bahrain,BH,BHR,48,BA,EMEA,EUR ,549300HJD00HOXYCA262
+BCAN ,YOW ,Bank of Canada,Ottawa,Central Bank,Ottawa,YOW ,45.4215,75.6972,Canada,CA,CAN,124,CA,NCSA,NAM ,5493007MJ12YVTVHJ712
+BCBR ,BSB ,Banco Central do Brasil,Brasilia,Central Bank,Brasilia,BSB ,15.7942,47.8822,Brazil,BR,BRA,76,BR,North America,NAM ,259400VHILGGKLBNL383
+BCEB ,LPB ,Banco Central de Bolivia,La Paz,Central Bank,La Paz,LPB ,16.4897,68.1193,Bolivia,BO,BOL,68,BL,NCSA,NAM ,549300JP3R5ZCN3Y0W95
+BDEM ,MEX ,Banco de Mexico,Mexico City,Central Bank,Mexico City,MEX ,19.4326,99.1332,Mexico,MX,MEX,484,MX,NCSA,NAM ,5493000PF3WCYN9ML549
+BKEN ,LDN ,Bank of England,London,Central Bank,London,LDN ,51.5074,0.1278,United Kingdom,GB,GBR,826,UK,EMEA,EUR ,YUEDD7W89PH0FV8Q2S28
+BKTW ,TPE ,Bank of Taiwan,Taipei,Central Bank,Taipei,TPE ,25.033,121.5654,Taiwan,TW,TWN,158,TW,Asia,ASI ,254900HXCCIOHM74FA02
+BNA ,CUR ,Central Bank of Curacao And St. Maarten,Curaco,Central Bank,Curaco,CUR ,12.1696,68.99,Dutch Antilles,CW,CUW,531,UC,North America,NAM ,213800LVQN54C5LIXE21
+BNBG ,SOF ,Bulgarian National Bank,Sofia,Central Bank,Sofia,SOF ,42.6977,23.3219,Bulgaria,BG,BGR,100,BU,EMEA,EUR ,549300AHYJ0OMBLIL335
+BNMA ,KUL ,Bank Negara Malaysia,Kuala Lumpur,Central Bank,Kuala Lumpur,KUL ,3.139,101.6869,Malaysia,MY,MYS,458,MY,APAC,ASI ,5299001WEKCK7E65TI48
+BOJP ,TYO ,Japan Central Bank,Tokyo,Central Bank,Tokyo,TYO ,35.6895,139.6917,Japan,JP,JPN,392,JA,Asia,ASI ,549300NROGNBV2T1GS07
+BOTH ,BBK ,Bank of Thailand,Bangkok,Central Bank,Bangkok,BBK ,13.7563,100.5018,Thailand,TH,THA,764,TH,Asia,ASI ,549300HJD00HOXYCA262
+BPBI ,SOF ,Eurobank Bulgaria ,Sofia,Central Bank,Sofia,SOF ,42.6977,23.3219,Bulgaria,BG,BGR,100,BU,EMEA,EUR ,549300IRGNL8Q3O8Y413
+BRAS ,LDN ,Banco do Brasil,London,Central Bank,London,LDN ,51.5074,0.1278,United Kingdom,GB,GBR,826,UK,EMEA,EUR ,QE0Q0253K88YAGNPE356
+BSS ,JUB ,Bank of South Sudan,Juba,Central Bank,Juba,JUB ,4.8594,31.5713,South Sudan,SD,SDN,729,SU,EMEA,EUR ,
+CBCE ,CMB ,Central Bank of Sri Lanka,Colombo,Central Bank,Colombo,CMB ,6.9271,79.8612,Sri Lanka,LK,LKA,144,CE,Asia,ASI ,254900HXCCIOHM74FA02
+CBKU ,KWI ,Central Bank of Kuwait ,Kuwait,Central Bank,Kuwait,KWI ,29.3117,47.4818,Kuwait,W,KWT,414,KU,EMEA,EUR ,2549005G75NMAK8TM233
+CBRF ,MOW ,Central Bank of Russia,Moscow,Central Bank,Moscow,MOW ,55.7558,37.6173,Russia,RU,RUS,643,RS,,EUR ,253400EB56NKL2M3WT18
+CBSA ,API ,Central Bank of Samoa,Apia,Central Bank,Apia,API ,13.8507,171.7514,Samoa,WS,WSM,882,WS,EMEA,EUR ,
+CNB ,PRG ,Czech National Bank,Prague,Central Bank,Prague,PRG ,50.0755,14.4378,Czech Republic,CZ,CZE,203,EZ,EMEA,EUR ,549300DS86PEHLIYB473
+DBF ,FFT ,Deutsche Bundesbank,Frankfurt,Central Bank,Frankfurt,FFT ,50.1109,8.6821,Germany,DE,DEU,276,GM,EMEA,EUR ,529900SEOICVR2VM6Y05
+ECBF ,FFT ,European Central Bank,Frankfurt,Central Bank,Frankfurt,FFT ,50.1109,8.6821,Germany,DE,DEU,276,GM,EMEA,EUR ,549300DTUYXVMJXZNY75
+ENBA ,DXB ,Emirates National Bank,Dubai,Central Bank,Dubai,DXB ,25.2048,55.2708,Dubai,AE,ARE,784,AE,EMEA,EUR ,54930029BCN8HF3B1286
+GUBA ,GEO ,Bank of Guyana,George Town,Central Bank,George Town,GEO ,19.2929,-81.3668,Guyana,GY,GUY,328,GY,North America,NAM ,254900JES8186NVIBN25
+INDO ,JKT ,Bank Indonesia,Jakarta,Central Bank,Jakarta,JKT ,6.1751,106.865,Indonesia,ID,IDN,360,ID,Asia,ASI ,OUB893BYM4R6CVFWWL56
+ISRA ,JRS ,Bank of Israel,Jerusalem,Central Bank,Jerusalem,JRS ,31.7683,35.2137,Israel,IL,ISR,376,IS,EMEA,EUR ,M8LYVLF5DOB9X0LZOW72
+NBHK ,OSL ,Norges Bank,Oslo,Central Bank,Oslo,OSL ,59.9139,10.7522,Norway,NO,NOR,578,NO,EMEA,EUR ,549300O6E2WAK3IAXE34
+NBOR ,BUH ,National Bank of Romania,Bucharest,Central Bank,Bucharest,BUH ,44.4268,26.1025,Romania,RO,ROU,642,RO,EMEA,EUR ,259400VHILGGKLBNL383
+NBPL ,WAW ,Narodowy Bank Polski,Warsaw,Central Bank,Warsaw,WAW ,52.2297,21.0122,Poland,PL,POL,616,PL,EMEA,EUR ,549300K7Z2KT76WQJD18
+RBI ,BOM ,Reserve Bank of India,Mumbai,Central Bank,Mumbai,BOM ,19.076,72.8777,India,IN,IND,356,IN,Asia,ASI ,335800IV7VCDQGIOI391
+RBNZ ,WLG ,Reserve Bank of New Zealand,Wellington,Central Bank,Wellington,WLG ,41.2865,174.7762,New Zealand,NZ,NZL,554,NZ,Asia,ASI ,54930066LV3G32L0HB48
+RSBK ,SYD ,Reserve Bank of Australia ,Sydney,Central Bank,Sydney,SYD ,33.8688,151.2093,Australia,AU,AUS,36,AS,Asia,ASI ,5493003GYPR7VI37GG77
+SBPP ,KHI ,State Bank Of Pakistan ,Karachi,Central Bank,Karachi,KHI ,25.07,,Pakistan,PK,PAK,586,PK,APAC,ASI ,TZY4KQ6WP35IRETGM191
+SISL ,REK ,Central Bank of Iceland,Reykjavik,Central Bank,Reykjavik,REK ,64.1265,21.8174,Iceland,IS,ISL,352,IC,EMEA,EUR ,549300K5GD3JPA2LLG98
+SNB ,BEG ,National Bank of Serbia,Belgrade,Central Bank,Belgrade,BEG ,44.7866,20.4489,Servbia,RS,SRB,688,RI,EMEA,EUR ,254900WJU5CCU5P7N911
+SRCR ,JBN ,South African Reserve Bank ,Johannesburg,Central Bank,Johannesburg,JBN ,26.2041,28.0473,South Africa,ZA,ZAF,710,SF,EMEA,EUR ,549300KEVMSOSY8T8R35
+TCMB ,ANK ,Central Bank of the Republic of Turkey,Ankara,Central Bank,Ankara,ANK ,39.9334,32.8597,Turkey,TR,TUR,792,TU,EMEA,EUR ,789000B8K6KNUMHC1Y64

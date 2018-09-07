@@ -1,0 +1,22 @@
+## Rename all GDELT fields
+    mutate { 
+        rename => { "GKGRECORDID" => "UID" } 
+        rename => { "V2.1DATE" => "PublishedDate" }
+        rename => { "V2SOURCECOLLECTIONIDENTIFIER" => "SourceType" }
+        rename => { "V2.1COUNTS" => "Counts" }
+        rename => { "V2ENHANCEDTHEMES" => "Themes" }
+        rename => { "V2ENHANCEDLOCATIONS" => "Locations" }
+        rename => { "V2ENHANCEDPERSONS" => "Persons" }
+        rename => { "V2ENHANCEDORGANIZATIONS" => "Organisations"}
+        rename => { "V1.5TONE" => "Sentiment" }
+        rename => { "V2GCAM" => "GCAM" }
+        rename => { "V2.1SHARINGIMAGE" => "SharingImage" }
+        rename => { "V2.1RELATEDIMAGES" => "RelatedImages" }
+        rename => { "V2.1SOCIALIMAGEEMBEDS" => "SocialEmbeds" }
+        rename => { "V2.1QUOTATIONS" => "Quotations" }
+        rename => { "V2.1ALLNAMES" => "AllNames" }
+        rename => { "V2.1AMOUNTS" => "Amounts" }
+        rename => { "V2.1TRANSLATIONINFO" => "TransalationInfo" }
+        rename => { "V2EXTRASXML" => "CitedReferenceList" }
+        v
+    }

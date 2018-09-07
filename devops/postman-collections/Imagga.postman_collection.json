@@ -1,0 +1,46 @@
+{
+	"info": {
+		"name": "Imagga",
+		"_postman_id": "bde1da4b-9f7a-d57a-2557-0b352a0a8270",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tagging",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "api_key",
+						"value": "acc_e6c3fa49998a5ce"
+					},
+					{
+						"key": "api_secret",
+						"value": "3ebc70c75a17f312c5f6d5d0e805438e"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic YWNjX2U2YzNmYTQ5OTk4YTVjZTozZWJjNzBjNzVhMTdmMzEyYzVmNmQ1ZDBlODA1NDM4ZQ=="
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.imagga.com/v1/tagging",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imagga",
+						"com"
+					],
+					"path": [
+						"v1",
+						"tagging"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

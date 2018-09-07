@@ -1,0 +1,495 @@
+{
+	"info": {
+		"name": "Parliament Data",
+		"_postman_id": "fd4ab6fe-be8b-fe6c-6754-dc7239b6db2e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "e-Petitions",
+			"description": "",
+			"item": [
+				{
+					"name": "e-Petition",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/epetitions/{id}.json?_view=members&_pageSize=5000&_page=0",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"epetitions",
+								"{id}.json"
+							],
+							"query": [
+								{
+									"key": "_view",
+									"value": "members",
+									"equals": true
+								},
+								{
+									"key": "_pageSize",
+									"value": "5000",
+									"equals": true
+								},
+								{
+									"key": "_page",
+									"value": "0",
+									"equals": true
+								}
+							]
+						},
+						"description": "e-Petition"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/epetitions.json?_view=ePetitionsListViewer&_pageSize=5000&_page=0",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"epetitions.json"
+							],
+							"query": [
+								{
+									"key": "_view",
+									"value": "ePetitionsListViewer",
+									"equals": true
+								},
+								{
+									"key": "_pageSize",
+									"value": "5000",
+									"equals": true
+								},
+								{
+									"key": "_page",
+									"value": "0 ",
+									"equals": true
+								}
+							]
+						},
+						"description": "e-Petitions"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions Debate Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/resources/{id}/debate.json",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"resources",
+								"{id}",
+								"debate.json"
+							]
+						},
+						"description": "e-Petitions"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/epetitions/{id}/track",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"epetitions",
+								"{id}",
+								"track"
+							]
+						},
+						"description": "e-Petitions"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions Response Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/resources/{id}/governmentresponse",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"resources",
+								"{id}",
+								"governmentresponse"
+							]
+						},
+						"description": "e-Petitions Response Item"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions Signatures by Constituency",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/resources/{id}/signaturesbyconstituency/{code}",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"resources",
+								"{id}",
+								"signaturesbyconstituency",
+								"{code}"
+							]
+						},
+						"description": "e-Petitions Response Item"
+					},
+					"response": []
+				},
+				{
+					"name": "e-Petitions Signatures by Constituency copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/resources/{id}/signaturesbyconstituency/{code}",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"resources",
+								"{id}",
+								"signaturesbyconstituency",
+								"{code}"
+							]
+						},
+						"description": "e-Petitions Response Item"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Members",
+			"description": "",
+			"item": [
+				{
+					"name": "e-Petitions Signatures by Constituency copy copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/commonsmembers.json?_view=members&_pageSize=5000&_page=0",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"commonsmembers.json"
+							],
+							"query": [
+								{
+									"key": "_view",
+									"value": "members",
+									"equals": true
+								},
+								{
+									"key": "_pageSize",
+									"value": "5000",
+									"equals": true
+								},
+								{
+									"key": "_page",
+									"value": "0",
+									"equals": true
+								}
+							]
+						},
+						"description": "e-Petitions Response Item"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Early Day Motions",
+			"description": "Early Day Motions",
+			"item": [
+				{
+					"name": "Early Day Motions",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Gavin Newlands\"] = responseBody.has(\"Gavin Newlands\");",
+									"tests[\"Sir Peter Bottomley\"] = responseBody.has(\"Sir Peter Bottomley\");",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://lda.data.parliament.uk/edms.json?_view=EDMs+List&_pageSize=10&_page=0",
+							"protocol": "http",
+							"host": [
+								"lda",
+								"data",
+								"parliament",
+								"uk"
+							],
+							"path": [
+								"edms.json"
+							],
+							"query": [
+								{
+									"key": "_view",
+									"value": "EDMs+List",
+									"equals": true
+								},
+								{
+									"key": "_pageSize",
+									"value": "10",
+									"equals": true
+								},
+								{
+									"key": "_page",
+									"value": "0",
+									"equals": true
+								}
+							]
+						},
+						"description": "Early Day Motions"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post to Slack",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"text\": \"A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!\"}"
+				},
+				"url": {
+					"raw": "https://hooks.slack.com/services/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",
+					"protocol": "https",
+					"host": [
+						"hooks",
+						"slack",
+						"com"
+					],
+					"path": [
+						"services",
+						"T6RP006LQ",
+						"B6SE8GE8J",
+						"QO1TGwXWNCjtcEO23knBd16i"
+					]
+				},
+				"description": "Post to Slack"
+			},
+			"response": []
+		},
+		{
+			"name": "Post to Slack copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// Include util",
+							"eval(globals.util);",
+							"",
+							"// Polling icons",
+							"const icons = [",
+							"    ':one:',",
+							"    ':two:',",
+							"    ':three:',",
+							"    ':four:',",
+							"    ':five:',",
+							"    ':six:',",
+							"    ':seven:',",
+							"    ':eight:',",
+							"    ':nine:',",
+							"    ':keycap_ten:',",
+							"];",
+							"",
+							"const choices = tryParse(globals.choices, []);",
+							"const formattedChoices = format(choices);",
+							"",
+							"updateGlobals({ formattedChoices });",
+							"",
+							"/**",
+							" * Create a complete Slack formatted message from the restaurant choices.",
+							" *",
+							" * @param {Object[]} choices - An array of Yelp business objects.",
+							" * @returns {String} - A formatted Slack message.",
+							" */",
+							"function format (choices) {",
+							"    let formattedChoices = choices.map(restaurantToString);",
+							"    ",
+							"    if (choices.length > 1) {",
+							"        // Add polling icons to choices",
+							"        formattedChoices = formattedChoices.map((c, i) => `${icons[i]} ${c}`);",
+							"        ",
+							"        // Add a polling reminder",
+							"        const reactionOptions = formattedChoices.map((c, i) => icons[i]).join(', ');",
+							"        const pollPrompt = `Add reactions (${reactionOptions}) to vote for your preferences!`;",
+							"        formattedChoices.push(pollPrompt);",
+							"    }",
+							"    ",
+							"    const header = `\\n_Restaurant ${pluralize(choices, 'choice')} for today:_`;",
+							"    formattedChoices.unshift(header);",
+							"",
+							"    return formattedChoices.join('\\n\\n');",
+							"}",
+							"",
+							"/**",
+							" * Create a Slack formatted display version of the restaurant.",
+							" *",
+							" * @param {Object} restaurant - A Yelp business object.",
+							" * @param {Number} index",
+							" * @returns {String}",
+							" */",
+							"function restaurantToString (restaurant, index) {",
+							"    return [",
+							"        `<${cleanUpUrl(restaurant.url)}|*${restaurant.name}*>`,",
+							"        getCategories(restaurant),",
+							"        getDistanceInMiles(restaurant),",
+							"        `${restaurant.rating} stars`,",
+							"        restaurant.price,",
+							"    ].join('\\n');",
+							"}",
+							"",
+							"function getCategories ({ categories }) {",
+							"    const titles = categories.map(c => c.title);",
+							"    return `_${titles.join(', ')}_`;",
+							"}",
+							"",
+							"function getDistanceInMiles ({ distance }) {",
+							"    const miles = _.round(0.000621371 * distance, 2);",
+							"    return `${miles} miles away`;",
+							"}",
+							"",
+							"function cleanUpUrl (url) {",
+							"    const queryIndex = url.indexOf('?');",
+							"    return url.slice(0, queryIndex);",
+							"}",
+							"",
+							"function pluralize (array, string) {",
+							"    return array.length === 1 ? string : `${string}s`;",
+							"}"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"// Include util",
+							"eval(globals.util);",
+							"",
+							"tests['Got a 200 response'] = responseCode.code === 200;",
+							"tests['Ok response'] = responseBody === 'ok';",
+							"",
+							"if (responseBody !== 'ok') {",
+							"    warning(responseBody);",
+							"}"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"text\": {{formattedChoices}}\n}"
+				},
+				"url": {
+					"raw": "{{webhook}}",
+					"host": [
+						"{{webhook}}"
+					]
+				},
+				"description": "Post formatted restaurant choices to Slack. Include voting instructions if there's more than one choice.\n\nMake sure `webhook` is set in your environment. To get a webhook url, [create a Slack app](https://api.slack.com/slack-apps), [activate incoming webhooks](https://api.slack.com/incoming-webhooks), and add a webhook for your team.\n\n|Environment Variable Name |Required? |Description\n|--------------------------|----------|--------------\n|`webhook`                 |**YES**   |An [incoming webhook](https://api.slack.com/incoming-webhooks) url."
+			},
+			"response": []
+		}
+	]
+}

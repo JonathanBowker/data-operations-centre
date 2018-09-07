@@ -1,0 +1,89 @@
+{
+	"info": {
+		"name": "ScrapingHub",
+		"_postman_id": "9fe08f59-a1dc-e987-1c62-af84ab04229b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/x-jsonlines"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": " application/xml"
+					},
+					{
+						"key": "Accept",
+						"value": " text/plain"
+					},
+					{
+						"key": "Accept",
+						"value": "text/csv"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://storage.scrapinghub.com/foo?apikey=c1f72daeae004988824ac8a2c64f74b4",
+					"protocol": "https",
+					"host": [
+						"storage",
+						"scrapinghub",
+						"com"
+					],
+					"path": [
+						"foo"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "c1f72daeae004988824ac8a2c64f74b4",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authentication copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://storage.scrapinghub.com/foo?apikey=c1f72daeae004988824ac8a2c64f74b4",
+					"protocol": "https",
+					"host": [
+						"storage",
+						"scrapinghub",
+						"com"
+					],
+					"path": [
+						"foo"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "c1f72daeae004988824ac8a2c64f74b4",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

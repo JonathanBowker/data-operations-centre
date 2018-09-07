@@ -1,0 +1,205 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bab.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bceb.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bdem.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bken.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bna.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bojp.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.both.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bpbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bras.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bab.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.bss.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cbce.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cbku.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cbrf.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cbsa.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cnb.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.dbf.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ecbf.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.enba.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.nbor.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.rbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.rbnz.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.rsbk.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.sbpp.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "central.banks",
+        "destination_type": "exchange",
+        "routing_key": "*.*.srcr.*.*.*.*",
+        "arguments": {}
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+<document>
+  <properties>
+    <author email="Kit@objectlab.co.uk">Benoit Xhenseval</author>
+    <title>On the web...</title>
+  </properties>
+  <head>
+    <meta name="description"
+	content="Mentions of the ObjectLab Kit."
+	/>
+
+    <meta name="keywords"
+        content="Date calculator, IMM Dates, Period Calculator, Financial Calendar, Business Calendar, java, open source" />
+    <meta name="Subject" content="Date Calculators" />
+    <meta name="Copyright" content="ObjectLab Financial Ltd" />
+    <meta name="Language" content="English" />
+    <meta name="Designer" content="ObjectLab Financial Ltd" />
+    <meta name="Distribution" content="Global" />
+    <meta name="robots" content="ALL"/>
+    <meta name="Revisit-After" content="20 Days" />
+  </head>
+  <body>
+    <!-- The body of the document contains a number of sections -->
+    <section name="Initial release 1.0.1. Oct 2006">
+
+    <p>
+    <a href="http://digg.com/submit?phase=2&amp;url=objectlabkit.sourceforge.net&amp;title=ObjectLab%20Kit%3A%20Open%20Source%20Date%20Calculators%20for%20Business%20and%20Finance&amp;bodytext=ObjectLab%20released%20version%201%2E0%2E1%20of%20ObjectLab%20Kit%20for%20Java%201%2E5,%20available%20for%20download%20via%20SourceForge%20or%20the%20Maven%20Central%20Repository%2E%20The%20Kit%20provides%20a%20Date%20Calculator%20that%20handle%20holidays,%20a%20IMM%20Date%20and%20Period%20Count%20Calculator%20and%20comes%20in%20two%20versions%3A%20one%20based%20on%20pure%20JDK%20(1%2E5)%20and%20one%20based%20on%20the%20Joda-time%20library%20(1%2E3%2B,%20JDK%201%2E5)%2E&amp;topic=programming">
+    <img style="vertical-align:middle" src="http://digg.com/img/badges/91x17-digg-button.png" width="91" height="17" alt="Digg!" /></a>
+    </p>
+
+    <subsection name="On the web">
+	<ul>
+		<li><a href="./press-release-1.0.1.txt">Original 'press' release</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="JavaLobby">
+	<ul>
+		<li><a href="http://www.javalobby.org/java/forums/t82598.html">JavaLobby.org notice</a></li>
+		<li><a href="./homepage-javalobby2.png">JavaLobby.org homepage image</a></li>
+		<li><a href="./homepage-javalobby.pdf">JavaLobby.org homepage PDF</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="The Server Side">
+	<ul>
+		<li><a href="http://www.theserverside.com/news/thread.tss?thread_id=42572">TheServerSide.com notice</a></li>
+		<li><a href="./homepage-theserverside.png">TheServerSide.com homepage image</a></li>
+		<li><a href="./homepage-theserverside.pdf">TheServerSide.com homepage PDF</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="Java.Net">
+	<ul>
+		<li><a href="http://today.java.net/pub/n/ObjectLabKit">The Java.net notice</a></li>
+		<li><a href="./newspage-javanet.png">Java.net News page image</a></li>
+		<li><a href="./newspage-javanet.pdf">Java.net News page PDF</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="JavaRSS.com">
+	<ul>
+		<li><a href="./homepage-javarss.png">JavaRSS.com homepage image</a></li>
+		<li><a href="./homepage-javarss.pdf">JavaRSS.com homepage PDF</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="Where are you all?">
+	<ul>
+		<li><a href="./visits-map-20061010-12.png">A Google Analytics Map for the week of our first release</a></li>
+	</ul>
+    </subsection>
+
+    <subsection name="dZone.com">
+	<ul>
+		<li><a href="./homepage-dzone.png">dzone.com homepage image</a></li>
+		<li><a href="./homepage-dzone.pdf">dzone.com homepage PDF</a></li>
+	</ul>
+    </subsection>
+
+    </section>
+
+  </body>
+</document>

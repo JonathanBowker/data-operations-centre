@@ -1,0 +1,383 @@
+{
+	"info": {
+		"name": "OneNote API",
+		"_postman_id": "7c76277e-dc89-6d0c-6d5e-3ec9531c7677",
+		"description": "With the OneNote API you can do things like create, view, and manage pages in personal, site, and group notebooks. ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE Pages",
+			"description": "You cannot recover deleted data, so be careful when using this method. Deleting pages using the API deletes them permanently. They are not added to the OneNote Recycle Bin",
+			"item": [
+				{
+					"name": "/v1.0/me/notes/pages/id/",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages/id/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages",
+								"id",
+								""
+							]
+						},
+						"description": "Deletes the specified page."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET Pages ",
+			"description": "The pages endpoint represents all the OneNote pages across all notebooks in OneDrive that are both owned by and shared with the user. You can get pages across all notebooks, get pages in a specific section, get a specific page, or get the HTML content of a page.",
+			"item": [
+				{
+					"name": "/v1.0/me/notes/pages",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Host",
+								"value": "www.onenote.com"
+							},
+							{
+								"key": "X-Target-URI",
+								"value": "https://www.onenote.com"
+							},
+							{
+								"key": "Connection",
+								"value": "Keep-Alive"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer EwD4Aq1DBAAUGCCXc8wU/zFu9QnLdZXy+YnElFkAAb8GKDQ6/navuhfry76wtE4GhHHQ7n9ZK5gf7bf9QtVGfcfNC3G3VR4V84ANUU4oq8VTmx4SUYcOIXWXx/rh2rT5hfRN4QtEjGq4Wq+3ow9GaYo3qbFPfPHh4nkdd45xWMD3QHDuG73L0z1JtqQK/hYsDWxPuqF30Ac3+8si6uuwBaEOQPs7Ty5Xg/4CqPgLD1DVdAMGuc1GQjZZjfUM8ihjonRTeiCWVctQji0IlHfjpaKMD950te2RMXaG0HoW+lfZwFJ9hxO42At2o+EJtleWCH/YG2aTFdD7qJEAD4wSvJ+RWN02BRpDQAI5Tu1oCWOTJHyag5Ucia5xW6gKRgEDZgAACBZsnmy5LdCIyAG2syPGvx1FeOMAcYxcyFfXMpgUKdH8gqZ7WaLQlM2YJ7+14/GFJLFKLqtNonz9+FRXhrqjeGQy6PiP6TKhD7hSbBSg8H8k9SsDxFPy9MUGiZAmU+r7TFl1VQn3Sb2B7V+gtLekybwA5RJMhibNj4BlEwlxhWU7nH/ycoVrZhKT2kefUP/MxDm/VNYPzaVR4H+7iHz8UTL1E4R5IIXcBq7d2DjEfA2mcV9sJTABIQZXSwLcitkZMkj+xYynnzb7WOrsGFYqooPf+qg7GBBDscWe/hrt3EmA0+0bsS07kgnXv9sb0iqpUqHth8W42jM1QQmUxHBcLVmOq3R/xWsnr/bR5NhGWHk6F/x9i5H0QfE/HRtV0Jo1xPK3oHraGCXY3v08b/DQUuIbX48HcrMHKoBFdAMlc01vMYcCoV7S5g0a6SpEJui9i7YrHlTfJ/szVv2yM2rLGsfWDhflhy1pLjoegTqzydx+38WQK1jHbiJ7nGUhPwd8oRbaiOKGAKUOEeV72IyuAguVQ2PAZqb2et2/J6UZKXDbmCl4MJcRJx26rirgW3Ot2Mxyp7+HBL5JNd9QCGUohakDW6c3rgpeRU3IlidUYJldWRL7AQ=="
+							},
+							{
+								"key": "Host",
+								"value": ""
+							},
+							{
+								"key": "X-Target-URI",
+								"value": ""
+							},
+							{
+								"key": "https",
+								"value": "//www.onenote.com"
+							},
+							{
+								"key": "Connection",
+								"value": ""
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Gets a collection of pages (metadata) across all notebooks in OneDrive that the user can access."
+					},
+					"response": []
+				},
+				{
+					"name": "/v1.0/me/notes/pages/id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/sections/{id}/pages{?filter,orderby,select,expand,top,skip,search,count,pagelevel}",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"sections",
+								"{id}",
+								"pages{"
+							],
+							"query": [
+								{
+									"key": "filter,orderby,select,expand,top,skip,search,count,pagelevel}",
+									"value": null
+								}
+							]
+						},
+						"description": "Gets a specific page object (metadata)."
+					},
+					"response": []
+				},
+				{
+					"name": "/v1.0/me/notes/pages/id/content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages/{id}{?select,expand,pagelevel}",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages",
+								"{id}{"
+							],
+							"query": [
+								{
+									"key": "select,expand,pagelevel}",
+									"value": null
+								}
+							]
+						},
+						"description": "Gets the HTML content of a specific page, including element IDs for use in PATCH requests."
+					},
+					"response": []
+				},
+				{
+					"name": "/v1.0/me/notes/pages/id/preview",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages/{id}{?select,expand,pagelevel}",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages",
+								"{id}{"
+							],
+							"query": [
+								{
+									"key": "select,expand,pagelevel}",
+									"value": null
+								}
+							]
+						},
+						"description": "The returned previewText property contains a text snippet from the page. The OneNote API returns complete phrases, up to a maximum of 300 characters.\n<br><br>\n\n\nGET: https://www.onenote.com/api/v1.0/me/notes/pages/id?select=title%2CcontentUrl%2Clinks&expand=parentNotebook&pagelevel=true"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Access Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://login.live.com/oauth20_authorize.srf?client_id=e042dca9-4a6e-4412-8d04-b9475de8cb5d",
+							"protocol": "https",
+							"host": [
+								"login",
+								"live",
+								"com"
+							],
+							"path": [
+								"oauth20_authorize.srf"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "e042dca9-4a6e-4412-8d04-b9475de8cb5d"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATCH Pages",
+			"description": "You can use PATCH requests to update page content or to change the indentation level of a page.",
+			"item": [
+				{
+					"name": "/v1.0/me/notes/pages/id/content",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Modify page content."
+					},
+					"response": []
+				},
+				{
+					"name": "/beta/me/notes/pages/id",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Change the indentation level of a page."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST Pages",
+			"description": "The pages resource path represents pages in the user's OneNote notebooks that are stored in Microsoft OneDrive.",
+			"item": [
+				{
+					"name": " /v1.0/me/notes/pages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Creates a new page in the user's default section and notebook. POST to the /pages endpoint for a specific section when you want to create a page in a location other than the default."
+					},
+					"response": []
+				},
+				{
+					"name": "/v1.0/me/notes/sections/id/pages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Creates a new page in the specified section."
+					},
+					"response": []
+				},
+				{
+					"name": "/v1.0/me/notes/pages?sectionName",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://www.onenote.com/api/v1.0/me/notes/pages",
+							"protocol": "https",
+							"host": [
+								"www",
+								"onenote",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1.0",
+								"me",
+								"notes",
+								"pages"
+							]
+						},
+						"description": "Creates a new page in the specified section of the user's default notebook. If the section doesn't exist (or was renamed), the API will create the section."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

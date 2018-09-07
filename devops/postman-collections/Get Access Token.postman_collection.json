@@ -1,0 +1,54 @@
+{
+	"info": {
+		"name": "Get Access Token",
+		"_postman_id": "85c6b1ac-c17e-4905-58f8-d04240d6ed3a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://newapi.brandwatch.com/oauth/token?username=jonathan@brandsentiment.co.uk&password=match1miss!&grant_type=api-password&client_id=brandwatch-api-client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://newapi.brandwatch.com/oauth/token?username=jonathan@brandsentiment.co.uk&password=match1miss!&grant_type=api-password&client_id=brandwatch-api-client",
+					"protocol": "https",
+					"host": [
+						"newapi",
+						"brandwatch",
+						"com"
+					],
+					"path": [
+						"oauth",
+						"token"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "jonathan@brandsentiment.co.uk"
+						},
+						{
+							"key": "password",
+							"value": "match1miss!"
+						},
+						{
+							"key": "grant_type",
+							"value": "api-password"
+						},
+						{
+							"key": "client_id",
+							"value": "brandwatch-api-client"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

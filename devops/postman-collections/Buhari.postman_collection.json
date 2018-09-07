@@ -1,0 +1,389 @@
+{
+	"info": {
+		"name": "Buhari",
+		"_postman_id": "83acd451-2899-0c44-60de-994af920b942",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01. Buhari Index",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Buhari Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/buhari",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								"buhari"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put Buhari Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"buhari\": {\n    \"properties\": {\n    \"Date\": {\n      \"type\": \"date\",\n      \"format\": \"dd-MM-yyyy hh:mm:ss\"\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/buhari/_mapping/buhari",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								"buhari",
+								"_mapping",
+								"buhari"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Buhari Mapping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"properties\": {\n    \"uuid\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"url\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"site_full\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"site\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"site_section\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"section_title\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"title\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"title_full\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"replies_count\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"participants_count\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"site_type\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"country\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"spam_score\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"main_image\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"performance_score\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"domain_rank\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"ord_in_thread\": {\n      \"index\": \"analyzed\",\n      \"type\": \"integer\"\n    },\n    \"author\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"published\": {\n      \"index\": \"analyzed\",\n      \"type\": \"date\"\n    },\n    \"text\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"highlightText\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"highlightTitle\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"language\": {\n      \"index\": \"analyzed\",\n      \"type\": \"string\"\n    },\n    \"external_links\": {\n      \"type\": \"nested\"\n    },\n    \"persons\": {\n      \"type\": \"nested\"\n    },\n    \"locations\": {\n      \"type\": \"nested\"\n    },\n    \"organizations\": {\n      \"type\": \"nested\"\n    },\n    \"crawled\": {\n      \"index\": \"analyzed\",\n      \"type\": \"date\"\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/buhari/_mapping/",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								"buhari",
+								"_mapping",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get Buhari Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://52.51.27.20:9220/buhari/_settings",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								"buhari",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Indeces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://52.51.27.20:9220/_cat/indices?v",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								"_cat",
+								"indices"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": null
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Open .Kibi Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/.kibi/_open",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								".kibi",
+								"_open"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Close .Kibi Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/.kibi/_close",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								".kibi",
+								"_close"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update .Kibi Index Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"index\" : {\n    \"number_of_replicas\" : 4\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://52.51.27.20:9220/.kibi/_settings",
+							"protocol": "http",
+							"host": [
+								"52",
+								"51",
+								"27",
+								"20"
+							],
+							"port": "9220",
+							"path": [
+								".kibi",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get RLP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"languageDetection\":{\"language\":\"ENGLISH\",\"strategy\":\"NONE\"},\"text\": \"The prices of essential goods such as flour, oil and sugar have considerably gone up in Tajikistan, privately-owned Asia-Plus news agency reported on 16 January . \\rThe prices roused the indignation of customers, while sellers complain about the growth of the US dollar rate, the agency said. The rapid increase of prices for wheat flour and butter is something that the population is concerned over the most, the agency said. /nAccording to residents, the prices for everything - cigarettes, tea, coffee, sweets, sugar and other goods - have risen approximately by 30-40 per cents, the agency said. Prices for office machines and equipment, medicine, clothing, shoes and even office supplies also noticeably went up. /n However, the prices of locally produced goods - meat, eggs, milk, vegetables and fruits - have so far remained as before. /n The agency mentioned that over the past one year, the national currency, somoni, depreciated by 40 per cent against the dollar. /n The concern over the rising prices in Tajikistan is increasing, while over 30 per cent of Tajikistan's population is living under the poverty line, having only one bread-winner in the family, the agency said. /n Meanwhile, in 2015 the authorities did not fulfill their promise to raise salaries of employees of budget organizations, pensions and benefits, referring to financial problems. /n The agency said that the price hike of basic products primarily hit hard the budget of vulnerable people - the disabled, pensioners, single mothers and state employees. /n The salary is enough only for the payment of the flat rent and communal services, the agency quoted a local resident, who was complaining about the mounting prices, as saying. /n The families of migrants, who lived in better conditions last year, are now experiencing the same problems as others, the agency added.\"}"
+				},
+				"url": {
+					"raw": "http://ec2-52-18-50-42.eu-west-1.compute.amazonaws.com:9020/rws/services/doc/processText",
+					"protocol": "http",
+					"host": [
+						"ec2-52-18-50-42",
+						"eu-west-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "9020",
+					"path": [
+						"rws",
+						"services",
+						"doc",
+						"processText"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "597d19e0-e720-417e-80b3-c1025aee82d5",
+					"name": "Sample 1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"languageDetection\":{\"language\":\"ENGLISH\",\"strategy\":\"NONE\"},\"text\":\"what a fantastic day for a BBQ. We have some great wines open for such an occassion #VillaNeuvaMalbec - excellent body, fruity!\"}"
+						},
+						"url": {
+							"raw": "http://ec2-52-18-50-42.eu-west-1.compute.amazonaws.com:9020/rws/services/doc/processText",
+							"protocol": "http",
+							"host": [
+								"ec2-52-18-50-42",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9020",
+							"path": [
+								"rws",
+								"services",
+								"doc",
+								"processText"
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "javascript",
+					"header": [
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "682",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 12 Sep 2015 11:42:13 GMT",
+							"description": ""
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apache-Coyote/1.1",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						}
+					],
+					"cookie": [],
+					"body": "{\"documentInfo\":{\"languageDetectionResults\":null},\"regions\":[{\"language\":\"ENGLISH\",\"startOffset\":0,\"endOffset\":127,\"resultAccess\":{\"NamedEntitySource\":[],\"NamedEntitySourceString\":[],\"TextBoundaries\":[32,127],\"NamedEntity\":[],\"Lemma\":[\"what\",\"a\",\"fantastic\",\"day\",\"for\",\"a\",\"BBQ\",\".\",\"we\",\"have\",\"some\",\"great\",\"wine\",\"open\",\"for\",\"such\",\"an\",\"occassion\",\"#\",\"VillaNeuvaMalbec\",\"-\",\"excellent\",\"body\",\",\",\"fruity\",\"!\"],\"TokenOffset\":[0,4,5,6,7,16,17,20,21,24,25,26,27,30,30,31,32,34,35,39,40,44,45,50,51,56,57,61,62,65,66,70,71,73,74,83,84,85,85,101,102,103,104,113,114,118,118,119,120,126,126,127],\"DetectedLanguage\":\"ENGLISH\",\"DetectedEncoding\":\"UTF-16\",\"BaseNounPhrase\":[1,4,5,7,8,9,10,14,15,18,18,19,19,20,21,23],\"SentenceBoundaries\":[8,26],\"PartOfSpeech\":[\"WPRON\",\"DET\",\"ADJ\",\"NOUN\",\"PREP\",\"DET\",\"PROP\",\"SENT\",\"PRONPERS\",\"VHPRES\",\"QUANT\",\"ADJ\",\"NOUN\",\"ADJ\",\"PREP\",\"PREDET\",\"DET\",\"NOUN\",\"MEAS\",\"PROP\",\"PUNCT\",\"ADJ\",\"NOUN\",\"CM\",\"ADJ\",\"SENT\"],\"NamedEntityTypeString\":[],\"NormalizedNamedEntity\":[],\"RawText\":\"what a fantastic day for a BBQ. We have some great wines open for such an occassion #VillaNeuvaMalbec - excellent body, fruity!\",\"Tokens\":[\"what\",\"a\",\"fantastic\",\"day\",\"for\",\"a\",\"BBQ\",\".\",\"We\",\"have\",\"some\",\"great\",\"wines\",\"open\",\"for\",\"such\",\"an\",\"occassion\",\"#\",\"VillaNeuvaMalbec\",\"-\",\"excellent\",\"body\",\",\",\"fruity\",\"!\"],\"Stopword\":[0,1,5,9,10,15,16],\"ScriptRegion\":[0,127,215]}}]}"
+				}
+			]
+		},
+		{
+			"name": "ElasticSearch Mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userprofile\" : {\n        \"properties\" : {\n            \"RelationshipStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"HomeTown\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Political\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Religion\"              : {\"type\" : \"string\", \"store\" : true },\n            \"LRUserID\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CoverPhoto\"            : {\"type\" : \"string\", \"store\" : true },\n            \"FollowersCount\"        : {\"type\" : \"integer\", \"store\" : true },\n            \"IsGeoEnabled\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ThumbnailImageUrl\"     : {\"type\" : \"string\", \"store\" : true },\n            \"GistsUrl\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfessionalHeadline\"  : {\"type\" : \"string\", \"store\" : true },\n            \"PublicRepository\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Volunteer\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TotalPrivateRepository\": {\"type\" : \"string\", \"store\" : true },\n            \"Industry\"              : {\"type\" : \"string\", \"store\" : true },\n            \"TotalStatusesCount\"    : {\"type\" : \"string\", \"store\" : true },\n            \"IMAccounts\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Suffix\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Favicon\"               : {\"type\" : \"string\", \"store\" : true },\n            \"LocalLanguage\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Hireable\"              : {\"type\" : \"string\", \"store\" : true },\n            \"InspirationalPeople\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Badges\"                : {\"type\" : \"string\", \"store\" : true },\n            \"JobBookmarks\"          : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedTime\"           : {\"type\" : \"date\", \"store\" : true },\n            \"ProfileCity\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Sports\"                : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"State\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"                 : {\"type\" : \"string\", \"store\" : true },\n\n\n\n            \"Associations\"          : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumbers\"          : {\"type\" : \"string\", \"store\" : true },\n            \"MiddleName\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"               : {\"type\" : \"string\", \"store\" : true },\n            \"MutualFriends\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Projects\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Subscription\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"MainAddress\"           : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCity\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Created\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Age\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"HttpsImageUrl\"         : {\"type\" : \"string\", \"store\" : true },\n            \"RepositoryUrl\"         : {\"type\" : \"string\", \"store\" : true },\n            \"IsProtected\"           : {\"type\" : \"string\", \"store\" : true },\n            \"PlacesLived\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Currency\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileName\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Honors\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Publications\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Verified\"              : {\"type\" : \"string\", \"store\" : true },\n            \"FirstName\"             : {\"type\" : \"string\", \"store\" : true },\n            \"KloutScore\"            : {\"type\" : \"string\", \"store\" : true },\n            \"LastName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Languages\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Provider\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Interests\"             : {\"type\" : \"string\", \"store\" : true },\n            \"NumRecommenders\"       : {\"type\" : \"string\", \"store\" : true },\n\n\n\n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"PrivateGists\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Certifications\"        : {\"type\" : \"string\", \"store\" : true },\n            \"TeleVisionShow\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Language\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Positions\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Courses\"               : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileCountry\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Family\"                : {\"type\" : \"string\", \"store\" : true },\n            \"TagLine\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Suggestions\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Prefix\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Books\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"CurrentStatus\"         : {\"type\" : \"string\", \"store\" : true },\n            \"FullName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"City\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"RecommendationsReceived\": {\"type\" : \"string\", \"store\" : true },\n            \"TimeZone\"              : {\"type\" : \"string\", \"store\" : true },\n            \"PublicGists\"           : {\"type\" : \"string\", \"store\" : true },\n            \"FriendsCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"MemberUrlResources\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Quote\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Quota\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"BirthDate\"             : {\"type\" : \"date\", \"store\" : true },\n            \"Educations\"            : {\"type\" : \"string\", \"store\" : true },\n            \"StarredUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"RelatedProfileViews\"   : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Skills\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Movies\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Games\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"FavoriteThings\"        : {\"type\" : \"string\", \"store\" : true },\n            \"InterestedIn\"          : {\"type\" : \"string\", \"store\" : true },\n            \"NickName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCountry\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Patents\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Addresses\"             : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

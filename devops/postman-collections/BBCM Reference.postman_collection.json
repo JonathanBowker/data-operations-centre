@@ -1,0 +1,636 @@
+{
+	"info": {
+		"name": "BBCM Reference",
+		"_postman_id": "2144567e-734f-40f4-5afa-3fb4fec4f8f0",
+		"description": "BBCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01. BBCM Indices",
+			"description": "",
+			"item": [
+				{
+					"name": "Create an Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Indeces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_cat/indices?v",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_cat",
+								"indices"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": null
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/_settings",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Open the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/_open",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"_open"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Close the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_close",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_close"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update the Index Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"index\" : {\n    \"number_of_replicas\" : 4\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_settings",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02. BBCM Mappings",
+			"description": "",
+			"item": [
+				{
+					"name": "Put BBCM Event Mapping v1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mappings\": {\n    \"event\": {\n      \"properties\": {\n        \"bbcm\": {\n          \"properties\": {\n            \"content\": {\n              \"properties\": {\n                \"bodyParagraph\": {\n                  \"type\": \"string\"\n                },\n                \"signOff\": {\n                  \"type\": \"string\"\n                },\n                \"sourceline\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"header\": {\n              \"properties\": {\n                \"broadcastDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"catchline\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountry\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"copyright\": {\n                  \"type\": \"string\"\n                },\n                \"headline\": {\n                  \"type\": \"string\"\n                },\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"medium\": {\n                  \"type\": \"string\"\n                },\n                \"priority\": {\n                  \"type\": \"string\"\n                },\n                \"publicationDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"service\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountry\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"topics\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        },\n        \"pi\": {\n          \"properties\": {\n            \"categories\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"entity\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"count\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                },\n                \"normalized\": {\n                  \"type\": \"string\"\n                },\n                \"type\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"language\": {\n              \"properties\": {\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                }\n              }\n            },\n            \"linkedEntities\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"entityId\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"relationships\": {\n              \"properties\": {\n                \"arg1\": {\n                  \"type\": \"string\"\n                },\n                \"arg2\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"predicate\": {\n                  \"type\": \"string\"\n                },\n                \"summaries\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"sentiment\": {\n              \"properties\": {\n                \"document\": {\n                  \"properties\": {\n                    \"label\": {\n                      \"type\": \"string\"\n                    },\n                    \"confidence\": {\n                      \"type\": \"double\"\n                    }\n                  }\n                },\n                \"entities\": {\n                  \"properties\": {\n                    \"mention\": {\n                      \"type\": \"string\"\n                    },\n                    \"type\": {\n                      \"type\": \"string\"\n                    },\n                    \"entityId\": {\n                      \"type\": \"string\"\n                    },\n                    \"sentiment\": {\n                      \"properties\": {\n                        \"label\": {\n                          \"type\": \"string\"\n                        },\n                        \"confidence\": {\n                          \"type\": \"double\"\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/_mapping",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put BBCM Event Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mappings\": {\n    \"event\": {\n      \"properties\": {\n        \"bbcm\": {\n          \"properties\": {\n            \"content\": {\n              \"properties\": {\n                \"bodyParagraph\": {\n                  \"type\": \"string\"\n                },\n                \"signOff\": {\n                  \"type\": \"string\"\n                },\n                \"sourceline\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"header\": {\n              \"properties\": {\n                \"broadcastDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss||dd-MM-yyyy\"\n                },\n                \"catchline\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountry\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"copyright\": {\n                  \"type\": \"string\"\n                },\n                \"headline\": {\n                  \"type\": \"string\"\n                },\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"medium\": {\n                  \"type\": \"string\"\n                },\n                \"priority\": {\n                  \"type\": \"string\"\n                },\n                \"publicationDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss||dd-MM-yyyy\"\n                },\n                \"service\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountry\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"topics\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        },\n        \"pi\": {\n          \"properties\": {\n            \"categories\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"entity\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"count\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                },\n                \"normalized\": {\n                  \"type\": \"string\"\n                },\n                \"type\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"language\": {\n              \"properties\": {\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                }\n              }\n            },\n            \"linkedEntities\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"entityId\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"relationships\": {\n              \"properties\": {\n                \"arg1\": {\n                  \"type\": \"string\"\n                },\n                \"arg2\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"predicate\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"sentiment\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/_mapping",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get BBCM Event Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/_mapping",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete  BBCM Event Mapping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"mappings\": {\n    \"event\": {\n      \"properties\": {\n        \"bbcm\": {\n          \"properties\": {\n            \"content\": {\n              \"properties\": {\n                \"bodyParagraph\": {\n                  \"type\": \"string\"\n                },\n                \"signOff\": {\n                  \"type\": \"string\"\n                },\n                \"sourceline\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"header\": {\n              \"properties\": {\n                \"broadcastDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss||dd-MM-yyyy\"\n                },\n                \"catchline\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountry\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"copyright\": {\n                  \"type\": \"string\"\n                },\n                \"headline\": {\n                  \"type\": \"string\"\n                },\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"medium\": {\n                  \"type\": \"string\"\n                },\n                \"priority\": {\n                  \"type\": \"string\"\n                },\n                \"publicationDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss||dd-MM-yyyy\"\n                },\n                \"service\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountry\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"topics\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        },\n        \"pi\": {\n          \"properties\": {\n            \"categories\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"entity\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"count\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                },\n                \"normalized\": {\n                  \"type\": \"string\"\n                },\n                \"type\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"language\": {\n              \"properties\": {\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                }\n              }\n            },\n            \"linkedEntities\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"entityId\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"relationships\": {\n              \"properties\": {\n                \"arg1\": {\n                  \"type\": \"string\"\n                },\n                \"arg2\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"predicate\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"sentiment\": {\n              \"properties\": {\n                \"document\": {\n                  \"properties\": {\n                    \"label\": {\n                      \"type\": \"string\"\n                    },\n                    \"confidence\": {\n                      \"type\": \"double\"\n                    }\n                  }\n                },\n                \"entities\": {\n                  \"properties\": {\n                    \"mention\": {\n                      \"type\": \"string\"\n                    },\n                    \"type\": {\n                      \"type\": \"string\"\n                    },\n                    \"entityId\": {\n                      \"type\": \"string\"\n                    },\n                    \"sentiment\": {\n                      \"properties\": {\n                        \"label\": {\n                          \"type\": \"string\"\n                        },\n                        \"confidence\": {\n                          \"type\": \"double\"\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/_mapping",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "03. BBCM Templates",
+			"description": "",
+			"item": [
+				{
+					"name": "Create BBCM Template - v2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"template\": \"bbcm*\",\n  \"order\": 1,\n  \"settings\": {\n    \"number_of_shards\": 1\n  },\n  \"mappings\": {\n    \"activity\": {\n      \"properties\": {\n        \"bbcm\": {\n          \"properties\": {\n            \"content\": {\n              \"properties\": {\n                \"bodyParagraph\": {\n                  \"type\": \"string\"\n                },\n                \"signOff\": {\n                  \"type\": \"string\"\n                },\n                \"sourceline\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"header\": {\n              \"properties\": {\n                \"broadcastDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"catchline\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountry\": {\n                  \"properties\": {\n                    \"countryCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"country\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"contentCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"copyright\": {\n                  \"type\": \"string\"\n                },\n                \"headline\": {\n                  \"type\": \"string\"\n                },\n                \"contentLanguage\": {\n                  \"properties\": {\n                    \"languageCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"language\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"medium\": {\n                  \"properties\": {\n                    \"mediumCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"medium\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"priority\": {\n                  \"properties\": {\n                    \"priorityCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"priority\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"publicationDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"service\": {\n                  \"properties\": {\n                    \"serviceCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"service\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"sourceCountry\": {\n                  \"properties\": {\n                    \"countryCode\": {\n                      \"type\": \"string\"\n                    },\n                    \"country\": {\n                      \"type\": \"string\"\n                    }\n                  }\n                },\n                \"sourceCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"topics\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        },\n        \"pi\": {\n          \"properties\": {\n            \"categories\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"entity\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"count\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                },\n                \"normalized\": {\n                  \"type\": \"string\"\n                },\n                \"type\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"language\": {\n              \"properties\": {\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                }\n              }\n            },\n            \"linkedEntities\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"entityId\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"relationships\": {\n              \"properties\": {\n                \"arg1\": {\n                  \"type\": \"string\"\n                },\n                \"arg2\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"predicate\": {\n                  \"type\": \"string\"\n                },\n                \"summaries\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"sentiment\": {\n              \"properties\": {\n                \"document\": {\n                  \n                      \"label\": {\n                        \"type\": \"string\"\n                      },\n                      \"confidence\": {\n                        \"type\": \"double\"\n                      }\n                  \n                },\n                \"entities\": {\n                  \"properties\": {\n                    \"mention\": {\n                      \"type\": \"string\"\n                    },\n                    \"type\": {\n                      \"type\": \"string\"\n                    },\n                    \"entityId\": {\n                      \"type\": \"string\"\n                    },\n                    \"sentiment\": {\n                      \"properties\": {\n                        \"label\": {\n                          \"type\": \"string\"\n                        },\n                        \"confidence\": {\n                          \"type\": \"double\"\n                        }\n                      }\n                    }\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_template/bbcm_event_per_index",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_template",
+								"bbcm_event_per_index"
+							]
+						},
+						"description": "Second interation template"
+					},
+					"response": []
+				},
+				{
+					"name": "Create BBCM Template - v1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"template\": \"bbcm*\",\n  \"order\": 1,\n  \"settings\": {\n    \"number_of_shards\": 1\n  },\n  \"mappings\": {\n    \"event\": {\n      \"properties\": {\n        \"bbcm\": {\n          \"properties\": {\n            \"content\": {\n              \"properties\": {\n                \"bodyParagraph\": {\n                  \"type\": \"string\"\n                },\n                \"signOff\": {\n                  \"type\": \"string\"\n                },\n                \"sourceline\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"header\": {\n              \"properties\": {\n                \"broadcastDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"catchline\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountry\": {\n                  \"type\": \"string\"\n                },\n                \"contentCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"copyright\": {\n                  \"type\": \"string\"\n                },\n                \"headline\": {\n                  \"type\": \"string\"\n                },\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"medium\": {\n                  \"type\": \"string\"\n                },\n                \"priority\": {\n                  \"type\": \"string\"\n                },\n                \"publicationDate\": {\n                  \"type\": \"date\",\n                  \"format\": \"dd-MM-yyyy HH:mm:ss\"\n                },\n                \"service\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountry\": {\n                  \"type\": \"string\"\n                },\n                \"sourceCountryLocation\": {\n                  \"type\": \"geo_point\"\n                },\n                \"topics\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        },\n        \"pi\": {\n          \"properties\": {\n            \"categories\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"entity\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"count\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                },\n                \"normalized\": {\n                  \"type\": \"string\"\n                },\n                \"type\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"language\": {\n              \"properties\": {\n                \"language\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                }\n              }\n            },\n            \"linkedEntities\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"entityId\": {\n                  \"type\": \"string\"\n                },\n                \"indocChainId\": {\n                  \"type\": \"string\"\n                },\n                \"mention\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"relationships\": {\n              \"properties\": {\n                \"arg1\": {\n                  \"type\": \"string\"\n                },\n                \"arg2\": {\n                  \"type\": \"string\"\n                },\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"predicate\": {\n                  \"type\": \"string\"\n                }\n              }\n            },\n            \"sentiment\": {\n              \"properties\": {\n                \"confidence\": {\n                  \"type\": \"double\"\n                },\n                \"label\": {\n                  \"type\": \"string\"\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_template/bbcm_event_per_index",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_template",
+								"bbcm_event_per_index"
+							]
+						},
+						"description": "Original BBCM template"
+					},
+					"response": []
+				},
+				{
+					"name": "Get BBCM Template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_template/bbcm_event_per_index",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_template",
+								"bbcm_event_per_index"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_template",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_template"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "04. BBCM Events",
+			"description": "",
+			"item": [
+				{
+					"name": "Put BBCM Event",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"bbcm\": {\n    \"header\": {\n      \"headline\": \"Press summary for Georgia's breakaway region of Abkhazia 21 Jan - 17 Feb 16\",\n      \"catchline\": \"TCU-GEORGIA-ABKHAZ-PRESS\",\n      \"broadcastDate\": \"17-02-2016 00:00:00\",\n      \"publicationDate\": \"16-02-2016 18:42:18\",\n      \"sourceCountry\": {\n        \"code\": \"GEO\",\n        \"country\": \"Georgia\"\n      },\n      \"sourceCountryLocation\": [\n        42.315407,\n        43.356892\n      ],\n      \"contentCountry\": {\n        \"countryCode\": \"GEO\",\n        \"country\": \"Georgia\"\n      },\n      \"contentCountryLocation\": [\n        42.315407,\n        43.356892\n      ],\n      \"service\": {\n        \"serviceCode\": \"ABPRES\",\n        \"service\": \"Summary of Abkhaz Press\"\n      },\n      \"contentLanguage\": {\n        \"languageCode\": \"RUS\",\n        \"language\": \"Russian\"\n      },\n      \"topics\": \"DOMESTIC_POLITICAL\",\n      \"priority\": {\n        \"priorityCode\": \"RR\",\n        \"priority\": \"Routine\"\n      },\n      \"medium\": {\n        \"mediumCode\": \"PR\",\n        \"medium\": \"Press\"\n      },\n      \"copyright\": \"BBC Monitoring. Copyright BBC.\"\n    },\n    \"content\": {\n      \"sourceline\": \"Summary of Abkhaz Press compiled by BBC Monitoring in Russian 17 Feb 16\",\n      \"signoff\": \"BBC Mon TCU nk\",\n      \"bodyParagraph\": \"Nuzhnaya Gazeta, No 1, 21 Jan /n1. Olga Jonua reports on Abkhaz president Raul Khajimba's speech in the Abkhaz parliament, in which he touched on problems such as a \\\"primitive structure\\\" of the Abkhaz economy; pubic control over government spending; taxation and a \\\"disastrous\\\" scale of tax evasion; pensions and social allowances; and repatriation of the ethnic Abkhaz living abroad; p 1; 1,500 words; npp. /n1. Unattirbuted report says that on 29 January, the Abkhaz parliament adopted amendments to the local self-government law that says that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government; p 2; 700 words; npp. /n2. Jof Grivapsh interviews the new head of the Abkhaz state-run TV station, Leonid Enik, who says that the role of the Abkhaz language should become more substantial in broadcasting; notes that he does not intend to make any personnel changes at the moment; and vows to allow the opposition to appear in the programmes of the TV station; p 3; 900 words; npp. /n1. Inal Khashig writes that the Abkhaz government has failed to carry out any reforms in the local management and other areas and attempts to point to reasons for the failure; p 1; 600 words; npp. /n2. Anton Krivenyuk writes that Abkhazia has joined Russian sanctions against Turkey, which, as many say, can lead to deterioration in Abkhaz-Turkish relations. However, the author notes that there are effectively no relations between Abkhazia and Turkey; p 3; 1,900 words; processing. /nNuzhnaya Gazeta, No 2, 28 Jan; Nuzhnaya Gazeta, No 4, 11 Feb - negative selection /nChegemskaya Pravda did not appear on 21 and 28 Jan and 11 Feb\"\n    }\n  },\n  \"pi\": {\n    \"entity\": {\n      \"indocChainId\": [\n        \"0\",\n        \"1\",\n        \"2\",\n        \"4\",\n        \"7\",\n        \"10\",\n        \"23\",\n        \"25\",\n        \"5\",\n        \"8\",\n        \"16\",\n        \"18\",\n        \"20\",\n        \"22\",\n        \"27\",\n        \"30\"\n      ],\n      \"type\": [\n        \"Nationality\",\n        \"Organization\",\n        \"Nationality\",\n        \"Person\",\n        \"Title\",\n        \"Organization\",\n        \"Location\",\n        \"Location\",\n        \"Person\",\n        \"Person\",\n        \"Location\",\n        \"Person\",\n        \"Person\",\n        \"Person\",\n        \"Nationality\",\n        \"Organization\"\n      ],\n      \"mention\": [\n        \"Abkhaz\",\n        \"BBC\",\n        \"Russian\",\n        \"Nuzhnaya Gazeta\",\n        \"president\",\n        \"parliament\",\n        \"Abkhazia\",\n        \"Turkey\",\n        \"Olga Jonua\",\n        \"Raul Khajimba\",\n        \"Jof\",\n        \"Leonid Enik\",\n        \"Inal Khashig\",\n        \"Anton Krivenyuk\",\n        \"Turkish\",\n        \"nNuzhnaya Gazeta\"\n      ],\n      \"normalized\": [\n        \"Abkhaz\",\n        \"BBC\",\n        \"Russian\",\n        \"Nuzhnaya Gazeta\",\n        \"president\",\n        \"parliament\",\n        \"Abkhazia\",\n        \"Turkey\",\n        \"Olga Jonua\",\n        \"Raul Khajimba\",\n        \"Jof\",\n        \"Leonid Enik\",\n        \"Inal Khashig\",\n        \"Anton Krivenyuk\",\n        \"Turkish\",\n        \"nNuzhnaya Gazeta\"\n      ],\n      \"count\": [\n        \"10\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\"\n      ],\n      \"confidence\": [\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\"\n      ]\n    },\n    \"linkedEntities\": {\n      \"entityId\": [\n        \"Q9531\",\n        \"Q1359023\",\n        \"Q15637429\",\n        \"Q23334\",\n        \"Q43\"\n      ],\n      \"indocChainId\": [\n        1,\n        8,\n        18,\n        23,\n        25\n      ],\n      \"mention\": [\n        \"BBC\",\n        \"Raul Khajimba\",\n        \"Leonid Enik\",\n        \"Abkhazia\",\n        \"Turkey\"\n      ],\n      \"confidence\": [\n        0.6842297,\n        0.853604,\n        0.62842095,\n        0.3928171,\n        0.17445955\n      ]\n    },\n    \"categories\": {\n      \"label\": [\n        \"BUSINESS\"\n      ],\n      \"confidence\": [\n        0.08317091\n      ]\n    },\n    \"document\": {\n      \"sentiment\": {\n        \"label\": [\n          \"neg\",\n          \"neu\",\n          \"pos\"\n        ],\n        \"confidence\": [\n          0.6427426560483569,\n          0.7463925956866589,\n          0.7938076143910243\n        ]\n      }\n    },\n    \"entities\": {\n      \"mention\": [\n        \"Tajikistan\",\n        \"Asia\",\n        \"US dollar\"\n      ],\n      \"type\": [\n        \"Location\",\n        \"Location\",\n        \"Location\"\n      ],\n      \"entityId\": [\n        \"Q863\",\n        \"Q48\",\n        \"Q4917\"\n      ],\n      \"sentiment\": {\n        \"label\": [\n          \"neg\",\n          \"neu\",\n          \"pos\"\n        ],\n        \"confidence\": [\n          0.6427426560483569,\n          0.7463925956866589,\n          0.7938076143910243\n        ]\n      },\n      \"relationships\": {\n        \"predicate\": [\n          \"adopt\",\n          \"say\",\n          \"go\",\n          \"become\",\n          \"say\",\n          \"write\",\n          \"join\",\n          \"write\",\n          \"note\",\n          \"not appear\"\n        ],\n        \"arg1\": [\n          \"the Abkhaz parliament\",\n          \"amendments to the local self-government law\",\n          \"heads of local administrations\",\n          \"the role of the Abkhaz language\",\n          \"the new head of the Abkhaz state-run TV station\",\n          \"Inal Khashig\",\n          \"Abkhazia\",\n          \"Anton Krivenyuk\",\n          \"the author\",\n          \"nChegemskaya Pravda\"\n        ],\n        \"arg2\": [\n          \"amendments to the local self-government law that says that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n          \"that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n          \"to be appointed by president with the approval of the elected bodies of local self-government\",\n          null,\n          \"that the role of the Abkhaz language should become more substantial in broadcasting\",\n          \"that the Abkhaz government has failed to carry out any reforms in the local management and other areas and attempts\",\n          \"Russian sanctions against Turkey\",\n          \"that Abkhazia has joined Russian sanctions against Turkey\",\n          \"that there are effectively no relations between Abkhazia and Turkey\",\n          null\n        ],\n        \"confidence\": [\n          \"0.7291215229230944\",\n          \"0.6089981819101293\",\n          \"0.5358076753217833\",\n          \"0.41255241282936317\",\n          \"0.5124800374161187\",\n          \"0.9159100191253455\",\n          \"0.7585475858258373\",\n          \"0.9387898330738502\",\n          \"0.624395997089533\",\n          \"0.44301927392108265\"\n        ],\n        \"summaries\": [\n          \"The Abkhaz parliament adopt amendments to the local self-government law that says that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n          \"Amendments to the local self-government law say that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n          \"Heads of local administrations go to be appointed by president with the approval of the elected bodies of local self-government\",\n          \"The role of the Abkhaz language become\",\n          \"The new head of the Abkhaz state-run TV station say that the role of the Abkhaz language should become more substantial in broadcasting\",\n          \"Inal Khashig write that the Abkhaz government has failed to carry out any reforms in the local management and other areas and attempts\",\n          \"Abkhazia join Russian sanctions against Turkey\",\n          \"Anton Krivenyuk write that Abkhazia has joined Russian sanctions against Turkey\",\n          \"The author note that there are effectively no relations between Abkhazia and Turkey\",\n          \"Chegemskaya Pravda not appear\"\n        ]\n      },\n      \"language\": {\n        \"language\": [\n          \"eng\",\n          \"fra\",\n          \"ita\",\n          \"ron\",\n          \"nld\"\n        ],\n        \"confidence\": [\n          0.032385938,\n          0.005173894,\n          0.004561694,\n          0.004126092,\n          0.003646563\n        ]\n      }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/1",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/_search",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"_search"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Event",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"bbcm\": {\n    \"header\": {\n      \"headline\": \"Press summary for Georgia's breakaway region of Abkhazia 21 Jan - 17 Feb 16\",\n      \"catchline\": \"TCU-GEORGIA-ABKHAZ-PRESS\",\n      \"broadcastDate\": \"17-02-2016 00:00:00\",\n      \"publicationDate\": \"16-02-2016 18:42:18\",\n      \"sourceCountry\": \"GEO GEORGIA\",\n      \"sourceCountryLocation\": [\"73\",\"56\"],\n      \"contentCountry\": \"GEORGIA\",\n      \"contentCountryLocation\": [\"89\",\"81\"],\n      \"service\": \"ABPRES Summary of Abkhaz Press\",\n      \"language\": \"RUS Russian\",\n      \"topics\": \"DOMESTIC_POLITICAL\",\n      \"priority\": \"RR\",\n      \"medium\": \"PR\",\n      \"copyright\": \"BBC Monitoring. Copyright BBC.\"\n    },\n    \"content\": {\n      \"sourceline\": \"Summary of Abkhaz Press compiled by BBC Monitoring in Russian 17 Feb 16\",\n      \"signoff\": \"BBC Mon TCU nk\",\n      \"bodyParagraph\": \"Nuzhnaya Gazeta, No 1, 21 Jan /n1. Olga Jonua reports on Abkhaz president Raul Khajimba's speech in the Abkhaz parliament, in which he touched on problems such as a \\\"primitive structure\\\" of the Abkhaz economy; pubic control over government spending; taxation and a \\\"disastrous\\\" scale of tax evasion; pensions and social allowances; and repatriation of the ethnic Abkhaz living abroad; p 1; 1,500 words; npp. /n1. Unattirbuted report says that on 29 January, the Abkhaz parliament adopted amendments to the local self-government law that says that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government; p 2; 700 words; npp. /n2. Jof Grivapsh interviews the new head of the Abkhaz state-run TV station, Leonid Enik, who says that the role of the Abkhaz language should become more substantial in broadcasting; notes that he does not intend to make any personnel changes at the moment; and vows to allow the opposition to appear in the programmes of the TV station; p 3; 900 words; npp. /n1. Inal Khashig writes that the Abkhaz government has failed to carry out any reforms in the local management and other areas and attempts to point to reasons for the failure; p 1; 600 words; npp. /n2. Anton Krivenyuk writes that Abkhazia has joined Russian sanctions against Turkey, which, as many say, can lead to deterioration in Abkhaz-Turkish relations. However, the author notes that there are effectively no relations between Abkhazia and Turkey; p 3; 1,900 words; processing. /nNuzhnaya Gazeta, No 2, 28 Jan; Nuzhnaya Gazeta, No 4, 11 Feb - negative selection /nChegemskaya Pravda did not appear on 21 and 28 Jan and 11 Feb\"\n    }\n  },\n  \"pi\": {\n    \"entity\": {\n      \"indocChainId\": [\n        \"0\",\n        \"1\",\n        \"2\",\n        \"4\",\n        \"7\",\n        \"10\",\n        \"23\",\n        \"25\",\n        \"5\",\n        \"8\",\n        \"16\",\n        \"18\",\n        \"20\",\n        \"22\",\n        \"27\",\n        \"30\"\n      ],\n      \"type\": [\n        \"NATIONALITY\",\n        \"ORGANIZATION\",\n        \"NATIONALITY\",\n        \"PERSON\",\n        \"TITLE\",\n        \"ORGANIZATION\",\n        \"LOCATION\",\n        \"LOCATION\",\n        \"PERSON\",\n        \"PERSON\",\n        \"LOCATION\",\n        \"PERSON\",\n        \"PERSON\",\n        \"PERSON\",\n        \"NATIONALITY\",\n        \"ORGANIZATION\"\n      ],\n      \"mention\": [\n        \"Abkhaz\",\n        \"BBC\",\n        \"Russian\",\n        \"Nuzhnaya Gazeta\",\n        \"president\",\n        \"parliament\",\n        \"Abkhazia\",\n        \"Turkey\",\n        \"Olga Jonua\",\n        \"Raul Khajimba\",\n        \"Jof\",\n        \"Leonid Enik\",\n        \"Inal Khashig\",\n        \"Anton Krivenyuk\",\n        \"Turkish\",\n        \"nNuzhnaya Gazeta\"\n      ],\n      \"normalized\": [\n        \"Abkhaz\",\n        \"BBC\",\n        \"Russian\",\n        \"Nuzhnaya Gazeta\",\n        \"president\",\n        \"parliament\",\n        \"Abkhazia\",\n        \"Turkey\",\n        \"Olga Jonua\",\n        \"Raul Khajimba\",\n        \"Jof\",\n        \"Leonid Enik\",\n        \"Inal Khashig\",\n        \"Anton Krivenyuk\",\n        \"Turkish\",\n        \"nNuzhnaya Gazeta\"\n      ],\n      \"count\": [\n        \"10\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"2\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\",\n        \"1\"\n      ],\n      \"confidence\": [\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\",\n        \"0.0\"\n      ]\n    },\n    \"linkedEntities\": {\n      \"entityId\": [\n        \"Q9531\",\n        \"Q1359023\",\n        \"Q15637429\",\n        \"Q23334\",\n        \"Q43\"\n      ],\n      \"indocChainId\": [\n        1,\n        8,\n        18,\n        23,\n        25\n      ],\n      \"mention\": [\n        \"BBC\",\n        \"Raul Khajimba\",\n        \"Leonid Enik\",\n        \"Abkhazia\",\n        \"Turkey\"\n      ],\n      \"confidence\": [\n        0.6842297,\n        0.853604,\n        0.62842095,\n        0.3928171,\n        0.17445955\n      ]\n    },\n    \"categories\": {\n      \"label\": [\n        \"BUSINESS\"\n      ],\n      \"confidence\": [\n        0.08317091\n      ]\n    },\n    \"sentiment\": {\n      \"label\": [\n        \"neg\",\n        \"pos\"\n      ],\n      \"confidence\": [\n        0.68277746,\n        0.31722254\n      ]\n    },\n    \"relationships\": {\n      \"predicate\": [\n        \"adopt\",\n        \"say\",\n        \"go\",\n        \"become\",\n        \"say\",\n        \"write\",\n        \"join\",\n        \"write\",\n        \"note\",\n        \"not appear\"\n      ],\n      \"arg1\": [\n        \"the Abkhaz parliament\",\n        \"amendments to the local self-government law\",\n        \"heads of local administrations\",\n        \"the role of the Abkhaz language\",\n        \"the new head of the Abkhaz state-run TV station\",\n        \"Inal Khashig\",\n        \"Abkhazia\",\n        \"Anton Krivenyuk\",\n        \"the author\",\n        \"nChegemskaya Pravda\"\n      ],\n      \"arg2\": [\n        \"amendments to the local self-government law that says that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n        \"that heads of local administrations are going to be appointed by president with the approval of the elected bodies of local self-government\",\n        \"to be appointed by president with the approval of the elected bodies of local self-government\",\n        null,\n        \"that the role of the Abkhaz language should become more substantial in broadcasting\",\n        \"that the Abkhaz government has failed to carry out any reforms in the local management and other areas and attempts\",\n        \"Russian sanctions against Turkey\",\n        \"that Abkhazia has joined Russian sanctions against Turkey\",\n        \"that there are effectively no relations between Abkhazia and Turkey\",\n        null\n      ],\n      \"confidence\": [\n        \"0.7291215229230944\",\n        \"0.6089981819101293\",\n        \"0.5358076753217833\",\n        \"0.41255241282936317\",\n        \"0.5124800374161187\",\n        \"0.9159100191253455\",\n        \"0.7585475858258373\",\n        \"0.9387898330738502\",\n        \"0.624395997089533\",\n        \"0.44301927392108265\"\n      ]\n    },\n    \"language\": {\n      \"language\": [\n        \"eng\",\n        \"fra\",\n        \"ita\",\n        \"ron\",\n        \"nld\"\n      ],\n      \"confidence\": [\n        0.032385938,\n        0.005173894,\n        0.004561694,\n        0.004126092,\n        0.003646563\n      ]\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/bbcm/event/3",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"bbcm",
+								"event",
+								"3"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Clear Cache",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/twitter/_cache/clear",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_cache",
+								"clear"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Flush",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_flush",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_flush"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_refresh",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_refresh"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Optimize",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_optimize",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_optimize"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete BBCM Templates",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/_template/bbcm*",
+					"protocol": "http",
+					"host": [
+						"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+						"eu-west-1",
+						"es",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"_template",
+						"bbcm*"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

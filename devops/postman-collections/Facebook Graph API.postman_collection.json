@@ -1,0 +1,1157 @@
+{
+	"info": {
+		"name": "Facebook Graph API",
+		"_postman_id": "36d48774-faed-c519-cbc6-e94d85259415",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Albums",
+			"description": "",
+			"item": [
+				{
+					"name": "Albums",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAHWBqVBWMpcNp2ZAwy3d1Wl8neaRPc8lUOfsjmLA5KujBx1ZCG8K2fLo0e1sJwnN8NVaaBO25wV1d6DQ7A088ewia1naiSZBgBWGEIZCIwA6wQnMvox0FL0sDapZCTdf3RaiFBgZBNjjmRHZCNC5Kchb1ZCEjJUKAmxacefeSMrPotiKddDOYlfzFtYJ87Q6AAZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,albums",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,albums"
+								}
+							]
+						},
+						"description": "This API get the Facebook users Photo Album details"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"description": "",
+			"item": [
+				{
+					"name": "Events",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,events{id,name,type,owner,rsvp_status,updated_time,place,start_time,end_time,description}",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,events{id,name,type,owner,rsvp_status,updated_time,place,start_time,end_time,description}"
+								}
+							]
+						},
+						"description": "Only friends who installed this app are returned in API v2.0 and higher. total_count in summary represents the total number of friends, including those who haven't installed the app.Learn More"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Friends",
+			"description": "",
+			"item": [
+				{
+					"name": "Friends",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,friends",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,friends"
+								}
+							]
+						},
+						"description": "Only friends who installed this app are returned in API v2.0 and higher. total_count in summary represents the total number of friends, including those who haven't installed the app.Learn More"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Groups",
+			"description": "",
+			"item": [
+				{
+					"name": "Groups",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,groups{id,name,venue,privacy,owner,description,email,parent}",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,groups{id,name,venue,privacy,owner,description,email,parent}"
+								}
+							]
+						},
+						"description": "The Group API is used to get group data from the user’s social account."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Page Likes",
+			"description": "",
+			"item": [
+				{
+					"name": "Page Likes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,likes{id,name,category,link,description,website,likes}",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,likes{id,name,category,link,description,website,likes}"
+								}
+							]
+						},
+						"description": "The Page Like API is used to get the Facebook Pages the user likes."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photos",
+			"description": "",
+			"item": [
+				{
+					"name": "Photos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,photos{name,created_time,place,album,link,tags}",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,photos{name,created_time,place,album,link,tags}"
+								}
+							]
+						},
+						"description": "The Photos API is used to get the users photos."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"description": "",
+			"item": [
+				{
+					"name": "Posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAK895dEp0B8KH4luZBKbypt5enpxKSq56jUYkOpyvlwEGQzrFW3PeRSEZAqe1P3ylO6lQvmft05nOiN0RaYHaZCwMuA3oQbmohAjIL4oWOnWCCaUG3hwCKJxf8jCfcC6zYZB74fX8of5BwrbIN0eyeWhdbKzDZArsKbbBlF9kZCvWzurSsy7Ro3GmZB8ZBo1JwZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,posts",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,posts"
+								}
+							]
+						},
+						"description": "The Photos API is used to get the users photos."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Profile",
+			"description": "",
+			"item": [
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "GET /v2.3/me HTTP/1.1",
+								"value": ""
+							},
+							{
+								"key": "Host",
+								"value": "graph.facebook.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "OAuth CAACEdEose0cBAHWBqVBWMpcNp2ZAwy3d1Wl8neaRPc8lUOfsjmLA5KujBx1ZCG8K2fLo0e1sJwnN8NVaaBO25wV1d6DQ7A088ewia1naiSZBgBWGEIZCIwA6wQnMvox0FL0sDapZCTdf3RaiFBgZBNjjmRHZCNC5Kchb1ZCEjJUKAmxacefeSMrPotiKddDOYlfzFtYJ87Q6AAZDZD"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,bio,age_range,birthday,devices,education,first_name,last_name,gender,hometown,interested_in,languages,relationship_status,religion,website,work",
+							"protocol": "https",
+							"host": [
+								"graph",
+								"facebook",
+								"com"
+							],
+							"path": [
+								"v2.4",
+								"me"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,email,bio,age_range,birthday,devices,education,first_name,last_name,gender,hometown,interested_in,languages,relationship_status,religion,website,work"
+								}
+							]
+						},
+						"description": "The Photos API is used to get the users photos."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAHWBqVBWMpcNp2ZAwy3d1Wl8neaRPc8lUOfsjmLA5KujBx1ZCG8K2fLo0e1sJwnN8NVaaBO25wV1d6DQ7A088ewia1naiSZBgBWGEIZCIwA6wQnMvox0FL0sDapZCTdf3RaiFBgZBNjjmRHZCNC5Kchb1ZCEjJUKAmxacefeSMrPotiKddDOYlfzFtYJ87Q6AAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Age Range",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/1626225894282158?fields=id,name,birthday,email,age_range",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"1626225894282158"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,birthday,email,age_range"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Bio",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,bio",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,bio"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Birthday",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,birthday",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,birthday"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,books",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,books"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Devices",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,devices",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,devices"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Education",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,education",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,education"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Events",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,events",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,events"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Family",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,family",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,family"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Favorite Athletes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,favorite_athletes",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,favorite_athletes"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Favorite Teams",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,favorite_teams",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,favorite_teams"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Games",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,games",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,games"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Likes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,likes",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,likes"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Music",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,music",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,music"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Relationship Staus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/me?fields=id,name,email,relationship_status",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"me"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "id,name,email,relationship_status"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Access Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "GET /v2.3/me HTTP/1.1",
+						"value": ""
+					},
+					{
+						"key": "Host",
+						"value": "graph.facebook.com"
+					},
+					{
+						"key": "Authorization",
+						"value": "OAuth CAACEdEose0cBAH0v5hzBYDYB8LUZCxKQPk2MWmiLvZBkZC5YHytTr6epfrtcxZAD6jNv2HklUjFnBuZB7hxYwje5d1WSVk7eXSCXJaeYdqSVtydJVZBXlJMwCJamSIkKvG0JwRgaUy4hMC8W0pilcWqma7qncxZA2ZAvYqqUmbXs48FYZAS7vHzZBuGcEytbkZClllKLqimAgsZAUAZDZD"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://graph.facebook.com/v2.4/oauth/access_token",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"v2.4",
+						"oauth",
+						"access_token"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

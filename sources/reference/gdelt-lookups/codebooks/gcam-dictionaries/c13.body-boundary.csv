@@ -1,0 +1,15 @@
+variable,dictionaryID,dimensionID,Type,languageCode,dictionary,dimension,section
+c13.1,13,1,Wordcount,eng,Body Boundary,Barrier Total,Containers
+c13.2,13,2,Wordcount,eng,Body Boundary,Barrier Total,Covered Hidden etc
+c13.3,13,3,Wordcount,eng,Body Boundary,Barrier Total,Enclosed Openings In Earth
+c13.4,13,4,Wordcount,eng,Body Boundary,Barrier Total,Protective Surfaces
+c13.5,13,5,Wordcount,eng,Body Boundary,Barrier Total,Shell Animal
+c13.6,13,6,Wordcount,eng,Body Boundary,Barrier Total,Special Animals
+c13.7,13,7,Wordcount,eng,Body Boundary,Barrier Total,Special Structures
+c13.8,13,8,Wordcount,eng,Body Boundary,Penetration Total,Autopsy etc
+c13.9,13,9,Wordcount,eng,Body Boundary,Penetration Total,Body Orifices and Use
+c13.10,13,10,Wordcount,eng,Body Boundary,Penetration Total,Entranceways and Openings
+c13.11,13,11,Wordcount,eng,Body Boundary,Penetration Total,Permeable
+c13.12,13,12,Wordcount,eng,Body Boundary,Penetration Total,Spurt and Excrete
+c13.13,13,13,Wordcount,eng,Body Boundary,Penetration Total,Transparency
+c13.14,13,14,Wordcount,eng,Body Boundary,Penetration Total,Wounds and Deformity

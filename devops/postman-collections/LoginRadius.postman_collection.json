@@ -1,0 +1,3307 @@
+{
+	"info": {
+		"name": "LoginRadius",
+		"_postman_id": "8b433de6-dfed-b6dd-8427-addee828b2a1",
+		"description": "This is the list of over 300 data points you can gather from various social networks.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LoginRadius  API Indeces",
+			"description": "Create LoginRadius  API Indeces",
+			"item": [
+				{
+					"name": "Access Token  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/access_token/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"access_token",
+								""
+							]
+						},
+						"description": "Create Access Token  Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Album Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/album/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"album",
+								""
+							]
+						},
+						"description": "Create Album Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Audio Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/audio/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"audio",
+								""
+							]
+						},
+						"description": "Create Audio Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Check In Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/checkin/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"checkin",
+								""
+							]
+						},
+						"description": "Create Check In Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/company/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"company",
+								""
+							]
+						},
+						"description": "Create Company Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/contact/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"contact",
+								""
+							]
+						},
+						"description": "Create Contact Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Event Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/event/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"event",
+								""
+							]
+						},
+						"description": "Create Event Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Following Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/following/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"following",
+								""
+							]
+						},
+						"description": "Create Following Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Group  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/group/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"group",
+								""
+							]
+						},
+						"description": "Create Group Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Like  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/like/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"like",
+								""
+							]
+						},
+						"description": "Create Like Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Mention  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/mention/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"mention",
+								""
+							]
+						},
+						"description": "Create Mention Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Page  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/page/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"page",
+								""
+							]
+						},
+						"description": "Create Page Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Photo  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/photo/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"photo",
+								""
+							]
+						},
+						"description": "Create Photo Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Post  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/post/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"post",
+								""
+							]
+						},
+						"description": "Create Post Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Status  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/status/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"status",
+								""
+							]
+						},
+						"description": "Create Status Index"
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/userprofile/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"userprofile",
+								""
+							]
+						},
+						"description": "Create User Profile Index"
+					},
+					"response": []
+				},
+				{
+					"name": "Video  Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/video/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"video",
+								""
+							]
+						},
+						"description": "Create Video Index"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facebook Mapping",
+			"description": "",
+			"item": [
+				{
+					"name": "Facebook Profile  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Profile\" : {\n        \"Properties\" : {\n            \"LRUserID\"              : {\"type\" : \"string\", \"store\" : true },        \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Provider\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProviderAccessCredential\"                 : {\n                                        \"type\" : \"object\",\n                                        \"Properties\" : {\n                                            \"TokenSecret\"   : {\"type\" : \"string\", \"store\" : true },\n                                            \"AccessToken\"   : {\"type\" : \"string\", \"store\" : true }\n                                            }\n                                    },\n            \"FirstName\"             : {\"type\" : \"string\", \"store\" : true },\n            \"MiddleName\"            : {\"type\" : \"string\", \"store\" : true },\n            \"LastName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"FullName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileName\"           : {\"type\" : \"string\", \"store\" : true },\n            \"BirthDate\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"                : {\"type\" : \"string\", \"store\" : true },\n          \"LocalCountry\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"                 : {\n                                        \"type\" : \"object\",\n                                        \"Properties\" : {\n                                            \"type\"  : {\"type\" : \"string\", \"store\" : true },\n                                            \"value\" : {\"type\" : \"string\", \"store\" : true }\n                                            }\n                                    },\n            \"ThumbnailImageUrl\"     : {\"type\" : \"string\", \"store\" : true },                      \n            \"ImageUrl\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"HomeTown\"              : {\"type\" : \"string\", \"store\" : true },\n            \"City\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },            \n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },            \n            \"TimeZone\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"LocalLanguage\"         : {\"type\" : \"string\", \"store\" : true },            \n          \"CoverPhoto\"      : {\"type\" : \"string\", \"store\" : true },          \n            \"Language\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"Verified\"              : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedTime\"           : {\"type\" : \"string\", \"store\" : true },            \n            \"Positions\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"Educations\"            : {\"type\" : \"string\", \"store\" : true },            \n            \"LocalCity\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"RelationshipStatus\"    : {\"type\" : \"string\", \"store\" : true },            \n            \"Quote\"                 : {\"type\" : \"string\", \"store\" : true },            \n            \"InterestedIn\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Religion\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"Political\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"Sports\"                : {\"type\" : \"string\", \"store\" : true },\n            \"InspirationalPeople\"   : {\"type\" : \"string\", \"store\" : true },            \n            \"HttpsImageUrl\"      : {\"type\" : \"string\", \"store\" : true }, \n            \"Languages\"             : {\"type\" : \"string\", \"store\" : true },                        \n            \"Projects\"        : {\"type\" : \"string\", \"store\" : true },                        \n            \"Games\"          : {\"type\" : \"string\", \"store\" : true },              \n            \"TeleVisionShow\"        : {\"type\" : \"string\", \"store\" : true },\n            \"MutualFriends\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Movies\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Books\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Age\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"AgeRange\"                 : {\n                                        \"type\" : \"object\",\n                                        \"Properties\" : {\n                                            \"Max\"   : {\"type\" : \"string\", \"store\" : true },\n                                            \"Min\"   : {\"type\" : \"string\", \"store\" : true }\n                                            }\n                                    },\n            \"FavoriteThings\"        : {\"type\" : \"string\", \"store\" : true }, \n            \"Currency\"              : {\"type\" : \"string\", \"store\" : true }\n                                                                                                                                                                                                                                                                                                                                                               \n        }\n    }\n}\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/userprofile/_mappin",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"userprofile",
+								"_mappin"
+							]
+						},
+						"description": "Facebook Profile Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Contact  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contact\" : {\n        \"properties\" : {       \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n      \"ProfileUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"              : {\"type\" : \"string\", \"store\" : true },      \n            \"Gender\"                : {\"type\" : \"string\", \"store\" : true },\n          \"DateOfBirth\"           : {\"type\" : \"string\", \"store\" : true },    \n          \"Location\"        : {\"type\" : \"string\", \"store\" : true }               \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/contact/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"contact",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Contact Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Like  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\" : {\n        \"properties\" : {       \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },            \n            \"CreatedDate\"           : {\"type\" : \"string\", \"store\" : true },            \n            \"Description\"           : {\"type\" : \"string\", \"store\" : true }                 \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/like/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"like",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Like Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Album  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"album\" : {\n        \"properties\" : {       \n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImageUrl\" : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ImageCount\"    : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/album/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"album",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Album Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Company  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\" : {\n        \"properties\" : {       \n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/company/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"company",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Company Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Event  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Privacy\"       : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"RsvpStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\"     : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"EndTime\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/event/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Event Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Getpost  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"getpost\" : {\n        \"properties\" : {\n            \"ID\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"     : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\" : {\"type\" : \"string\", \"store\" : true },\n            \"UpdateTime\": {\"type\" : \"string\", \"store\" : true },\n            \"Message\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Picture\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Share\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/getpost/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"getpost",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Getpost Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Group  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\" : {\n        \"properties\" : {\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Logo\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/group/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"group",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Group Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Page  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : {\n        \"properties\" : {\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImage\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Mission\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ReleaseDate\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Phone\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Products\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CheckinCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Published\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TalkingAboutCount\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CategoryList\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Locations\"             : {\"type\" : \"string\", \"store\" : true },\n            \"UserName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Founded\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"                 : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/page/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"page",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Page Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Photo  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo\" : {\n        \"properties\" : {\n          \"Width\"         : {\"type\" : \"string\", \"store\" : true },\n          \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DirectUrl\"     : {\"type\" : \"string\", \"store\" : true },\n          \"AlbumId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Link\"          : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n          \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n          \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"Height\"        : {\"type\" : \"string\", \"store\" : true },\n          \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/photo/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"photo",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Photo Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Status  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : {\n        \"properties\" : {\n          \"Id\"        : {\"type\" : \"string\", \"store\" : true },\n          \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DateTime\"  : {\"type\" : \"string\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/status/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"status",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Status Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Video  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"video\" : {\n        \"properties\" : {\n            \"EmbedHtml\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"        : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/video/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"video",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Video Mapping."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facebook Posting",
+			"description": "",
+			"item": [
+				{
+					"name": "Facebook User Profile  Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"LRUserID\"                  : \"Jonathan\",     \n    \"ID\"                        : \"1111111111\",\n    \"Provider\"                  : \"Facebook\", \n    \"ProviderAccessCredential\"  : {\n                                    \"TokenSecret\": \"12345556277286497\",\n                                    \"AccessToken\": \"12345577689956277286497\"\n                                    },\n    \"ProviderAccessCrydyntial\"  : {\n                                    \"TokenSecret\": \"12345556277286497\",\n                                    \"AccessToken\": \"12345577689956277286497\"\n                                    },\n    \"FirstName\"                 : \"Jonathan\",\n    \"MiddleName\"                : \"Billam\",\n    \"LastName\"                  : \"Bowker\",\n    \"FullName\"                  : \"Jonathan Bowker\",\n    \"ProfileName\"               : \"JonathanBowker\",\n    \"BirthDate\"                 : \"2014-05-22T17:11:42.163Z\",\n    \"Gender\"                    : \"M\",\n    \"LocalCountry\"          : \"UK\",\n    \"Email\"                     : {\n                                    \"Type\": \"Primary\",\n                                    \"Value\": \"j.b.bowker@gmail.com\"\n                                    },\n    \"ThumbnailImageUrl\"         : \"https://facebook.com/picture.jpg\",                     \n    \"ImageUrl\"                  : \"https://facebook.com/picture.jpg\",\n    \"ProfileUrl\"                : \"https://facebook.com/picture.jpg\",\n    \"HomeTown\"                  : \"Macclesfield\",\n    \"City\"                      : \"Macclesfield\",\n    \"Website\"                   : \"http://www.onemanbandwidth.co.uk\",         \n    \"About\"                     : \"Love of wine, dogs and walking\",           \n    \"TimeZone\"                  : \"-6\",            \n    \"LocalLanguage\"             : \"en-GB\",           \n    \"CoverPhoto\"          : \"https://xxxxxxxxx.com/picture.jpg\",         \n    \"Language\"                  : \"en-GB\",           \n    \"Verified\"                  : \"True\",\n    \"UpdatedTime\"               : \"2014-05-22T17:11:42.163Z\",           \n    \"Positions\"                 : null,           \n    \"Educations\"                : null,         \n    \"LocalCity\"                 : \"Reading\",           \n    \"RelationshipStatus\"        : null,\n    \"Quote\"                     : null,            \n    \"InterestedIn\"              : null,\n    \"Religion\"                  : null,        \n    \"Political\"                 : null,           \n    \"Sports\"                    : null,\n    \"InspirationalPeople\"       : \"Mike Dunn\",             \n    \"HttpsImageUrl\"          : \"https://xxxxxxxxx.com/picture.jpg\",   \n    \"Languages\"                 : \"Turkish, French, Enlgish\",                       \n    \"Projects\"            : null,                    \n    \"Games\"              : null,           \n    \"TeleVisionShow\"            : null,\n    \"MutualFriends\"          : null,\n    \"Movies\"                    : null,\n    \"Books\"                     : null,\n    \"Age\"                       : null,\n    \"AgeRange\"                  : {\n                                    \"Max\": 0,\n                                    \"Min\": 47\n                                    },\n    \"FavoriteThings\"            : null,\n    \"Currency\"                  : null\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/userprofile/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"userprofile",
+								""
+							]
+						},
+						"description": "Facebook User Profile Post."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Contact  Mapping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\"                    : \"1111111111\",\n    \"Name\"                  : \"Nicola Bowker\",\n  \"ProfileUrl\"            : \"https://xxxxxxx.com/profile\",\n    \"ImageUrl\"              : \"https://xxxxxxx.com/picture?type=large\",    \n    \"Gender\"                : \"F\",\n    \"DateOfBirth\"           : \"19/12/1964\",   \n    \"Location\"        : \"Edmonton, Alberta\"           \n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/contact/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"contact",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Contact Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Like  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\" : {\n        \"properties\" : {       \n            \"ID\"                    : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },            \n            \"CreatedDate\"           : {\"type\" : \"date\", \"store\" : true },            \n            \"Description\"           : {\"type\" : \"string\", \"store\" : true }                 \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/like/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"like",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Like Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Album  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"album\" : {\n        \"properties\" : {       \n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImageUrl\" : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"ImageCount\"    : {\"type\" : \"integer\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/album/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"album",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Album Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Company  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\" : {\n        \"properties\" : {       \n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/company/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"company",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Company Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Event  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Privacy\"       : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"RsvpStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\"     : {\"type\" : \"float\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"integer\", \"store\" : true },\n            \"EndTime\"       : {\"type\" : \"float\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/event/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Event Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Getpost  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"getpost\" : {\n        \"properties\" : {\n            \"ID\"        : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"     : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\" : {\"type\" : \"float\", \"store\" : true },\n            \"UpdateTime\": {\"type\" : \"float\", \"store\" : true },\n            \"Message\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Place\"     : {\"type\" : \"float\", \"store\" : true },\n            \"Picture\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"Share\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"Type\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/getpost/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"getpost",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Getpost Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Group  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\" : {\n        \"properties\" : {\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Logo\"          : {\"type\" : \"integer\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/group/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"group",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Group Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Page  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : {\n        \"properties\" : {\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImage\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Mission\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ReleaseDate\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Phone\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Products\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CheckinCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Published\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TalkingAboutCount\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CategoryList\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Locations\"             : {\"type\" : \"string\", \"store\" : true },\n            \"UserName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Founded\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"                 : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/page/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"page",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Page Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Photo  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo\" : {\n        \"properties\" : {\n          \"Width\"         : {\"type\" : \"integer\", \"store\" : true },\n          \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DirectUrl\"     : {\"type\" : \"string\", \"store\" : true },\n          \"AlbumId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"UpdatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"Link\"          : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n          \"CreatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"Height\"        : {\"type\" : \"integer\", \"store\" : true },\n          \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n          \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/photo/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"photo",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Photo Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Status  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : {\n        \"properties\" : {\n          \"Id\"        : {\"type\" : \"integer\", \"store\" : true },\n          \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DateTime\"  : {\"type\" : \"date\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"integer\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/status/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"status",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Status Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Video  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"video\" : {\n        \"properties\" : {\n            \"EmbedHtml\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"        : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/video/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"video",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Video Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook User Profile  Full",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"LRUserID\"                  : \"Jonathan\",     \n    \"ID\"                        : \"1111111111\",\n    \"Provider\"                  : \"Facebook\", \n    \"ProviderAccessCredential\"  : {\n                                    \"TokenSecret\": \"12345556277286497\",\n                                    \"AccessToken\": \"12345577689956277286497\"\n                                    },\n    \"FirstName\"                 : \"Jonathan\",\n    \"MiddleName\"                : \"Billam\",\n    \"LastName\"                  : \"Bowker\",\n    \"FullName\"                  : \"Jonathan Bowker\",\n    \"ProfileName\"               : \"JonathanBowker\",\n    \"BirthDate\"                 : \"2014-05-22T17:11:42.163Z\",\n    \"Gender\"                    : \"M\",\n    \"LocalCountry\"          : \"UK\",\n    \"Email\"                     : {\n                                    \"Type\": \"Primary\",\n                                    \"Value\": \"j.b.bowker@gmail.com\"\n                                    },\n    \"ThumbnailImageUrl\"         : \"https://facebook.com/picture.jpg\",                     \n    \"ImageUrl\"                  : \"https://facebook.com/picture.jpg\",\n    \"ProfileUrl\"                : \"https://facebook.com/picture.jpg\",\n    \"HomeTown\"                  : \"Macclesfield\",\n    \"City\"                      : \"Macclesfield\",\n    \"Website\"                   : \"http://www.onemanbandwidth.co.uk\",         \n    \"About\"                     : \"Love of wine, dogs and walking\",           \n    \"TimeZone\"                  : \"-6\",            \n    \"LocalLanguage\"             : \"en-GB\",           \n    \"CoverPhoto\"          : \"https://xxxxxxxxx.com/picture.jpg\",         \n    \"Language\"                  : \"en-GB\",           \n    \"Verified\"                  : \"True\",\n    \"UpdatedTime\"               : \"2014-05-22T17:11:42.163Z\",           \n    \"Positions\"                 : null,           \n    \"Educations\"                : null,         \n    \"LocalCity\"                 : \"Reading\",           \n    \"RelationshipStatus\"        : null,\n    \"Quote\"                     : null,            \n    \"InterestedIn\"              : null,\n    \"Religion\"                  : null,        \n    \"Political\"                 : null,           \n    \"Sports\"                    : null,\n    \"InspirationalPeople\"       : \"Mike Dunn\",             \n    \"HttpsImageUrl\"          : \"https://xxxxxxxxx.com/picture.jpg\",   \n    \"Languages\"                 : \"Turkish, French, Enlgish\",                       \n    \"Projects\"            : null,                    \n    \"Games\"              : null,           \n    \"TeleVisionShow\"            : null,\n    \"MutualFriends\"          : null,\n    \"Movies\"                    : null,\n    \"Books\"                     : null,\n    \"Age\"                       : null,\n    \"AgeRange\"                  : {\n                                    \"Max\": 0,\n                                    \"Min\": 47\n                                    },\n    \"FavoriteThings\"            : null,\n    \"Currency\"                  : null,\n    \"Contact\"                  : {\n                                    \"ID\"          : \"1111111111\",\n                                    \"Name\"        : \"Nicola Bowker\",\n                                  \"ProfileUrl\"  : \"https://xxxxxxx.com/profile\",\n                                    \"ImageUrl\"    : \"https://xxxxxxx.com/picture?type=large\",    \n                                    \"Gender\"      : \"F\",\n                                    \"DateOfBirth\" : \"19/12/1964\",   \n                                    \"Location\"    : \"Edmonton, Alberta\"\n                                    },   \n    \"Like\"                      : {\n                                    \"ID\"          : \"1111111111\",\n                                    \"Name\"        : \"Nicola Bowker\",\n                                    \"Category\"    : \"Edmonton, Alberta\", \n                                    \"Website\"     : \"https://xxxxxxx.com/profile\",           \n                                    \"CreatedDate\" : \"19/12/1964\",              \n                                    \"Description\" : \"Learning how to do it\"     \n                                    },\n    \"Album\"                     : {\n                                    \"Description\"   : \"Learning how to do it\",\n                                    \"CoverImageUrl\" : \"https://xxxxxxx.com/picture?type=large\",\n                                    \"Title\"         : \"Learning how to do it\",\n                                    \"UpdatedDate\"   : \"19/12/1964\",\n                                    \"Location\"      : \"Edmonton, Alberta\", \n                                    \"CreatedDate\"   : \"2014-05-22T17:11:42.163Z\",  \n                                    \"OwnerId\"       : \"11142552\", \n                                    \"Type\"          : \"Normal\", \n                                    \"ID\"            : \"111111111\",\n                                    \"ImageCount\"    : \"45\",\n                                    \"OwnerName\"     : \"Nicola Bowker\"    \n                                        },\n    \"Company\"                    : {\n                                    \"ID\": \"111111111\",\n                                    \"Name\": \"Robots, Inc.\"\n                                    },\n    \"Event\"                    : {\n                                    \"Name\"          : \"Birthday Party!\",\n                                    \"Privacy\"       : \"FRIENDS\",\n                                    \"OwnerName\"     : \"FirstName LastName\",\n                                    \"RsvpStatus\"    : \"unsure\",\n                                    \"UpdatedDate\"   : \"11/3/2012 7:59:45 PM\",\n                                    \"Location\"      : \"My House\",\n                                    \"StartTime\"     : \"1/1/2012 3:00:00 PM\",\n                                    \"OwnerId\"       : \"1111111111\",\n                                    \"EndTime\"       : \"1/2/20012 12:00:00 AM\",\n                                    \"ID\"            : \"11111111111111111\",\n                                    \"Description\"   : \"Hey friends!!\\n\\nRemember to park on the street!\"\n                                    },\n    \"Getpost\"                    : {\n                                    \"ID\": \"100000000000_1111111111111\",\n                                    \"Name\": \"FirstName LastName\",\n                                    \"Title\": \"LoginRadius Push Notification Demo\",\n                                    \"StartTime\": \"5/12/2014 7:13:39 PM\",\n                                    \"UpdateTime\": \"5/12/2014 7:13:39 PM\",\n                                    \"Message\": \"Try LoginRadius demo to check Push Notification feature and reach out to your potential customers\",\n                                    \"Place\": \"\",\n                                    \"Picture\": \"https://xxxxxxxx.com/picture.jpg\",\n                                    \"Likes\": 12,\n                                    \"Share\": 10,\n                                    \"Type\": \"link\"\n                                    },\n                                    \n    \"Group\"                    : {\n                                    \"Description\": \"This group is for students/youth that are interested in being part of the Students to Startups community.\",\n                                    \"Image\": \"https://scontent-b.xx.fbcdn.net/xxxxxxxxxxxxxxx.jpg\",\n                                    \"Email\": \"xxxxxxxxxxxxxxx@groups.facebook.com\",\n                                    \"Logo\": \"https://fbstatic-a.akamaihd.net/xxxxxxxxxxxxxxx.png\",\n                                    \"ID\": \"11111111111111\",\n                                    \"Name\": \"Students to Startups\"\n                                    },                                    \n\n    \"Page\"                    : {\n                                    \"Category\": \"Organization\",\n                                    \"CoverImage\": null,\n                                    \"Mission\": \"We\",\n                                    \"Description\": \"We like to make games!.\",\n                                    \"ReleaseDaWete\": null,\n                                    \"Phone\": \"\",\n                                    \"Awards\": \"We\",\n                                    \"Website\": \"http://www.xxxxxxxxxxxxxxxx.com\",\n                                    \"About\": \"My Game Company is all about making the best games!\",\n                                    \"Name\": \"My Game Company!\",\n                                    \"Url\": \"https://www.facebook.com/xxxxxxxxxxxxxxxx\",\n                                    \"Products\": null,\n                                    \"CheckinCount\": \"0\",\n                                    \"Published\": true,\n                                    \"TalkingAboutCount\": \"15\",\n                                    \"CategoryList\": null,\n                                    \"ID\": \"11111111111111111111\",\n                                    \"Image\": \"https://fbcdn-profile-a.akamaihd.net/xxxxxxxxxxxxxxxx.png\",\n                                    \"Locations\": null,\n                                    \"UserName\": \"xxxxxxxxxxxxxxxx\",\n                                    \"Founded\": null,\n                                    \"Likes\": \"350\"\n                                    },                                 \n    \"Photo\"                    : {\n                                    \"Width\": \"604\",\n                                    \"OwnerName\": \"FirstName LastName\",\n                                    \"ImageUrl\": \"https://scontent-a.xx.fbcdn.net/xxxxxxxxxxxxxxxxx.jpg\",\n                                    \"DirectUrl\": \"https://scontent-a.xx.fbcdn.net/xxxxxxxxxxxxxxxxx.jpg\",\n                                    \"AlbumId\": \"11111111111\",\n                                    \"UpdatedDate\": \"1/1/2009 6:06:15 PM\",\n                                    \"Link\": \"https://www.facebook.com/photo.php?fbid=xxxxxxxxxxxxxxxxx&type=1\",\n                                    \"Location\": \"Marion's House\",\n                                    \"CreatedDate\": \"1/1/2009 5:55:03 PM\",\n                                    \"OwnerId\": \"1111111111111111111111\",\n                                    \"Height\": \"453\",\n                                    \"ID\": \"11111111111\",\n                                    \"Name\": \"Birthday Party!\"\n                                    },\n    \"Status\"                    : {\n                                    \"Id\": \"100000000000\",\n                                    \"Text\": \"xxxxxxxxx\",\n                                    \"DateTime\": \"5/12/2014 7:16:04 PM\",\n                                    \"Likes\": 0,\n                                    \"Place\": \"\",\n                                    \"Name\": null\n                                    },\n    \"Video\"                    : {\n                                    \"EmbedHtml\": \"<iframe src=\\\"https://www.facebook.com/video/embed?video_id=xxxxxxxxxxxxx\\\" width=\\\"720\\\" height=\\\"1280\\\" frameborder=\\\"0\\\"></iframe>\",\n                                    \"Description\": \"Friends dancing\",\n                                    \"Image\": \"https://fbcdn-vthumb-a.akamaihd.net/hvthumb-ak-xap1/111111111111111111111111111.jpg\",\n                                    \"Source\": \"https://scontent-b.xx.fbcdn.net/hvideo-xpf1/v/111111111111111111111111111.mp4\",\n                                    \"UpdatedDate\": \"12/21/2012 06:23 \",\n                                    \"OwnerName\": \"FirstName LsatName\",\n                                    \"CreatedDate\": \"12/21/2012 06:23 \",\n                                    \"OwnerId\": \"1111111111111\",\n                                    \"ID\": \"111111111111111111111111111111\",\n                                    \"Name\": \"Friends dancing in the rain!\"\n                                    }                                     \n                                 \n\n\n}\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/userprofile/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"userprofile",
+								""
+							]
+						},
+						"description": "Facebook User Profile Full."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Setup Login Radius",
+			"description": "",
+			"item": [
+				{
+					"name": "Album Field Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"album\" : {\n        \"properties\" : {\n            \"DirectoryUrl\"  : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImageUrl\" : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"ImageCount\"    : {\"type\" : \"integer\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/album/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"album",
+								"_mapping"
+							]
+						},
+						"description": "Album field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Creating An Index",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								""
+							]
+						},
+						"description": "We want to create an animal index and to do that we can send a PUT request to the URL localhost:9200/animal/"
+					},
+					"response": []
+				},
+				{
+					"name": "Access Token Field Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_token\" : {\n        \"properties\" : {\n            \"access_token\"  : {\"type\" : \"string\", \"store\" : true },\n            \"expires_in\"    : {\"type\" : \"date\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/access_token/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"access_token",
+								"_mapping"
+							]
+						},
+						"description": "Access Token field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Company  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\" : {\n        \"properties\" : {\n            \"ID\"    : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"  : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/company/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"company",
+								"_mapping"
+							]
+						},
+						"description": "Company field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Contact  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contact\" : {\n        \"properties\" : {\n            \"EmailID\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Status\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"    : {\"type\" : \"string\", \"store\" : true },\n            \"DateOfBirth\"   : {\"type\" : \"date\", \"store\" : true },\n            \"Industry\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"        : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumber\"   : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/contact/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"contact",
+								"_mapping"
+							]
+						},
+						"description": "Contact field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Event  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Privacy\"       : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"RsvpStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\"     : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"integer\", \"store\" : true },\n            \"EndTime\"       : {\"type\" : \"date\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/event/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": "Event field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userprofile\" : {\n        \"properties\" : {\n            \"RelationshipStatus\"        : {\"type\" : \"string\", \"store\" : true },\n            \"HomeTown\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Political\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Religion\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"LRUserID\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"CoverPhoto\"                : {\"type\" : \"string\", \"store\" : true },\n            \"FollowersCount\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"IsGeoEnabled\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ThumbnailImageUrl\"         : {\"type\" : \"string\", \"store\" : true },\n            \"GistsUrl\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProfessionalHeadline\"      : {\"type\" : \"string\", \"store\" : true },\n            \"PublicRepository\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Volunteer\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"TotalPrivateRepository\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Industry\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"TotalStatusesCount\"        : {\"type\" : \"string\", \"store\" : true },\n            \"IMAccounts\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Suffix\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Favicon\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"LocalLanguage\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Hireable\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"InspirationalPeople\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Badges\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"JobBookmarks\"              : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedTime\"               : {\"type\" : \"date\", \"store\" : true },\n            \"ProfileCity\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Sports\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"                : {\"type\" : \"string\", \"store\" : true },\n            \"State\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"                     : {\n                                            \"type\" : \"object\",\n                                                \"properties\" : {\n                                                    \"type\"  : {\"type\" : \"string\", \"store\" : true },\n                                                    \"value\" : {\"type\" : \"string\", \"store\" : true }\n                                                    }\n                                        },\n            \"Associations\"              : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumbers\"              : {\"type\" : \"string\", \"store\" : true },\n            \"MiddleName\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"MutualFriends\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Projects\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Subscription\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"MainAddress\"               : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCity\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Created\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Age\"                       : {\"type\" : \"string\", \"store\" : true },\n\n            \"HttpsImageUrl\"             : {\"type\" : \"string\", \"store\" : true },\n            \"RepositoryUrl\"             : {\"type\" : \"string\", \"store\" : true },\n            \"IsProtected\"               : {\"type\" : \"string\", \"store\" : true },\n            \"PlacesLived\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Currency\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileName\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Honors\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Publications\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Verified\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"FirstName\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"KloutScore\"                : {\"type\" : \"string\", \"store\" : true },\n            \"LastName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Languages\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Provider\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProviderAccessCredential\"  : {\n                                            \"type\" : \"object\",\n                                                \"properties\" : {\n                                                    \"TokenSecret\"   : {\"type\" : \"string\", \"store\" : true },\n                                                    \"AccessToken\"   : {\"type\" : \"string\", \"store\" : true }\n                                                    }\n                                            },\n            \"Interests\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"NumRecommenders\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                        : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"PrivateGists\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Certifications\"            : {\"type\" : \"string\", \"store\" : true },\n            \"TeleVisionShow\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Language\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Positions\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Courses\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileCountry\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Family\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"TagLine\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Suggestions\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Prefix\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Books\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"CurrentStatus\"             : {\"type\" : \"string\", \"store\" : true },\n            \"FullName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"City\"                      : {\"type\" : \"string\", \"store\" : true },\n            \"RecommendationsReceived\"   : {\"type\" : \"string\", \"store\" : true },\n            \"TimeZone\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"PublicGists\"               : {\"type\" : \"string\", \"store\" : true },\n            \"FriendsCount\"              : {\"type\" : \"string\", \"store\" : true },\n            \"MemberUrlResources\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Quote\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Quota\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"BirthDate\"                 : {\"type\" : \"date\", \"store\" : true },\n            \"Educations\"                : {\"type\" : \"string\", \"store\" : true },\n            \"StarredUrl\"                : {\"type\" : \"string\", \"store\" : true },\n            \"RelatedProfileViews\"       : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Skills\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Movies\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Games\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"FavoriteThings\"            : {\"type\" : \"string\", \"store\" : true },\n            \"InterestedIn\"              : {\"type\" : \"string\", \"store\" : true },\n            \"NickName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCountry\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Patents\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Addresses\"                 : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n\n\n\n\n\n\n\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/userprofile/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"userprofile",
+								"_mapping"
+							]
+						},
+						"description": "User profile field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Group  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\" : {\n        \"properties\" : {\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"MemberCount\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"         : {\"type\" : \"string\", \"store\" : true },\n            \"PostalCode\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Logo\"          : {\"type\" : \"integer\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/group/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"group",
+								"_mapping"
+							]
+						},
+						"description": "Group field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Like  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\" : {\n        \"properties\" : {\n            \"Category\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/like/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"like",
+								"_mapping"
+							]
+						},
+						"description": "Like field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Page  Field Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : {\n        \"properties\" : {\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Industries\"            : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImage\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Mission\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Status\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ReleaseDate\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Phone\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"StockExchange\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"EmployeeCountRange\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Specialties\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Products\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CheckinCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Published\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TalkingAboutCount\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"CategoryList\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                    : {\"type\" : \"integer\", \"store\" : true },\n            \"Image\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Locations\"             : {\"type\" : \"string\", \"store\" : true },\n            \"UserName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Founded\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"                 : {\"type\" : \"integer\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/page/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"page",
+								"_mapping"
+							]
+						},
+						"description": "Page field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": " Photo  Mapping ",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo\" : {\n        \"properties\" : {\n          \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Width\"         : {\"type\" : \"integer\", \"store\" : true },\n          \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DirectUrl\"     : {\"type\" : \"string\", \"store\" : true },\n          \"AlbumId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"UpdatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"Link\"          : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n          \"CreatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"Height\"        : {\"type\" : \"integer\", \"store\" : true },\n          \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n          \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n        }\n    }\n}\n\n\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/photo/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"photo",
+								"_mapping"
+							]
+						},
+						"description": "Photo field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": " Status  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : {\n        \"properties\" : {\n          \"Id\"        : {\"type\" : \"string\", \"store\" : true },\n          \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DateTime\"  : {\"type\" : \"date\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"integer\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Source\"    : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"  : {\"type\" : \"string\", \"store\" : true },\n          \"LinkUrl\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/status/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"status",
+								"_mapping"
+							]
+						},
+						"description": "Status field mapping"
+					},
+					"response": []
+				},
+				{
+					"name": " Status  Video",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"video\" : {\n        \"properties\" : {\n            \"EmbedHtml\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"DirectLink\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"        : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"Duration\"      : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n\n\n\n"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/loginradius/video/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"loginradius",
+								"video",
+								"_mapping"
+							]
+						},
+						"description": "Status video mapping"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Social Data",
+			"description": "",
+			"item": [
+				{
+					"name": "Post Access Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_token\"  :\"'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\",\n    \"expires_in\"    : \"2014-05-22T17:11:42.163Z\"\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/access_token/access_token/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"access_token",
+								"access_token",
+								""
+							]
+						},
+						"description": "Post Access Token"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"DirectoryUrl\": null,\n    \"Description\": \"\",\n    \"CoverImageUrl\": \"https://graph.facebook.com/111111111111111111/picture?type=normal\",\n    \"Title\": \"Mobile Uploads\",\n    \"UpdatedDate\": \"5/24/2014 2:12:06 AM\",\n    \"Location\": \"\",\n    \"CreatedDate\": \"12/28/2008 6:51:51 PM\",\n    \"OwnerId\": \"111111111111111111\",\n    \"Type\": \"mobile\",\n    \"ID\": \"111111111111\",\n    \"ImageCount\": \"45\",\n    \"OwnerName\": \"FirstName LastName\"\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/album/album/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"album",
+								"album",
+								""
+							]
+						},
+						"description": "Post Album"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Audio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Artist\": \"Artist Name\",\n    \"Url\": \"https://xxxxxxx.com/direct_file_link/\",\n    \"Title\": \"Audio Title\",\n    \"UpdatedDate\": \"6/03/2014 14:34 \",\n    \"OwnerName\": \"FirstName LastName\",\n    \"CreatedDate\": \"6/03/2014 14:27 \",\n    \"Duration\": \"51000\",\n    \"OwnerId\": \"1111111111111\",\n    \"ID\": \"1111111111111101\"\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/audio/audio/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"audio",
+								"audio",
+								""
+							]
+						},
+						"description": "Post Audio"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Checkin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Distance\": null,\n        \"PlaceTitle\": \"Cafe\",\n        \"ImageUrl\": \"\",\n        \"Address\": \"Canada\",\n        \"Longitude\": \"-113.xxxxx\",\n        \"OwnerName\": \"\",\n        \"CreatedDate\": \"5/1/2014\",\n        \"Latitude\": \"53.xxxxx\",\n        \"OwnerId\": \"\",\n        \"Message\": \"\",\n        \"Type\": \"Cafe\",\n        \"ID\": \"556546667767\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/checkin/checkin/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"checkin",
+								"checkin",
+								""
+							]
+						},
+						"description": "Post Checkin"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Company",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ID\": \"111111111\",\n    \"Name\":\"Robots, Inc.\"\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/company/company/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"company",
+								"company",
+								""
+							]
+						},
+						"description": "Post Company"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"EmailID\": \"\",\n            \"Status\": null,\n            \"Name\": \"Jonathan Bowker\",\n            \"Country\": null,\n            \"ImageUrl\": \"https://xxxxxxx.com/picture?type=large\",\n            \"ProfileUrl\": \"https://xxxxxxx.com/profile\",\n            \"DateOfBirth\": \"01/02/1980\",\n            \"Industry\": null,\n            \"Location\": \"Edmonton, Alberta\",\n            \"Gender\": \"F\",\n            \"PhoneNumber\": \"\",\n            \"ID\": \"1111111111\"\n        }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/contact/contact/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"contact",
+								"contact",
+								""
+							]
+						},
+						"description": "Post Contact"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Event",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Name\": \"Birthday Party!\",\n        \"Privacy\": \"Friends\",\n        \"OwnerName\": \"FirstName LastName\",\n        \"RsvpStatus\": \"unsure\",\n        \"UpdatedDate\": \"11/3/2012 7:59:45 PM\",\n        \"Location\": \"My House\",\n        \"StartTime\": \"1/1/2012 3:00:00 PM\",\n        \"OwnerId\": \"1111111111\",\n        \"EndTime\": \"1/2/20012 12:00:00 AM\",\n        \"ID\": \"66778855677\",\n        \"Description\": \"Hey friends!!\\n\\nRemember to park on the street!\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/event/event/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"event",
+								"event",
+								""
+							]
+						},
+						"description": "Post Event"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Following",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"Name\": \"Ankur Sharma\",\n        \"EmailID\": \"uuyyyuuu\",\n        \"PhoneNumber\": \"\",\n        \"ID\": \"778887766\",\n        \"ProfileUrl\": \"https://www.twitter.com/ankur018\",\n        \"ImageUrl\": \"http://pbs.twimg.com/profile_images/524134335276789762/J6EJL4VQ_normal.jpeg\",\n        \"Status\": \"\",\n        \"Industry\": null,\n        \"Country\": null,\n        \"Location\": \"\",\n        \"Gender\": null,\n        \"DateOfBirth\": null\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/following/following/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"following",
+								"following",
+								""
+							]
+						},
+						"description": "Post Following"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"Description\": \"This group is for students/youth that are interested in being part of the Students to Startups community.\",\n        \"MemberCount\": null,\n        \"Country\": \"\",\n        \"Image\": \"https://scontent-b.xx.fbcdn.net/xxxxxxxxxxxxxxx.jpg\",\n        \"Email\": \"xxxxxxxxxxxxxxx@groups.facebook.com\",\n        \"PostalCode\": null,\n        \"Logo\": \"https://fbstatic-a.akamaihd.net/xxxxxxxxxxxxxxx.png\",\n        \"Type\": null,\n        \"ID\": \"11111111111111\",\n        \"Name\": \"Students to Startups\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/group/group/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"group",
+								"group",
+								""
+							]
+						},
+						"description": "Post Group"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Like",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {    \n        \"Category\": \"Movie\",\n        \"Website\": \"\",\n        \"Name\": \"That one movie with a really famous actor no one can name.\",\n        \"CreatedDate\": \"5/4/2010 1:57:46 AM\",\n        \"ID\": \"11111111111111111\",\n        \"Description\": \"Some dramatic romantic comedy.\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/like/like/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"like",
+								"like",
+								""
+							]
+						},
+						"description": "Post Like"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Mention",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Name\": \"FirstName LastName\",\n        \"Text\": \"@LoginRadius great idea!\",\n        \"ImageUrl\": null,\n        \"DateTime\": \"5/15/2014 3:30:39 AM\",\n        \"Source\": \"web\",\n        \"Place\": \"\",\n        \"Likes\": 2,\n        \"LinkUrl\": null,\n        \"Id\": \"111111111111111\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/mention/mention/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"mention",
+								"mention",
+								""
+							]
+						},
+						"description": "Post Mention"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Page",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Category\": \"Organization\",\n    \"Industries\": null,\n    \"CoverImage\": null,\n    \"Mission\": \"\",\n    \"Status\": null,\n    \"Description\": \"We like to make games!.\",\n    \"ReleaseDate\": null,\n    \"Phone\": \"\",\n    \"Awards\": \"\",\n    \"StockExchange\": null,\n    \"Website\": \"http://www.xxxxxxxxxxxxxxxx.com\",\n    \"About\": \"My Game Company is all about making the best games!\",\n    \"Name\": \"My Game Company!\",\n    \"Url\": \"https://www.facebook.com/xxxxxxxxxxxxxxxx\",\n    \"EmployeeCountRange\": null,\n    \"Specialties\": null,\n    \"Products\": null,\n    \"CheckinCount\": \"0\",\n    \"Published\": true,\n    \"TalkingAboutCount\": \"15\",\n    \"CategoryList\": null,\n    \"ID\": \"11111111111111111111\",\n    \"Image\": \"https://fbcdn-profile-a.akamaihd.net/xxxxxxxxxxxxxxxx.png\",\n    \"Locations\": null,\n    \"UserName\": \"xxxxxxxxxxxxxxxx\",\n    \"Founded\": null,\n    \"Likes\": \"350\"\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/page/page/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"page",
+								"page",
+								""
+							]
+						},
+						"description": "Post Page"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Description\": null,\n        \"Width\": \"604\",\n        \"OwnerName\": \"Nicola Bowker\",\n        \"ImageUrl\": \"https://scontent-a.xx.fbcdn.net/xxxxxxxxxxxxxxxxx.jpg\",\n        \"DirectUrl\": \"https://scontent-a.xx.fbcdn.net/xxxxxxxxxxxxxxxxx.jpg\",\n        \"AlbumId\": \"11111111111\",\n        \"UpdatedDate\": \"1/1/2009 6:06:15 PM\",\n        \"Link\": \"https://www.facebook.com/photo.php?fbid=xxxxxxxxxxxxxxxxx&type=1\",\n        \"Location\": \"Caroline's House\",\n        \"CreatedDate\": \"1/1/2009 5:55:03 PM\",\n        \"OwnerId\": \"1111111111111111111111\",\n        \"Height\": \"453\",\n        \"ID\": \"11111111111\",\n        \"Name\": \"Birthday Party!\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/photo/photo/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"photo",
+								"photo",
+								""
+							]
+						},
+						"description": "Post Photo"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"ID\": \"77866788\",\n        \"Name\": \"Nicola Bowker\",\n        \"Title\": null,\n        \"StartTime\": \"5/12/2014 7:14:41 PM\",\n        \"UpdateTime\": \"5/12/2014 7:14:41 PM\",\n        \"Message\": \"Did you enjoy the game?\",\n        \"Place\": \"\",\n        \"Picture\": null,\n        \"Likes\": 0,\n        \"Share\": 0,\n        \"Type\": \"status\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/post/post/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"post",
+								"post",
+								""
+							]
+						},
+						"description": "Post Post"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"Id\": \"11111111111\",\n        \"Text\": \"Love this too\",\n        \"DateTime\": \"5/12/2014 7:16:04 PM\",\n        \"Likes\": 89,\n        \"Place\": \"London\",\n        \"Source\": \"Somewhere\",\n        \"ImageUrl\": \"https://ec2-52-17-213-43.com/picture.jpg\",\n        \"LinkUrl\": \"https://ec2-52-17-213-43.com/picture.jpg\",\n        \"Name\":\"London\"\n    }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/status/status",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"status",
+								"status"
+							]
+						},
+						"description": "Post Status"
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"RelationshipStatus\": \"Divorced\",\n        \"HomeTown\": null,\n        \"Political\": \"Christian\",\n        \"Religion\": \"\",\n        \"LRUserID\": \"76799393\",\n        \"CoverPhoto\": \"https://ec2-52-17-213-43.com/picture.jpg\",\n        \"FollowersCount\": 0,\n        \"IsGeoEnabled\": null,\n        \"ThumbnailImageUrl\": \"https://ec2-52-17-213-43.com/picture.jpg\",\n        \"GistsUrl\": null,\n        \"ProfessionalHeadline\": null,\n        \"PublicRepository\": null,\n        \"Volunteer\": null,\n        \"TotalPrivateRepository\": 0,\n        \"Industry\": null,\n        \"TotalStatusesCount\": 0,\n        \"IMAccounts\": null,\n        \"Suffix\": null,\n        \"Favicon\": null,\n        \"LocalLanguage\": \"en-US\",\n        \"Hireable\": false,\n        \"InspirationalPeople\": null,\n        \"Badges\": null,\n        \"JobBookmarks\": null,\n        \"UpdatedTime\": \"4/10/2014 1:05:36 AM\",\n        \"ProfileCity\": \"Edmonton\",\n        \"Sports\": null,\n        \"ProfileUrl\": \"https://www.facebook.com/xxxxxxxxxx\",\n        \"State\": null,\n        \"Email\": [\n            {\n                \"Type\": \"Primary\",\n                \"Value\": \"xxxxxxxxxxxxxx@xxxxxxx.com\"\n            }\n        ],\n        \"Associations\": null,\n        \"PhoneNumbers\": null,\n        \"MiddleName\": \"\",\n        \"Country\": null,\n        \"MutualFriends\": null,\n        \"Projects\": null,\n        \"Subscription\": null,\n        \"Website\": \"\",\n        \"MainAddress\": null,\n        \"LocalCity\": \"Edmonton\",\n        \"Created\": null,\n        \"Age\": \"50\",\n        \"HttpsImageUrl\": \"https://xxxxxxxxx.com/picture.jpg\",\n        \"RepositoryUrl\": null,\n        \"IsProtected\": false,\n        \"PlacesLived\": null,\n        \"Currency\": \"CAD\",\n        \"ProfileName\": \"\",\n        \"Honors\": null,\n        \"Publications\": null,\n        \"Verified\": \"True\",\n        \"FirstName\": \"John\",\n        \"KloutScore\": null,\n        \"LastName\": \"Phillips\",\n        \"ImageUrl\": \"https://ec2-52-17-213-43.com/picture.jpg\",\n        \"Languages\": null,\n        \"Provider\": \"facebook\",\n        \"Interests\": null,\n        \"NumRecommenders\": 0,\n        \"ProviderAccessCredential\": {\n            \"TokenSecret\": null,\n            \"AccessToken\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"\n        },\n        \"ID\": \"10000000000000\",\n        \"Awards\": null,\n        \"PrivateGists\": 0,\n        \"Certifications\": null,\n        \"TeleVisionShow\": null,\n        \"Language\": \"en-US\",\n        \"Positions\": null,\n        \"Courses\": null,\n        \"ProfileCountry\": null,\n        \"Family\": null,\n        \"TagLine\": null,\n        \"Suggestions\": null,\n        \"Prefix\": null,\n        \"Books\": null,\n        \"CurrentStatus\": null,\n        \"FullName\": \"Nicola Bowker\",\n        \"City\": \"Edmonton\",\n        \"RecommendationsReceived\": null,\n        \"AgeRange\": {\n            \"Max\": 0,\n            \"Min\": 47\n        },\n        \"TimeZone\": \"-6\",\n        \"PublicGists\": 0,\n        \"FriendsCount\": 0,\n        \"MemberUrlResources\": null,\n        \"Quote\": \"\",\n        \"Quota\": \"\",\n        \"BirthDate\": \"27/5/1900\",\n        \"Educations\": null,\n        \"StarredUrl\": null,\n        \"RelatedProfileViews\": null,\n        \"About\": \"\",\n        \"Skills\": null,\n        \"Gender\": \"F\",\n        \"Movies\": null,\n        \"Games\": null,\n        \"FavoriteThings\": [],\n        \"InterestedIn\": null,\n        \"NickName\": null,\n        \"LocalCountry\": \"Canada\",\n        \"Patents\": null,\n        \"Addresses\": null\n    }\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/userprofile/userprofile/",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"userprofile",
+								"userprofile",
+								""
+							]
+						},
+						"description": "User profile"
+					},
+					"response": []
+				},
+				{
+					"name": "Post Video",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n                \"EmbedHtml\": \"<iframe src=\\\"https://www.facebook.com/video/embed?video_id=xxxxxxxxxxxxx\\\" width=\\\"720\\\" height=\\\"1280\\\" frameborder=\\\"0\\\"></iframe>\",\n                \"Description\": \"\",\n                \"Image\": \"https://fbcdn-vthumb-a.akamaihd.net/hvthumb-ak-xap1/111111111111111111111111111.jpg\",\n                \"DirectLink\": \"https://scontent-b.xx.fbcdn.net/hvideo-xpf1/v/111111111111111111111111111.mp4\",\n                \"Source\": \"https://scontent-b.xx.fbcdn.net/hvideo-xpf1/v/111111111111111111111111111.mp4\",\n                \"UpdatedDate\": \"12/21/2012 06:23 \",\n                \"OwnerName\": \"FirstName LsatName\",\n                \"CreatedDate\": \"12/21/2012 06:23 \",\n                \"Duration\": null,\n                \"OwnerId\": \"1111111111111\",\n                \"ID\": \"111111111111111111111111111111\",\n                \"Name\": \"Friends dancing in the rain!\"\n            }"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/video/video/",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"video",
+								"video",
+								""
+							]
+						},
+						"description": "Post Video"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LoginRadius  API Mapping",
+			"description": "The index API adds or updates a typed JSON document in a specific index, making it searchable.",
+			"item": [
+				{
+					"name": "Access Token  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_token\" : {\n        \"properties\" : {\n            \"access_token\"  : {\"type\" : \"string\", \"store\" : true },\n            \"expires_in\"    : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/access_token/access_token/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"access_token",
+								"access_token",
+								"_mapping"
+							]
+						},
+						"description": "Create Access Token Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Album Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"album\" : {\n        \"properties\" : {\n            \"DirectoryUrl\"  : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImageUrl\" : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ImageCount\"    : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/album/album/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"album",
+								"album",
+								"_mapping"
+							]
+						},
+						"description": "Create Album Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Audio Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"audio\" : {\n        \"properties\" : {\n            \"Artist\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Duration\"      : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true }          \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/audio/audio/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"audio",
+								"audio",
+								"_mapping"
+							]
+						},
+						"description": "Create Audio Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Check In Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"checkin\" : {\n        \"properties\" : {\n            \"Distance\"      : {\"type\" : \"string\", \"store\" : true },\n            \"PlaceTitle\"    : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Address\"       : {\"type\" : \"string\", \"store\" : true },            \n            \"Longitude\"     : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Latitude\"      : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Message\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },            \n            \"ID\"            : {\"type\" : \"string\", \"store\" : true }          \n        }\n    }\n}\n\n        \n        "
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/checkin/checkin/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"checkin",
+								"checkin",
+								"_mapping"
+							]
+						},
+						"description": "Create Check In Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Company Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\" : {\n        \"properties\" : {\n            \"ID\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"  : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/company/company/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"company",
+								"company",
+								"_mapping"
+							]
+						},
+						"description": "Create Company Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Contact Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contact\" : {\n        \"properties\" : {\n            \"EmailID\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Status\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"    : {\"type\" : \"string\", \"store\" : true },\n            \"DateOfBirth\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Industry\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"        : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumber\"   : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/contact/contact/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"contact",
+								"contact",
+								"_mapping"
+							]
+						},
+						"description": "Create Contact Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Event Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Privacy\"       : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"RsvpStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\"     : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"EndTime\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/event/event/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"event",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": "Create Event Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Following Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"following\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"EmailID\"       : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumber\"   : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"    : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Status\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Industry\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"        : {\"type\" : \"string\", \"store\" : true },\n            \"DateOfBirth\"   : {\"type\" : \"string\", \"store\" : true }            \n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/following/following/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"following",
+								"following",
+								"_mapping"
+							]
+						},
+						"description": "Create Following Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Group  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\" : {\n        \"properties\" : {\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"MemberCount\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"         : {\"type\" : \"string\", \"store\" : true },\n            \"PostalCode\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Logo\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/group/group/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"group",
+								"group",
+								"_mapping"
+							]
+						},
+						"description": "Create Group Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Like  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\" : {\n        \"properties\" : {\n            \"Category\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/like/like/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"like",
+								"like",
+								"_mapping"
+							]
+						},
+						"description": "Create Like Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Mention  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"mention\" : {\n        \"properties\" : {\n            \"Name\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"  : {\"type\" : \"string\", \"store\" : true },\n            \"DateTime\"  : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"     : {\"type\" : \"string\", \"store\" : true },\n            \"LinkUrl\"   : {\"type\" : \"string\", \"store\" : true },   \n            \"Id\"        : {\"type\" : \"string\", \"store\" : true }             \n        }\n    }\n}\n\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/mention/mention/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"mention",
+								"mention",
+								"_mapping"
+							]
+						},
+						"description": "Create Mention Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Page  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : {\n        \"properties\" : {\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Industries\"            : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImage\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Mission\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Status\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ReleaseDate\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Phone\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"StockExchange\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"EmployeeCountRange\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Specialties\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Products\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CheckinCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Published\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TalkingAboutCount\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CategoryList\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Locations\"             : {\"type\" : \"string\", \"store\" : true },\n            \"UserName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Founded\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"                 : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/page/page/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"page",
+								"page",
+								"_mapping"
+							]
+						},
+						"description": "Create Page Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Photo  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo\" : {\n        \"properties\" : {\n          \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Width\"         : {\"type\" : \"string\", \"store\" : true },\n          \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DirectUrl\"     : {\"type\" : \"string\", \"store\" : true },\n          \"AlbumId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Link\"          : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n          \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n          \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"Height\"        : {\"type\" : \"string\", \"store\" : true },\n          \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/photo/photo/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"photo",
+								"photo",
+								"_mapping"
+							]
+						},
+						"description": "Create Photo Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Post  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"post\" : {\n        \"properties\" : {\n          \"ID\"        : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true },\n          \"Title\"     : {\"type\" : \"string\", \"store\" : true },\n          \"StartTime\" : {\"type\" : \"string\", \"store\" : true },\n          \"UpdateTime\": {\"type\" : \"string\", \"store\" : true },\n          \"Message\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Picture\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"  : {\"type\" : \"string\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Share\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Type\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/post/post/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"post",
+								"post",
+								"_mapping"
+							]
+						},
+						"description": "Create Post Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Status  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : {\n        \"properties\" : {\n          \"Id\"        : {\"type\" : \"string\", \"store\" : true },\n          \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DateTime\"  : {\"type\" : \"string\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Source\"    : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"  : {\"type\" : \"string\", \"store\" : true },\n          \"LinkUrl\"   : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/status/status/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"status",
+								"status",
+								"_mapping"
+							]
+						},
+						"description": "Create Status Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "User Profile  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userprofile\" : {\n        \"properties\" : {\n            \"RelationshipStatus\"        : {\"type\" : \"string\", \"store\" : true },\n            \"HomeTown\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Political\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Religion\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"LRUserID\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"CoverPhoto\"                : {\"type\" : \"string\", \"store\" : true },\n            \"FollowersCount\"            : {\"type\" : \"string\", \"store\" : true },\n            \"IsGeoEnabled\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ThumbnailImageUrl\"         : {\"type\" : \"string\", \"store\" : true },\n            \"GistsUrl\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProfessionalHeadline\"      : {\"type\" : \"string\", \"store\" : true },\n            \"PublicRepository\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Volunteer\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"TotalPrivateRepository\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Industry\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"TotalStatusesCount\"        : {\"type\" : \"string\", \"store\" : true },\n            \"IMAccounts\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Suffix\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Favicon\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"LocalLanguage\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Hireable\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"InspirationalPeople\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Badges\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"JobBookmarks\"              : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedTime\"               : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileCity\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Sports\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"                : {\"type\" : \"string\", \"store\" : true },\n            \"State\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"                     : {\n                                            \"type\" : \"object\",\n                                                \"properties\" : {\n                                                    \"type\"  : {\"type\" : \"string\", \"store\" : true },\n                                                    \"value\" : {\"type\" : \"string\", \"store\" : true }\n                                                    }\n                                        },\n            \"Associations\"              : {\"type\" : \"string\", \"store\" : true },\n            \"PhoneNumbers\"              : {\"type\" : \"string\", \"store\" : true },\n            \"MiddleName\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Country\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"MutualFriends\"             : {\"type\" : \"string\", \"store\" : true },\n            \"Projects\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Subscription\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"MainAddress\"               : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCity\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Created\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Age\"                       : {\"type\" : \"string\", \"store\" : true },\n\n            \"HttpsImageUrl\"             : {\"type\" : \"string\", \"store\" : true },\n            \"RepositoryUrl\"             : {\"type\" : \"string\", \"store\" : true },\n            \"IsProtected\"               : {\"type\" : \"string\", \"store\" : true },\n            \"PlacesLived\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Currency\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileName\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Honors\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Publications\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Verified\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"FirstName\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"KloutScore\"                : {\"type\" : \"string\", \"store\" : true },\n            \"LastName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Languages\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Provider\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"ProviderAccessCredential\"  : {\n                                            \"type\" : \"object\",\n                                                \"properties\" : {\n                                                    \"TokenSecret\"   : {\"type\" : \"string\", \"store\" : true },\n                                                    \"AccessToken\"   : {\"type\" : \"string\", \"store\" : true }\n                                                    }\n                                            },\n            \"Interests\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"NumRecommenders\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                        : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"PrivateGists\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Certifications\"            : {\"type\" : \"string\", \"store\" : true },\n            \"TeleVisionShow\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Language\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Positions\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Courses\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileCountry\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Family\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"TagLine\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Suggestions\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Prefix\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Books\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"CurrentStatus\"             : {\"type\" : \"string\", \"store\" : true },\n            \"FullName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"City\"                      : {\"type\" : \"string\", \"store\" : true },\n            \"RecommendationsReceived\"   : {\"type\" : \"string\", \"store\" : true },\n            \"TimeZone\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"PublicGists\"               : {\"type\" : \"string\", \"store\" : true },\n            \"FriendsCount\"              : {\"type\" : \"string\", \"store\" : true },\n            \"MemberUrlResources\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Quote\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Quota\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"BirthDate\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Educations\"                : {\"type\" : \"string\", \"store\" : true },\n            \"StarredUrl\"                : {\"type\" : \"string\", \"store\" : true },\n            \"RelatedProfileViews\"       : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"Skills\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Gender\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Movies\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Games\"                     : {\"type\" : \"string\", \"store\" : true },\n            \"FavoriteThings\"            : {\"type\" : \"string\", \"store\" : true },\n            \"InterestedIn\"              : {\"type\" : \"string\", \"store\" : true },\n            \"NickName\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"LocalCountry\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Patents\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Addresses\"                 : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n\n\n\n\n\n\n\n\n\n\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/userprofile/userprofile/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"userprofile",
+								"userprofile",
+								"_mapping"
+							]
+						},
+						"description": "Create User Profile Mapping"
+					},
+					"response": []
+				},
+				{
+					"name": "Video  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjp0cmFpbnRpbWUxMTQ1"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"video\" : {\n        \"properties\" : {\n            \"EmbedHtml\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"DirectLink\"    : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"        : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Duration\"      : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}\n"
+						},
+						"url": {
+							"raw": "http://ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/video/video/_mapping",
+							"protocol": "http",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"video",
+								"video",
+								"_mapping"
+							]
+						},
+						"description": "Create Video Mapping"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Twitter  Mapping",
+			"description": "",
+			"item": [
+				{
+					"name": "Twitter User Profile  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userprofile\" : {\n        \"properties\" : {\n            \"LRUserID\"              : {\"type\" : \"string\", \"store\" : true },        \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Provider\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProviderAccessCredential\"                 : {\n                                        \"type\" : \"object\",\n                                        \"properties\" : {\n                                            \"TokenSecret\"   : {\"type\" : \"string\", \"store\" : true },\n                                            \"AccessToken\"   : {\"type\" : \"string\", \"store\" : true }\n                                            }\n                                    },\n            \"FirstName\"             : {\"type\" : \"string\", \"store\" : true },\n            \"MiddleName\"            : {\"type\" : \"string\", \"store\" : true },\n            \"LastName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"FullName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileName\"           : {\"type\" : \"string\", \"store\" : true },\n            \"BirthDate\"             : {\"type\" : \"date\", \"store\" : true },\n            \"Gender\"                : {\"type\" : \"string\", \"store\" : true },\n          \"LocalCountry\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"                 : {\n                                        \"type\" : \"object\",\n                                        \"properties\" : {\n                                            \"type\"  : {\"type\" : \"string\", \"store\" : true },\n                                            \"value\" : {\"type\" : \"string\", \"store\" : true }\n                                            }\n                                    },\n            \"ThumbnailImageUrl\"     : {\"type\" : \"string\", \"store\" : true },                      \n            \"ImageUrl\"              : {\"type\" : \"string\", \"store\" : true },\n            \"ProfileUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"HomeTown\"              : {\"type\" : \"string\", \"store\" : true },\n            \"City\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },            \n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },            \n            \"TimeZone\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"LocalLanguage\"         : {\"type\" : \"string\", \"store\" : true },            \n          \"CoverPhoto\"      : {\"type\" : \"string\", \"store\" : true },          \n            \"Language\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"Verified\"              : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedTime\"           : {\"type\" : \"date\", \"store\" : true },            \n            \"Positions\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"Educations\"            : {\"type\" : \"string\", \"store\" : true },            \n            \"LocalCity\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"RelationshipStatus\"    : {\"type\" : \"string\", \"store\" : true },            \n            \"Quote\"                 : {\"type\" : \"string\", \"store\" : true },            \n            \"InterestedIn\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Religion\"              : {\"type\" : \"string\", \"store\" : true },            \n            \"Political\"             : {\"type\" : \"string\", \"store\" : true },            \n            \"Sports\"                : {\"type\" : \"string\", \"store\" : true },\n            \"InspirationalPeople\"   : {\"type\" : \"string\", \"store\" : true },            \n            \"HttpsImageUrl\"      : {\"type\" : \"string\", \"store\" : true }, \n            \"Languages\"             : {\"type\" : \"string\", \"store\" : true },                        \n            \"Projects\"        : {\"type\" : \"string\", \"store\" : true },                        \n            \"Games\"          : {\"type\" : \"string\", \"store\" : true },              \n            \"TeleVisionShow\"        : {\"type\" : \"string\", \"store\" : true },\n            \"MutualFriends\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Movies\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Books\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Age\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"AgeRange\"                 : {\n                                        \"type\" : \"object\",\n                                        \"properties\" : {\n                                            \"Max\"   : {\"type\" : \"integer\", \"store\" : true },\n                                            \"Min\"   : {\"type\" : \"integer\", \"store\" : true }\n                                            }\n                                    },\n            \"FavoriteThings\"        : {\"type\" : \"string\", \"store\" : true },        \n            \"Currency\"              : {\"type\" : \"string\", \"store\" : true }                \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/twitter/userprofile/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"twitter",
+								"userprofile",
+								"_mapping"
+							]
+						},
+						"description": "Twitter User Profile Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Contact  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contact\" : {\n        \"properties\" : {       \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n      \"ProfileUrl\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ImageUrl\"              : {\"type\" : \"string\", \"store\" : true },      \n            \"Gender\"                : {\"type\" : \"string\", \"store\" : true },\n          \"BirthDate\"           : {\"type\" : \"date\", \"store\" : true },    \n          \"Location\"        : {\"type\" : \"string\", \"store\" : true }               \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/contact/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"contact",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Contact Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Like  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"like\" : {\n        \"properties\" : {       \n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },            \n            \"CreatedDate\"           : {\"type\" : \"date\", \"store\" : true },            \n            \"Description\"           : {\"type\" : \"string\", \"store\" : true }                 \n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/like/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"like",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Like Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Album  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"album\" : {\n        \"properties\" : {       \n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImageUrl\" : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"         : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"Type\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"ImageCount\"    : {\"type\" : \"integer\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/album/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"album",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Album Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Company  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"company\" : {\n        \"properties\" : {       \n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"integer\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/company/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"company",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Company Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Event  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"event\" : {\n        \"properties\" : {\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Privacy\"       : {\"type\" : \"string\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"RsvpStatus\"    : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\"     : {\"type\" : \"float\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"integer\", \"store\" : true },\n            \"EndTime\"       : {\"type\" : \"float\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/event/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"event",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Event Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Getpost  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"getpost\" : {\n        \"properties\" : {\n            \"ID\"        : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"      : {\"type\" : \"string\", \"store\" : true },\n            \"Title\"     : {\"type\" : \"string\", \"store\" : true },\n            \"StartTime\" : {\"type\" : \"float\", \"store\" : true },\n            \"UpdateTime\": {\"type\" : \"float\", \"store\" : true },\n            \"Message\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Place\"     : {\"type\" : \"float\", \"store\" : true },\n            \"Picture\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"Share\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"Type\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/getpost/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"getpost",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Getpost Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Group  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"group\" : {\n        \"properties\" : {\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Email\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Logo\"          : {\"type\" : \"integer\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"integer\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/group/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"group",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Group Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Page  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"page\" : {\n        \"properties\" : {\n            \"Category\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CoverImage\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Mission\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"           : {\"type\" : \"string\", \"store\" : true },\n            \"ReleaseDate\"           : {\"type\" : \"string\", \"store\" : true },\n            \"Phone\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Awards\"                : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"About\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Website\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"                  : {\"type\" : \"string\", \"store\" : true },\n            \"Url\"                   : {\"type\" : \"string\", \"store\" : true },\n            \"Products\"              : {\"type\" : \"string\", \"store\" : true },\n            \"CheckinCount\"          : {\"type\" : \"string\", \"store\" : true },\n            \"Published\"             : {\"type\" : \"string\", \"store\" : true },\n            \"TalkingAboutCount\"     : {\"type\" : \"integer\", \"store\" : true },\n            \"CategoryList\"          : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"                    : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"                 : {\"type\" : \"string\", \"store\" : true },\n            \"Locations\"             : {\"type\" : \"string\", \"store\" : true },\n            \"UserName\"              : {\"type\" : \"string\", \"store\" : true },\n            \"Founded\"               : {\"type\" : \"string\", \"store\" : true },\n            \"Likes\"                 : {\"type\" : \"integer\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/page/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"page",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Page Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Photo  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"photo\" : {\n        \"properties\" : {\n          \"Width\"         : {\"type\" : \"integer\", \"store\" : true },\n          \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n          \"ImageUrl\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DirectUrl\"     : {\"type\" : \"string\", \"store\" : true },\n          \"AlbumId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"UpdatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"Link\"          : {\"type\" : \"string\", \"store\" : true },\n          \"Location\"      : {\"type\" : \"string\", \"store\" : true },\n          \"CreatedDate\"   : {\"type\" : \"float\", \"store\" : true },\n          \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n          \"Height\"        : {\"type\" : \"integer\", \"store\" : true },\n          \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/photo/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"photo",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Photo Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Status  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\" : {\n        \"properties\" : {\n          \"Id\"        : {\"type\" : \"string\", \"store\" : true },\n          \"Text\"      : {\"type\" : \"string\", \"store\" : true },\n          \"DateTime\"  : {\"type\" : \"date\", \"store\" : true },\n          \"Likes\"     : {\"type\" : \"integer\", \"store\" : true },\n          \"Place\"     : {\"type\" : \"string\", \"store\" : true },\n          \"Name\"      : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/status/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"status",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Status Mapping."
+					},
+					"response": []
+				},
+				{
+					"name": "Facebook Video  Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"video\" : {\n        \"properties\" : {\n            \"EmbedHtml\"     : {\"type\" : \"string\", \"store\" : true },\n            \"Description\"   : {\"type\" : \"string\", \"store\" : true },\n            \"Image\"         : {\"type\" : \"string\", \"store\" : true },\n            \"Source\"        : {\"type\" : \"string\", \"store\" : true },\n            \"UpdatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerName\"     : {\"type\" : \"string\", \"store\" : true },\n            \"CreatedDate\"   : {\"type\" : \"date\", \"store\" : true },\n            \"OwnerId\"       : {\"type\" : \"string\", \"store\" : true },\n            \"ID\"            : {\"type\" : \"string\", \"store\" : true },\n            \"Name\"          : {\"type\" : \"string\", \"store\" : true }\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "ec2-52-17-213-43.eu-west-1.compute.amazonaws.com:9200/facebook/video/_mapping",
+							"host": [
+								"ec2-52-17-213-43",
+								"eu-west-1",
+								"compute",
+								"amazonaws",
+								"com"
+							],
+							"port": "9200",
+							"path": [
+								"facebook",
+								"video",
+								"_mapping"
+							]
+						},
+						"description": "Facebook Video Mapping."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"info": {
+		"name": "Webhose API",
+		"_postman_id": "d29adafe-c714-3ed7-0127-3a0c3979d7f6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ElasticSearch Mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"webhose\" : {\n    \"properties\" : {\n      \"message\" : {\"type\" : \"string\", \"store\" : true }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

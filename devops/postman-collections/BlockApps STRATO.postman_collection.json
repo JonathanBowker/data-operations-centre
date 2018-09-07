@@ -1,0 +1,257 @@
+{
+	"info": {
+		"name": "BlockApps STRATO",
+		"_postman_id": "f5cc7994-8f3e-ddde-860a-71d3121a5de9",
+		"description": "BlockApps STRATO is the platform to quickly build, scale and deploy blockchain applications. Initialize the BlockApps Platform on Microsoft Azure.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bloc API",
+			"description": "",
+			"item": [
+				{
+					"name": "default",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost/bloc/v2.1/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bloc",
+								"v2.1",
+								""
+							]
+						},
+						"description": "Returns the number of Shadow Rolling Blocks by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "/users",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost/bloc/v2.1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bloc",
+								"v2.1",
+								"users"
+							]
+						},
+						"description": "Returns the number of Shadow Rolling Blocks by FileUID\n"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{users}",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost/bloc/v2.1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bloc",
+								"v2.1",
+								"users"
+							]
+						},
+						"description": "Returns the number of Shadow Rolling Blocks by FileUID\n"
+					},
+					"response": []
+				},
+				{
+					"name": "/users/{user}",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json;charset=utf-8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic YWRtaW46YWRtaW4="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost/bloc/v2.1/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"bloc",
+								"v2.1",
+								"users"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Strato API",
+			"description": "",
+			"item": []
+		}
+	]
+}

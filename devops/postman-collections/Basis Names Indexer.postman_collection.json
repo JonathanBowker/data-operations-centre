@@ -1,0 +1,360 @@
+{
+	"info": {
+		"name": "Basis Names Indexer",
+		"_postman_id": "5109501a-9d77-492b-5dcc-29c9042cde67",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create index",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Index mapping",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"properties\": {\n    \"Name6\": {\n      \"type\": \"rni_name\"\n    },\n    \"Name1\": {\n      \"type\": \"rni_name\"\n    },\n    \"Name2\": {\n      \"type\": \"rni_name\"\n    },\n    \"Name3\": {\n      \"type\": \"rni_name\"\n    },\n    \"Name4\": {\n      \"type\": \"rni_name\"\n    },\n    \"Name5\": {\n      \"type\": \"rni_name\"\n    },\n    \"Title\": {\n      \"type\": \"string\"\n    },\n    \"DateOfBirth\": {\n      \"type\": \"string\"\n    },\n    \"TownOfBirth\": {\n      \"type\": \"rni_name\"\n    },\n    \"CountryOfBirth\": {\n      \"type\": \"rni_name\"\n    },\n    \"Nationality\": {\n      \"type\": \"string\"\n    },\n    \"PassportDetails\": {\n      \"type\": \"string\"\n    },\n    \"NINumber\": {\n      \"type\": \"string\"\n    },\n    \"Position\": {\n      \"type\": \"string\"\n    },\n    \"Address1\": {\n      \"type\": \"string\"\n    },\n    \"Address2\": {\n      \"type\": \"string\"\n    },\n    \"Address3\": {\n      \"type\": \"string\"\n    },\n    \"Address4\": {\n      \"type\": \"string\"\n    },\n    \"Address5\": {\n      \"type\": \"string\"\n    },\n    \"Address6\": {\n      \"type\": \"string\"\n    },\n    \"Post/ZipCode\": {\n      \"type\": \"string\"\n    },\n    \"Country\": {\n      \"type\": \"rni_name\"\n    },\n    \"OtherInformation\": {\n      \"type\": \"string\"\n    },\n    \"GroupType\": {\n      \"type\": \"string\"\n    },\n    \"AliasType\": {\n      \"type\": \"string\"\n    },\n    \"Regime\": {\n      \"type\": \"rni_name\"\n    },\n    \"ListedOn\": {\n      \"type\": \"string\"\n    },\n    \"LastUpdated\": {\n      \"type\": \"string\"\n    },\n    \"GroupID\": {\n      \"type\": \"string\"\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/_mapping",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"_mapping"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "List Indeces copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://52.50.45.97:9220/_cat/indices?v",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"_cat",
+						"indices"
+					],
+					"query": [
+						{
+							"key": "v",
+							"value": "",
+							"equals": false
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add record 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"Name6\": \"Jonathan Billam Bowker\",\n  \"Name1\": \"Jonathan\",\n  \"Name2\": \"Billam\",\n  \"Name3\": \"Bowker\",\n  \"Name4\": \"null\",\n  \"Name5\": \"null\",\n  \"Title\": \"null\",\n  \"DateOfBirth\": \"null\",\n  \"TownOfBirth\": \"null\",\n  \"CountryOfBirth\": \"null\",\n  \"Nationality\": \"null\",\n  \"PassportDetails\": \"null\",\n  \"NINumber\": \"null\",\n  \"Position\": \"null\",\n  \"Address1\": \"null\",\n  \"Address2\": \"null\",\n  \"Address3\": \"null\",\n  \"Address4\": \"null\",\n  \"Address5\": \"null\",\n  \"Address6\": \"null\",\n  \"Post/ZipCode\": \"RG87NQ\",\n  \"Country\": \"null\",\n  \"OtherInformation\": \"Is on the board of Brand Sentiment\",\n  \"GroupType\": \"null\",\n  \"AliasType\": \"null\",\n  \"Regime\": \"null\",\n  \"ListedOn\": \"null\",\n  \"LastUpdated\": \"null\",\n  \"GroupID\": \"1267\"\n}"
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/01",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"01"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add record 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"primary_name\" : \n        \"Joe Schmoe\"\n      ,\n      \"aka\" : \n        \"Schmoey\"\n    \n}\n    "
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/02",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"02"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add record 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"primary_name\" : \n        \"Bernie Madoff\"\n      ,\n      \"aka\" : \n        \"Bernie Madof, Berni Madof, \"\n    \n}\n    "
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/03",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"03"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Name Query Basic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\" : {\n        \"Name6\" : \"Jonathan Bowker\"\n    }\n  }  \n}"
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/_search",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"_search"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Name Query Multi Field",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\" : {\n        \"Name6\" : \"Jonathan Bowker\"\n    }\n  }  \n}"
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/_search",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"_search"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Name Query Match & Rescore.",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\": {\n      \"Name6\": \"Jonathan Bowker\"\n    }\n  },\n  \"rescore\": {\n    \"window_size\": 200,\n    \"query\": {\n      \"rescore_query\": {\n        \"function_score\": {\n          \"name_score\": {\n            \"field\": \"Name6\",\n            \"query_name\": \"Jo Shmoe\"\n          }\n        }\n      }\n    }\n  }\n}"
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/log/_search",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"log",
+						"_search"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Match all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/_search",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"_search"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Test RNI Installation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist/rni_plugin/_verify_installation?rni-name-field=Name6",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist",
+						"rni_plugin",
+						"_verify_installation"
+					],
+					"query": [
+						{
+							"key": "rni-name-field",
+							"value": "Name6",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete index",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://52.50.45.97:9220/hmt_sanctionslist",
+					"protocol": "http",
+					"host": [
+						"52",
+						"50",
+						"45",
+						"97"
+					],
+					"port": "9220",
+					"path": [
+						"hmt_sanctionslist"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

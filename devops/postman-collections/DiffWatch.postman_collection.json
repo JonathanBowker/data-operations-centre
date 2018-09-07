@@ -1,0 +1,826 @@
+{
+	"info": {
+		"name": "DiffWatch",
+		"_postman_id": "3f8f4c44-a546-29b7-2042-3d14abc55dc5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Entity DiffScore",
+			"description": "",
+			"item": [
+				{
+					"name": "Asset Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS assetRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN  assetRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns te number of Asset Entities by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Shadow Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowEntity) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowEntityFileUID, COUNT(n.fileUID) AS count RETURN  shadowEntityFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of Shadow Entities by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Match Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetEntity),(m:ShadowEntity) WHERE n.contentHash = m.contentHash WITH n.fileUID AS assetEntityFileUID, m.fileUID AS shadowEntityFileUID,  COUNT(m.fileUID) AS count RETURN  assetEntityFileUID, shadowEntityFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of matching Asset and Shadow Entities by FileUID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pattern DiffScore",
+			"description": "",
+			"item": [
+				{
+					"name": "Asset Pattern Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetPattern) WHERE n.fileUID IS NOT null WITH n.fileUID AS assetPatternFileUID, COUNT(n.fileUID) AS count RETURN  assetPatternFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of Asset Patterns by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Shadow Pattern Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowPattern) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowPatternFileUID, COUNT(n.fileUID) AS count RETURN  shadowPatternFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of Shadow Patterns by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Match Patterns Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetPattern),(m:ShadowPattern) WHERE n.contentHash = m.contentHash WITH n.fileUID AS assetPatternFileUID, m.fileUID AS shadowPatternFileUID,  COUNT(m.fileUID) AS count RETURN  assetPatternFileUID, shadowPatternFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of matching Asset and Shadow Pattrens by FileUID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rolling Block DiffScore",
+			"description": "",
+			"item": [
+				{
+					"name": "Asset Rolling Block Count",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"assetRollingBlockFileUID\", jsonData.assetRollingBlockFileUID);"
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS assetRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN  assetRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns te number of Asset Rolling Blocks by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Shadow Rolling Block Count",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"shadowRollingBlockFileUID\", jsonData.shadowRollingBlockFileUID);"
+								]
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of Shadow Rolling Blocks by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Match Rolling Block Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRollingBlock),(m:ShadowRollingBlock) WHERE n.contentHash = m.contentHash WITH n.fileUID AS assetRollingBlockFileUID, m.fileUID AS shadowRollingBlockFileUID,  COUNT(m.fileUID) AS count RETURN  assetRollingBlockFileUID, shadowRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}\n\n"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of matching Asset and Shadow Rolling Blocks by FileUID"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Word Boundary DiffScore",
+			"description": "",
+			"item": [
+				{
+					"name": "Asset Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetRollingBlock) WHERE n.fileUID IS NOT null WITH n.fileUID AS assetRollingBlockFileUID, COUNT(n.fileUID) AS count RETURN  assetRollingBlockFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns te number of Asset Entities by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Shadow Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:ShadowEntity) WHERE n.fileUID IS NOT null WITH n.fileUID AS shadowEntityFileUID, COUNT(n.fileUID) AS count RETURN  shadowEntityFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of Shadow Entities by FileUID\n\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Match Entity Count",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "neo4j",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "neo",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json; charset=UTF-8"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic bmVvNGo6bmVv"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"statements\": [\n    {\n      \"statement\": \"MATCH (n:AssetEntity),(m:ShadowEntity) WHERE n.contentHash = m.contentHash WITH n.fileUID AS assetEntityFileUID, m.fileUID AS shadowEntityFileUID,  COUNT(m.fileUID) AS count RETURN  assetEntityFileUID, shadowEntityFileUID, count ORDER BY count desc\"\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:7474/db/data/transaction",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7474",
+							"path": [
+								"db",
+								"data",
+								"transaction"
+							]
+						},
+						"description": "Returns the number of matching Asset and Shadow Entities by FileUID"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

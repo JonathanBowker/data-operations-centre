@@ -1,0 +1,7 @@
+variable,dictionaryID,dimensionID,type,languageCode,dictionary,dimension
+c6.1,6,1,Wordcount,eng,Financial Sentiment,Litigious
+c6.2,6,2,Wordcount,eng,Financial Sentiment,ModalStrong
+c6.3,6,3,Wordcount,eng,Financial Sentiment,ModalWeak
+c6.4,6,4,Wordcount,eng,Financial Sentiment,Negative
+c6.5,6,5,Wordcount,eng,Financial Sentiment,Positive
+c6.6,6,6,Wordcount,eng,Financial Sentiment,Uncertainty

@@ -1,0 +1,242 @@
+{
+	"info": {
+		"name": "01. CELEX",
+		"_postman_id": "91108a42-8912-a708-7dce-959c23f1af22",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CELEX-sectors",
+			"description": "",
+			"item": [
+				{
+					"name": "Create celex-sectors index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-sectors/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-sectors",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete celex-sectors index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-sectors/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-sectors",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get celex-sectors index settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-sectors/_settings",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-sectors",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post celex-sectors records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"04\",\"domain\": \"POLITICS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"08\",\"domain\": \"INTERNATIONAL RELATIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"10\",\"domain\": \"EUROPEAN UNION\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"12\",\"domain\": \"LAW\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"16\",\"domain\": \"ECONOMICS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"20\",\"domain\": \"TRADE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"24\",\"domain\": \"FINANCE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"28\",\"domain\": \"SOCIAL QUESTIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"32\",\"domain\": \"EDUCATION AND COMMUNICATIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"36\",\"domain\": \"SCIENCE\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"40\",\"domain\": \"BUSINESS AND COMPETITION\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"44\",\"domain\": \"EMPLOYMENT AND WORKING CONDITIONS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domainss\", \"_type\": \"domain\" } }\n{ \"domainID\": \"48\",\"domain\": \"TRANSPORT\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"52\",\"domain\": \"ENVIRONMENT\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"56\",\"domain\": \"AGRICULTURE, FORESTRY AND FISHERIES\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"60\",\"domain\": \"AGRI-FOODSTUFFS\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"64\",\"domain\": \"PRODUCTION, TECHNOLOGY AND RESEARCH\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"66\",\"domain\": \"ENERGY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"68\",\"domain\": \"INDUSTRY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"72\",\"domain\": \"GEOGRAPHY\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"eurovoc-domains\", \"_type\": \"domain\" } }\n{ \"domainID\": \"76\",\"domain\": \"INTERNATIONAL ORGANISATIONS\",\"language\":\"en\" }"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-years/sector/_bulk",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-years",
+								"sector",
+								"_bulk"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CELEX-years",
+			"description": "",
+			"item": [
+				{
+					"name": "Create celex-years index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-years/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-years",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete celex-years index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 1,\n      \"number_of_replicas\" : 1\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-years/",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-years",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get celex-years index settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-years/_settings",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-years",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Post celex-years records",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"1\",\"sector\": \"Treaties\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"2\",\"sector\": \"International agreements \",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"3\",\"sector\": \" Legislation\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"4\",\"sector\": \"Complementary legislation\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"5\",\"sector\": \"Preparatory acts\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"6\",\"sector\": \"Case-law\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"7\",\"sector\": \" National transposition measures\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"8\",\"sector\": \" References to national case-law concerning EU law\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"9\",\"sector\": \"Parliamentary questions\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"0\",\"sector\": \"Consolidated acts\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"C\",\"sector\": \"Other documents published in the Official Journal C series\",\"language\":\"en\" }\n{ \"index\":{ \"_index\": \"celex-sectors\", \"_type\": \"sector\" } }\n{ \"sectorID\": \"E\",\"sector\": \"EFTA documents\",\"language\":\"en\" }"
+						},
+						"url": {
+							"raw": "https://search-ethelhq-3cbs3kdjs75luegvltcf7275tm.eu-west-2.es.amazonaws.com/celex-years/year/_bulk",
+							"protocol": "https",
+							"host": [
+								"search-ethelhq-3cbs3kdjs75luegvltcf7275tm",
+								"eu-west-2",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"celex-years",
+								"year",
+								"_bulk"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

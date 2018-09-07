@@ -1,0 +1,172 @@
+{
+	"info": {
+		"name": "Cloud Storage",
+		"_postman_id": "053906f1-e2fe-ff0c-1d9a-1a5723873541",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Users Facebook",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "content-length",
+						"value": "128"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Select\": \"Provider,FirstName,MiddleName,BirthDate,Email,Country,HomeTown,City,SignupDate,LocalCountry,EmailVerified,RelationshipStatus,IsBlocked,ID,LastName,Gender,State,LocalCity\",\n    \"From\": \"users\",\n    \"Where\": \"Provider=facebook\",\n    \"OrderBy\": \"LastName\",\n    \"Skip\": \"0\",\n    \"Limit\": \"20\"\n\n}"
+				},
+				"url": {
+					"raw": "api.loginradius.com/api/v2/identity?key=569a5625-0a90-4603-920f-a78a72535303&secret=41eb7476-f31e-4b25-b9a2-298531c212b3&oauth_consumer_key=569a5625-0a90-4603-920f-a78a72535303&oauth_token&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1440231551&oauth_nonce=lvWoSC&oauth_version=1.0&oauth_signature=ifZCl1gFvkGsLZy0G7/DzA4Eg9o=",
+					"host": [
+						"api",
+						"loginradius",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"identity"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "569a5625-0a90-4603-920f-a78a72535303"
+						},
+						{
+							"key": "secret",
+							"value": "41eb7476-f31e-4b25-b9a2-298531c212b3"
+						},
+						{
+							"key": "oauth_consumer_key",
+							"value": "569a5625-0a90-4603-920f-a78a72535303"
+						},
+						{
+							"key": "oauth_token",
+							"value": null
+						},
+						{
+							"key": "oauth_signature_method",
+							"value": "HMAC-SHA1"
+						},
+						{
+							"key": "oauth_timestamp",
+							"value": "1440231551"
+						},
+						{
+							"key": "oauth_nonce",
+							"value": "lvWoSC"
+						},
+						{
+							"key": "oauth_version",
+							"value": "1.0"
+						},
+						{
+							"key": "oauth_signature",
+							"value": "ifZCl1gFvkGsLZy0G7/DzA4Eg9o="
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users Twitter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-encoding",
+						"value": "gzip"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "content-length",
+						"value": "128"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Select\": \"ID,Provider,FirstName,LastName,BirthDate,Gender,Email\",\n    \"From\": \"users\",\n    \"Where\": \"Provider=twitter\",\n    \"OrderBy\": \"LastName\",\n    \"Skip\": \"0\",\n    \"Limit\": \"20\"\n\n}"
+				},
+				"url": {
+					"raw": "api.loginradius.com/api/v2/identity?key=569a5625-0a90-4603-920f-a78a72535303&secret=41eb7476-f31e-4b25-b9a2-298531c212b3&oauth_consumer_key=569a5625-0a90-4603-920f-a78a72535303&oauth_token&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1440231551&oauth_nonce=lvWoSC&oauth_version=1.0&oauth_signature=ifZCl1gFvkGsLZy0G7/DzA4Eg9o=",
+					"host": [
+						"api",
+						"loginradius",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"identity"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "569a5625-0a90-4603-920f-a78a72535303"
+						},
+						{
+							"key": "secret",
+							"value": "41eb7476-f31e-4b25-b9a2-298531c212b3"
+						},
+						{
+							"key": "oauth_consumer_key",
+							"value": "569a5625-0a90-4603-920f-a78a72535303"
+						},
+						{
+							"key": "oauth_token",
+							"value": null
+						},
+						{
+							"key": "oauth_signature_method",
+							"value": "HMAC-SHA1"
+						},
+						{
+							"key": "oauth_timestamp",
+							"value": "1440231551"
+						},
+						{
+							"key": "oauth_nonce",
+							"value": "lvWoSC"
+						},
+						{
+							"key": "oauth_version",
+							"value": "1.0"
+						},
+						{
+							"key": "oauth_signature",
+							"value": "ifZCl1gFvkGsLZy0G7/DzA4Eg9o="
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

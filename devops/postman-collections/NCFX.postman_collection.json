@@ -1,0 +1,166 @@
+{
+	"info": {
+		"name": "NCFX",
+		"_postman_id": "167add79-ca7c-01a6-54e8-67d936a59044",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MinuteTWAP",
+			"description": "",
+			"item": [
+				{
+					"name": "01. Get  GBP:USD Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/MinuteTWAP;16122016100000;16122016100005;GBPUSD;,JSON,BSentiment,NCFX2016!",
+							"protocol": "https",
+							"host": [
+								"ncfxrestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"service1.svc",
+								"securejson",
+								"getdata",
+								"MinuteTWAP;16122016100000;16122016100005;GBPUSD;,JSON,BSentiment,NCFX2016!"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "01. Get Tick Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/Tick;16122016100000;16122016100001;,json,BSentiment,NCFX2016!",
+					"protocol": "https",
+					"host": [
+						"ncfxrestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"service1.svc",
+						"securejson",
+						"getdata",
+						"Tick;16122016100000;16122016100001;,json,BSentiment,NCFX2016!"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "02. Get GBP:USD Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/Tick;12042017100000;12042017100001;GBPUSD;,JSON,BSentiment,NCFX2016!",
+					"protocol": "https",
+					"host": [
+						"ncfxrestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"service1.svc",
+						"securejson",
+						"getdata",
+						"Tick;12042017100000;12042017100001;GBPUSD;,JSON,BSentiment,NCFX2016!"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "03. Get GBP:JPY Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/Tick;12042017100400;12042017100500;GBPJPY;,JSON,BSentiment,NCFX2016!",
+					"protocol": "https",
+					"host": [
+						"ncfxrestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"service1.svc",
+						"securejson",
+						"getdata",
+						"Tick;12042017100400;12042017100500;GBPJPY;,JSON,BSentiment,NCFX2016!"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "04. Get USD:JPY Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/Tick;12042017100400;12042017100500;USDJPY;,JSON,BSentiment,NCFX2016!",
+					"protocol": "https",
+					"host": [
+						"ncfxrestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"service1.svc",
+						"securejson",
+						"getdata",
+						"Tick;12042017100400;12042017100500;USDJPY;,JSON,BSentiment,NCFX2016!"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "05. Get GBP:EUR Data ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ncfxrestapi.azurewebsites.net/service1.svc/securejson/getdata/Tick;12042017100400;12042017100500;GBPEUR;,JSON,BSentiment,NCFX2016!",
+					"protocol": "https",
+					"host": [
+						"ncfxrestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"service1.svc",
+						"securejson",
+						"getdata",
+						"Tick;12042017100400;12042017100500;GBPEUR;,JSON,BSentiment,NCFX2016!"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

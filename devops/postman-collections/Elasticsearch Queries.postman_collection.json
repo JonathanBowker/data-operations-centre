@@ -1,0 +1,190 @@
+{
+	"info": {
+		"name": "Elasticsearch Queries",
+		"_postman_id": "44927030-677d-c493-c5a2-6db077ff67bf",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Match Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"match\" : {\n        \"main\" : \"this is a test\"\n    }\n  }  \n}\n"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "A family of match queries that accept text/numerics/dates, analyzes it and constructs a query out of it. "
+			},
+			"response": []
+		},
+		{
+			"name": "Fuzzy Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"fuzzy\" : {\n        \"author_name\" : \"jonathan bowker\"\n    }\n  }  \n}\n"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "The fuzzy query uses similarity based on Levenshtein edit distance for string fields, and a +/- margin on numeric and date fields."
+			},
+			"response": []
+		},
+		{
+			"name": "Aggregation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"size\" : 0,\n    \"aggs\" : {\n        \"tags\" : {\n            \"terms\" : { \n                \"field\" : \"tags\", \n                \"exclude\" : \"devoxx|dv13\"\n            }\n        }\n    }\n}'"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "A query that matches documents matching boolean combinations of other queries."
+			},
+			"response": []
+		},
+		{
+			"name": "Multi Match Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"multi_match\" : {\n     \"query\":    \"this is a test\", \n     \"fields\": [ \"title\", \"main\" ] \n    }\n  }  \n}\n\n\n"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "The multi_match query builds on the match query to allow multi-field queries"
+			},
+			"response": []
+		},
+		{
+			"name": "Boolean Query",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-vendor",
+						"value": "brandsentiment"
+					},
+					{
+						"key": "X-vendor-auth",
+						"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"query\": {\n    \"bool\" : {\n        \"must\" : {\n            \"term\" : { \"main\" : \"test\" }\n        },\n        \"must_not\" : {\n            \"range\" : {\n                \"source_followers\" : { \"from\" : 10, \"to\" : 20 }\n            }\n        },\n        \"should\" : [\n            {\n                \"term\" : { \"tag\" : \"wow\" }\n            },\n            {\n                \"term\" : { \"tag\" : \"oman\" }\n            }\n        ],\n        \"minimum_should_match\" : 1,\n        \"boost\" : 1.0\n    }\n  }  \n}\n"
+				},
+				"url": {
+					"raw": "http://brandsentiment.elasticsearch.spinn3r.com/content*/_search",
+					"protocol": "http",
+					"host": [
+						"brandsentiment",
+						"elasticsearch",
+						"spinn3r",
+						"com"
+					],
+					"path": [
+						"content*",
+						"_search"
+					]
+				},
+				"description": "A query that matches documents matching boolean combinations of other queries."
+			},
+			"response": []
+		}
+	]
+}

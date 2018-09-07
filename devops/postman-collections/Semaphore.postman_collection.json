@@ -1,0 +1,106 @@
+{
+	"info": {
+		"name": "Semaphore",
+		"_postman_id": "07daff36-3895-a634-4f7b-0f0bf99d9880",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://rpa.regdelta.com:5058",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "rpa.regdelta.com:5058"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Keep_Alive",
+						"value": "300"
+					},
+					{
+						"key": "Accept_Charset",
+						"value": "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" ?>\n<request op=\"CLASSIFY\">\n  <document>\n    <body type=\"TEXT\">\"BIPRU 13.8 provides that, in the case of a firm using the financial collateral comprehensive method under BIPRU 5, where an exposure takes the form of an SFT, the exposure value should be increased by the volatility adjustment appropriate to such securities or commodities set out in BIPRU 5.4.30 R to BIPRU 5.4.65 R (Supervisory volatility adjustments approach and the own estimates of volatility adjustments approach).\"</body>\n    <path></path>\n    <multiarticle></multiarticle>\n    <language>Default</language>\n    <threshold>48</threshold>\n    <clustering type=\"RMS\" threshold=\"20\"/>\n    <operation_mode>CAT</operation_mode>\n    <feedback></feedback>\n    <use_generated_keys></use_generated_keys>\n  </document>\n</request>"
+				},
+				"url": {
+					"raw": "http://rpa.regdelta.com:5058/cat/index.html",
+					"protocol": "http",
+					"host": [
+						"rpa",
+						"regdelta",
+						"com"
+					],
+					"port": "5058",
+					"path": [
+						"cat",
+						"index.html"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://rpa.regdelta.com:5058 copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "rpa.regdelta.com:5058"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Keep_Alive",
+						"value": "300"
+					},
+					{
+						"key": "Accept_Charset",
+						"value": "ISO-8859-1,utf-8;q=0.7,*;q=0.7"
+					},
+					{
+						"key": "Content-Type",
+						"value": "text/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" ?>\n<request op=\"CLASSIFY\">\n  <document>\n    <body type=\"TEXT\">\"BIPRU 13.8 provides that, in the case of a firm using the financial collateral comprehensive method under BIPRU 5, where an exposure takes the form of an SFT, the exposure value should be increased by the volatility adjustment appropriate to such securities or commodities set out in BIPRU 5.4.30 R to BIPRU 5.4.65 R (Supervisory volatility adjustments approach and the own estimates of volatility adjustments approach).\"</body>\n    <path></path>\n    <multiarticle></multiarticle>\n    <language>Default</language>\n    <threshold>48</threshold>\n    <clustering type=\"RMS\" threshold=\"20\"/>\n    <operation_mode>CAT</operation_mode>\n    <feedback></feedback>\n    <use_generated_keys></use_generated_keys>\n  </document>\n</request>"
+				},
+				"url": {
+					"raw": "http://rpa.regdelta.com:5058/cat/index.html",
+					"protocol": "http",
+					"host": [
+						"rpa",
+						"regdelta",
+						"com"
+					],
+					"port": "5058",
+					"path": [
+						"cat",
+						"index.html"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

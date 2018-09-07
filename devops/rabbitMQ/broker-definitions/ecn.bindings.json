@@ -1,0 +1,189 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.afuo.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.axi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ccm.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.cpbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.dcfx.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ewn.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.exn.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ffs.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ftc.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.fxdc.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.fxn.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.fxo.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.hfh.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.hsfx.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.ibc.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.igml.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.ldn.gbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.nyc.gbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.oat.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.shke.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.slc.gbi.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.tdf.*.*.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "ecns",
+        "destination_type": "exchange",
+        "routing_key": "*.*.zur.gbi.*.*.*.*",
+        "arguments": {}
+    }
+  ]
+}

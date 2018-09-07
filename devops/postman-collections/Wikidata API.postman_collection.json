@@ -1,0 +1,47 @@
+{
+	"info": {
+		"name": "Wikidata API",
+		"_postman_id": "b38029bd-ce98-60cb-5210-bd81ca014690",
+		"description": "Wikidata is a free linked database that can be read and edited by both humans and machines.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "entities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q42&languages=en",
+					"protocol": "https",
+					"host": [
+						"www",
+						"wikidata",
+						"org"
+					],
+					"path": [
+						"w",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "wbgetentities"
+						},
+						{
+							"key": "ids",
+							"value": "Q42"
+						},
+						{
+							"key": "languages",
+							"value": "en"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

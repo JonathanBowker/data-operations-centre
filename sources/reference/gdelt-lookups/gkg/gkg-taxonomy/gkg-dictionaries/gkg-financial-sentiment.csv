@@ -1,0 +1,7 @@
+Variable,DictionaryID,DimensionID,Type,LanguageCode,DictionaryHumanName,DimensionHumanName,DictionaryCitation
+c6.1,6,1,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Litigious,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."
+c6.2,6,2,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Modal Strong,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."
+c6.3,6,3,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Modal Weak,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."
+c6.4,6,4,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Negative,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."
+c6.5,6,5,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Positive,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."
+c6.6,6,6,WORDCOUNT,eng,Loughran and McDonald Financial Sentiment Dictionaries,Uncertainty,"Tim Loughran and Bill McDonald. (2011). 'When is a Liability not a Liability?' Journal of Finance, V66, pp. 35-65."

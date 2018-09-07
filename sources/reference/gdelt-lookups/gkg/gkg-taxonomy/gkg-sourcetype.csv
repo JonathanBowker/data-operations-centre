@@ -1,0 +1,7 @@
+Code,DocumentIdentifier,Description
+1,Web,The document originates from the open web and the DocumentIdentifier is a fully-qualified URL that can be used to access the document on the web.
+2,Citation Only,"The document originates from a broadcast, print, or other offline source in which only a textual citation is available for the document. In this case the DocumentIdentifier contains the textual citation for the document."
+3,Core,"The document originates from the CORE archive and the DocumentIdentifier contains its DOI, suitable for accessing the original document through the CORE website."
+4,Defense Technical Information Center,"The document originates from the DTIC archive and the DocumentIdentifier contains its DOI, suitable for accessing the original document through the DTIC website."
+5,Journal Storage,"The document originates from the JSTOR archive and the DocumentIdentifier contains its DOI, suitable for accessing the original document through your JSTOR subscription if your institution subscribes to it"
+6,Non Textual Source,The document originates from a textual proxy such as closed captioning of a non-textual information source such as a video or podcast available via a URL and the DocumentIdentifier provides the URL of the non-textual original source.

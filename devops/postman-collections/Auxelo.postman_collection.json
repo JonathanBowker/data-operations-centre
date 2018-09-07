@@ -1,0 +1,409 @@
+{
+	"info": {
+		"name": "Auxelo",
+		"_postman_id": "cec90bbd-da90-687b-70d9-9360064e2df1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Fund managers",
+			"description": "Retrieves the details of a fund manager object that has previously been created.",
+			"item": [
+				{
+					"name": "Get fund managers",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "1tkuFg6JXNvQ0TRDmcgH",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "M9clryEzD1H2UpinLg1j",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA256",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1489338868,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "u81Har",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://www.aulexo.com/api/v2/funds/managers/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aulexo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"funds",
+								"managers",
+								""
+							]
+						},
+						"description": "Returns a list of fund managers, together with summary information about their related funds."
+					},
+					"response": []
+				},
+				{
+					"name": "Get fund managers details",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "1tkuFg6JXNvQ0TRDmcgH",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "M9clryEzD1H2UpinLg1j",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA256",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1489338378,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "TlZRtW",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"1tkuFg6JXNvQ0TRDmcgH\",oauth_signature_method=\"HMAC-SHA256\",oauth_timestamp=\"1489338378\",oauth_nonce=\"TlZRtW\",oauth_version=\"1.0\",oauth_signature=\"arki8JOwK3tpqMwcY%2BqKUs%2FgIpq1wk7ciIclGq%2B6yE0%3D\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 10\n}\n"
+						},
+						"url": {
+							"raw": "https://www.aulexo.com/api/v2/funds/manager/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aulexo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"funds",
+								"manager",
+								""
+							]
+						},
+						"description": "Retrieves the details of a fund manager object that has previously been created."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Funds",
+			"description": "",
+			"item": [
+				{
+					"name": "Get funds",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "1tkuFg6JXNvQ0TRDmcgH",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "M9clryEzD1H2UpinLg1j",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA256",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1489338378,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"1tkuFg6JXNvQ0TRDmcgH\",oauth_signature_method=\"HMAC-SHA256\",oauth_timestamp=\"1489338378\",oauth_nonce=\"TlZRtW\",oauth_version=\"1.0\",oauth_signature=\"Ia5O2lz6Dc%2BXeFeBZn0tIjFZHOidCRH3H%2BSzKjDbXPo%3D\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 10\n}\n"
+						},
+						"url": {
+							"raw": "https://www.aulexo.com/api/v2/funds/funds/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aulexo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"funds",
+								"funds",
+								""
+							]
+						},
+						"description": "Returns a list of funds, with summary information about their managers and share classes."
+					},
+					"response": []
+				},
+				{
+					"name": "Get funds details",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "1tkuFg6JXNvQ0TRDmcgH",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "M9clryEzD1H2UpinLg1j",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA256",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1489338378,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "autoAddParam",
+									"type": "any"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "OAuth oauth_consumer_key=\"1tkuFg6JXNvQ0TRDmcgH\",oauth_signature_method=\"HMAC-SHA256\",oauth_timestamp=\"1489338378\",oauth_nonce=\"TlZRtW\",oauth_version=\"1.0\",oauth_signature=\"Ia5O2lz6Dc%2BXeFeBZn0tIjFZHOidCRH3H%2BSzKjDbXPo%3D\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 100\n}\n"
+						},
+						"url": {
+							"raw": "https://www.aulexo.com/api/v2/funds/fund/",
+							"protocol": "https",
+							"host": [
+								"www",
+								"aulexo",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"funds",
+								"fund",
+								""
+							]
+						},
+						"description": "Retrieves the details of a fund object that has previously been created."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

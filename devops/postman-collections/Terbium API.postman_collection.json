@@ -1,0 +1,649 @@
+{
+	"info": {
+		"name": "Terbium API",
+		"_postman_id": "c2570fdd-9438-fa05-9746-28d59d041abc",
+		"description": "The Terbium API is a set of endpoints for programatically accessing the Matchlight system and is used by both the web interface and the software development kit (SDK).",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Alerts",
+			"description": "An Alert is a notification that is triggered anytime Terbium finds a match for a Record on the dark web. What constitutes an alert varies among record types and account-specific alerting thresholds.",
+			"item": [
+				{
+					"name": "Get user alerts count",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/alerts/count",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"alerts",
+								"count"
+							]
+						},
+						"description": "Get user alerts count."
+					},
+					"response": []
+				},
+				{
+					"name": "List alerts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/alerts",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"alerts"
+							]
+						},
+						"description": "List alerts"
+					},
+					"response": []
+				},
+				{
+					"name": "Get alert details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/alert/5b160346cfb7404ba2aca6458d95c22e/details",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"alert",
+								"5b160346cfb7404ba2aca6458d95c22e",
+								"details"
+							]
+						},
+						"description": "Get alert details"
+					},
+					"response": []
+				},
+				{
+					"name": "Update alert metadata.",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/alert/(alert_id)/edit",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"alert",
+								"(alert_id)",
+								"edit"
+							]
+						},
+						"description": "Update alert metadata."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feeds",
+			"description": "Users can only list data feeds and pull their contents. Contact Terbium Labs to create, edit, or delete a data feed.",
+			"item": [
+				{
+					"name": "Feeds",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/feeds",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"feeds"
+							]
+						},
+						"description": "List of feeds in an account"
+					},
+					"response": []
+				},
+				{
+					"name": "Prepare a feed",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/feed/(feed_name)/prepare",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"feed",
+								"(feed_name)",
+								"prepare"
+							]
+						},
+						"description": "Prepare a feed"
+					},
+					"response": []
+				},
+				{
+					"name": "Status of a feed ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/feed/(feed_name)/link",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"feed",
+								"(feed_name)",
+								"link"
+							]
+						},
+						"description": "Get the state of a feed in preperation"
+					},
+					"response": []
+				},
+				{
+					"name": "List feed hit counts",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/feeds/(feed_name)",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"feeds",
+								"(feed_name)"
+							]
+						},
+						"description": "List feed hit counts over a date range"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"description": "Projects are collections of Records. Both Projects and Records are shared among all users in an account,",
+			"item": [
+				{
+					"name": "Create a project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/project/add",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"project",
+								"add"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List all the projects",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/projects",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"projects"
+							]
+						},
+						"description": "List all the projects in the account"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/feed/(feed_name)/link",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"feed",
+								"(feed_name)",
+								"link"
+							]
+						},
+						"description": "Delete the project."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit project",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/project/(upload_token)/edit",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"project",
+								"(upload_token)",
+								"edit"
+							]
+						},
+						"description": "Edit the project name"
+					},
+					"response": []
+				},
+				{
+					"name": "Get project details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/project/(upload_token)",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"project",
+								"(upload_token)"
+							]
+						},
+						"description": "Get a project’s details"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Records",
+			"description": "Matchlight monitors text which may be PII, Bulk PII, Documents, or Source Code. Generically, these are all referred to as “records”.",
+			"item": [
+				{
+					"name": "List records",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/records",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"records"
+							]
+						},
+						"description": "Get a list records in an account."
+					},
+					"response": []
+				},
+				{
+					"name": "Create new source code record",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/records/upload/source_code/ba834666-db4d-436f-91f0-82695a1f10bf",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"records",
+								"upload",
+								"source_code",
+								"ba834666-db4d-436f-91f0-82695a1f10bf"
+							]
+						},
+						"description": "Create new records in a source code type project."
+					},
+					"response": []
+				},
+				{
+					"name": "Create new document record",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/records/upload/source_code/(upload_token)",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"records",
+								"upload",
+								"source_code",
+								"(upload_token)"
+							]
+						},
+						"description": "Create a new record in a document type project."
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new PII record",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/records/upload/pii/d8e24aa3-5f73-4dfb-9d67-286fd6304d23",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"records",
+								"upload",
+								"pii",
+								"d8e24aa3-5f73-4dfb-9d67-286fd6304d23"
+							]
+						},
+						"description": "Create a new PII record."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a record",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/record/(record_id)/delete",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"record",
+								"(record_id)",
+								"delete"
+							]
+						},
+						"description": "Delete a record"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit record metadata",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/record/(record_id)/edit",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"record",
+								"(record_id)",
+								"edit"
+							]
+						},
+						"description": "Edit the record metadata."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"description": "The API search interface functionality is identical to the web interface and SDK.",
+			"item": [
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Matchlight-Auth",
+								"value": "c32194e728ec43faae1bab41765745c3:8c9ee9cc790c4bdca660f05966648830"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://api.terbiumlabs.com/api/v2/search",
+							"protocol": "https",
+							"host": [
+								"api",
+								"terbiumlabs",
+								"com"
+							],
+							"path": [
+								"api",
+								"v2",
+								"search"
+							]
+						},
+						"description": "Perform a search"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

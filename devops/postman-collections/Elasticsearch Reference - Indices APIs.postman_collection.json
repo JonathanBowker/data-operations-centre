@@ -1,0 +1,1422 @@
+{
+	"info": {
+		"name": "Elasticsearch Reference - Indices APIs",
+		"_postman_id": "e5c182ed-4f0b-1cbf-a9d1-25b626ec4bc8",
+		"description": "http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/indices.html",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "04. Analyse",
+			"description": "",
+			"item": [
+				{
+					"name": "Standard Analyser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "this is a test"
+						},
+						"url": {
+							"raw": "http://{{server}}/_analyze?analyzer=standard",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "analyzer",
+									"value": "standard"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Tokeniser and Filters",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "this is a test"
+						},
+						"url": {
+							"raw": "http://{{server}}/_analyze?tokenizer=keyword&filters=lowercase",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "tokenizer",
+									"value": "keyword"
+								},
+								{
+									"key": "filters",
+									"value": "lowercase"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Analyser of the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "this is a test"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_analyze?text=this+is+a+test",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_analyze"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "this+is+a+test"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "05. Templates",
+			"description": "",
+			"item": [
+				{
+					"name": "Add a Template",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"template\" : \"te*\",\n  \"order\" : 1,\n  \"settings\" : {\n    \"number_of_shards\" : 1\n  },\n  \"mappings\" : {\n    \"type1\" : {\n      \"_source\" : { \"enabled\" : false }\n    }\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_template/template_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add another Template",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"template\" : \"te*\",\n  \"order\" : 2,\n  \"settings\" : {\n    \"number_of_shards\" : 2\n  },\n  \"mappings\" : {\n    \"type1\" : {\n      \"_source\" : { \"enabled\" : true }\n    }\n  },\n  \"aliases\" : {\n    \"alias1\" : {},\n    \"alias2\" : {\n      \"filter\" : {\n        \"term\" : {\"user\" : \"kimchy\" }\n      },\n      \"routing\" : \"kimchy\"\n    },\n    \"{index}-alias\" : {}\n  }\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}/_template/template_2",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Template",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Templates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Templates",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_template/template*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_template",
+								"template*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_settings",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Aliases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "06. Warmers",
+			"description": "",
+			"item": [
+				{
+					"name": "Create an Index w/ a Warmer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"warmers\" : {\n    \"warmer_1\" : {\n      \"types\" : [],\n      \"source\" : {\n        \"query\" : {\n          \"match_all\" : {}\n        },\n        \"facets\" : {\n          \"facet_1\" : {\n            \"terms\" : {\n              \"field\" : \"field\"\n            }\n          }\n        }\n      }\n    }\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put another Warmer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"query\" : {\n    \"match_all\" : {}\n  },\n  \"facets\" : {\n    \"facet_2\" : {\n      \"terms\" : {\n        \"field\" : \"field\"\n      }\n    }\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer_2",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer_2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Warmer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer_1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer_1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Warmers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Warmers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_warmer/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_warmer",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Warmers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/test/_warmer/warmer*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								"_warmer",
+								"warmer*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/test/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"test",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02. Mappings",
+			"description": "",
+			"item": [
+				{
+					"name": "Put a Mapping",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"tweet\" : {\n    \"properties\" : {\n      \"message\" : {\"type\" : \"string\", \"store\" : true }\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Mappings in the Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Mappings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Field Mapping",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping/field/message",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping",
+								"field",
+								"message"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Type Exists",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Mapping",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_mapping",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_mapping"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Index Exists copy",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "08. More POSTs",
+			"description": "",
+			"item": [
+				{
+					"name": "Clear Cache",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm.eu-west-1.es.amazonaws.com/twitter/_cache/clear",
+							"protocol": "http",
+							"host": [
+								"search-bbcm-tbqov3pdyputpqz6ppxgrsn7xm",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"twitter",
+								"_cache",
+								"clear"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Flush",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_flush",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_flush"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_refresh",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_refresh"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Optimize",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_optimize",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_optimize"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "03. Aliases",
+			"description": "",
+			"item": [
+				{
+					"name": "Add an Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"actions\" : [\n    { \"add\" : { \"index\" : \"twitter\", \"alias\" : \"alias1\" } }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Aliases",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removes the Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"actions\" : [\n    { \"remove\" : { \"index\" : \"twitter\", \"alias\" : \"alias1\" } }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Removes the Alias and Add an Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"actions\" : [\n    { \"remove\" : { \"index\" : \"twitter\", \"alias\" : \"alias1\" } },\n    { \"add\" : { \"index\" : \"twitter\", \"alias\" : \"alias2\" } }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Filtered Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"actions\" : [\n    {\n      \"add\" : {\n         \"index\" : \"twitter\",\n         \"alias\" : \"alias3\",\n         \"filter\" : { \"term\" : { \"user\" : \"kimchy\" } }\n      }\n    }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Add a Routing Alias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"actions\" : [\n    {\n      \"add\" : {\n         \"index\" : \"twitter\",\n         \"alias\" : \"alias4\",\n         \"routing\" : \"1\"\n      }\n    }\n  ]\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Aliases in the Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_aliases",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_aliases"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all Aliases in the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_aliases/*",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_aliases",
+								"*"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "07. More GETs",
+			"description": "",
+			"item": [
+				{
+					"name": "Status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_status",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_status"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Stats",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_stats",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_stats"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Segments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_segments",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_segments"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_recovery",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_recovery"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "01. Indices",
+			"description": "",
+			"item": [
+				{
+					"name": "Create an Index w/o Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index w/ YAML Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "index :\n  number_of_shards : 3\n  number_of_replicas : 2\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index w/ JSON Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 3,\n      \"number_of_replicas\" : 2\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Index Settings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/_settings",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Settings",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-vendor",
+								"value": "brandsentiment"
+							},
+							{
+								"key": "X-vendor-auth",
+								"value": "EYakNi3AGWGy359IO84oHmdtnr4"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://brandsentiment.elasticsearch.spinn3r.com/_settings",
+							"protocol": "http",
+							"host": [
+								"brandsentiment",
+								"elasticsearch",
+								"spinn3r",
+								"com"
+							],
+							"path": [
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Check if the Index Exists",
+					"request": {
+						"method": "HEAD",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the Index",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Open the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_open",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_open"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Close the Index",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_close",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_close"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update the Index Settings",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"index\" : {\n    \"number_of_replicas\" : 4\n  }\n}\n"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/_settings",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"_settings"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Put a tweet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"user\" : \"kimchy\",\n  \"post_date\" : \"2009-11-15T14:12:12\",\n  \"message\" : \"trying out Elasticsearch\"\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/1",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Get all tweets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://{{server}}/twitter/tweet/_search",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								"tweet",
+								"_search"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create an Index w/ JSON Settings copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"settings\" : {\n    \"index\" : {\n      \"number_of_shards\" : 3,\n      \"number_of_replicas\" : 2\n    }\n  }\n}"
+						},
+						"url": {
+							"raw": "http://{{server}}/twitter/",
+							"protocol": "http",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"twitter",
+								""
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "List Indeces",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "search-oman-3jcsf74cycz7wsymd6vzr2moju.eu-west-1.es.amazonaws.com/_cat/indices?v",
+							"host": [
+								"search-oman-3jcsf74cycz7wsymd6vzr2moju",
+								"eu-west-1",
+								"es",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"_cat",
+								"indices"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": null
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

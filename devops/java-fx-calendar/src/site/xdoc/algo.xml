@@ -1,0 +1,50 @@
+<document>
+  <properties>
+    <author email="Kit@objectlab.co.uk">Benoit Xhenseval</author>
+    <title>Holiday Handler Algorithms</title>
+  </properties>
+  <head>
+    <meta name="description"
+	content="Each algorithm is explained: forward, backward, etc."
+	/>
+
+    <meta name="keywords"
+        content="Date calculator, IMM Dates, Period Calculator, Financial Calendar, Business Calendar, java, open source" />
+    <meta name="Subject" content="Date Calculators" />
+    <meta name="Copyright" content="ObjectLab Financial Ltd" />
+    <meta name="Language" content="English" />
+    <meta name="Designer" content="ObjectLab Financial Ltd" />
+    <meta name="Distribution" content="Global" />
+    <meta name="robots" content="ALL"/>
+    <meta name="Revisit-After" content="20 Days" />
+  </head>
+  <body>
+    <!-- The body of the document contains a number of sections -->
+    <section name="Holiday Handler Algorithms">
+
+    <subsection name="Forward">
+    <p>If the date is a non-working day, move forward to the next working day.</p>
+    <img src="images/forward.png"/>
+    </subsection>
+    
+    <subsection name="Modified Following">
+    <p>If the date is a non-working day, move forward to the next working day, 
+    UNLESS it crosses over a new month, in which case we revert to find the last working day of the current month.</p>
+    <img src="images/modif-following.png"/>
+    </subsection>
+    
+    <subsection name="Backward">
+    <p>If the date is a non-working day, move backward to the previous working day.</p>
+    <img src="images/backward.png"/>
+    </subsection>
+    
+    <subsection name="Modified Preceding">
+    <p>If the date is a non-working day, move backward to the previous working day, 
+    	UNLESS it crosses over a new month, in which case we revert to find the next working day of the current month.</p>
+    <img src="images/modif-preceding.png"/>
+    </subsection>
+
+    </section>
+
+  </body>
+</document>

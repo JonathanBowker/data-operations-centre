@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Wikidata API (Entities)",
+		"_postman_id": "b38029bd-ce98-60cb-5210-bd81ca014690",
+		"description": "Wikidata is a free linked database that can be read and edited by both humans and machines.\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "entities",
+			"request": {
+				"url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q42&languages=en",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
