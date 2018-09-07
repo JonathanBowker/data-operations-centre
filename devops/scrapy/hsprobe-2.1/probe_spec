@@ -1,0 +1,68 @@
+# File format: each line is of the form
+#
+# <port_range>[,<port_range>...][:[<proto>[,<proto>[...]]]]
+#
+# where <port_range> is of the form
+#
+# <port>[-<port>]
+#
+# where <port> is a (numeric) port to probe,
+# and <proto> is a lowercase string specifying a
+# protocol to be tested on the specified port range(s).
+#
+# Port ranges may overlap, in which case all protocols
+# specified are tested on ports in the overlapping ranges.
+# Ports are probed in the order of first appearance, and
+# for each port, protocols are also probed in the order
+# of first appearance (i.e., specifying a port more than once
+# will not cause repeated probes of that port, and
+# specifying a protcol more than once for any port will
+# not cause repeated probes of that protocol on the same port).
+#
+# Comments are introduced by '#' and continue to the
+# end of the line
+#
+# Examples:
+#
+# # Check whether ports 6000-6009 are open (no protocol check):
+# 6000-6009
+#
+# # Try HTTP on various ports:
+# 80,8000-8008,8080,8081:http
+#
+# # Add a test of HTTPS to ports 80 and 8080 (but not the others):
+# 80,8080:https
+# 
+#
+80:http			# http
+443:https		# https
+22			# shell, sftp
+21			# ftp
+8080:http		# web
+110			# mail, pop
+995			# mail, pops
+143			# mail, imap
+993			# mail, imaps
+25			# mail, smtp
+465			# mail, smtps
+587			# mail, smtps
+4050			# Wide Area File Server, wafs
+5800			# Remote Desktop
+5500			# Remote Desktop
+5900			# Remote Desktop
+6346			# Limeware P2P Fileshare  (Gnutella)
+6347			# Limeware P2P Fileshare
+6665			# chat, forum, freenode, irc
+6666			# chat, forum, freenode, irc
+6667			# chat, forum, freenode, irc
+6697			# chat, forum, freenode, irc  (SSL only),
+6801			# Voip NetPhone
+6881			# BitTorrent
+7000			# chat, forum, freenode, irc (SSL only)
+7070			# chat, forum, freenode, irc
+9878			# Tor Ricochet
+11109			# TorChat
+11119			# TorChat
+11009			# TorChat
+8080,8001-8002:http,https	# web, http
+55080			# skynet

@@ -1,0 +1,43 @@
+from scrapy.contrib.downloadermiddleware.redirect import BaseRedirectMiddleware
+from scrapy.selector import HtmlXPathSelector
+from scrapy.utils.response import get_meta_refresh
+from scrapy import log
+
+#class CustomRefreshMiddleware(MetaRefreshMiddleware):
+class CustomRefreshMiddleware(BaseRedirectMiddleware):
+    enabled_setting = 'REDIRECT_ENABLED'
+    enabled_setting = 'META_REFRESH_ENABLED'
+    def __init__(self, settings):
+        if not settings.getbool(self.enabled_setting):
+            raise NotConfigured
+        
+        self.max_redirect_times = settings.getint('REDIRECT_MAX_TIMES')
+        self.priority_adjust = settings.getint('REDIRECT_PRIORITY_ADJUST')
+
+
+    def _redirect(self, redirected, request, spider, reason):
+        ttl = request.meta.setdefault('redirect_ttl', self.max_redirect_times)
+        redirects = request.meta.get('redirect_times', 0) + 1
+
+        print "REDIRECT....\n"
+        if ttl and redirects <= self.max_redirect_times:
+            print "REDIRECT....\n"
+            return redirected
+
+
+
+    def process_response(self, request, response, spider):
+        url = response.url
+        print "***URI:***" + response.url + "\n"
+        print response.body
+
+        
+        if isinstance(response, HtmlResponse):
+            interval, url = get_meta_refresh(response)
+            if url and interval < self._maxdelay:
+#                redirected = self._redirect_request_using_get(request, url)
+                return self._redirect(redirected, request, spider, 'meta refresh')
+
+        return response
+
+

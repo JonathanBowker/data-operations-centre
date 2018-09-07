@@ -1,0 +1,12 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+sinanews/__init__.py
+sinanews/items.py
+sinanews/pipelines.py
+sinanews/settings.py
+sinanews/spiders/__init__.py
+sinanews/spiders/spider.py
