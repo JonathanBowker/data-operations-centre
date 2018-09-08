@@ -1,4 +1,5 @@
 | No | Region | Country | City | City Code | Organisation | Organisation Code |
+| -- | -- | -- | -- | -- | -- | -- |
 | 1 | APAC | Singapore | Singapore | SGP | Association of Banks in Singapore | ABS |
 | 1 | NCSA | USA | New York | NYC | Engelhard Industrial Bullion | BASF |
 | 1 | EMEA | Turkey | Istanbul | IST | Banks Association of Turkey | BAT |
