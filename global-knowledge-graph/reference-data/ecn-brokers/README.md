@@ -23,5 +23,6 @@
 | 22 | North America | USA | Chicago | CHI  | Interactive Brokers  | IBC | 
 | 23 | EMEA | United Kingdom | London | LDN  | IG Markets | IGML | 
 | 24 | NCSA | Canada | Toronto | TOR  | Oanda | OAT | 
-| 25 | Asia | Hong Kong | Hong Kong | HKG  | Sun Hung Kai Forex and Bullion | SHKE | 
-| 26 | NCSA | USA | Los Angeles | LAX  | 3Dfx | TDF | 
+| 25 | Asia | Australia | Melbourne | MEL  | Pepperstone | PEP |
+| 26 | Asia | Hong Kong | Hong Kong | HKG  | Sun Hung Kai Forex and Bullion | SHKE | 
+| 27 | NCSA | USA | Los Angeles | LAX  | 3Dfx | TDF | 
