@@ -1,4 +1,4 @@
-# Time and Quantity Bucketing and Analysis Engine
+# Time and Quantity (TiQu) Bucketing and Analysis Engine
 
 
 | No | Field | Description | Calculation |
