@@ -21,7 +21,7 @@
 | 19 | EMEA | United Kingdom | London | LDN | London Metal Exchange | LME |
 | 20 | APAC | India | Mumbai | BOM | Mecklai Financial Services | MEC |
 | 21 | NCSA | USA | New York | NYC | ICE Aggregated Rates | OTCD |
-| 22 | NCSA | USA | New York | NYC | ICE Calculated Averages | OTCD |
+| 22 | NCSA | USA | New York | NYC | ICE Calculated Averages | OTCV |
 | 23 | NCSA | USA | New York | NYC | ICE Calculated Cross Rates | OTCX |
 | 24 | NCSA | USA | New York | NYC | Handy & Harman | PMS |
 | 25 | NCSA | USA | New York | NYC | Rada Forex | RADA |
