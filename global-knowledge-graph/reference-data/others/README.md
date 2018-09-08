@@ -1,29 +1,31 @@
-| No | Region | Country | City | City Code | Organisation | Organisation Code |
-| -- | -- | -- | -- | -- | -- | -- |
+| No | Region | Country | City | City Code | ECN | ECN Code |
+| -- | -- | -- | -- | --  | -- | --  |
 | 1 | APAC | Singapore | Singapore | SGP | Association of Banks in Singapore | ABS |
-| 1 | NCSA | USA | New York | NYC | Engelhard Industrial Bullion | BASF |
-| 1 | EMEA | Turkey | Istanbul | IST | Banks Association of Turkey | BAT |
-| 1 | EMEA | United Kingdom | London | LDN | Debt Management Office | BDLv
-| 1 | APAC | Taiwan | Taipei | TPE | Bankers Association of Republic of China | BRC |
-| 1 | NCSA | Brasil | Brasília | BSB | CETIP Custody & Settlement | CET |
-| 1 | APAC | China | Shanghai | SHA | China National Interbank Funding Center | CNI |
-| 1 | APAC | Taiwan | Taipei | TPE | Chunghwa Post | CPT |
-| 1 | EMEA | United Kingdom | London | LDN | Crypto Compare | CTC |
-| 1 | NCSA | USA | New York | NYC | Dow Jones | DJ |
-| 1 | EMEA | Belgium | Brussel | BRU | European Banking Federation | FBE |
-| 1 | APAC | Hong Kong | Hong Kong | HKG | Hong Kong Association of Banks | HKAB |
-| 1 | EMEA | United Kingdom | London | LDN | Intercontinental Exchange Group | ICE |
-| 1 | NCSA | USA | Washington | WAS | International Monetary Fund | IMFD |
-| 1 | EMEA | South Africa | Johannesburg | JNB | Johannesburg Stock Exchange | JSE |
-| 1 | APAC | Korea | Seoul | SOL | Korea Federation of Banks Seoul | KFB |
-| 1 | EMEA | USA | San Francisco | SFO | Kraken Cryptocurrency Exchange  | KKN |
-| 1 | EMEA | United Kingdom | London | LDN | London Bullion Market Association | LBM |
-| 1 | EMEA | United Kingdom | London | LDN | London Metal Exchange | LME |
-| 1 | APAC | India | Mumbai | BOM | Mecklai Financial Services | MEC |
-| 1 | NCSA | USA | New York | NYC | ICE Publishing | OTCD |
-| 1 | NCSA | USA | New York | NYC | ICE Calculated Cross Rates | OTCX |
-| 1 | NCSA | USA | New York | NYC | Handy & Harman | PMS |
-| 1 | NCSA | USA | New York | NYC | Rada Forex | RADA |
-| 1 | APAC | India | Mumbai | BOM | Riddhi Siddhi Bullion | RSBL |
-| 1 | EMEA | United Kingdom | London | LDN | WDX Organisation | WDX |
-| 1 | APAC | Sri Lanka | Colombo | CMB | Wealth Trust Securities | WTEY |
+| 2 | NCSA | USA | New York | NYC | Engelhard Industrial Bullion | BASF |
+| 3 | EMEA | Turkey | Istanbul | IST | Banks Association of Turkey | BAT |
+| 4 | EMEA | United Kingdom | London | LDN | Debt Management Office | BDLv
+| 5 | APAC | Taiwan | Taipei | TPE | Bankers Association of Republic of China | BRC |
+| 6 | NCSA | Brasil | Brasília | BSB | CETIP Custody & Settlement | CET |
+| 7 | APAC | China | Shanghai | SHA | China National Interbank Funding Center | CNI |
+| 8 | APAC | Taiwan | Taipei | TPE | Chunghwa Post | CPT |
+| 9 | EMEA | United Kingdom | London | LDN | Crypto Compare | CTC |
+| 10 | NCSA | USA | New York | NYC | Dow Jones | DJ |
+| 11 | EMEA | Belgium | Brussel | BRU | European Banking Federation | FBE |
+| 12 | APAC | Hong Kong | Hong Kong | HKG | Hong Kong Association of Banks | HKAB |
+| 13 | EMEA | United Kingdom | London | LDN | Intercontinental Exchange Group | ICE |
+| 14 | NCSA | USA | Washington | WAS | International Monetary Fund | IMFD |
+| 15 | EMEA | South Africa | Johannesburg | JNB | Johannesburg Stock Exchange | JSE |
+| 16 | APAC | Korea | Seoul | SOL | Korea Federation of Banks Seoul | KFB |
+| 17 | EMEA | USA | San Francisco | SFO | Kraken Cryptocurrency Exchange  | KKN |
+| 18 | EMEA | United Kingdom | London | LDN | London Bullion Market Association | LBM |
+| 19 | EMEA | United Kingdom | London | LDN | London Metal Exchange | LME |
+| 20 | APAC | India | Mumbai | BOM | Mecklai Financial Services | MEC |
+| 21 | NCSA | USA | New York | NYC | ICE Publishing | OTCD |
+| 22 | NCSA | USA | New York | NYC | ICE Calculated Cross Rates | OTCX |
+| 23 | NCSA | USA | New York | NYC | Handy & Harman | PMS |
+| 24 | NCSA | USA | New York | NYC | Rada Forex | RADA |
+| 25 | APAC | India | Mumbai | BOM | Riddhi Siddhi Bullion | RSBL |
+| 26 | EMEA | United Kingdom | London | LDN | WDX Organisation | WDX |
+| 27 | APAC | Sri Lanka | Colombo | CMB | Wealth Trust Securities | WTEY |
+
+
