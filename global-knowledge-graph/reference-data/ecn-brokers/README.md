@@ -12,7 +12,7 @@
 | 11 | EMEA | Czech Republic | Praha | CZK  | 42 Financial Services | FSP |
 | 12 | NCSA | USA | New York | NYC  | FX Dealer Direct | FXDC | 
 | 13 | NCSA | USA | New York | NYC  | Forex Capital Markets (FXCM) | FXN | 
-| 14 | Asia | New Zealand | Auckland | AKL  | FX Open | FXO | 
+| 14 | APAC | New Zealand | Auckland | AKL  | FX Open | FXO | 
 | 15 | NCSA | USA | New York | NYC  | Gain Capital | GACI | 
 | 16 | EMEA | United Kingdom | London | LDN  | GBI Direct London  | GBI | 
 | 17 | NCSA | USA | New York | NYC  | GBI Direct New York | GBI | 
@@ -20,7 +20,7 @@
 | 19 | EMEA | Switzerland | Zurich | ZUR  | GBI Direct Zurich | GBI | 
 | 20 | APAC | Hong Kong | Hong Kong | HKG  | Hong Kong Forex Investment | HFH | 
 | 21 | NCSA | USA | New York | NYC  | Hotspot FX  | HSFX | 
-| 22 | North America | USA | Chicago | CHI  | Interactive Brokers  | IBC | 
+| 22 | NCSA | USA | Chicago | CHI  | Interactive Brokers  | IBC | 
 | 23 | EMEA | United Kingdom | London | LDN  | IG Markets | IGML | 
 | 24 | NCSA | Canada | Toronto | TOR  | Oanda | OAT | 
 | 25 | APAC | Australia | Melbourne | MEL  | Pepperstone | PEP |
