@@ -3,7 +3,7 @@
 | 1 | APAC | Singapore | Singapore | SGP | Association of Banks in Singapore | ABS |
 | 2 | NCSA | USA | New York | NYC | Engelhard Industrial Bullion | BASF |
 | 3 | EMEA | Turkey | Istanbul | IST | Banks Association of Turkey | BAT |
-| 4 | EMEA | United Kingdom | London | LDN | Debt Management Office | BDLv
+| 4 | EMEA | United Kingdom | London | LDN | Debt Management Office | BDL |
 | 5 | APAC | Taiwan | Taipei | TPE | Bankers Association of Republic of China | BRC |
 | 6 | NCSA | Brasil | Brasília | BSB | CETIP Custody & Settlement | CET |
 | 7 | APAC | China | Shanghai | SHA | China National Interbank Funding Center | CNI |
