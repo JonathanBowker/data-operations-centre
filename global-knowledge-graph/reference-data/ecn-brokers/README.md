@@ -1,7 +1,7 @@
 | No | Region | Country | City | City Code | ECN | ECN Code |
 | -- | -- | -- | -- | --  | -- | --  |
 | 1 | APAC | Malaysia | Kuala Lumpur | KUL  | Affin Money Brokers  | AFUO  |
-| 2 | Asia | Australia | Sydney | SYD  | Axicorp Financial Services  | AXI  |
+| 2 | APAC | Australia | Sydney | SYD  | Axicorp Financial Services  | AXI  |
 | 3 | NCSA | USA | New York | NYC  | Cougar Capital Management | CCM  |
 | 5 | EMEA | France | Paris | PAR  | CPR Billets | CPBI  |
 | 6 | APAC | New Zealand | Auckland | AKL  | Divisa | DCFX  |
