@@ -1,6 +1,7 @@
 # Time and Quantity (TiQu) Bucketing and Analysis Engine
 
 
+
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | ActualBidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
