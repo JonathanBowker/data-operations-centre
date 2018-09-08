@@ -20,12 +20,13 @@
 | 18 | EMEA | United Kingdom | London | LDN | London Bullion Market Association | LBM |
 | 19 | EMEA | United Kingdom | London | LDN | London Metal Exchange | LME |
 | 20 | APAC | India | Mumbai | BOM | Mecklai Financial Services | MEC |
-| 21 | NCSA | USA | New York | NYC | ICE Publishing | OTCD |
-| 22 | NCSA | USA | New York | NYC | ICE Calculated Cross Rates | OTCX |
-| 23 | NCSA | USA | New York | NYC | Handy & Harman | PMS |
-| 24 | NCSA | USA | New York | NYC | Rada Forex | RADA |
-| 25 | APAC | India | Mumbai | BOM | Riddhi Siddhi Bullion | RSBL |
-| 26 | EMEA | United Kingdom | London | LDN | WDX Organisation | WDX |
-| 27 | APAC | Sri Lanka | Colombo | CMB | Wealth Trust Securities | WTEY |
+| 21 | NCSA | USA | New York | NYC | ICE Aggregated Rates | OTCD |
+| 22 | NCSA | USA | New York | NYC | ICE Calculated Averages | OTCD |
+| 23 | NCSA | USA | New York | NYC | ICE Calculated Cross Rates | OTCX |
+| 24 | NCSA | USA | New York | NYC | Handy & Harman | PMS |
+| 25 | NCSA | USA | New York | NYC | Rada Forex | RADA |
+| 26 | APAC | India | Mumbai | BOM | Riddhi Siddhi Bullion | RSBL |
+| 27 | EMEA | United Kingdom | London | LDN | WDX Organisation | WDX |
+| 28 | APAC | Sri Lanka | Colombo | CMB | Wealth Trust Securities | WTEY |
 
 
