@@ -24,5 +24,9 @@
 | 23 | EMEA | United Kingdom | London | LDN  | IG Markets | IGML | 
 | 24 | NCSA | Canada | Toronto | TOR  | Oanda | OAT | 
 | 25 | Asia | Australia | Melbourne | MEL  | Pepperstone | PEP |
-| 26 | Asia | Hong Kong | Hong Kong | HKG  | Sun Hung Kai Forex and Bullion | SHKE | 
-| 27 | NCSA | USA | Los Angeles | LAX  | 3Dfx | TDF | 
+| 26 | Asia | New Zealand | Auckland | AKL  | PFD Services | PFD |
+| 27| Asia | India | Mumbai | BOM  | SAK Forex | SAK |
+| 28 | Asia | Hong Kong | Hong Kong | HKG  | Sun Hung Kai Forex and Bullion | SHKE | 
+| 29 | NCSA | USA | Los Angeles | LAX  | 3Dfx | TDF | 
+| 30 | EMEA | Cyprus | Limmasol | LIM  | Windsor Brokers | WBRS | 
+
