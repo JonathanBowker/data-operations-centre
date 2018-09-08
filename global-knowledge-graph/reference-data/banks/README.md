@@ -32,23 +32,24 @@
 | 30 | Malaysia | MYBK  | Maybank | ```*.*.mybk.*.*.*.*``` | 
 | 31 | Denmark | NDEA  | Nordea | ```*.*.ndea.*.*.*.*``` | 
 | 32 | Malaysia | NTM  | Nittan Capital Bank  | ```*.*.ntm.*.*.*.*``` | 
-| 33 | Finland | OKOY  | Pohjola Bank | ```*.*.okoy.*.*.*.*``` | 
-| 34 | Qatar | QCB  | Qatar Central Bank | ```*.*.qcb.*.*.*.*``` | 
-| 35 | United Kingdom | RABO  | Rabobank | ```*.*.rabo.*.*.*.*``` | 
-| 36 | United Kingdom | RBOS  | Royal Bank of Scotland | ```*.*.rbos.*.*.*.*``` | 
-| 37 | Sweden | RIKS  | Sveriges Riksbank | ```*.*.riks.*.*.*.*``` | 
-| 38 | Bosnia and Herzegovina | RZBA  | Raiffeisen Bank | ```*.*.rzba.*.*.*.*``` | 
-| 39 | Denmark | SAXO  | Saxo Bank | ```*.*.saxo.*.*.*.*``` | 
-| 40 | Taiwan | SCBL  | Standard Chartered Bank | ```*.*.scbl.*.*.*.*``` | 
-| 41 | Albania | SGSB  | Raiffeisen Bank | ```*.*.sgsb.*.*.*.*``` | 
-| 42 | Taiwan | SINO  | Bank Sinopac Taipei  | ```*.*.sino.*.*.*.*``` | 
-| 43 | Germany | SOLA  | Landesbank Baden-Wuerttemberg | ```*.*.sola.*.*.*.*``` | 
-| 44 | Switzerland | SQZ  | Swissquote Bank | ```*.*.sqz.*.*.*.*``` | 
-| 45 | Taiwan | TACB  | Taiwan Cooperative Bank  | ```*.*.tacb.*.*.*.*``` | 
-| 46 | Taiwan | TPBK  | Taipei Fubon Commercial Bank | ```*.*.tpbk.*.*.*.*``` | 
-| 47 | Germany | TUBD  | HSBC Trinkaus Bank | ```*.*.tubd.*.*.*.*``` |
-| 48 | Switzerland | UBSW  | UBS Investment Bank | ```*.*.ubsw.*.*.*.*``` | 
-| 49 | Singapore | UOVB  | United Overseas Bank | ```*.*.uovb.*.*.*.*``` | 
-| 50 | Taiwan | UWCB  | Cathay United Bank | ```*.*.uwcb.*.*.*.*``` |
-| 51 | Romania | WBAN  | Sanpaolo IMI Bank | ```*.*.wban.*.*.*.*``` 
-| 52 | Switzerland | ZKBK  | Kantonalbank | ```*.*.zkbk.*.*.*.*``` |
+| 33 | Denmark | NYKB  | Copenhagen | ```*.*.nykb.*.*.*.*``` | 
+| 34 | Finland | OKOY  | Pohjola Bank | ```*.*.okoy.*.*.*.*``` | 
+| 35 | Qatar | QCB  | Qatar Central Bank | ```*.*.qcb.*.*.*.*``` | 
+| 36 | United Kingdom | RABO  | Rabobank | ```*.*.rabo.*.*.*.*``` | 
+| 37 | United Kingdom | RBOS  | Royal Bank of Scotland | ```*.*.rbos.*.*.*.*``` | 
+| 38 | Sweden | RIKS  | Sveriges Riksbank | ```*.*.riks.*.*.*.*``` | 
+| 39 | Bosnia and Herzegovina | RZBA  | Raiffeisen Bank | ```*.*.rzba.*.*.*.*``` | 
+| 40 | Denmark | SAXO  | Saxo Bank | ```*.*.saxo.*.*.*.*``` | 
+| 41 | Taiwan | SCBL  | Standard Chartered Bank | ```*.*.scbl.*.*.*.*``` | 
+| 42 | Albania | SGSB  | Raiffeisen Bank | ```*.*.sgsb.*.*.*.*``` | 
+| 43 | Taiwan | SINO  | Bank Sinopac Taipei  | ```*.*.sino.*.*.*.*``` | 
+| 44 | Germany | SOLA  | Landesbank Baden-Wuerttemberg | ```*.*.sola.*.*.*.*``` | 
+| 45 | Switzerland | SQZ  | Swissquote Bank | ```*.*.sqz.*.*.*.*``` | 
+| 46 | Taiwan | TACB  | Taiwan Cooperative Bank  | ```*.*.tacb.*.*.*.*``` | 
+| 47 | Taiwan | TPBK  | Taipei Fubon Commercial Bank | ```*.*.tpbk.*.*.*.*``` | 
+| 48 | Germany | TUBD  | HSBC Trinkaus Bank | ```*.*.tubd.*.*.*.*``` |
+| 49 | Switzerland | UBSW  | UBS Investment Bank | ```*.*.ubsw.*.*.*.*``` | 
+| 50 | Singapore | UOVB  | United Overseas Bank | ```*.*.uovb.*.*.*.*``` | 
+| 51 | Taiwan | UWCB  | Cathay United Bank | ```*.*.uwcb.*.*.*.*``` |
+| 52 | Romania | WBAN  | Sanpaolo IMI Bank | ```*.*.wban.*.*.*.*``` 
+| 53 | Switzerland | ZKBK  | Kantonalbank | ```*.*.zkbk.*.*.*.*``` |
