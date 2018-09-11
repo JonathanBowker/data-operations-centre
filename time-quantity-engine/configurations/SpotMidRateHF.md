@@ -18,7 +18,8 @@ A median for both the bid rates and ask rates are independently calculated over 
 | 2 | Trading Day | YYYYddMM | 20180101 |
 | 3 | CcyPair | Currency pair | BASE/REF |
 | 4 | Tenor | Tenor | SP |
+| 5 | TransactionCount | Transaction count | Integer |
 | 5 | MedianBidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
-| 6 | MedianRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
+| 6 | MedianAskRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
 | 7 | MidRate | The calculated Mid rate | (MedianAskRate) - (MedianBidRate) | 
 
