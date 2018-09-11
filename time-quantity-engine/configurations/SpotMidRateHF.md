@@ -6,8 +6,11 @@ A median for both the bid rates and ask rates are independently calculated over 
 ## Engine Configuration:
 
 * **Window Size**: 5 milliseconds
-* **Input**: All Spot rates excluding - OTCV and OTCD sources.
-* **Output** - _See table below_
+* **Input**: All Spot rates CcyPair, Tenor, BidRate, AskRate 
+* **Filters**: Exclude OTCV and OTCD sources.
+* **Output** - See table below
+
+## OutPut Fields:
 
 | No | Field | Descrip§tion | Calculation |
 | -- | -- | -- | -- |
