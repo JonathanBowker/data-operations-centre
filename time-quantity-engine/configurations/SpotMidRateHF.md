@@ -1,4 +1,4 @@
-# TiQu - High Frequency Spot MidRate Calculations
+# TiQu - High Frequency Spot MidRate (Benchmark)
 
 ## Spot Mid-Rate and Spread Calculation
 A median for both the bid rates and ask rates are independently calculated over a fixed time period bucket, then added together and divided by 2 to create the spot mid-rate. The bid and offer median rates are also subtracted to calculate the spread. The outright forward bid and offer median rates are also subtracted to calculate the median spread.
