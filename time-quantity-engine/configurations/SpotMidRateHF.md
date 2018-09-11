@@ -15,12 +15,12 @@ A median for both the bid rates and ask rates are independently calculated over 
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | CreatedAt | Timeststamp Created | YYYYmmDD'T'HH:mm:SS.ZZZ |
-| 1 | Record No | 0000001 to 4300000 (over 24 Hours) | 0000001 |
-| 2 | TradingDay | YYYYmmDD | 20180101 |
-| 3 | CcyPair | Currency pair | BASE/REF |
-| 4 | Tenor | Tenor | SP |
-| 5 | TransactionCount | Transaction count | Integer |
-| 5 | MedianBidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
-| 6 | MedianAskRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
-| 7 | MidRate | The calculated Mid rate | (MedianAskRate) - (MedianBidRate) | 
+| 2 | Record No | 0000001 to 4300000 (over 24 Hours) | 0000001 |
+| 3 | TradingDay | YYYYmmDD | 20180101 |
+| 4 | CcyPair | Currency pair | BASE/REF |
+| 5 | Tenor | Tenor | SP |
+| 6 | TransactionCount | Transaction count | Integer |
+| 7 | MedianBidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
+| 8 | MedianAskRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
+| 9 | MidRate | The calculated Mid rate | (MedianAskRate) - (MedianBidRate) | 
 
