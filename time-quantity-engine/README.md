@@ -41,6 +41,7 @@ Each bucket for Spot, Outright Forward and Interest Rate Differentials is analys
 * **Input 2 - Outright Forwards** - _Outright forward rates from Step 3_
 * **Input 3 - Interest Rate Differentials** - _Interest Rate Differentials from Step 4_
 
+## OUTPUT TABLE
 
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
