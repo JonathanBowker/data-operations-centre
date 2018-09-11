@@ -11,7 +11,6 @@ A median for both the bid rates and ask rates are independently calculated over 
 
 | No | Field | Descrip§tion | Calculation |
 | -- | -- | -- | -- |
-
 | 1 | CcyPair | Currency pair | (Sum of Bid transactions)/ TransactionCount |
 | 2 | Tenor | Tenor = (SP) | Tenor = (SP) |
 | 3 | BidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
