@@ -12,7 +12,7 @@ A median for both the bid rates and ask rates are independently calculated over 
 
 ## OutPut Fields:
 
-| No | Field | Descrip§tion | Calculation |
+| No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | CcyPair | Currency pair | (Sum of Bid transactions)/ TransactionCount |
 | 2 | Tenor | Tenor = (SP) | Tenor = (SP) |
