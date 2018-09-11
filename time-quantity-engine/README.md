@@ -1,6 +1,6 @@
 # Time and Quantity (TiQu) Bucketing and Analysis Engine
 
-This analysis is calculated on streaming Spot and Calculated Forward Rates.
+This analysis is performed on streaming Spot and Calculated Forward Rates.
 
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
