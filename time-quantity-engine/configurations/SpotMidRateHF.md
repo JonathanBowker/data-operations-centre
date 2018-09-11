@@ -15,7 +15,7 @@ A median for both the bid rates and ask rates are independently calculated over 
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | Record No | 0000001 to 4300000 (over 24 Hours) | 0000001 |
-| 2 | Trading Day | YYYYddMM | 20180101 |
+| 2 | TradingDay | YYYYddMM | 20180101 |
 | 3 | CcyPair | Currency pair | BASE/REF |
 | 4 | Tenor | Tenor | SP |
 | 5 | TransactionCount | Transaction count | Integer |
