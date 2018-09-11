@@ -41,9 +41,8 @@ Each window for Spot, Outright Forward and Interest Rate Differentials is analys
 * **Input 2 - Outright Forwards** - _Outright forward rates from Step 3_
 * **Input 3 - Interest Rate Differentials** - _Interest Rate Differentials from Step 4_
 
-**Output** - See table below
-
-
+## Output Field Table
+Step 6 - Price Volatility Calculation
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | BidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
