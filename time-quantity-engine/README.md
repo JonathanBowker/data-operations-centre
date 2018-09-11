@@ -7,7 +7,7 @@
 | 1 | BidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
 | 2 | AskRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
 | 3 | PreviousMidRate | The previous bucket MidRate | Carry forward previous bucket MidRate | 
-| 4 | MidRate | The mid-rate between the MidBidRate and the MidAskRate | (MidBidRate + MidAskRate)/2 | 
+| 4 | MidRate | The MidRate between the MidBidRate and the MidAskRate | (MidBidRate + MidAskRate)/2 | 
 | 5 | MidRateChange | The change in rate between the current bucket and the previous bucket | (Previous bucket MidChange) – (Current bucket MidChange) | 
 | 6 | RateChange% | The MidChange as a percentage | (MidChange / Previous bucket MidChange) x 100 | 
 | 7 | PreviousSpread | The previous bucket Spread | MidBidRate - MidAskRate | 
