@@ -19,7 +19,7 @@ A median for both the bid forward points and offer forward points are independen
 ## Step 3 - Outright Forward Mid-Rate and Spread Calculation
 For each currency pair and tenor, the forward point bid and ask medians are added to or subtracted from the corresponding spot bid and ask rate medians (by timestamp) to calculate the outright forward ask and bid rates. The outright forward ask and bid rates are then added together and divided by 2 to create the outright forward mid for each currency pair and tenor. The outright forward bid and offer median rates are also subtracted to calculate the median spread.
 
-**Input** - _spot bid, ask spot mid rates form Step 1 and outright forward ask and bid rates from Step 3_
+**Input** - _spot bid, ask spot mid rates from Step 1 and outright forward ask and bid rates from Step 3_
 
 **Output** - _See table below_
 
