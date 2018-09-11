@@ -17,8 +17,8 @@ A median for both the bid rates and ask rates are independently calculated over 
 | 4 | AskRate | The median Ask rate | (Sum of Ask transactions)/ TransactionCount | 
 | 5 | MidRate | The calculated Mid rate | (AskRate)- (BidRate) | 
 | 6 | MidRateChange | The change in Spread between the current bucket and the previous bucket | (previous MidRate – current MidRate) |
-| 6 | MidRateChange% | The change in Spread between the current bucket and the previous bucket | (previous MidRate – current MidRate) |
+| 6 | MidRateChange% | The change in Spread between the current bucket and the previous bucket as a % | (previous MidRate – current MidRate) |
 | 7| Spread | The Bid-Ask spread | MidBidRate - MidAskRate | 
 | 9 | SpreadChange | The change in Spread between the current bucket and the previous bucket | (previous MidSpread – MidSpread) | 
-| 8 | SpreadChange% | The MidSpread as a percentage | (MidBidRate - MidAskRate)/ MidAskRate | 
+| 8 | SpreadChange% | The change in Spread between the current bucket and the previous bucket as a % | (MidBidRate - MidAskRate)/ MidAskRate | 
 
