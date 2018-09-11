@@ -41,8 +41,7 @@ Each window for Spot, Outright Forward and Interest Rate Differentials is analys
 * **Input 2 - Outright Forwards** - _Outright forward rates from Step 3_
 * **Input 3 - Interest Rate Differentials** - _Interest Rate Differentials from Step 4_
 
-## Output Field Table
-Step 6 - Price Volatility Calculation
+
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
 | 1 | BidRate | The median Bid rate | (Sum of Bid transactions)/ TransactionCount |
@@ -55,7 +54,7 @@ Step 6 - Price Volatility Calculation
 | 8 | Spread | The Bid-Ask spread | MidBidRate - MidAskRate | 
 | 9 | Spread% | The MidSpread as a percentage | (MidBidRate - MidAskRate)/ MidAskRate | 
 | 10 | SpreadChange | The change in MidRate between the current bucket and the previous bucket | (previous MidSpread – MidSpread) | 
-| 11 | SpreadChange% |The change in MidRate between the current bucket and the previous bucket as a percentage | (MidSpread / Previous bucket MidSpread) x 100 | 
+| 11 | SpreadChange% | The change in MidRate between the current bucket and the previous bucket as a percentage | (MidSpread / Previous bucket MidSpread) x 100 | 
 | 12 | TransactionCount | Number of transaction (quotes) in the bucket | Total Number of Transactions | 
 | 13 | ChangeCount | Number of price change transactions (quotes) in the bucket | Total Number of price change transactions in the bucket | 
 | 14 | ChangeAmount | Total amount of price change in the bucket | Total Number of price change transactions in the bucket | 
