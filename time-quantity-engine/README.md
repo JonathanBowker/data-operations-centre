@@ -7,28 +7,28 @@ A median for both the bid rates and ask rates are independently calculated over 
 
 **Input** - _bid, ask spot rates excluding contributions from OTCD and OTCV (OTCX is required becuase is provides calculated spot rates for the cross currencies)_
 
-**Output** - See table below
+**Output** - _See table below_
 
 ## Step 2 - Forward Point Mid-Rate and Spread Calculation
 A median for both the bid forward points and offer forward points are independently calculated over a fixed time period bucket, then added together and divided by 2 to create the forward point mid for each currency pair and tenor. 
 
 **Input** - _bid, ask forward point "carry rates" excluding contributions from OTCD and OTCV (OTCX is required becuase is provides calculated spot rates for the cross currencies)_
 
-**Output** - These are only held for calculation of the Outright Forwards in Step -3 
+**Output** - _These are only held for calculation of the Outright Forwards in Step -3_ 
 
 ## Step 3 - Outright Forward Mid-Rate and Spread Calculation
 For each currency pair and tenor, the forward point bid and ask medians are added to or subtracted from the corresponding spot bid and ask rate medians (by timestamp) to calculate the outright forward ask and bid rates. The outright forward ask and bid rates are then added together and divided by 2 to create the outright forward mid for each currency pair and tenor. The outright forward bid and offer median rates are also subtracted to calculate the median spread.
 
 **Input** - _spot bid, ask spot mid rates form Step 1 and outright forward ask and bid rates from Step 3_
 
-**Output** - See table below
+**Output** - _See table below_
 
 ## Step 4 - Interest Rate Differential Mid-Rate and Spread Calculation
 For each currency pair and tenor, the outright forward rate bid and ask medians are divided by the corresponding spot (by timestamp) and then annualised before subtracting 1 to calculate the interest rate differential.
 
 **Input** - _outright forward bid and ask rates from Step 3 and the spot bid, ask spot mid rates from Step 1_
 
-**Output** - See table below
+**Output** - _See table below_
 
 # Additional Bucket Calculations
 ## Step 5 - Price Change and Direction Velocity Calculation
