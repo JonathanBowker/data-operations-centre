@@ -1,5 +1,5 @@
 # TiQu - High Frequency Spot MidRate (Benchmark)
-This is a benchmark Spot stream is produced for DOC Forward Rate and other calculations, it is NOT an offcially administered benchmark rate for TCA calculations and cannot be used for TCA calculationsas even though the methodology is the same.
+This is a benchmark Spot stream is produced for DOC Forward Rate and other calculations, it is NOT an offcially administered benchmark rate for Trade Cost Analysis (TCA) calculations and therefore must NOT be used for TCA calculations. **(_However, the calculation methodology used is the same as that used for offcially administered benchmark mid rate calculation__)**.
 
 ## Spot Mid-Rate and Spread Calculation
 A median for both the bid rates and ask rates are independently calculated over a fixed time period bucket, then added together and divided by 2 to create the spot mid-rate. The bid and offer median rates are also subtracted to calculate the spread. The outright forward bid and offer median rates are also subtracted to calculate the median spread.
