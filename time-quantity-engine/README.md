@@ -30,15 +30,16 @@ For each currency pair and tenor, the outright forward rate bid and ask medians 
 
 **Output** - See table below
 
+# Additional Bucket Calculations
 ## Step 5 - Price Change and Direction Velocity Calculation
 Each window for Spot, Outright Forward and Interest Rate Differentials is analysed for price change and direction velocity. Price change is calculated by subtracting the current window mid from the previous window mid, and the direction velocity is measured by the sum of the amount changed divided by the number of price changes in each window.
 
 ## Step 6 - Price Volatility Calculation
 Each window for Spot, Outright Forward and Interest Rate Differentials is analysed for opening, high, low and close prices as well as the number of price changes (ChangeCount) in each window. 
 
-**Input 1 - Spots** - _Spot rates from Step 1_
-**Input 2 - Outright Forwards** - _Outright forward rates from Step 3_
-**Input 3 - Interest Rate Differentials** - _Interest Rate Differentials from Step 4_
+* **Input 1 - Spots** - _Spot rates from Step 1_
+* **Input 2 - Outright Forwards** - _Outright forward rates from Step 3_
+* **Input 3 - Interest Rate Differentials** - _Interest Rate Differentials from Step 4_
 
 **Output** - See table below
 
@@ -60,3 +61,9 @@ Each window for Spot, Outright Forward and Interest Rate Differentials is analys
 | 13 | ChangeCount | Number of price change transactions (quotes) in the bucket | Total Number of price change transactions in the bucket | 
 | 14 | ChangeAmount | Total amount of price change in the bucket | Total Number of price change transactions in the bucket | 
 | 15 | PriceDrift | Number of transaction (quotes) in the bucket | ChangeAmount / ChangeCount | 
+| 16 | CloseBid | Closing Bid rate | Closing transaction Bid rate | 
+| 17 | CloseAsk | Closing Bid rate | Closing transaction Bid rate | 
+| 18 | CloseMid | Closing Bid rate | Closing transaction Bid rate | 
+| 19 | Open | Opening  Mid rate | Opening transaction Bid rate | 
+| 20 | High | Highest Mid rate | Highest Mid rate in the bucket | 
+| 21 | Low | Lowest Mid rate | Lowest Mid rate in the bucket | 
