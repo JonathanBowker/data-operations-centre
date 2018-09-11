@@ -10,7 +10,7 @@ A median for both the bid rates and ask rates are independently calculated over 
 * **Filters**: Exclude OTCV and OTCD sources.
 * **Output** - See table below
 
-## OutPut Fields:
+## OutPut Table:
 
 | No | Field | Description | Calculation |
 | -- | -- | -- | -- |
