@@ -1,6 +1,6 @@
 | No | Region | Country | City | City Code | ECN | ECN Code |
 | -- | -- | -- | -- | --  | -- | --  |
-| 1 | APAC | Malaysia | Kuala Lumpur | KUL  | Affin Money Brokers  | AFUO  |
+| 1 | APAC | Malaysia |  |   |   |   |
 | 2 | EMEA | France | Paris | PAR  | CPR Billets | CPBI  |
 | 3 | APAC | New Zealand | Auckland | AKL  | Divisa | DCFX  |
 | 4 | NCSA | USA | New York | NYC  | Edgewater Market | EWN  |
