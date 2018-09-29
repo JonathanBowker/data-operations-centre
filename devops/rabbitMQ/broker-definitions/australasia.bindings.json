@@ -1,0 +1,45 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "australasia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.audusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "australasia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.nzdusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "australasia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpgk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "australasia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdxpf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "australasia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdfjd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
