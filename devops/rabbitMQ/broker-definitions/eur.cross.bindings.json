@@ -4,7 +4,7 @@
         {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurusd.s.*.*",
         "arguments": {}
@@ -12,7 +12,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurgbp.s.*.*",
         "arguments": {}
@@ -20,7 +20,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.euraud.s.*.*",
         "arguments": {}
@@ -28,7 +28,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurnzd.s.*.*",
         "arguments": {}
@@ -36,7 +36,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurjpy.s.*.*",
         "arguments": {}
@@ -44,7 +44,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurcny.s.*.*",
         "arguments": {}
@@ -52,7 +52,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurchf.s.*.*",
         "arguments": {}
@@ -60,7 +60,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurcad.s.*.*",
         "arguments": {}
@@ -68,7 +68,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurmxn.s.*.*",
         "arguments": {}
@@ -76,7 +76,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurinr.s.*.*",
         "arguments": {}
@@ -84,7 +84,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurbrl.s.*.*",
         "arguments": {}
@@ -92,7 +92,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurrub.s.*.*",
         "arguments": {}
@@ -100,7 +100,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurkrw.s.*.*",
         "arguments": {}
@@ -108,7 +108,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.euridr.s.*.*",
         "arguments": {}
@@ -116,7 +116,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eursek.s.*.*",
         "arguments": {}
@@ -124,7 +124,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eursgd.s.*.*",
         "arguments": {}
@@ -132,7 +132,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurzar.s.*.*",
         "arguments": {}
@@ -140,7 +140,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurisk.s.*.*",
         "arguments": {}
@@ -148,7 +148,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurczk.s.*.*",
         "arguments": {}
@@ -156,7 +156,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurdkk.s.*.*",
         "arguments": {}
@@ -164,7 +164,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurhkd.s.*.*",
         "arguments": {}
@@ -172,7 +172,7 @@
     {
         "source": "lix.data.incoming",
         "vhost": "/",
-        "destination": "eur-cross",
+        "destination": "eur.cross",
         "destination_type": "exchange",
         "routing_key": "*.*.*.eurnok.s.*.*",
         "arguments": {}
