@@ -1,0 +1,325 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdngn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdzar.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdzmw.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdegp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usddzd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdaoa.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmad.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsdg.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkes.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdetb.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtzs.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtnd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlyd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdghs.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcdf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdugx.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbwp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdxaf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdnad.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmur.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmga.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdrwf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdgnf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmro.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsll.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdxof.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmwk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdern.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdszl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbif.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlsl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlrd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcve.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usddjf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdscr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsos.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdgmd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkmf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "africa",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdstd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
