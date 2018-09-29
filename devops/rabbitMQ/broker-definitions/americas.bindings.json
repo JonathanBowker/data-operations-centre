@@ -1,0 +1,213 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcad.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmxn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbrl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdars.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdveb.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcop.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdclp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpen.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcuc.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usddop.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdgtq.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdury.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcrc.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpab.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbob.s.*.*,
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpyg.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsvc.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdttd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhnl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdjmd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdnio.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhtg.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbsd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsrd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdgyd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "americas",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkyd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
