@@ -1,0 +1,133 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.eurusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.audusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.nzdusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcny.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdchf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcad.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmxn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdinr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbrl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdrub.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkrw.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdzar.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsgd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "majors",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhkd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
