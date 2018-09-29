@@ -1,0 +1,181 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.eurusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdchf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdrub.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtry.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsek.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpln.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdnok.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usddkk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdczk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdron.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhuf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usduah.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbyr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhrv.s.*.*,
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsrb.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbih.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdisk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdall.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmkd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmdl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "europe",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbgn.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
