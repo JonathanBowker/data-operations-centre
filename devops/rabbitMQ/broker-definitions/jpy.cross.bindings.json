@@ -1,0 +1,133 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.eurjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.audjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.nzdjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.cnyjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.chfjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.cadjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.mxnjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.inrjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.brljpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.rubjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.krwjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.idrjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.hkdjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "jpy.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.sgdjpy.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
