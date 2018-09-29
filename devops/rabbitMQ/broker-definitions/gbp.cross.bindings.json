@@ -1,0 +1,149 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpusd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.eurgbp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpaud.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpnzd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpcny.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpchf.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpcad.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpmxn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpinr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpbrl.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbprub.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpkrw.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpidr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpsgd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpczk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbpdkk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "gbp.cross",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.gbphkd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
