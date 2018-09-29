@@ -1,0 +1,373 @@
+{
+  "rabbit_version": "3.6.15",
+  "bindings": [
+        {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdjpy.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdcny.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdinr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkrw.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdidr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsar.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtwd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdirr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdaed.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdthb.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmyr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsgd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdils.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdhkd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdphp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdpkr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdiqd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkzt.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdqar.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdvnd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbdt.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdomr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdazn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlkr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdsyp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmmk.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usduzs.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmop.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtmt.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlbp.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdyer.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbhd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdafn.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdnpr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdbnd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkhr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdgel.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkpw.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmnt.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdlak.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdamd.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdtjs.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkgs.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdmvr.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdjod.s.*.*",
+        "arguments": {}
+    },
+    {
+        "source": "lix.data.incoming",
+        "vhost": "/",
+        "destination": "asia",
+        "destination_type": "exchange",
+        "routing_key": "*.*.*.usdkwd.s.*.*",
+        "arguments": {}
+    }
+  ]
+}
