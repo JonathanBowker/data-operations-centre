@@ -8,6 +8,7 @@
 | 6 | Bulgaria | BNBG | Bulgarian National Bank | ```*.*.bnbg.*.*.*.*``` |
 | 7 | Bulgaria | BPBI | Bulgarian Postbank | ```*.*.bpbi.*.*.*.*``` |
 | 8 | Canada | BCAN | Bank of Canada | ```*.*.bcan.*.*.*.*``` |
+| 5 | Ghana | BAGH  | Bank of Ghana | ```*.*.bagh.*.*.*.*``` |
 | 9 | Czech Republic | CNB | Czech National Bank | ```*.*.cnb.*.*.*.*``` |
 | 10 | Dubai | ENBA | Emirates National Bank | ```*.*.enba.*.*.*.*``` |
 | 11 | Dutch Antilles | BNA | Bank Nederlandse Antillen | ```*.*.bna.*.*.*.*``` |
