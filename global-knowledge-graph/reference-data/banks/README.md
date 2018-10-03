@@ -4,7 +4,6 @@
 | 2 | Papua New Guinea  | ANZB  | ANZ Bank Papua New Guinea  | ```*.png.anzb.*.*.*.*``` |
 | 3 | Singapore | ANZB  | ANZ Bank Singapore | ```*.sgp.anzb.*.*.*.*``` |
 | 4 | Japan | ANZB  | ANZ Bank Tokyo | ```*.tyo.anzb.*.*.*.*``` |
-| 5 | Ghana | BAGH  | Bank of Ghana | ```*.*.bagh.*.*.*.*``` |
 | 6 | Vietnam | BFTV  | Vietcom Bank | ```*.*.bftv.*.*.*.*``` | 
 | 7 | Taiwan | CCBC  | Chang Hwa Commercial Bank | ```*.*.ccbc.*.*.*.*``` | 
 | 8 | France | CCBP  | Natixis | ```*.*.ccbp.*.*.*.*``` | 
