@@ -1,0 +1,177 @@
+# CSP (FULL EXTENDED) (ETHCSPX)
+
+This is the full (extended) parsed transaction from the CSP.
+This is extended in as much as the MidPrice has been added.
+These transactions are created as part of the CSP RTS suite of services.
+If new/unexpected fields are encountered, these will be appended to the transaction as a delimited list.
+ 
+* 1       Permission (3)
+* 2       Source ID (4)
+* 3       Type (5)
+* 4       Session Indicator (5)
+* 5       Currency Pair (5)
+* 6       Trade Type (5)
+* 7       Tenor (5)
+* 8       Bid Price (12)
+* 9       Ask Price (10)
+* 10      Contributor ID (248)
+* 11      Region Code (1270)
+* 12      City Code (1271)
+* 13      Region ID (811)
+* 14      City ID Ref (810)
+* 15      Current Price (14)
+* 16      Trade Open (400)
+* 17      Trade High (388)
+* 18      Trade Low (394)
+* 19      Trade Trend (432)
+* 20      Trade Tick (316)
+* 21      Change (361)
+* 22      Percent Change (362)
+* 23      Trade Price (8)
+* 24      Yesterday Trade Close (407)
+* 25      Trade Datetime (18)
+* 26      Quote Datetime (20)
+* 27      Activity Datetime (16)
+* 28      Fractional Indicator (670)
+* 29      Previous Trade Date (451)
+* 30      Desktop Eligibility Indicator (1662)
+* 31      Refresh (24)
+* 32      Mid Price
+
+## Sample Transaction
+
+* 1       Permission (3)                          1321
+* 2       Source ID (4)                           1321
+* 3       Type (5)                                X
+* 4       Session Indicator (5)
+* 5       Currency Pair (5)                       EURUSD
+* 6       Trade Type (5)                          S
+* 7       Tenor (5)                               SP
+* 8       Bid Price (12)                          1.19540
+* 9       Ask Price (10)                          1.19544
+* 10      Contributor ID (248)                    AXI
+* 11      Region Code (1270)                      ASI
+* 12      City Code (1271)                        SYD
+* 13      Region ID (811)                         12311
+* 14      City ID Ref (810)                       233104
+* 15      Current Price (14)
+* 16      Trade Open (400)
+* 17      Trade High (388)
+* 18      Trade Low (394)
+* 19      Trade Trend (432)                       +*+**-++
+* 20      Trade Tick (316)                        +
+* 21      Change (361)                            -0.00018
+* 22      Percent Change (362)                    -0.02000
+* 23      Trade Price (8)                         1.19540
+* 24      Yesterday Trade Close (407)
+* 25      Trade Datetime (18)                     2018-05-02T23:58:00.748Z
+* 26      Quote Datetime (20)                     2018-05-02T23:58:00.748Z
+* 27      Activity Datetime (16)                  2018-05-02T23:58:00.748Z
+* 28      Fractional Indicator (670)
+* 29      Previous Trade Date (451)
+* 30      Desktop Eligibility Indicator (1662)    1
+* 31      Refresh (24)
+* 32      Mid Price                               1.19542
+
+# Matched Forward (ETHMatchedForward)
+
+The matched forward transaction is an enhanced FX forward rate format where the forwards have been matched to their 'nearest' spot rate, allowing a number of calculations to be performed.
+
+* 1       uuid
+* 2       calculatedDateTime
+* 3       quoteType
+* 4       ccyPair
+* 5       tenor
+* 6       baseCcy
+* 7       quoteCcy
+* 8       source
+* 9       region
+* 10      city
+* 11      fwdQuoteDateTime
+* 12      spotQuoteDateTime
+* 13      spotBid
+* 14      spotAsk
+* 15      spotMid
+* 16      spotSpread
+* 17      fwdPointsBid
+* 18      fwdPointsAsk
+* 19      fwdPointsMid
+* 20      fwdPointsSpread
+* 21      fwdRateBid
+* 22      fwdRateAsk
+* 23      fwdRateMid
+* 24      fwdRateSpread
+* 25      fwdBasisBid
+* 26      fwdBasisAsk
+* 27      fwdBasisMid
+* 28      fwdBasisSpread
+* 29      fwdValBid
+* 30      fwdValAsk
+* 31      fwdValMid
+* 32      fwdValSpread
+* 33      fractionalIndicator
+* 34      comment
+
+## Sample Transaction
+
+* uuid                    97d9162d-62f5-473b-b5ea-029ae53f0a32
+* calculatedDateTime      2018-07-14T15:12:29.659Z
+* quoteType               F
+* ccyPair                 EURUSD
+* tenor                   10M
+* baseCcy                 EUR
+* quoteCcy                USD
+* source                  ZKBK
+* region                  EUR
+* city                    ZUR
+* fwdQuoteDateTime        2018-05-01T00:03:48.355Z
+* spotQuoteDateTime       2018-05-01T00:03:31.338Z
+* spotBid                 1.2078000000
+* spotAsk                 1.2078000000
+* spotMid                 1.2078000000
+* spotSpread              0.0000000000
+* fwdPointsBid            0.0000031124
+* fwdPointsAsk            0.0000031344
+* fwdPointsMid            0.0000031234
+* fwdPointsSpread         0.0000000220
+* fwdRateBid              1.2389240000
+* fwdRateAsk              1.2391440000
+* fwdRateMid              1.2390340000
+* fwdRateSpread           0.0002200000
+* fwdBasisBid             0.0311240000
+* fwdBasisAsk             0.0313440000
+* fwdBasisMid             0.0312340000
+* fwdBasisSpread          0.0002200000
+* fwdValBid               311.2400000000
+* fwdValAsk               313.4400000000
+* fwdValMid               312.3400000000
+* fwdValSpread            2.2000000000
+* fractionalIndicator     4
+* comment                 Matched spot rate on 1 of 1
+
+# Spot Quote (ETHSpotQuote)
+
+* 1       CreatedTimestamp
+* 2       RoutingKey
+* 3       TradingDay
+* 4       BucketNo
+* 5       CurrencyPair
+* 6       Tenor
+* 7       QuoteCurrency
+* 8       BaseCurrency
+* 9       SpotsZipLink
+* 10      SpotOpen
+* 11      SpotHigh
+* 12      SpotLow
+* 13      SpotClose
+* 14      SpotClosingBid
+* 15      SpotClosingAsk
+* 16      SpotClosingMid
+* 17      SpotClosingSpread
+* 18      SpotQuoteCount
+Total number of quotes
+* 19      SpotChangeCount - Total number of quotes without nulls
+* 20      SpotTravelled - Total of (3rd spot - second spot) + (2nd spot - 1st spot) and so one. (Same for all below)
+* 21      SpotIncrement - SpotTravelled/SpotChangeCount
+
+
