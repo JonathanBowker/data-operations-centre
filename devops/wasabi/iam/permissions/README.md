@@ -1,4 +1,4 @@
-Specifying Permissions in a Policy
+# Specifying Permissions in a Policy
 Amazon S3 defines a set of permissions that you can specify in a policy. These are keywords, each of which maps to specific Amazon S3 operations (see Operations on Buckets, and Operations on Objects in the Amazon Simple Storage Service API Reference).
 
 ## Topics
@@ -6,7 +6,8 @@ Amazon S3 defines a set of permissions that you can specify in a policy. These a
 * Permissions for Object Operations
 * Permissions Related to Bucket Operations
 * Permissions Related to Bucket Subresource Operations
-* Permissions for Object Operations
+
+# Permissions for Object Operations
 
 This section provides a list of the permissions for object operations that you can specify in a policy.
 
@@ -56,7 +57,8 @@ The following example bucket policy grants the s3:PutObject and the s3:PutObject
 You can use a wildcard to grant permission for all Amazon S3 actions.
 
 "Action":   "*"
-Permissions Related to Bucket Operations
+
+# Permissions Related to Bucket Operations
 This section provides a list of the permissions related to bucket operations that you can specify in a policy.
 
 ## Amazon S3 Permissions Related to Bucket Operations
@@ -92,10 +94,10 @@ The following example user policy grants the s3:CreateBucket, s3:ListAllMyBucket
 
 If your user is going to use the console to view buckets and see the contents of any of these buckets, the user must have the s3:ListAllMyBuckets and s3:GetBucketLocation permissions. For an example, see "Policy for Console Access" at Writing IAM Policies: How to Grant Access to an Amazon S3 Bucket.
 
-## Permissions Related to Bucket Subresource Operations
+# Permissions Related to Bucket Subresource Operations
 This section provides a list of the permissions related to bucket subresource operations that you can specify in a policy.
 
-Amazon S3 Permissions Related to Bucket Subresource Operations
+## Amazon S3 Permissions Related to Bucket Subresource Operations
 
 | Permission Keywords | Amazon S3 Operation(s) Covered |
 | -- | -- |
