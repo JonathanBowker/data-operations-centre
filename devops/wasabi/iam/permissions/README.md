@@ -36,7 +36,7 @@ This section provides a list of the permissions for object operations that you c
 
 The following example bucket policy grants the s3:PutObject and the s3:PutObjectAcl permissions to a user (Dave). If you remove the Principal element, you can attach the policy to a user. These are object operations, and accordingly the relative-id portion of the Resource ARN identifies objects (examplebucket/*). For more information, see Specifying Resources in a Policy.
 
-```{
+``` {
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -49,7 +49,7 @@ The following example bucket policy grants the s3:PutObject and the s3:PutObject
             "Resource": "arn:aws:s3:::examplebucket/*"
         }
     ]
-}```
+} ```
 
 You can use a wildcard to grant permission for all Amazon S3 actions.
 
@@ -133,7 +133,7 @@ Amazon S3 Permissions Related to Bucket Subresource Operations
 
 The following user policy grants the s3:GetBucketAcl permission on the examplebucket bucket to user Dave.
 
-```{
+``` {
   "Version": "2012-10-17",
   "Statement": [
     {
@@ -149,5 +149,6 @@ The following user policy grants the s3:GetBucketAcl permission on the examplebu
       "Resource": "arn:aws:s3:::examplebucket"
     }
   ]
-}```
+} ```
+
 You can delete objects either by explicitly calling the DELETE Object API or by configuring its lifecycle (see Object Lifecycle Management) so that Amazon S3 can remove the objects when their lifetime expires. To explicitly block users or accounts from deleting objects, you must explicitly deny them s3:DeleteObject, s3:DeleteObjectVersion, and s3:PutLifecycleConfiguration permissions. By default, users have no permissions. But as you create users, add users to groups, and grant them permissions, it is possible for users to get certain permissions that you did not intend to give. That is where you can use explicit deny, which supersedes all other permissions a user might have and denies the user permissions for specific actions.
