@@ -9,53 +9,30 @@ Permissions Related to Bucket Subresource Operations
 Permissions for Object Operations
 This section provides a list of the permissions for object operations that you can specify in a policy.
 
-Amazon S3 Permissions for Object Operations
+|Amazon S3 | Permissions for Object Operations |
+| -- | -- |
+| Permissions |	Amazon S3 Operations|
+| s3:AbortMultipartUpload |	Abort Multipart Upload |
+| s3:DeleteObject | DELETE Object|
+| s3:DeleteObjectTagging | DELETE Object tagging |
+| s3:DeleteObjectVersion | DELETE Object (a Specific Version of the Object) |
+| s3:DeleteObjectVersionTagging | DELETE Object tagging (for a Specific Version of the Object)|
+| s3:GetObject | GET Object, HEAD Object, SELECT Object Content. When you grant this permission on a version-enabled bucket, you always get the latest version data.|
+| s3:GetObjectAcl | GET Object ACL | 
+| s3:GetObjectTagging | GET Object tagging | 
+| s3:GetObjectTorrent	GET Object torrent | 
+| s3:GetObjectVersion | GET Object, HEAD Object. To grant permission for version-specific object data, you must grant this permission. That is, when you specify version number when making any of these requests, you need this Amazon S3 permission. | 
+| s3:GetObjectVersionAcl | GET ACL (for a Specific Version of the Object) | 
+| s3:GetObjectVersionTagging  |  GET Object tagging (for a Specific Version of the Object) | 
+| s3:GetObjectVersionTorrent | GET Object Torrent versioning | 
+| s3:ListMultipartUploadParts | List Parts | 
+| s3:PutObject | PUT Object, POST Object, Initiate Multipart Upload, Upload Part, Complete Multipart Upload, PUT Object - Copy | 
+| s3:PutObjectAcl | PUT Object ACL | 
+| s3:PutObjectTagging | PUT Object tagging | 
+| s3:PutObjectVersionAcl | PUT Object ACL (for a Specific Version of the Object)|
+| s3:PutObjectVersionTagging | PUT Object tagging (for a Specific Version of the Object)|
+| s3:RestoreObject | POST Object restore |
 
-Permissions,	Amazon S3 Operations
-s3:AbortMultipartUpload,	Abort Multipart Upload
-s3:DeleteObject,	DELETE Object
-s3:DeleteObjectTagging
-
-DELETE Object tagging
-s3:DeleteObjectVersion	DELETE Object (a Specific Version of the Object)
-s3:DeleteObjectVersionTagging
-
-DELETE Object tagging (for a Specific Version of the Object)
-s3:GetObject	
-GET Object, HEAD Object, SELECT Object Content
-
-When you grant this permission on a version-enabled bucket, you always get the latest version data.
-
-s3:GetObjectAcl	GET Object ACL
-s3:GetObjectTagging
-
-GET Object tagging
-s3:GetObjectTorrent	GET Object torrent
-s3:GetObjectVersion	
-GET Object, HEAD Object
-
-To grant permission for version-specific object data, you must grant this permission. That is, when you specify version number when making any of these requests, you need this Amazon S3 permission.
-
-s3:GetObjectVersionAcl	GET ACL (for a Specific Version of the Object)
-s3:GetObjectVersionTagging
-
-GET Object tagging (for a Specific Version of the Object)
-s3:GetObjectVersionTorrent	GET Object Torrent versioning
-s3:ListMultipartUploadParts	List Parts
-s3:PutObject	
-PUT Object, POST Object, Initiate Multipart Upload, Upload Part, Complete Multipart Upload, PUT Object - Copy
-
-s3:PutObjectAcl	PUT Object ACL
-s3:PutObjectTagging
-
-PUT Object tagging
-s3:PutObjectVersionAcl	PUT Object ACL (for a Specific Version of the Object)
-s3:PutObjectVersionTagging
-
-PUT Object tagging (for a Specific Version of the Object)
-s3:RestoreObject
-
-POST Object restore
 The following example bucket policy grants the s3:PutObject and the s3:PutObjectAcl permissions to a user (Dave). If you remove the Principal element, you can attach the policy to a user. These are object operations, and accordingly the relative-id portion of the Resource ARN identifies objects (examplebucket/*). For more information, see Specifying Resources in a Policy.
 
 {
