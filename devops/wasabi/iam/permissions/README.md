@@ -3,10 +3,10 @@ Amazon S3 defines a set of permissions that you can specify in a policy. These a
 
 ## Topics
 
-⋅⋅* Permissions for Object Operations
-⋅⋅* Permissions Related to Bucket Operations
-⋅⋅* Permissions Related to Bucket Subresource Operations
-⋅⋅* Permissions for Object Operations
+* Permissions for Object Operations
+* Permissions Related to Bucket Operations
+* Permissions Related to Bucket Subresource Operations
+* Permissions for Object Operations
 
 This section provides a list of the permissions for object operations that you can specify in a policy.
 
