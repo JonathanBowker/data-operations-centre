@@ -36,7 +36,8 @@ This section provides a list of the permissions for object operations that you c
 
 The following example bucket policy grants the s3:PutObject and the s3:PutObjectAcl permissions to a user (Dave). If you remove the Principal element, you can attach the policy to a user. These are object operations, and accordingly the relative-id portion of the Resource ARN identifies objects (examplebucket/*). For more information, see Specifying Resources in a Policy.
 
-``` {
+``` 
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -71,7 +72,8 @@ This section provides a list of the permissions related to bucket operations tha
 
 The following example user policy grants the s3:CreateBucket, s3:ListAllMyBuckets, and the s3:GetBucketLocation permissions to a user. Note that for all these permissions, you set the relative-id part of the Resource ARN to "*". For all other bucket actions, you must specify a bucket name. For more information, see Specifying Resources in a Policy.
 
-``` {
+``` 
+{
    "Version":"2012-10-17",
    "Statement":[
       {
@@ -135,7 +137,8 @@ Amazon S3 Permissions Related to Bucket Subresource Operations
 
 The following user policy grants the s3:GetBucketAcl permission on the examplebucket bucket to user Dave.
 
-``` {
+```
+{
   "Version": "2012-10-17",
   "Statement": [
     {
