@@ -9,7 +9,7 @@ Permissions Related to Bucket Subresource Operations
 Permissions for Object Operations
 This section provides a list of the permissions for object operations that you can specify in a policy.
 
-|Amazon S3 | Permissions for Object Operations |
+| Amazon S3 | Permissions for Object Operations |
 | -- | -- |
 | Permissions |	Amazon S3 Operations|
 | s3:AbortMultipartUpload |	Abort Multipart Upload |
@@ -20,17 +20,17 @@ This section provides a list of the permissions for object operations that you c
 | s3:GetObject | GET Object, HEAD Object, SELECT Object Content. When you grant this permission on a version-enabled bucket, you always get the latest version data.|
 | s3:GetObjectAcl | GET Object ACL | 
 | s3:GetObjectTagging | GET Object tagging | 
-| s3:GetObjectTorrent	GET Object torrent | 
+| s3:GetObjectTorrent |	GET Object torrent | 
 | s3:GetObjectVersion | GET Object, HEAD Object. To grant permission for version-specific object data, you must grant this permission. That is, when you specify version number when making any of these requests, you need this Amazon S3 permission. | 
 | s3:GetObjectVersionAcl | GET ACL (for a Specific Version of the Object) | 
-| s3:GetObjectVersionTagging  |  GET Object tagging (for a Specific Version of the Object) | 
+| s3:GetObjectVersionTagging  | GET Object tagging (for a Specific Version of the Object) | 
 | s3:GetObjectVersionTorrent | GET Object Torrent versioning | 
 | s3:ListMultipartUploadParts | List Parts | 
 | s3:PutObject | PUT Object, POST Object, Initiate Multipart Upload, Upload Part, Complete Multipart Upload, PUT Object - Copy | 
 | s3:PutObjectAcl | PUT Object ACL | 
 | s3:PutObjectTagging | PUT Object tagging | 
-| s3:PutObjectVersionAcl | PUT Object ACL (for a Specific Version of the Object)|
-| s3:PutObjectVersionTagging | PUT Object tagging (for a Specific Version of the Object)|
+| s3:PutObjectVersionAcl | PUT Object ACL (for a Specific Version of the Object) |
+| s3:PutObjectVersionTagging | PUT Object tagging (for a Specific Version of the Object) |
 | s3:RestoreObject | POST Object restore |
 
 The following example bucket policy grants the s3:PutObject and the s3:PutObjectAcl permissions to a user (Dave). If you remove the Principal element, you can attach the policy to a user. These are object operations, and accordingly the relative-id portion of the Resource ARN identifies objects (examplebucket/*). For more information, see Specifying Resources in a Policy.
@@ -57,13 +57,15 @@ This section provides a list of the permissions related to bucket operations tha
 
 Amazon S3 Permissions Related to Bucket Operations
 
-Permission Keywords	Amazon S3 Operation(s) Covered
-s3:CreateBucket	PUT Bucket
-s3:DeleteBucket	DELETE Bucket
-s3:ListBucket	GET Bucket (List Objects), HEAD Bucket
-s3:ListBucketVersions	GET Bucket Object versions
-s3:ListAllMyBuckets	GET Service
-s3:ListBucketMultipartUploads	List Multipart Uploads
+| Permission Keywords | Amazon S3 Operation(s) Covered |
+| -- | -- |
+| s3:CreateBucket | PUT Bucket |
+| s3:DeleteBucket | DELETE Bucket |
+| s3:ListBucket | GET Bucket (List Objects), HEAD Bucket |
+| s3:ListBucketVersions | GET Bucket Object versions |
+| s3:ListAllMyBuckets | GET Service |
+| s3:ListBucketMultipartUploads | List Multipart Uploads |
+
 The following example user policy grants the s3:CreateBucket, s3:ListAllMyBuckets, and the s3:GetBucketLocation permissions to a user. Note that for all these permissions, you set the relative-id part of the Resource ARN to "*". For all other bucket actions, you must specify a bucket name. For more information, see Specifying Resources in a Policy.
 
 {
@@ -88,42 +90,44 @@ This section provides a list of the permissions related to bucket subresource op
 
 Amazon S3 Permissions Related to Bucket Subresource Operations
 
-Permissions	Amazon S3 Operation(s) Covered
-s3:DeleteBucketPolicy	DELETE Bucket policy
-s3:DeleteBucketWebsite	DELETE Bucket website
-s3:GetAccelerateConfiguration	GET Bucket accelerate
-s3:GetAnalyticsConfiguration	GET Bucket analytics, List Bucket Analytics Configurations
-s3:GetBucketAcl	GET Bucket acl
-s3:GetBucketCORS	GET Bucket cors
-s3:GetBucketLocation	GET Bucket location
-s3:GetBucketLogging	GET Bucket logging
-s3:GetBucketNotification	GET Bucket notification
-s3:GetBucketPolicy	GET Bucket policy
-s3:GetBucketRequestPayment	GET Bucket requestPayment
-s3:GetBucketTagging	GET Bucket tagging
-s3:GetBucketVersioning	GET Bucket versioning
-s3:GetBucketWebsite	GET Bucket website
-s3:GetEncryptionConfiguration	GET Bucket encryption
-s3:GetInventoryConfiguration	GET Bucket inventory, List Bucket Inventory Configurations
-s3:GetLifecycleConfiguration	GET Bucket lifecycle
-s3:GetMetricsConfiguration	GET Bucket metrics, List Bucket Metrics Configurations
-s3:GetReplicationConfiguration	GET Bucket replication
-s3:PutAccelerateConfiguration	PUT Bucket accelerate
-s3:PutAnalyticsConfiguration	PUT Bucket analytics, DELETE Bucket analytics
-s3:PutBucketAcl	PUT Bucket acl
-s3:PutBucketCORS	PUT Bucket cors, DELETE Bucket cors
-s3:PutBucketLogging	PUT Bucket logging
-s3:PutBucketNotification	PUT Bucket notification
-s3:PutBucketPolicy	PUT Bucket policy
-s3:PutBucketRequestPayment	PUT Bucket requestPayment
-s3:PutBucketTagging	DELETE Bucket tagging, PUT Bucket tagging
-s3:PutBucketVersioning	PUT Bucket versioning
-s3:PutBucketWebsite	PUT Bucket website
-s3:PutEncryptionConfiguration	PUT Bucket encryption, DELETE Bucket encryption
-s3:PutInventoryConfiguration	PUT Bucket inventory, DELETE Bucket inventory
-s3:PutLifecycleConfiguration	PUT Bucket lifecycle, DELETE Bucket lifecycle
-s3:PutMetricsConfiguration	PUT Bucket metrics, DELETE Bucket metrics
-s3:PutReplicationConfiguration	PUT Bucket replication, DELETE Bucket replication
+| Permission Keywords | Amazon S3 Operation(s) Covered |
+| -- | -- |
+| s3:DeleteBucketPolicy	| DELETE Bucket policy |
+| s3:DeleteBucketWebsite	| DELETE Bucket website |
+| s3:GetAccelerateConfiguration	| GET Bucket accelerate |
+| s3:GetAnalyticsConfiguration	| GET Bucket analytics, List Bucket Analytics Configurations |
+| s3:GetBucketAcl | GET Bucket acl |
+| s3:GetBucketCORS | GET Bucket cors |
+| s3:GetBucketLocation | GET Bucket location |
+| s3:GetBucketLogging | GET Bucket logging |
+| s3:GetBucketNotification | GET Bucket notification |
+| s3:GetBucketPolicy | GET Bucket policy |
+| s3:GetBucketRequestPayment | GET Bucket requestPayment |
+| s3:GetBucketTagging | GET Bucket tagging |
+| s3:GetBucketVersioning | GET Bucket versioning |
+| s3:GetBucketWebsite | GET Bucket website |
+| s3:GetEncryptionConfiguration | GET Bucket encryption |
+| s3:GetInventoryConfiguration | GET Bucket inventory, List Bucket Inventory Configurations |
+| s3:GetLifecycleConfiguration | GET Bucket lifecycle |
+| s3:GetMetricsConfiguration | GET Bucket metrics, List Bucket Metrics Configurations |
+| s3:GetReplicationConfiguration | GET Bucket replication |
+| s3:PutAccelerateConfiguration | PUT Bucket accelerate |
+| s3:PutAnalyticsConfiguration | PUT Bucket analytics, DELETE Bucket analytics |
+| s3:PutBucketAcl | PUT Bucket acl |
+| s3:PutBucketCORS | PUT Bucket cors, DELETE Bucket cors |
+| s3:PutBucketLogging | PUT Bucket logging |
+| s3:PutBucketNotification | PUT Bucket notification |
+| s3:PutBucketPolicy | PUT Bucket policy |
+| s3:PutBucketRequestPayment | PUT Bucket requestPayment |
+| s3:PutBucketTagging | DELETE Bucket tagging, PUT Bucket tagging |
+| s3:PutBucketVersioning | PUT Bucket versioning |
+| s3:PutBucketWebsite | PUT Bucket website |
+| s3:PutEncryptionConfiguration | PUT Bucket encryption, DELETE Bucket encryption |
+| s3:PutInventoryConfiguration | PUT Bucket inventory, DELETE Bucket inventory |
+| s3:PutLifecycleConfiguration | PUT Bucket lifecycle, DELETE Bucket lifecycle |
+| s3:PutMetricsConfiguration | PUT Bucket metrics, DELETE Bucket metrics |
+| s3:PutReplicationConfiguration | PUT Bucket replication, DELETE Bucket replication |
+
 The following user policy grants the s3:GetBucketAcl permission on the examplebucket bucket to user Dave.
 
 {
