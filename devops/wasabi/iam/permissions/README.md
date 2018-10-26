@@ -1,7 +1,7 @@
 Specifying Permissions in a Policy
 Amazon S3 defines a set of permissions that you can specify in a policy. These are keywords, each of which maps to specific Amazon S3 operations (see Operations on Buckets, and Operations on Objects in the Amazon Simple Storage Service API Reference).
 
-Topics
+## Topics
 
 Permissions for Object Operations
 Permissions Related to Bucket Operations
@@ -55,7 +55,7 @@ You can use a wildcard to grant permission for all Amazon S3 actions.
 Permissions Related to Bucket Operations
 This section provides a list of the permissions related to bucket operations that you can specify in a policy.
 
-Amazon S3 Permissions Related to Bucket Operations
+## Amazon S3 Permissions Related to Bucket Operations
 
 | Permission Keywords | Amazon S3 Operation(s) Covered |
 | -- | -- |
@@ -85,7 +85,7 @@ The following example user policy grants the s3:CreateBucket, s3:ListAllMyBucket
 }
 If your user is going to use the console to view buckets and see the contents of any of these buckets, the user must have the s3:ListAllMyBuckets and s3:GetBucketLocation permissions. For an example, see "Policy for Console Access" at Writing IAM Policies: How to Grant Access to an Amazon S3 Bucket.
 
-Permissions Related to Bucket Subresource Operations
+## Permissions Related to Bucket Subresource Operations
 This section provides a list of the permissions related to bucket subresource operations that you can specify in a policy.
 
 Amazon S3 Permissions Related to Bucket Subresource Operations
