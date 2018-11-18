@@ -35,6 +35,9 @@ optional arguments:
   -tf [TIMEFORMAT], --timeformat [TIMEFORMAT]
                         Timestamp format. Default: '%Y-%m-%d %H:%M:%S' e.g.:
                         1970-01-01 00:00:00
+                        
+                        Timestamp format. Millisecond:'%Y-%m-%dT%H:%M:%S.%f%z' e.g.:
+                        2018-04-24T00:00:00.026Z
   --fieldcolumns [FIELDCOLUMNS]
                         List of csv columns to use as fields, separated by
                         comma, e.g.: value1,value2. Default: value
